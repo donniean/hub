@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+    />
+    <title>Global Packages</title>
+    <style>
+      ol {
+        list-style-type: decimal-leading-zero;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <code id="install-total"></code>
+      <ol id="install-list"></ol>
+    </div>
+    <div>
+      <code id="uninstall-total"></code>
+      <ol id="uninstall-list"></ol>
+    </div>
+    <script>
+      const list = [
+        {
+          name: 'babel-eslint',
+          isInstall: true
+        },
+        {
+          name: 'create-react-app',
+          isInstall: false
+        },
+        {
+          name: 'create-react-native-app',
+          isInstall: false
+        },
+        {
+          name: 'eslint',
+          isInstall: true
+        },
+        {
+          name: 'eslint-plugin-html',
+          isInstall: true
+        },
+        {
+          name: 'eslint-plugin-jquery',
+          isInstall: true
+        },
+        {
+          name: 'eslint-plugin-node',
+          isInstall: true
+        },
+        {
+          name: 'eslint-plugin-react',
+          isInstall: true
+        },
+        {
+          name: 'eslint-plugin-react-hooks@next',
+          isInstall: true
+        },
+        {
+          name: 'eslint-plugin-react-native',
+          isInstall: true
+        },
+        {
+          name: 'htmlhint',
+          isInstall: true
+        },
+        {
+          name: 'http-server',
+          isInstall: true
+        },
+        {
+          name: 'npm',
+          isInstall: true
+        },
+        {
+          name: 'npm-check',
+          isInstall: true
+        },
+        {
+          name: 'npm-check-updates',
+          isInstall: true
+        },
+        {
+          name: 'prettier',
+          isInstall: true
+        },
+        {
+          name: 'react-devtools',
+          isInstall: true
+        },
+        {
+          name: 'react-native-cli',
+          isInstall: true
+        },
+        {
+          name: 'react-native-git-upgrade',
+          isInstall: true
+        },
+        {
+          name: 'react-native-rename',
+          isInstall: true
+        },
+        {
+          name: 'rnpm',
+          isInstall: true
+        },
+        {
+          name: 'stylelint',
+          isInstall: true
+        },
+        {
+          name: 'typescript',
+          isInstall: true
+        },
+        {
+          name: 'typings',
+          isInstall: true
+        },
+        {
+          name: 'vorlon',
+          isInstall: true
+        }
+      ];
+
+      const installCommand = 'npm i -g';
+      let installList = [];
+      let installTotal = installCommand;
+
+      const uninstallCommand = 'npm un -g';
+      let uninstallList = [];
+      let uninstallTotal = uninstallCommand;
+
+      for (let item of list) {
+        const { name, isInstall } = item;
+        let code = '';
+        if (isInstall) {
+          code = `${installCommand} ${name}`;
+          installList.push(`<li><code>${code}</code></li>`);
+          installTotal += ` ${name}`;
+        } else {
+          code = `${uninstallCommand} ${name}`;
+          uninstallList.push(`<li><code>${code}</code></li>`);
+          uninstallTotal += ` ${name}`;
+        }
+      }
+
+      document.getElementById('install-total').innerHTML = installTotal.trim();
+      document.getElementById('install-list').innerHTML = installList
+        .join('')
+        .trim();
+      document.getElementById(
+        'uninstall-total'
+      ).innerHTML = uninstallTotal.trim();
+      document.getElementById('uninstall-list').innerHTML = uninstallList
+        .join('')
+        .trim();
+    </script>
+  </body>
+</html>
