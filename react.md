@@ -1,6 +1,6 @@
-# react
+# React
 
-- [react](#react)
+- [React](#react)
   - [Awesome](#awesome)
   - [UI](#ui)
   - [Portal](#portal)
