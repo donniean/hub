@@ -32,6 +32,12 @@
 
 ---
 
+## Carousel
+- [react-slick](https://github.com/akiran/react-slick)
+- [react-swipe](https://github.com/voronianski/react-swipe)
+
+---
+
 ## List
 
 - [react-virtualized](https://github.com/bvaughn/react-virtualized)
