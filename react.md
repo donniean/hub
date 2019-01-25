@@ -5,11 +5,14 @@
   - [UI](#ui)
   - [Portal](#portal)
   - [Carousel & Swipe](#carousel--swipe)
+  - [Image](#image)
   - [List](#list)
   - [Button](#button)
   - [Modal](#modal)
   - [Toast](#toast)
   - [Loading](#loading)
+  - [Skeleton & Placeholder](#skeleton--placeholder)
+  - [Gesture](#gesture)
 
 ## Awesome
 
@@ -39,7 +42,12 @@
 - [nuka-carousel](https://github.com/FormidableLabs/nuka-carousel)
 - [react-swipe](https://github.com/voronianski/react-swipe)
 - [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views)
-- [react-swipeable](https://github.com/dogfessional/react-swipeable)
+
+---
+
+## Image
+
+- [react-image](https://github.com/mbrevda/react-image)
 
 ---
 
@@ -66,8 +74,24 @@
 
 - [react-toastify](https://github.com/fkhadra/react-toastify)
 
+---
+
 ## Loading
 
 - [react-spinners](https://github.com/davidhu2000/react-spinners)
 - [react-loading](https://github.com/fakiolinho/react-loading)
 - [react-loader](https://github.com/CognizantStudio/react-loader)
+
+---
+
+## Skeleton & Placeholder
+
+- [react-content-loader](https://github.com/danilowoz/react-content-loader)
+- [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
+- [react-placeholder](https://github.com/buildo/react-placeholder)
+
+---
+
+## Gesture
+
+- [react-swipeable](https://github.com/dogfessional/react-swipeable)
