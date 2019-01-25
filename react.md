@@ -4,7 +4,7 @@
   - [Awesome](#awesome)
   - [UI](#ui)
   - [Portal](#portal)
-  - [Carousel](#carousel)
+  - [Carousel & Swipe](#carousel--swipe)
   - [List](#list)
   - [Button](#button)
   - [Modal](#modal)
