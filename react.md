@@ -38,6 +38,8 @@
 - [react-slick](https://github.com/akiran/react-slick)
 - [nuka-carousel](https://github.com/FormidableLabs/nuka-carousel)
 - [react-swipe](https://github.com/voronianski/react-swipe)
+- [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views)
+- [react-swipeable](https://github.com/dogfessional/react-swipeable)
 
 ---
 
