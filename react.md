@@ -33,7 +33,7 @@
 
 ---
 
-## Carousel
+## Carousel & Swipe
 
 - [react-slick](https://github.com/akiran/react-slick)
 - [nuka-carousel](https://github.com/FormidableLabs/nuka-carousel)
