@@ -2,6 +2,7 @@
 
 - [React](#react)
   - [Awesome](#awesome)
+  - [Icons](#icons)
   - [UI](#ui)
   - [Portal](#portal)
   - [Carousel & Swipe](#carousel--swipe)
@@ -14,10 +15,18 @@
   - [Skeleton & Placeholder](#skeleton--placeholder)
   - [Gesture](#gesture)
 
+---
+
 ## Awesome
 
 - [awesome-react](https://github.com/enaqx/awesome-react)
 - [awesome-react-components](https://github.com/brillout/awesome-react-components)
+
+---
+
+## Icons
+
+- [react-icons](https://github.com/react-icons/react-icons)
 
 ---
 
