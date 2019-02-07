@@ -9,6 +9,8 @@
 ## Icons
 
 - [Font-Awesome](https://github.com/FortAwesome/Font-Awesome)
+- [material-design-icons](https://github.com/google/material-design-icons)
+- [Iconfont](https://www.iconfont.cn/)
 
 ---
 
