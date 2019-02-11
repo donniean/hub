@@ -20,3 +20,4 @@
 - [React](./react.md)
   - [React Native](./react-native.md)
 - [Modernizr](https://github.com/modernizr/modernizr)
+- [validator.js](https://github.com/chriso/validator.js)
