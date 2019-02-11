@@ -1,4 +1,4 @@
-# React
+# [React](https://github.com/facebook/react)
 
 - [React](#react)
   - [Resources](#resources)
@@ -21,7 +21,6 @@
 
 ## Resources
 
-- [react](https://github.com/facebook/react)
 - [react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
 
 ---
