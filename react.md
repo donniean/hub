@@ -14,7 +14,8 @@
   - [Toast](#toast)
   - [Loading](#loading)
   - [Skeleton & Placeholder](#skeleton--placeholder)
-  - [Form & Input](#form--input)
+  - [Form](#form)
+    - [Radio & Checkbox](#radio--checkbox)
   - [Gesture](#gesture)
 
 ---
@@ -112,10 +113,15 @@
 
 ---
 
-## Form & Input
+## Form
 
+- [redux-form](https://github.com/erikras/redux-form)
 - [formik](https://github.com/jaredpalmer/formik)
-- [formik](https://github.com/jaredpalmer/formik)
+- [final-form](https://github.com/final-form/final-form)
+  - [react-final-form](https://github.com/final-form/react-final-form)
+
+### Radio & Checkbox
+
 - [react-radio-group](https://github.com/chenglou/react-radio-group)
 - [react-checkbox-group](https://github.com/ziad-saab/react-checkbox-group)
 
