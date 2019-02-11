@@ -1,6 +1,7 @@
 # React
 
 - [React](#react)
+  - [Resources](#resources)
   - [Awesome](#awesome)
   - [Icons](#icons)
   - [UI](#ui)
@@ -15,6 +16,13 @@
   - [Skeleton & Placeholder](#skeleton--placeholder)
   - [Form & Input](#form--input)
   - [Gesture](#gesture)
+
+---
+
+## Resources
+
+- [react](https://github.com/facebook/react)
+- [react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
 
 ---
 
@@ -107,6 +115,8 @@
 
 ## Form & Input
 
+- [formik](https://github.com/jaredpalmer/formik)
+- [formik](https://github.com/jaredpalmer/formik)
 - [react-radio-group](https://github.com/chenglou/react-radio-group)
 - [react-checkbox-group](https://github.com/ziad-saab/react-checkbox-group)
 
