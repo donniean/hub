@@ -15,7 +15,7 @@
 
 ---
 
-## Libs
+## Libraries & Frameworks
 
 - [React](./react.md)
   - [React Native](./react-native.md)

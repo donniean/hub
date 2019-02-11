@@ -28,6 +28,7 @@
 ## Icons
 
 - [react-icons](https://github.com/react-icons/react-icons)
+- [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
 
 ---
 
