@@ -3,6 +3,7 @@
 - [React](#react)
   - [Resources](#resources)
   - [Awesome](#awesome)
+  - [Starter Kit && Boilerplates](#starter-kit--boilerplates)
   - [Icons](#icons)
   - [UI](#ui)
   - [Portal](#portal)
@@ -30,6 +31,15 @@
 
 - [awesome-react](https://github.com/enaqx/awesome-react)
 - [awesome-react-components](https://github.com/brillout/awesome-react-components)
+
+---
+
+## Starter Kit && Boilerplates
+
+- [create-react-app](https://github.com/facebook/create-react-app)
+- [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate)
+- [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
+- [react-slingshot](https://github.com/coryhouse/react-slingshot)
 
 ---
 
