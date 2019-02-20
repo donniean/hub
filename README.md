@@ -2,7 +2,9 @@
 
 - [Collection](#collection)
   - [Icons](#icons)
-  - [Libraries & Frameworks](#libraries--frameworks)
+  - [Event](#event)
+  - [UI](#ui)
+  - [Utils](#utils)
   - [Mock](#mock)
 
 ---
@@ -16,12 +18,28 @@
 
 ---
 
-## Libraries & Frameworks
+## Event
+
+- [events](https://github.com/Gozala/events)
+- [eventemitter3](https://github.com/primus/eventemitter3)
+- [event-emitter](https://github.com/medikoo/event-emitter)
+- [wolfy87-eventemitter](https://github.com/Olical/EventEmitter)
+
+---
+
+## UI
 
 - [React](./react.md)
   - [React Native](./react-native.md)
+
+---
+
+## Utils
+
 - [Modernizr](https://github.com/modernizr/modernizr)
 - [validator.js](https://github.com/chriso/validator.js)
+
+---
 
 ## Mock
 
