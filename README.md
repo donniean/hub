@@ -23,6 +23,7 @@
 - [events](https://github.com/Gozala/events)
 - [eventemitter3](https://github.com/primus/eventemitter3)
 - [event-emitter](https://github.com/medikoo/event-emitter)
+- [tiny-emitter](https://github.com/scottcorgan/tiny-emitter)
 - [wolfy87-eventemitter](https://github.com/Olical/EventEmitter)
 
 ---
