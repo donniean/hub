@@ -24,6 +24,7 @@
 - [eventemitter3](https://github.com/primus/eventemitter3)
 - [event-emitter](https://github.com/medikoo/event-emitter)
 - [tiny-emitter](https://github.com/scottcorgan/tiny-emitter)
+- [mitt](https://github.com/developit/mitt)
 - [wolfy87-eventemitter](https://github.com/Olical/EventEmitter)
 
 ---
