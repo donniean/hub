@@ -18,6 +18,7 @@
   - [Form](#form)
     - [Radio & Checkbox](#radio--checkbox)
   - [Gesture](#gesture)
+  - [Animations](#animations)
 
 ---
 
@@ -140,3 +141,9 @@
 ## Gesture
 
 - [react-swipeable](https://github.com/dogfessional/react-swipeable)
+
+---
+
+## Animations
+
+- [react-transition-group](https://github.com/reactjs/react-transition-group)
