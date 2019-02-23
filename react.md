@@ -1,4 +1,4 @@
-# [React123](https://github.com/facebook/react)
+# [React](https://github.com/facebook/react)
 
 - [React](#react)
   - [Resources](#resources)
