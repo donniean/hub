@@ -1,6 +1,6 @@
-# 1Collection
+# Collection
 
-- [1Collection](#1collection)
+- [Collection](#collection)
   - [Icons](#icons)
   - [Event](#event)
   - [UI](#ui)
