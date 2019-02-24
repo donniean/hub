@@ -1,4 +1,4 @@
-# 0Collection
+# Collection
 
 - [Collection](#collection)
   - [Icons](#icons)
