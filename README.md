@@ -57,4 +57,5 @@
 
 ## Animations
 
--[Easing Functions Cheat Sheet](https://github.com/ai/easings.net)
+- [animate.css](https://github.com/daneden/animate.css)
+- [Easing Functions Cheat Sheet](https://github.com/ai/easings.net)
