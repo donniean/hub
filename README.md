@@ -7,6 +7,7 @@
   - [Utils](#utils)
   - [Gesture](#gesture)
   - [Mock](#mock)
+  - [Animations](#animations)
 
 ---
 
@@ -51,3 +52,9 @@
 - [json-server](https://github.com/typicode/json-server)
 - [faker.js](https://github.com/marak/Faker.js/)
 - [Mock](https://github.com/nuysoft/Mock)
+
+---
+
+## Animations
+
+-[Easing Functions Cheat Sheet](https://github.com/ai/easings.net)
