@@ -149,6 +149,7 @@
 ## Gesture
 
 - [react-swipeable](https://github.com/dogfessional/react-swipeable)
+- [react-hammerjs](https://github.com/JedWatson/react-hammerjs)
 
 ---
 
