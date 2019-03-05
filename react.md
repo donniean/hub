@@ -39,6 +39,7 @@
 ## Starter Kit && Boilerplates
 
 - [create-react-app](https://github.com/facebook/create-react-app)
+  - [react-app-rewired](https://github.com/timarney/react-app-rewired)
 - [react-boilerplate](https://github.com/react-boilerplate/react-boilerplate)
 - [react-starter-kit](https://github.com/kriasoft/react-starter-kit)
 - [react-slingshot](https://github.com/coryhouse/react-slingshot)
