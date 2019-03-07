@@ -57,7 +57,6 @@ const config = {
       }
     ],
     semi: 'error',
-    'react/display-name': 'off',
     'node/no-unsupported-features/es-builtins': [
       'error',
       {
@@ -79,6 +78,7 @@ const config = {
         ignores: []
       }
     ],
+    'react/display-name': 'off',
     'react-hooks/rules-of-hooks': 'error'
   },
   overrides: [
