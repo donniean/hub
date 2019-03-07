@@ -57,7 +57,6 @@ const config = {
       }
     ],
     semi: 'error',
-    'react/prop-types': 'off',
     'react/display-name': 'off',
     'node/no-unsupported-features/es-builtins': [
       'error',
