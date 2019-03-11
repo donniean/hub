@@ -63,7 +63,12 @@ const config = {
       }
     ],
     'unit-case': 'lower',
-    'unit-no-unknown': true,
+    'unit-no-unknown': [
+      true,
+      {
+        ignoreUnits: ['rpx']
+      }
+    ],
     'value-keyword-case': 'lower',
     'value-list-comma-space-after': [
       'always',
