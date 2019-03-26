@@ -12,6 +12,10 @@
         list-style-type: decimal-leading-zero;
         font-family: monospace;
       }
+
+      li {
+        padding: 6px 0;
+      }
     </style>
   </head>
 
@@ -27,19 +31,11 @@
     <script>
       const list = [
         {
-          name: '@wechat-miniprogram/miniprogram-cli',
-          isInstall: true
-        },
-        {
           name: 'babel-eslint',
           isInstall: true
         },
         {
           name: 'create-react-app',
-          isInstall: false
-        },
-        {
-          name: 'create-react-native-app',
           isInstall: false
         },
         {
@@ -143,12 +139,13 @@
       for (let item of list) {
         const { name, isInstall } = item;
         let code = '';
+        let link = `<a href="https://npms.io/search?q=${name}" target="_blank">${name}</a>`;
         if (isInstall) {
-          code = `${installCommand} ${name}`;
+          code = `${installCommand} ${link}`;
           installList.push(`<li><code>${code}</code></li>`);
           installTotal += ` ${name}`;
         } else {
-          code = `${uninstallCommand} ${name}`;
+          code = `${uninstallCommand} ${link}`;
           uninstallList.push(`<li><code>${code}</code></li>`);
           uninstallTotal += ` ${name}`;
         }
