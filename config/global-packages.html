@@ -1,166 +1,192 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="UTF-8" />
+    <meta charset="utf-8" />
     <meta
       name="viewport"
-      content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"
+      content="width=device-width, user-scalable=no, initial-scale=1, minimum-scale=1, maximum-scale=1, shrink-to-fit=no, viewport-fit=cover"
     />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="renderer" content="webkit|ie-comp|ie-stand" />
+    <meta name="description" content="" />
     <title>Global Packages</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/normalize.css@8.0.1/normalize.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/styles/default.min.css"
+    />
     <style>
+      .wrapper {
+        padding: 6px;
+      }
+
       ol {
         list-style-type: decimal-leading-zero;
         font-family: monospace;
-      }
-
-      li {
-        padding: 6px 0;
       }
     </style>
   </head>
 
   <body>
-    <div>
-      <code id="install-total"></code>
-      <ol id="install-list"></ol>
+    <div class="wrapper">
+      <div>
+        <div id="installed-total"></div>
+        <ol id="installed-list"></ol>
+      </div>
+      <div>
+        <div id="uninstalled-total"></div>
+        <ol id="uninstalled-list"></ol>
+      </div>
     </div>
-    <div>
-      <code id="uninstall-total"></code>
-      <ol id="uninstall-list"></ol>
-    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.6/highlight.min.js"></script>
+
     <script>
+      hljs.initHighlightingOnLoad();
+
+      function getCodeWrapper(code) {
+        return `<pre><code class="shell">${code}</code></pre>`;
+      }
+
       const list = [
         {
           name: 'babel-eslint',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'create-react-app',
-          isInstall: false
+          isInstalled: false
         },
         {
           name: 'eslint',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'eslint-plugin-html',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'eslint-plugin-jquery',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'eslint-plugin-node',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'eslint-plugin-react',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'eslint-plugin-react-hooks',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'eslint-plugin-react-native',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'htmlhint',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'http-server',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'npm',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'npm-check',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'npm-check-updates',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'prettier',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'react-devtools',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'react-native-cli',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'react-native-git-upgrade',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'react-native-rename',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'rnpm',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'stylelint',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'typescript',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'typings',
-          isInstall: true
+          isInstalled: true
         },
         {
           name: 'vorlon',
-          isInstall: true
+          isInstalled: true
         }
       ];
 
-      const installCommand = 'npm i -g';
-      let installList = [];
-      let installTotal = installCommand;
+      const installedCommand = 'npm i -g';
+      let installedList = [];
+      let installedTotal = installedCommand;
 
-      const uninstallCommand = 'npm un -g';
-      let uninstallList = [];
-      let uninstallTotal = uninstallCommand;
+      const uninstalledCommand = 'npm un -g';
+      let uninstalledList = [];
+      let uninstalledTotal = uninstalledCommand;
 
       for (let item of list) {
-        const { name, isInstall } = item;
+        const { name, isInstalled } = item;
         let code = '';
         let link = `<a href="https://npms.io/search?q=${name}" target="_blank">${name}</a>`;
-        if (isInstall) {
-          code = `${installCommand} ${link}`;
-          installList.push(`<li><code>${code}</code></li>`);
-          installTotal += ` ${name}`;
+        if (isInstalled) {
+          code = `${installedCommand} ${link}`;
+          installedList.push(`<li>${getCodeWrapper(code)}</li>`);
+          installedTotal += ` ${name}`;
         } else {
-          code = `${uninstallCommand} ${link}`;
-          uninstallList.push(`<li><code>${code}</code></li>`);
-          uninstallTotal += ` ${name}`;
+          code = `${uninstalledCommand} ${link}`;
+          uninstalledList.push(`<li>${getCodeWrapper(code)}</li>`);
+          uninstalledTotal += ` ${name}`;
         }
       }
+      installedTotal = getCodeWrapper(installedTotal);
+      uninstalledTotal = getCodeWrapper(uninstalledTotal);
 
-      document.getElementById('install-total').innerHTML = installTotal.trim();
-      document.getElementById('install-list').innerHTML = installList
+      document.getElementById(
+        'installed-total'
+      ).innerHTML = installedTotal.trim();
+      document.getElementById('installed-list').innerHTML = installedList
         .join('')
         .trim();
       document.getElementById(
-        'uninstall-total'
-      ).innerHTML = uninstallTotal.trim();
-      document.getElementById('uninstall-list').innerHTML = uninstallList
-        .join('')
-        .trim();
+        'uninstalled-total'
+      ).innerHTML = uninstalledTotal.trim();
+      document.getElementById(
+        'uninstalled-list'
+      ).innerHTML = uninstalledList.join('').trim();
     </script>
   </body>
 </html>
