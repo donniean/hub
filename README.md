@@ -38,6 +38,7 @@
 
 - [Modernizr](https://github.com/modernizr/modernizr)
 - [validator.js](https://github.com/chriso/validator.js)
+- [deepmerge](https://github.com/TehShrike/deepmerge)
 
 ---
 
