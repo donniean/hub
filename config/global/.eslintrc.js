@@ -19,9 +19,10 @@ const config = {
     sourceType: 'module',
     ecmaFeatures: {
       jsx: true
-    }
+    },
+    parser: 'babel-eslint'
   },
-  parser: 'babel-eslint',
+  // parser: 'babel-eslint',
   globals: {
     appcan: false
   },
