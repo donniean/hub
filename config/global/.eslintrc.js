@@ -11,7 +11,8 @@ const config = {
   extends: [
     'eslint:recommended',
     'plugin:node/recommended',
-    'plugin:react/recommended'
+    'plugin:react/recommended',
+    'plugin:vue/recommended'
   ],
   parserOptions: {
     ecmaVersion: 2018,
@@ -24,7 +25,15 @@ const config = {
   globals: {
     appcan: false
   },
-  plugins: ['html', 'jquery', 'node', 'react', 'react-hooks', 'react-native'],
+  plugins: [
+    'html',
+    'jquery',
+    'node',
+    'react',
+    'react-hooks',
+    'react-native',
+    'vue'
+  ],
   rules: {
     'no-compare-neg-zero': 'warn',
     'no-console': 'off',

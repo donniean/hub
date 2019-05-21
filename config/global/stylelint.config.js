@@ -234,7 +234,13 @@ const config = {
     'no-extra-semicolons': true,
     'no-invalid-double-slash-comments': true,
     'no-unknown-animations': true,
-    'rule-empty-line-before': ['always']
+    'rule-empty-line-before': [
+      'always',
+      {
+        severity: 'warning',
+        except: ['after-single-line-comment', 'first-nested']
+      }
+    ]
   },
   ignoreFiles: [
     '**/.git/',
