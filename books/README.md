@@ -26,8 +26,8 @@
 - [JavaScript 语言精粹（修订版）](https://book.douban.com/subject/11874748/) - 2012
 - [高性能 JavaScript](https://book.douban.com/subject/26599677/) - 2015
 - [JavaScript 忍者秘籍（第 2 版）](https://book.douban.com/subject/30143702/) - 2018
-- [你不知道的 JavaScript](https://book.douban.com/series/40642) - 2015 ~ 2018
 - [JavaScript 设计模式与开发实践](https://book.douban.com/subject/26382780/) - 2015
+- [你不知道的 JavaScript](https://book.douban.com/series/40642) - 2015 ~ 2018
 - [JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/) - 2017
 - [JavaScript-Garden](https://bonsaiden.github.io/JavaScript-Garden/)
 
