@@ -1,7 +1,7 @@
 # Collections
 
 - [Books](./books/README.md)
-- [Config](./config)
+- [Config](./config/)
 - Libraries & Frameworks
 - Notes
 - Snippets
