@@ -28,6 +28,7 @@
 - [你不知道的JavaScript](https://book.douban.com/series/40642) - 2015 ~ 2018
 
 ---
+
 ## HTTP
 
 - [图解HTTP](https://book.douban.com/subject/25863515/) - 2014
@@ -37,5 +38,5 @@
 
 ## Database
 
-- [SQL必知必会-第4版](https://book.douban.com/subject/24250054/) - 2013
-- []()
+- [SQL必知必会（第4版）](https://book.douban.com/subject/24250054/) - 2013
+- [MySQL必知必会](https://book.douban.com/subject/3354490/) - 2009
