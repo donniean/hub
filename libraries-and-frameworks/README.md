@@ -1,6 +1,6 @@
-# Libraries & Frameworks
+# Libraries/Frameworks
 
-- [Libraries & Frameworks](#libraries--frameworks)
+- [Libraries/Frameworks](#librariesframeworks)
   - [Icons](#icons)
   - [Event](#event)
   - [UI](#ui)
@@ -10,8 +10,6 @@
   - [Gesture](#gesture)
   - [Mock](#mock)
   - [Animations](#animations)
-
----
 
 ## Icons
 
