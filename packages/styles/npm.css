@@ -1,0 +1,16 @@
+.wrapper {
+  padding: 6px;
+}
+
+ol {
+  list-style-type: decimal-leading-zero;
+  font-family: monospace;
+}
+
+pre {
+  white-space: normal;
+}
+
+code {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+}
