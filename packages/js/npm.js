@@ -1,4 +1,5 @@
 const config = {
+  elementId: 'wrapper',
   installCommand: 'npm install -g',
   uninstallCommand: 'npm uninstall -g',
   installList: [

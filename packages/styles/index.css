@@ -2,7 +2,8 @@
   padding: 6px;
 }
 
-.link-container a {
+.link-container a,
+.link-container span {
   text-decoration: none;
   line-height: 2em;
   font-size: 1.5em;

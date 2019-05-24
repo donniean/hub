@@ -1,6 +1,7 @@
 hljs.initHighlightingOnLoad();
 
 function init({
+  elementId,
   installCommand,
   uninstallCommand,
   installList,
@@ -16,8 +17,8 @@ function init({
 
   for (const item of installList) {
     const { name } = item;
-    const link = `<a href="${url}${name}" target="_blank">${name}</a>`;
-    const code = `${installCommand} ${url ? link : name}`;
+    const link = `<a href="${url.trim()}${name}" target="_blank">${name}</a>`;
+    const code = `${installCommand} ${url.trim() ? link : name}`;
     installCodeList.push(`<li>${getCodeWrapper(code)}</li>`);
     installTotalCommand += ` ${name}`;
   }
@@ -45,7 +46,7 @@ function init({
       </div>
     </div>
   `;
-  document.getElementById('wrapper').innerHTML = html;
+  document.getElementById(elementId).innerHTML = html;
 }
 
 function getCodeWrapper(code) {
