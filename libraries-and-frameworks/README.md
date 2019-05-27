@@ -16,7 +16,7 @@
 
 ## Styles
 
-- [Bulma](https://github.com/jgthms/bulma)
+- [bulma](https://github.com/jgthms/bulma)
 
 ---
 
@@ -38,7 +38,7 @@
 
 ## UI
 
-- [React](./react.md)
+- [react](./react.md)
   - [React Native](./react-native.md)
 
 ---
