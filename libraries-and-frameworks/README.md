@@ -1,16 +1,23 @@
 # Libraries/Frameworks
 
 - [Libraries/Frameworks](#librariesframeworks)
+  - [Frameworks](#frameworks)
   - [Styles](#styles)
   - [Icons](#icons)
   - [Event](#event)
-  - [UI](#ui)
   - [Utils](#utils)
   - [Math](#math)
   - [Currency](#currency)
   - [Gesture](#gesture)
-  - [Mock](#mock)
   - [Animations](#animations)
+  - [Mock](#mock)
+  - [App](#app)
+
+---
+
+## Frameworks
+
+- [React](./react.md)
 
 ---
 
@@ -33,13 +40,6 @@
 
 - [events](https://github.com/Gozala/events)
 - [eventemitter3](https://github.com/primus/eventemitter3)
-
----
-
-## UI
-
-- [react](./react.md)
-  - [React Native](./react-native.md)
 
 ---
 
@@ -73,6 +73,13 @@
 
 ---
 
+## Animations
+
+- [animate.css](https://github.com/daneden/animate.css)
+- [Easing Functions Cheat Sheet](https://github.com/ai/easings.net)
+
+---
+
 ## Mock
 
 - [json-server](https://github.com/typicode/json-server)
@@ -81,7 +88,6 @@
 
 ---
 
-## Animations
+## App
 
-- [animate.css](https://github.com/daneden/animate.css)
-- [Easing Functions Cheat Sheet](https://github.com/ai/easings.net)
+- [React Native](./react-native.md)
