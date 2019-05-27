@@ -45,6 +45,7 @@
 
 ## Utils
 
+- [lodash](https://github.com/lodash/lodash)
 - [Modernizr](https://github.com/modernizr/modernizr)
 - [validator.js](https://github.com/chriso/validator.js)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
@@ -55,7 +56,7 @@
 
 - [big.js](https://github.com/MikeMcl/big.js/)
 - [mathjs](https://github.com/josdejong/mathjs)
-- [numeral](https://github.com/adamwdraper/Numeral-js)
+- [Numeral-js](https://github.com/adamwdraper/Numeral-js)
 
 ---
 
