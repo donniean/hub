@@ -1,11 +1,11 @@
-# Libraries/Frameworks
+# Resources/Frameworks/Libraries
 
-- [Libraries/Frameworks](#librariesframeworks)
+- [Resources/Frameworks/Libraries](#resourcesframeworkslibraries)
   - [Frameworks](#frameworks)
   - [Styles](#styles)
   - [Icons](#icons)
   - [Event](#event)
-  - [Utils](#utils)
+  - [Utilities](#utilities)
   - [Math](#math)
   - [Currency](#currency)
   - [Gesture](#gesture)
@@ -43,7 +43,7 @@
 
 ---
 
-## Utils
+## Utilities
 
 - [lodash](https://github.com/lodash/lodash)
 - [Modernizr](https://github.com/modernizr/modernizr)
@@ -62,7 +62,7 @@
 
 ## Currency
 
-- [accounting](https://github.com/openexchangerates/accounting.js)
+- [accounting.js](https://github.com/openexchangerates/accounting.js)
 - [dinero.js](https://github.com/sarahdayan/dinero.js)
 - [currency.js](https://github.com/scurker/currency.js)
 
@@ -77,7 +77,7 @@
 ## Animations
 
 - [animate.css](https://github.com/daneden/animate.css)
-- [Easing Functions Cheat Sheet](https://github.com/ai/easings.net)
+- [easings.net](https://github.com/ai/easings.net)
 
 ---
 
