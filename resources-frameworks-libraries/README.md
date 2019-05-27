@@ -1,6 +1,7 @@
 # Resources/Frameworks/Libraries
 
 - [Resources/Frameworks/Libraries](#resourcesframeworkslibraries)
+  - [Resources](#resources)
   - [Frameworks](#frameworks)
   - [Styles](#styles)
   - [Icons](#icons)
@@ -12,6 +13,10 @@
   - [Animations](#animations)
   - [Mock](#mock)
   - [App](#app)
+
+---
+
+## Resources
 
 ---
 
