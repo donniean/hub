@@ -8,6 +8,7 @@
   - [Starter Kit/Boilerplates](#starter-kitboilerplates)
   - [Icons](#icons)
   - [UI](#ui)
+  - [hooks](#hooks)
   - [Portal](#portal)
   - [Carousel/Swipe](#carouselswipe)
   - [Image](#image)
@@ -35,6 +36,8 @@
 
 - [react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
 - [css-in-js](https://github.com/MicheleBertoli/css-in-js) - React: CSS in JS techniques comparison
+- [react-hooks](https://github.com/nikgraf/react-hooks)
+- [ReactStateMuseum](https://github.com/GantMan/ReactStateMuseum) - A whirlwind tour of React state management systems by example
 
 ---
 
@@ -48,6 +51,7 @@
 
 - [awesome-react](https://github.com/enaqx/awesome-react)
 - [awesome-react-components](https://github.com/brillout/awesome-react-components)
+- [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
 
 ---
 
@@ -75,6 +79,12 @@
 - [grommet](https://github.com/grommet/grommet)
 - [ant-design-mobile](https://github.com/ant-design/ant-design-mobile)
 - [react-component](https://github.com/react-component)
+
+---
+
+## hooks
+
+- [react-use](https://github.com/streamich/react-use)
 
 ---
 

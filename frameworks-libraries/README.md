@@ -1,56 +1,23 @@
-# Resources/Frameworks/Libraries
+# Frameworks/Libraries
 
-- [Resources/Frameworks/Libraries](#resourcesframeworkslibraries)
-  - [Resources](#resources)
-    - [Interview](#interview)
-    - [Style Guide](#style-guide)
-    - [Tools](#tools)
+- [Frameworks/Libraries](#frameworkslibraries)
   - [Frameworks](#frameworks)
   - [Boilerplates](#boilerplates)
+  - [UI](#ui)
   - [Styles](#styles)
   - [Icons](#icons)
-  - [Event](#event)
+  - [Polyfill/Shim](#polyfillshim)
   - [Utilities](#utilities)
+  - [Event](#event)
+  - [Image](#image)
   - [Math](#math)
   - [Currency](#currency)
   - [Gesture](#gesture)
+  - [Device](#device)
   - [Animations](#animations)
   - [Debugger](#debugger)
   - [Mock](#mock)
   - [App](#app)
-
----
-
-## Resources
-
-- [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
-- [fks](https://github.com/JacksonTian/fks) - 前端技能汇总 Frontend Knowledge Structure
-- [what-happens-when](https://github.com/alex/what-happens-when)
-- [HEAD](https://github.com/joshbuchea/HEAD)
-- [chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
-- [easings.net](https://github.com/ai/easings.net) - Easing Functions Cheat Sheet
-- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
-
----
-
-### Interview
-
-- [Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
-- [Front-end-Developer-Questions](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
-- [FE-interview](https://github.com/qiu-deqing/FE-interview)
-
----
-
-### Style Guide
-
-- [javascript](https://github.com/airbnb/javascript) - Airbnb JavaScript Style Guide
-
----
-
-### Tools
-
-- [sketch-measure](https://github.com/utom/sketch-measure)
-- [SketchI18N](https://github.com/cute/SketchI18N)
 
 ---
 
@@ -63,13 +30,23 @@
 ## Boilerplates
 
 - [html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
+- [umd](https://github.com/umdjs/umd)
+
+---
+
+## UI
+
+- [bulma](https://github.com/jgthms/bulma)
+- [material-components-web](https://github.com/material-components/material-components-web)
 
 ---
 
 ## Styles
 
+- [normalize.css](https://github.com/necolas/normalize.css/)
 - [sanitize.css](https://github.com/csstools/sanitize.css)
-- [bulma](https://github.com/jgthms/bulma)
+- [SpinKit](https://github.com/tobiasahlin/SpinKit)
+- [loaders.css](https://github.com/ConnorAtherton/loaders.css)
 - [css-ripple-effect](https://github.com/mladenplavsic/css-ripple-effect)
 
 ---
@@ -83,10 +60,11 @@
 
 ---
 
-## Event
+## Polyfill/Shim
 
-- [events](https://github.com/Gozala/events)
-- [eventemitter3](https://github.com/primus/eventemitter3)
+- [core-js](https://github.com/zloirock/core-js)
+- [es6-shim](https://github.com/paulmillr/es6-shim)
+- [fetch](https://github.com/github/fetch) - A window.fetch JavaScript polyfill.
 
 ---
 
@@ -96,6 +74,20 @@
 - [Modernizr](https://github.com/modernizr/modernizr)
 - [validator.js](https://github.com/chriso/validator.js)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
+- [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
+
+---
+
+## Event
+
+- [events](https://github.com/Gozala/events)
+- [eventemitter3](https://github.com/primus/eventemitter3)
+
+---
+
+## Image
+
+- [compressorjs](https://github.com/fengyuanchen/compressorjs)
 
 ---
 
@@ -121,6 +113,12 @@
 
 ---
 
+## Device
+
+- [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)
+
+---
+
 ## Animations
 
 - [animate.css](https://github.com/daneden/animate.css)
@@ -131,6 +129,8 @@
 
 - [eruda](https://github.com/liriliri/eruda)
 - [vConsole](https://github.com/Tencent/vConsole)
+- [Vorlonjs](https://github.com/MicrosoftDX/Vorlonjs)
+- [spy-debugger](https://github.com/wuchangming/spy-debugger)
 
 ---
 

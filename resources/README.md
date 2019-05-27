@@ -1,19 +1,31 @@
 # Resources
 
 - [Resources](#resources)
+  - [Read](#read)
   - [Interview](#interview)
   - [Style Guide](#style-guide)
+  - [Utilities](#utilities)
+  - [Document](#document)
+  - [Git](#git)
+  - [Server](#server)
+  - [ShadowSocks](#shadowsocks)
   - [Tools](#tools)
 
 ---
 
+## Read
+
+- [awesome](https://github.com/sindresorhus/awesome)
+- [free-programming-books](https://github.com/EbookFoundation/free-programming-books)
 - [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
-- [fks](https://github.com/JacksonTian/fks) - 前端技能汇总 Frontend Knowledge Structure
+- [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist)
 - [what-happens-when](https://github.com/alex/what-happens-when)
 - [HEAD](https://github.com/joshbuchea/HEAD)
-- [chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
-- [easings.net](https://github.com/ai/easings.net) - Easing Functions Cheat Sheet
 - [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
+- [fks](https://github.com/JacksonTian/fks) - 前端技能汇总 Frontend Knowledge Structure
+- [front-end-collect](https://github.com/foru17/front-end-collect)
+- [frontend-tech-list](https://github.com/alienzhou/frontend-tech-list)
+- [chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
 
 ---
 
@@ -28,6 +40,41 @@
 ## Style Guide
 
 - [javascript](https://github.com/airbnb/javascript) - Airbnb JavaScript Style Guide
+- [project-guidelines](https://github.com/elsewhencode/project-guidelines)
+- [idiomatic-css](https://github.com/necolas/idiomatic-css)
+
+---
+
+## Utilities
+
+- [easings.net](https://github.com/ai/easings.net) - Easing Functions Cheat Sheet
+
+---
+
+## Document
+
+- [compat-table](https://github.com/kangax/compat-table)
+- [Markdown-Syntax-CN](https://github.com/riku/Markdown-Syntax-CN)
+
+---
+
+## Git
+
+- [gitignore](https://github.com/github/gitignore)
+- [gitattributes](https://github.com/alexkaratarakis/gitattributes)
+
+---
+
+## Server
+
+- [acme.sh](https://github.com/Neilpang/acme.sh)
+
+---
+
+## ShadowSocks
+
+- [fancyss](https://github.com/hq450/fancyss) - fancyss is a project providing tools to across the GFW on asuswrt/merlin based router.
+- [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
 
 ---
 
@@ -35,3 +82,4 @@
 
 - [sketch-measure](https://github.com/utom/sketch-measure)
 - [SketchI18N](https://github.com/cute/SketchI18N)
+- [baiduyun](https://github.com/syhyz1990/baiduyun) - 🖖 油猴脚本 一个脚本搞定百度网盘下载
