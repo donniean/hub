@@ -5,18 +5,18 @@
   - [Resources](#resources)
   - [Tools](#tools)
   - [Awesome](#awesome)
-  - [Starter Kit && Boilerplates](#starter-kit--boilerplates)
+  - [Starter Kit/Boilerplates](#starter-kitboilerplates)
   - [Icons](#icons)
   - [UI](#ui)
   - [Portal](#portal)
-  - [Carousel & Swipe](#carousel--swipe)
+  - [Carousel/Swipe](#carouselswipe)
   - [Image](#image)
   - [List](#list)
   - [Button](#button)
   - [Modal](#modal)
   - [Toast](#toast)
   - [Loading](#loading)
-  - [Skeleton & Placeholder](#skeleton--placeholder)
+  - [Skeleton/Placeholder](#skeletonplaceholder)
   - [Form](#form)
     - [Radio & Checkbox](#radio--checkbox)
   - [Size & Position](#size--position)
@@ -50,7 +50,7 @@
 
 ---
 
-## Starter Kit && Boilerplates
+## Starter Kit/Boilerplates
 
 - [create-react-app](https://github.com/facebook/create-react-app)
   - [react-app-rewired](https://github.com/timarney/react-app-rewired)
@@ -83,7 +83,7 @@
 
 ---
 
-## Carousel & Swipe
+## Carousel/Swipe
 
 - [react-slick](https://github.com/akiran/react-slick)
 - [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views)
@@ -133,7 +133,7 @@
 
 ---
 
-## Skeleton & Placeholder
+## Skeleton/Placeholder
 
 - [react-content-loader](https://github.com/danilowoz/react-content-loader)
 - [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
