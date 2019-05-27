@@ -34,6 +34,7 @@
 ## Resources
 
 - [react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
+- [css-in-js](https://github.com/MicheleBertoli/css-in-js) - React: CSS in JS techniques comparison
 
 ---
 
