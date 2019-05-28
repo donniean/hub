@@ -7,6 +7,8 @@
   - [Starter Kit/Boilerplates](#starter-kitboilerplates)
   - [Style](#style)
   - [State](#state)
+  - [Type Checker](#type-checker)
+  - [Routing](#routing)
   - [UI](#ui)
   - [Utilities](#utilities)
   - [Hooks](#hooks)
@@ -80,6 +82,18 @@
 
 ---
 
+## Type Checker
+
+- [prop-types](https://github.com/facebook/prop-types)
+
+---
+
+## Routing
+
+- [react-router](https://github.com/ReactTraining/react-router)
+
+---
+
 ## UI
 
 - [material-ui](https://github.com/mui-org/material-ui)
@@ -92,8 +106,6 @@
 
 ## Utilities
 
-- [prop-types](https://github.com/facebook/prop-types)
-- [react-router](https://github.com/ReactTraining/react-router)
 - [classnames](https://github.com/JedWatson/classnames)
 - [immutable-js](https://github.com/immutable-js/immutable-js)
 
