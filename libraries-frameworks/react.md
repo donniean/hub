@@ -198,6 +198,8 @@
 - [final-form](https://github.com/final-form/final-form)
   - [react-final-form](https://github.com/final-form/react-final-form)
 
+---
+
 ### Radio & Checkbox
 
 - [react-radio-group](https://github.com/chenglou/react-radio-group)
