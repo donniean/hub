@@ -23,8 +23,8 @@
   - [Loading](#loading)
   - [Skeleton/Placeholder](#skeletonplaceholder)
   - [Form](#form)
-    - [Radio & Checkbox](#radio--checkbox)
-  - [Size & Position](#size--position)
+    - [Radio/Checkbox](#radiocheckbox)
+  - [Size/Position](#sizeposition)
   - [Gesture](#gesture)
   - [Animations](#animations)
 
@@ -198,16 +198,14 @@
 - [final-form](https://github.com/final-form/final-form)
   - [react-final-form](https://github.com/final-form/react-final-form)
 
----
-
-### Radio & Checkbox
+### Radio/Checkbox
 
 - [react-radio-group](https://github.com/chenglou/react-radio-group)
 - [react-checkbox-group](https://github.com/ziad-saab/react-checkbox-group)
 
 ---
 
-## Size & Position
+## Size/Position
 
 - [react-sizeme](https://github.com/ctrlplusb/react-sizeme)
 - [react-measure](https://github.com/souporserious/react-measure)
