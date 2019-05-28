@@ -8,7 +8,7 @@
   - [Starter Kit/Boilerplates](#starter-kitboilerplates)
   - [Icons](#icons)
   - [UI](#ui)
-  - [hooks](#hooks)
+  - [Hooks](#hooks)
   - [Portal](#portal)
   - [Carousel/Swipe](#carouselswipe)
   - [Image](#image)
@@ -82,7 +82,7 @@
 
 ---
 
-## hooks
+## Hooks
 
 - [react-use](https://github.com/streamich/react-use)
 
