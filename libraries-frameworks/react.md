@@ -13,6 +13,7 @@
   - [Utilities](#utilities)
   - [Hooks](#hooks)
   - [Icons](#icons)
+  - [Head](#head)
   - [Portal](#portal)
   - [Carousel/Swipe](#carouselswipe)
   - [Button](#button)
@@ -67,6 +68,7 @@
 ## Style
 
 - [styled-components](https://github.com/styled-components/styled-components)
+  - [polished](https://github.com/styled-components/polished)
 
 ---
 
@@ -91,6 +93,7 @@
 ## Routing
 
 - [react-router](https://github.com/ReactTraining/react-router)
+  - [history](https://github.com/ReactTraining/history)
 
 ---
 
@@ -114,6 +117,7 @@
 ## Hooks
 
 - [react-use](https://github.com/streamich/react-use)
+- [react-hanger](https://github.com/kitze/react-hanger)
 
 ---
 
@@ -121,6 +125,12 @@
 
 - [react-icons](https://github.com/react-icons/react-icons)
 - [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+
+---
+
+## Head
+
+- [react-helmet](https://github.com/nfl/react-helmet)
 
 ---
 

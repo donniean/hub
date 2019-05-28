@@ -69,6 +69,7 @@
 ## Utilities
 
 - [lodash](https://github.com/lodash/lodash)
+- [qs](https://github.com/ljharb/qs)
 - [Modernizr](https://github.com/modernizr/modernizr)
 - [validator.js](https://github.com/chriso/validator.js)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
@@ -78,8 +79,8 @@
 
 ## Event
 
-- [events](https://github.com/Gozala/events)
 - [eventemitter3](https://github.com/primus/eventemitter3)
+- [events](https://github.com/Gozala/events)
 
 ---
 
