@@ -5,13 +5,16 @@
   - [Resources](#resources)
   - [Tools](#tools)
   - [Starter Kit/Boilerplates](#starter-kitboilerplates)
-  - [Icons](#icons)
+  - [Style](#style)
+  - [State](#state)
   - [UI](#ui)
+  - [Utilities](#utilities)
   - [Hooks](#hooks)
+  - [Icons](#icons)
   - [Portal](#portal)
   - [Carousel/Swipe](#carouselswipe)
-  - [List](#list)
   - [Button](#button)
+  - [List](#list)
   - [Modal](#modal)
   - [Toast](#toast)
   - [Loading](#loading)
@@ -59,10 +62,21 @@
 
 ---
 
-## Icons
+## Style
 
-- [react-icons](https://github.com/react-icons/react-icons)
-- [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
+- [styled-components](https://github.com/styled-components/styled-components)
+
+---
+
+## State
+
+- [redux](https://github.com/reduxjs/redux)
+  - [redux-thunk](https://github.com/reduxjs/redux-thunk)
+  - [redux-saga](https://github.com/redux-saga/redux-saga)
+  - [redux-observable](https://github.com/redux-observable/redux-observable)
+- [mobx](https://github.com/mobxjs/mobx)
+- [unstated](https://github.com/jamiebuilds/unstated)
+  - [unstated-next](https://github.com/jamiebuilds/unstated-next)
 
 ---
 
@@ -76,9 +90,25 @@
 
 ---
 
+## Utilities
+
+- [prop-types](https://github.com/facebook/prop-types)
+- [react-router](https://github.com/ReactTraining/react-router)
+- [classnames](https://github.com/JedWatson/classnames)
+- [immutable-js](https://github.com/immutable-js/immutable-js)
+
+---
+
 ## Hooks
 
 - [react-use](https://github.com/streamich/react-use)
+
+---
+
+## Icons
+
+- [react-icons](https://github.com/react-icons/react-icons)
+- [react-fontawesome](https://github.com/FortAwesome/react-fontawesome)
 
 ---
 
@@ -97,16 +127,16 @@
 
 ---
 
+## Button
+
+- [react-ink](https://github.com/vigetlabs/react-ink)
+
+---
+
 ## List
 
 - [react-virtualized](https://github.com/bvaughn/react-virtualized)
 - [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller)
-
----
-
-## Button
-
-- [react-ink](https://github.com/vigetlabs/react-ink)
 
 ---
 
@@ -169,3 +199,5 @@
 ## Animations
 
 - [react-transition-group](https://github.com/reactjs/react-transition-group)
+- [react-motion](https://github.com/chenglou/react-motion)
+- [react-spring](https://github.com/react-spring/react-spring)
