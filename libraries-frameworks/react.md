@@ -4,14 +4,12 @@
   - [Official](#official)
   - [Resources](#resources)
   - [Tools](#tools)
-  - [Awesome](#awesome)
   - [Starter Kit/Boilerplates](#starter-kitboilerplates)
   - [Icons](#icons)
   - [UI](#ui)
   - [Hooks](#hooks)
   - [Portal](#portal)
   - [Carousel/Swipe](#carouselswipe)
-  - [Image](#image)
   - [List](#list)
   - [Button](#button)
   - [Modal](#modal)
@@ -34,9 +32,13 @@
 
 ## Resources
 
+- [awesome-react](https://github.com/enaqx/awesome-react)
+- [awesome-react-components](https://github.com/brillout/awesome-react-components)
+- [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
+- [awesome-react-hooks](https://github.com/glauberfc/awesome-react-hooks)
+- [react-hooks](https://github.com/nikgraf/react-hooks)
 - [react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
 - [css-in-js](https://github.com/MicheleBertoli/css-in-js) - React: CSS in JS techniques comparison
-- [react-hooks](https://github.com/nikgraf/react-hooks)
 - [ReactStateMuseum](https://github.com/GantMan/ReactStateMuseum) - A whirlwind tour of React state management systems by example
 
 ---
@@ -44,14 +46,6 @@
 ## Tools
 
 - [storybook](https://github.com/storybooks/storybook/)
-
----
-
-## Awesome
-
-- [awesome-react](https://github.com/enaqx/awesome-react)
-- [awesome-react-components](https://github.com/brillout/awesome-react-components)
-- [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
 
 ---
 
@@ -76,9 +70,9 @@
 
 - [material-ui](https://github.com/mui-org/material-ui)
 - [ant-design](https://github.com/ant-design/ant-design)
-- [grommet](https://github.com/grommet/grommet)
 - [ant-design-mobile](https://github.com/ant-design/ant-design-mobile)
 - [react-component](https://github.com/react-component)
+- [grommet](https://github.com/grommet/grommet)
 
 ---
 
@@ -103,18 +97,10 @@
 
 ---
 
-## Image
-
-- [react-image](https://github.com/mbrevda/react-image)
-
----
-
 ## List
 
 - [react-virtualized](https://github.com/bvaughn/react-virtualized)
 - [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller)
-- [react-pull-to-refresh](https://github.com/bryaneaton13/react-pull-to-refresh)
-- [react-pullrefresh](https://github.com/yusukeshibata/react-pullrefresh)
 
 ---
 
@@ -138,6 +124,7 @@
 
 ## Loading
 
+- [react-spinkit](https://github.com/KyleAMathews/react-spinkit)
 - [react-spinners](https://github.com/davidhu2000/react-spinners)
 - [react-loading](https://github.com/fakiolinho/react-loading)
 - [react-loader](https://github.com/CognizantStudio/react-loader)
@@ -147,15 +134,15 @@
 ## Skeleton/Placeholder
 
 - [react-content-loader](https://github.com/danilowoz/react-content-loader)
-- [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
 - [react-placeholder](https://github.com/buildo/react-placeholder)
+- [react-loading-skeleton](https://github.com/dvtng/react-loading-skeleton)
 
 ---
 
 ## Form
 
-- [redux-form](https://github.com/erikras/redux-form)
 - [formik](https://github.com/jaredpalmer/formik)
+- [redux-form](https://github.com/erikras/redux-form)
 - [final-form](https://github.com/final-form/final-form)
   - [react-final-form](https://github.com/final-form/react-final-form)
 
@@ -176,7 +163,6 @@
 ## Gesture
 
 - [react-swipeable](https://github.com/dogfessional/react-swipeable)
-- [react-hammerjs](https://github.com/JedWatson/react-hammerjs)
 
 ---
 
