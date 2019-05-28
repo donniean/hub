@@ -70,6 +70,7 @@
 
 ## Utilities
 
+- [jquery](https://github.com/jquery/jquery)
 - [lodash](https://github.com/lodash/lodash)
 - [qs](https://github.com/ljharb/qs)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
