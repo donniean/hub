@@ -1,7 +1,7 @@
 # Frameworks/Libraries
 
 - [Frameworks/Libraries](#frameworkslibraries)
-  - [Frameworks](#frameworks)
+  - [React](#react)
   - [Boilerplates](#boilerplates)
   - [UI](#ui)
   - [Styles](#styles)
@@ -17,13 +17,11 @@
   - [Animations](#animations)
   - [Debugger](#debugger)
   - [Mock](#mock)
-  - [App](#app)
+  - [React Native](#react-native)
 
 ---
 
-## Frameworks
-
-- [React](./react.md)
+## [React](./react.md)
 
 ---
 
@@ -142,6 +140,4 @@
 
 ---
 
-## App
-
-- [React Native](./react-native.md)
+## [React Native](./react-native.md)
