@@ -72,6 +72,7 @@
 
 - [jquery](https://github.com/jquery/jquery)
 - [lodash](https://github.com/lodash/lodash)
+- [moment](https://github.com/moment/moment)
 - [qs](https://github.com/ljharb/qs)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
 - [validator.js](https://github.com/chriso/validator.js)
@@ -109,8 +110,8 @@
 ## Math
 
 - [big.js](https://github.com/MikeMcl/big.js/)
-- [mathjs](https://github.com/josdejong/mathjs)
 - [Numeral-js](https://github.com/adamwdraper/Numeral-js)
+- [mathjs](https://github.com/josdejong/mathjs)
 
 ---
 
