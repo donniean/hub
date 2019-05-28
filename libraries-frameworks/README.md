@@ -1,6 +1,6 @@
-# Frameworks/Libraries
+# Libraries/Frameworks
 
-- [Frameworks/Libraries](#frameworkslibraries)
+- [Libraries/Frameworks](#librariesframeworks)
   - [React](#react)
   - [Boilerplates](#boilerplates)
   - [UI](#ui)
