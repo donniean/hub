@@ -8,6 +8,8 @@
   - [Icons](#icons)
   - [Polyfill/Shim](#polyfillshim)
   - [Utilities](#utilities)
+  - [Promise](#promise)
+  - [Request](#request)
   - [Event](#event)
   - [Image](#image)
   - [Math](#math)
@@ -60,9 +62,9 @@
 
 ## Polyfill/Shim
 
+- [Modernizr](https://github.com/modernizr/modernizr)
 - [core-js](https://github.com/zloirock/core-js)
 - [es6-shim](https://github.com/paulmillr/es6-shim)
-- [fetch](https://github.com/github/fetch) - A window.fetch JavaScript polyfill.
 
 ---
 
@@ -70,10 +72,23 @@
 
 - [lodash](https://github.com/lodash/lodash)
 - [qs](https://github.com/ljharb/qs)
-- [Modernizr](https://github.com/modernizr/modernizr)
-- [validator.js](https://github.com/chriso/validator.js)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
+- [validator.js](https://github.com/chriso/validator.js)
 - [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
+
+---
+
+## Promise
+
+- [bluebird](https://github.com/petkaantonov/bluebird)
+
+---
+
+## Request
+
+- [fetch](https://github.com/github/fetch) - A window.fetch JavaScript polyfill.
+- [axios](https://github.com/axios/axios)
+- [superagent](https://github.com/visionmedia/superagent)
 
 ---
 
