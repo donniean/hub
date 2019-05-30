@@ -2,7 +2,7 @@ const array = [
   { name: 'Homebrew', url: '' },
   { name: 'Homebrew Cask', url: '' },
   { name: 'Scoop', url: 'scoop.html' },
-  { name: 'Chocolatey', url: '' },
+  { name: 'Chocolatey', url: 'chocolatey.html' },
   { name: 'npm', url: 'npm.html' }
 ];
 
