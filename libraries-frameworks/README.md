@@ -97,8 +97,8 @@
 
 ## Event
 
-- [eventemitter3](https://github.com/primus/eventemitter3)
 - [events](https://github.com/Gozala/events)
+- [eventemitter3](https://github.com/primus/eventemitter3)
 
 ---
 
