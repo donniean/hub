@@ -16,7 +16,7 @@
   - [Head](#head)
   - [Portal](#portal)
   - [Button](#button)
-  - [List](#list)
+  - [List/Infinite](#listinfinite)
   - [Carousel/Swipe](#carouselswipe)
   - [Modal](#modal)
   - [Toast](#toast)
@@ -146,10 +146,11 @@
 
 ---
 
-## List
+## List/Infinite
 
 - [react-virtualized](https://github.com/bvaughn/react-virtualized)
 - [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller)
+- [react-infinite-scroll-component](https://github.com/ankeetmaini/react-infinite-scroll-component)
 
 ---
 
