@@ -15,9 +15,9 @@
   - [Icons](#icons)
   - [Head](#head)
   - [Portal](#portal)
-  - [Carousel/Swipe](#carouselswipe)
   - [Button](#button)
   - [List](#list)
+  - [Carousel/Swipe](#carouselswipe)
   - [Modal](#modal)
   - [Toast](#toast)
   - [Loading](#loading)
@@ -140,15 +140,6 @@
 
 ---
 
-## Carousel/Swipe
-
-- [react-slick](https://github.com/akiran/react-slick)
-- [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views)
-- [nuka-carousel](https://github.com/FormidableLabs/nuka-carousel)
-- [react-swipe](https://github.com/voronianski/react-swipe)
-
----
-
 ## Button
 
 - [react-ink](https://github.com/vigetlabs/react-ink)
@@ -159,6 +150,15 @@
 
 - [react-virtualized](https://github.com/bvaughn/react-virtualized)
 - [react-infinite-scroller](https://github.com/CassetteRocks/react-infinite-scroller)
+
+---
+
+## Carousel/Swipe
+
+- [react-slick](https://github.com/akiran/react-slick)
+- [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views)
+- [nuka-carousel](https://github.com/FormidableLabs/nuka-carousel)
+- [react-swipe](https://github.com/voronianski/react-swipe)
 
 ---
 
