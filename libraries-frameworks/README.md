@@ -58,7 +58,7 @@
 - [material-design-icons](https://github.com/google/material-design-icons)
 - [simple-icons](https://github.com/simple-icons/simple-icons)
 - [SuperTinyIcons](https://github.com/edent/SuperTinyIcons)
-- [logos](https://github.com/gilbarbara/logos) - A huge collection of SVG logos http://svgporn.com/
+- [logos](https://github.com/gilbarbara/logos) - A huge collection of SVG logos
 
 ---
 
