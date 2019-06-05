@@ -19,6 +19,7 @@ const config = {
     { name: 'npm-check' },
     { name: 'npm-check-updates' },
     { name: 'prettier' },
+    { name: 'serve' },
     { name: 'stylelint' },
     { name: 'typescript' },
     { name: 'vorlon' }
