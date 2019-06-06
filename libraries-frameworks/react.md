@@ -24,6 +24,7 @@
   - [Skeleton/Placeholder](#skeletonplaceholder)
   - [Form](#form)
     - [Radio/Checkbox](#radiocheckbox)
+    - [Select](#select)
   - [Size/Position](#sizeposition)
   - [Gesture](#gesture)
   - [Animations](#animations)
@@ -203,6 +204,10 @@
 
 - [react-radio-group](https://github.com/chenglou/react-radio-group)
 - [react-checkbox-group](https://github.com/ziad-saab/react-checkbox-group)
+
+### Select
+
+-[react-select](https://github.com/JedWatson/react-select)
 
 ---
 
