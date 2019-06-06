@@ -207,7 +207,7 @@
 
 ### Select
 
--[react-select](https://github.com/JedWatson/react-select)
+- [react-select](https://github.com/JedWatson/react-select)
 
 ---
 
