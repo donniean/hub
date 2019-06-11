@@ -1,6 +1,6 @@
 const array = [
-  { name: 'Homebrew', url: '' },
-  { name: 'Homebrew Cask', url: '' },
+  { name: 'Homebrew', url: 'homebrew.html' },
+  { name: 'Homebrew Cask', url: 'homebrew-cask.html' },
   { name: 'Scoop', url: 'scoop.html' },
   { name: 'Chocolatey', url: 'chocolatey.html' },
   { name: 'npm', url: 'npm.html' }

@@ -5,9 +5,9 @@ const config = {
   installList: [
     { name: 'git' },
     { name: 'git-lfs' },
-    { name: 'nginx ' },
-    { name: 'nodejs ' },
-    { name: 'openssh ' },
+    { name: 'nginx' },
+    { name: 'nodejs' },
+    { name: 'openssh' },
     { name: 'yarn' }
   ],
   uninstallList: []
