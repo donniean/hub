@@ -8,6 +8,7 @@
   - [Icons](#icons)
   - [Polyfill/Shim](#polyfillshim)
   - [Utilities](#utilities)
+  - [Validation/Check](#validationcheck)
   - [Promise](#promise)
   - [Request](#request)
   - [Event](#event)
@@ -78,8 +79,17 @@
 - [qs](https://github.com/ljharb/qs)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
 - [node-uuid](https://github.com/kelektiv/node-uuid)
-- [validator.js](https://github.com/chriso/validator.js)
 - [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
+
+---
+
+## Validation/Check
+
+- [joi](https://github.com/hapijs/joi)
+- [yup](https://github.com/jquense/yup)
+- [validator.js](https://github.com/chriso/validator.js)
+- [is](https://github.com/enricomarino/is)
+- [is.js](https://github.com/arasatasaygin/is.js)
 
 ---
 
