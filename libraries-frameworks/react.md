@@ -119,7 +119,7 @@
 ## Hooks
 
 - [react-use](https://github.com/streamich/react-use)
-- [react-hanger1](https://github.com/kitze/react-hanger)
+- [react-hanger](https://github.com/kitze/react-hanger)
 
 ---
 
