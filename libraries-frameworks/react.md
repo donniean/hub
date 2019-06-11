@@ -82,7 +82,7 @@
 - [mobx](https://github.com/mobxjs/mobx)
 - [unstated](https://github.com/jamiebuilds/unstated)
   - [unstated-next](https://github.com/jamiebuilds/unstated-next)
-- [constate](https://github.com/diegohaz/constate) 
+- [constate](https://github.com/diegohaz/constate)
 
 ---
 
