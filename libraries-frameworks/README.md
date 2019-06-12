@@ -45,7 +45,8 @@
 
 ## Styles
 
-- [normalize.css](https://github.com/necolas/normalize.css/)
+- [normalize.css](https://github.com/necolas/normalize.css/) - normalize.css
+  - [normalize.css](https://github.com/csstools/normalize.css) - @csstools/normalize.css
 - [sanitize.css](https://github.com/csstools/sanitize.css)
 - [SpinKit](https://github.com/tobiasahlin/SpinKit)
 - [loaders.css](https://github.com/ConnorAtherton/loaders.css)
