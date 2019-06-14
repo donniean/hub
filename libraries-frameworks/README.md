@@ -152,6 +152,7 @@
 ## Device
 
 - [mobile-detect.js](https://github.com/hgoebl/mobile-detect.js)
+- [bowser](https://github.com/lancedikson/bowser)
 
 ---
 
