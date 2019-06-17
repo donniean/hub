@@ -21,13 +21,12 @@ const config = {
     { name: 'prettier' },
     { name: 'serve' },
     { name: 'stylelint' },
-    { name: 'typescript' },
-    { name: 'vorlon' }
+    { name: 'typescript' }
   ],
   uninstallList: [
     { name: 'react-devtools' },
     { name: 'react-native-cli' },
-    { name: 'react-native-rename' }
+    { name: 'vorlon' }
   ],
   url: 'https://npms.io/search?q='
 };
