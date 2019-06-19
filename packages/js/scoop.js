@@ -6,6 +6,7 @@ const config = {
     { name: 'git' },
     { name: 'git-lfs' },
     { name: 'nginx' },
+    { name: 'nodejs' },
     { name: 'openssh' },
     { name: 'yarn' }
   ],
