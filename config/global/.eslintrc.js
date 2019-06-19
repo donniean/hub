@@ -1,12 +1,12 @@
 const config = {
   env: {
-    browser: true,
-    node: true,
+    browser: true
+    /* node: true,
     commonjs: true,
     es6: true,
     amd: true,
     jquery: true,
-    'react-native/react-native': true
+    'react-native/react-native': true */
   },
   extends: [
     'eslint:recommended',
@@ -56,9 +56,9 @@ const config = {
     'no-catch-shadow': 'error',
     'no-label-var': 'error',
     'no-shadow-restricted-names': 'error',
-    'no-undef': 'off',
-    'no-unused-vars': 'off',
-    'no-use-before-define': 'off',
+    // 'no-undef': 'off',
+    // 'no-unused-vars': 'off',
+    // 'no-use-before-define': 'off',
     indent: [
       'warn',
       2,
