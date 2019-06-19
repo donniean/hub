@@ -9,6 +9,7 @@ const config = {
     { name: 'nginx' },
     { name: 'nodejs' },
     { name: 'openssh' },
+    { name: 'trafficmonitor' },
     { name: 'yarn' }
   ],
   uninstallList: []
