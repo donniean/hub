@@ -9,6 +9,7 @@ const config = {
     { name: 'nginx' },
     { name: 'nodejs' },
     { name: 'openssh' },
+    { name: 'shadowsocks' },
     { name: 'trafficmonitor' },
     { name: 'yarn' }
   ],
