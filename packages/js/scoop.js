@@ -3,6 +3,7 @@ const config = {
   installCommand: 'scoop install',
   uninstallCommand: 'scoop uninstall',
   installList: [
+    { name: 'geekuninstaller' },
     { name: 'git' },
     { name: 'git-lfs' },
     { name: 'nginx' },
