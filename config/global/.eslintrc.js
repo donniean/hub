@@ -1,12 +1,12 @@
 const config = {
   env: {
     browser: true
-    /* node: true,
+    node: true,
     commonjs: true,
     es6: true,
     amd: true,
     jquery: true,
-    'react-native/react-native': true */
+    'react-native/react-native': true
   },
   extends: [
     'eslint:recommended',
