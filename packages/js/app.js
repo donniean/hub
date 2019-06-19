@@ -1,3 +1,4 @@
+/*global hljs*/
 hljs.initHighlightingOnLoad();
 
 function init({

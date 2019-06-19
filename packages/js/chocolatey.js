@@ -6,4 +6,5 @@ const config = {
   uninstallList: []
 };
 
+/*global init*/
 init(config);
