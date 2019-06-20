@@ -3,6 +3,7 @@ const config = {
   installCommand: 'npm install -g',
   uninstallCommand: 'npm uninstall -g',
   installList: [
+    { name: '@acmilank22/eslint-config' },
     { name: 'babel-eslint' },
     { name: 'create-react-app' },
     { name: 'eslint' },
