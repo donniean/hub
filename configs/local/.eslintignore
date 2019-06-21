@@ -6,8 +6,6 @@
 **/node_modules/
 **/lib/
 **/libs/
-**/typings/
-**/jsconfig.json
 **/build/
 **/dist/
 **/*.min.*
