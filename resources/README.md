@@ -1,15 +1,15 @@
 # Resources
 
-- [Resources](#resources)
-  - [Read](#read)
-  - [Interview](#interview)
-  - [Style Guide](#style-guide)
-  - [Utilities](#utilities)
-  - [Document](#document)
-  - [Git](#git)
-  - [Server](#server)
-  - [ShadowSocks](#shadowsocks)
-  - [Tools](#tools)
+- [Resources](#Resources)
+  - [Read](#Read)
+  - [Interview](#Interview)
+  - [Style Guide](#Style-Guide)
+  - [Utilities](#Utilities)
+  - [Document](#Document)
+  - [Git](#Git)
+  - [Server](#Server)
+  - [ShadowSocks](#ShadowSocks)
+  - [Tools](#Tools)
 
 ---
 
@@ -42,6 +42,7 @@
 - [javascript](https://github.com/airbnb/javascript) - Airbnb JavaScript Style Guide
 - [project-guidelines](https://github.com/elsewhencode/project-guidelines)
 - [idiomatic-css](https://github.com/necolas/idiomatic-css)
+- [chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) - 中文文案排版指北
 
 ---
 
@@ -61,6 +62,7 @@
 ## Git
 
 - [gitignore](https://github.com/github/gitignore)
+- [gitignore.io](https://github.com/joeblau/gitignore.io)
 - [gitattributes](https://github.com/alexkaratarakis/gitattributes)
 
 ---
