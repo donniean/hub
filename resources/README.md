@@ -42,6 +42,7 @@
 - [javascript](https://github.com/airbnb/javascript) - Airbnb JavaScript Style Guide
 - [project-guidelines](https://github.com/elsewhencode/project-guidelines)
 - [idiomatic-css](https://github.com/necolas/idiomatic-css)
+- [chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) - Chinese copywriting guidelines for better written communication／中文文案排版指北
 
 ---
 
