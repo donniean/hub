@@ -13,7 +13,7 @@ readDir(filesPath)
   .catch(err => console.log(err));
 
 function readDir(path) {
-  return new Promise((resolve, rejece) => {
+  return new Promise((resolve, reject) => {
     fs.readdir(path, (err, files) => {
       if (err) {
         reject(err);
