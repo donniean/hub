@@ -33,7 +33,7 @@
     }
   },
   "lint-staged": {
-    "*.{html,js,jsx,ts,tsx,json}": [
+    "*.js": [
       "eslint --fix",
       "git add"
     ]
