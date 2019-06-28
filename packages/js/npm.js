@@ -23,5 +23,5 @@ const config = {
   url: 'https://npms.io/search?q='
 };
 
-/*global init*/
+/* global init */
 init(config);
