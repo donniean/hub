@@ -1,10 +1,10 @@
+import init from './app.js';
+
 const config = {
   elementId: 'wrapper',
   installCommand: 'choco install -y',
   uninstallCommand: 'choco uninstall',
-  installList: [{ name: 'chocolateygui' }],
-  uninstallList: []
+  installList: [{ name: 'chocolateygui' }]
 };
 
-/*global init*/
 init(config);

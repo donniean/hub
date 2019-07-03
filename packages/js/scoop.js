@@ -1,3 +1,5 @@
+import init from './app.js';
+
 const config = {
   elementId: 'wrapper',
   installCommand: 'scoop install',
@@ -12,9 +14,7 @@ const config = {
     { name: 'shadowsocks' },
     { name: 'trafficmonitor' },
     { name: 'yarn' }
-  ],
-  uninstallList: []
+  ]
 };
 
-/*global init*/
 init(config);

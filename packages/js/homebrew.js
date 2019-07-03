@@ -1,3 +1,5 @@
+import init from './app.js';
+
 const config = {
   elementId: 'wrapper',
   installCommand: 'brew install',
@@ -12,9 +14,7 @@ const config = {
     { name: 'yarn' },
     { name: 'zsh' },
     { name: 'zsh-completions' }
-  ],
-  uninstallList: []
+  ]
 };
 
-/*global init*/
 init(config);

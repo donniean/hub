@@ -88,3 +88,5 @@ function init({
 function getCodeWrapper(code) {
   return `<pre><code class="shell">${code}</code></pre>`;
 }
+
+export default init;

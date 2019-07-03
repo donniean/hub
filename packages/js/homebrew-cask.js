@@ -1,3 +1,5 @@
+import init from './app.js';
+
 const config = {
   elementId: 'wrapper',
   installCommand: 'brew cask install',
@@ -6,9 +8,7 @@ const config = {
     { name: 'react-native-debugger' },
     { name: 'smartgit' },
     { name: 'smartsvn' }
-  ],
-  uninstallList: []
+  ]
 };
 
-/*global init*/
 init(config);

@@ -1,3 +1,5 @@
+import init from './app.js';
+
 const config = {
   elementId: 'wrapper',
   installCommand: 'npm install -g',
@@ -17,5 +19,4 @@ const config = {
   url: 'https://npms.io/search?q='
 };
 
-/* global init */
 init(config);
