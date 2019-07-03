@@ -19,6 +19,7 @@
   - [Gesture](#Gesture)
   - [Device](#Device)
   - [Animations](#Animations)
+  - [Template](#Template)
   - [Debugger](#Debugger)
   - [Mock](#Mock)
   - [Node.js](#Nodejs)
@@ -160,6 +161,13 @@
 ## Animations
 
 - [animate.css](https://github.com/daneden/animate.css)
+
+---
+
+## Template
+
+- [handlebars.js](https://github.com/wycats/handlebars.js)
+- [pug](https://github.com/pugjs/pug)
 
 ---
 
