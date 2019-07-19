@@ -9,8 +9,6 @@ const config = {
     { name: 'create-react-app' },
     { name: 'htmlhint' },
     { name: 'http-server' },
-    { name: 'lerna' },
-    { name: 'mrm' },
     { name: 'npm' },
     { name: 'npm-check' },
     { name: 'npm-check-updates' },
