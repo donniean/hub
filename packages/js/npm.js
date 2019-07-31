@@ -11,7 +11,8 @@ const config = {
     { name: 'npm' },
     { name: 'npm-check' },
     { name: 'npm-check-updates' },
-    { name: 'serve' }
+    { name: 'serve' },
+    { name: 'yo' }
   ],
   alternativeList: [],
   uninstallList: [],
