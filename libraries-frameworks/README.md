@@ -1,29 +1,29 @@
 # Libraries/Frameworks
 
-- [Libraries/Frameworks](#LibrariesFrameworks)
-  - [React](#React)
-  - [Boilerplates](#Boilerplates)
-  - [UI](#UI)
-  - [Styles](#Styles)
-  - [Icons](#Icons)
-  - [Polyfill/Shim](#PolyfillShim)
-  - [Utilities](#Utilities)
-  - [Validation/Check](#ValidationCheck)
-  - [Promise](#Promise)
-  - [Request](#Request)
-  - [Event](#Event)
-  - [List/Infinite](#ListInfinite)
-  - [Image](#Image)
-  - [Math](#Math)
-  - [Currency](#Currency)
-  - [Gesture](#Gesture)
-  - [Device](#Device)
-  - [Animations](#Animations)
-  - [Template](#Template)
-  - [Debugger](#Debugger)
-  - [Mock](#Mock)
-  - [Node.js](#Nodejs)
-  - [React Native](#React-Native)
+- [Libraries/Frameworks](#librariesframeworks)
+  - [React](#react)
+  - [Boilerplates](#boilerplates)
+  - [UI](#ui)
+  - [Styles](#styles)
+  - [Icons](#icons)
+  - [Polyfill/Shim](#polyfillshim)
+  - [Utilities](#utilities)
+  - [Validation/Check](#validationcheck)
+  - [Promise](#promise)
+  - [Request](#request)
+  - [Event](#event)
+  - [List/Infinite](#listinfinite)
+  - [Image](#image)
+  - [Math](#math)
+  - [Currency](#currency)
+  - [Gesture](#gesture)
+  - [Device](#device)
+  - [Animations](#animations)
+  - [Template](#template)
+  - [Debugger](#debugger)
+  - [Mock](#mock)
+  - [Node.js](#nodejs)
+  - [React Native](#react-native)
 
 ---
 
@@ -191,6 +191,7 @@
 ## Node.js
 
 - [node-fs-extra](https://github.com/jprichardson/node-fs-extra)
+- [lerna](https://github.com/lerna/lerna)
 
 ---
 
