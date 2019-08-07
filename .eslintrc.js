@@ -45,5 +45,11 @@ module.exports = {
     ecmaVersion: 2018,
     sourceType: 'module',
     parser: 'babel-eslint'
-  }
+  },
+  overrides: [
+    {
+      files: ['webpack.js', 'gulpfile.js', 'webpack.*.js', 'gulpfile.*.js'],
+      rules: { 'node/no-unpublished-require': 'off' }
+    }
+  ]
 };
