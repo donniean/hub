@@ -12,6 +12,7 @@
   - [Promise](#promise)
   - [Request](#request)
   - [Event](#event)
+  - [Modal/Alert/Toast/Notification/Dialog](#modalalerttoastnotificationdialog)
   - [List/Infinite](#listinfinite)
   - [Image](#image)
   - [Math](#math)
@@ -114,6 +115,15 @@
 
 - [events](https://github.com/Gozala/events)
 - [eventemitter3](https://github.com/primus/eventemitter3)
+
+---
+
+## Modal/Alert/Toast/Notification/Dialog
+
+- [sweetalert2](https://github.com/sweetalert2/sweetalert2)
+- [toastr](https://github.com/CodeSeven/toastr)
+- [noty](https://github.com/needim/noty)
+- [notie](https://github.com/jaredreich/notie)
 
 ---
 
