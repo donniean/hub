@@ -1,29 +1,30 @@
 # Libraries/Frameworks
 
-- [Libraries/Frameworks](#LibrariesFrameworks)
-  - [React](#React)
-  - [Boilerplates](#Boilerplates)
-  - [UI](#UI)
-  - [Styles](#Styles)
-  - [Icons](#Icons)
-  - [Polyfill/Shim](#PolyfillShim)
-  - [Utilities](#Utilities)
-  - [Validation/Check](#ValidationCheck)
-  - [Promise](#Promise)
-  - [Request](#Request)
-  - [Event](#Event)
-  - [List/Infinite](#ListInfinite)
-  - [Image](#Image)
-  - [Math](#Math)
-  - [Currency](#Currency)
-  - [Gesture](#Gesture)
-  - [Device](#Device)
-  - [Animations](#Animations)
-  - [Template](#Template)
-  - [Debugger](#Debugger)
-  - [Mock](#Mock)
-  - [Node.js](#Nodejs)
-  - [React Native](#React-Native)
+- [Libraries/Frameworks](#librariesframeworks)
+  - [React](#react)
+  - [Boilerplates](#boilerplates)
+  - [UI](#ui)
+  - [Styles](#styles)
+  - [Icons](#icons)
+  - [Polyfill/Shim](#polyfillshim)
+  - [Utilities](#utilities)
+  - [Validation/Check](#validationcheck)
+  - [Promise](#promise)
+  - [Request](#request)
+  - [Event](#event)
+  - [Modal/Alert/Toast/Notification/Dialog](#modalalerttoastnotificationdialog)
+  - [List/Infinite](#listinfinite)
+  - [Image](#image)
+  - [Math](#math)
+  - [Currency](#currency)
+  - [Gesture](#gesture)
+  - [Device](#device)
+  - [Animations](#animations)
+  - [Template](#template)
+  - [Debugger](#debugger)
+  - [Mock](#mock)
+  - [Node.js](#nodejs)
+  - [React Native](#react-native)
 
 ---
 
@@ -117,6 +118,15 @@
 
 ---
 
+## Modal/Alert/Toast/Notification/Dialog
+
+- [sweetalert2](https://github.com/sweetalert2/sweetalert2)
+- [toastr](https://github.com/CodeSeven/toastr)
+- [noty](https://github.com/needim/noty)
+- [notie](https://github.com/jaredreich/notie)
+
+---
+
 ## List/Infinite
 
 - [mescroll](https://github.com/mescroll/mescroll)
@@ -191,6 +201,7 @@
 ## Node.js
 
 - [node-fs-extra](https://github.com/jprichardson/node-fs-extra)
+- [lerna](https://github.com/lerna/lerna)
 
 ---
 

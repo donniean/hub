@@ -14,7 +14,10 @@ const config = {
     { name: 'serve' },
     { name: 'yo' }
   ],
-  alternativeList: [],
+  alternativeList: [
+    { name: '@react-native-community/cli' },
+    { name: 'react-native-rename' }
+  ],
   uninstallList: [],
   url: 'https://npms.io/search?q='
 };
