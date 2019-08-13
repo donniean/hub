@@ -15,7 +15,7 @@
   - [Modal/Alert/Toast/Notification/Dialog](#modalalerttoastnotificationdialog)
   - [List/Infinite](#listinfinite)
   - [Image](#image)
-  - [Math](#math)
+  - [Number/Math](#numbermath)
   - [Currency](#currency)
   - [Gesture](#gesture)
   - [Device](#device)
@@ -139,7 +139,7 @@
 
 ---
 
-## Math
+## Number/Math
 
 - [big.js](https://github.com/MikeMcl/big.js/)
 - [Numeral-js](https://github.com/adamwdraper/Numeral-js)
