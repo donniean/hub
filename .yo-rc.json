@@ -1,0 +1,19 @@
+{
+  "@acmilank22/generator-configs": {
+    "promptValues": {
+      "configs": [
+        "editorconfig",
+        "prettier",
+        "eslint",
+        "stylelint",
+        "lint-staged",
+        "htmlhint",
+        "gitignore",
+        "gitattributes",
+        "license",
+        "sort-package-json"
+      ],
+      "eslint": "es6"
+    }
+  }
+}

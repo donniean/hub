@@ -2,20 +2,29 @@
   "name": "collections",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "homepage": "https://github.com/acmilank22/collections#readme",
+  "bugs": {
+    "url": "https://github.com/acmilank22/collections/issues"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/acmilank22/collections.git"
   },
-  "author": "",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/acmilank22/collections/issues"
+  "author": "",
+  "main": "index.js",
+  "scripts": {
+    "eslint": "npx eslint --fix \"**/*.{js,jsx,html,vue}\"",
+    "lint": "npm run prettier && npm run eslint && npm run stylelint",
+    "prettier": "npx prettier \"**/*.{js,jsx,html,vue,css,scss,json,md}\"",
+    "stylelint": "npx stylelint --fix \"**/*.{css,scss,html,js,jsx,vue}\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "homepage": "https://github.com/acmilank22/collections#readme",
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
   "devDependencies": {
     "babel-eslint": "^10.0.2",
     "eslint": "^6.1.0",
@@ -25,17 +34,13 @@
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-prettier": "^3.1.0",
     "htmlhint": "^0.11.0",
-    "husky": "^3.0.2",
-    "lint-staged": "^9.2.1",
+    "husky": "^3.0.4",
+    "lint-staged": "^9.2.3",
     "prettier": "^1.18.2",
+    "sort-package-json": "^1.22.1",
     "stylelint": "^10.1.0",
     "stylelint-config-prettier": "^5.2.0",
     "stylelint-config-standard": "^18.3.0",
     "stylelint-prettier": "^1.1.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
   }
 }
