@@ -5,7 +5,7 @@ const config = {
   installCommand: 'npm install -g',
   uninstallCommand: 'npm uninstall -g',
   installList: [
-    { name: '@acmilank22/configs' },
+    { name: '@acmilank22/generator-configs' },
     { name: 'create-react-app' },
     { name: 'http-server' },
     { name: 'npm' },
