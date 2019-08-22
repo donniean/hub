@@ -16,6 +16,7 @@
   - [Head](#head)
   - [Portal](#portal)
   - [Button](#button)
+  - [Text](#text)
   - [List/Infinite](#listinfinite)
   - [Carousel/Swipe](#carouselswipe)
   - [Modal](#modal)
@@ -145,6 +146,12 @@
 ## Button
 
 - [react-ink](https://github.com/vigetlabs/react-ink)
+
+---
+
+## Text
+
+- [react-lines-ellipsis](https://github.com/xiaody/react-lines-ellipsis)
 
 ---
 
