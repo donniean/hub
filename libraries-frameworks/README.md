@@ -83,6 +83,8 @@
 - [qs](https://github.com/ljharb/qs)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
 - [node-uuid](https://github.com/kelektiv/node-uuid)
+- [crypto-random-string](https://github.com/sindresorhus/crypto-random-string)
+- [unique-string](https://github.com/sindresorhus/unique-string)
 - [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
 
 ---
