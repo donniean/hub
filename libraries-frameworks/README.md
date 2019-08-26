@@ -15,6 +15,7 @@
   - [Modal/Alert/Toast/Notification/Dialog](#modalalerttoastnotificationdialog)
   - [List/Infinite](#listinfinite)
   - [Image](#image)
+    - [Gallery/Lightbox](#gallerylightbox)
   - [Number/Math](#numbermath)
   - [Currency](#currency)
   - [Gesture](#gesture)
@@ -138,6 +139,10 @@
 ## Image
 
 - [compressorjs](https://github.com/fengyuanchen/compressorjs)
+
+### Gallery/Lightbox
+
+- [PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)
 
 ---
 

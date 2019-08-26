@@ -19,6 +19,8 @@
   - [Text](#text)
   - [List/Infinite](#listinfinite)
   - [Carousel/Swipe](#carouselswipe)
+  - [Image](#image)
+    - [Gallery/Lightbox](#gallerylightbox)
   - [Modal](#modal)
   - [Toast](#toast)
   - [Loading](#loading)
@@ -169,6 +171,16 @@
 - [react-swipeable-views](https://github.com/oliviertassinari/react-swipeable-views)
 - [nuka-carousel](https://github.com/FormidableLabs/nuka-carousel)
 - [react-swipe](https://github.com/voronianski/react-swipe)
+
+---
+
+## Image
+
+- [react-image](https://github.com/mbrevda/react-image)
+
+### Gallery/Lightbox
+
+- [react-images](https://github.com/jossmac/react-images)
 
 ---
 
