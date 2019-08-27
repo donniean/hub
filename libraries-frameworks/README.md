@@ -160,6 +160,7 @@
 ### Gallery/Lightbox
 
 - [PhotoSwipe](https://github.com/dimsemenov/PhotoSwipe)
+- [viewerjs](https://github.com/fengyuanchen/viewerjs)
 
 ---
 
