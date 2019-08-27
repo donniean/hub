@@ -85,8 +85,6 @@
 - [lodash](https://github.com/lodash/lodash)
 - [qs](https://github.com/ljharb/qs)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
-- [crypto-random-string](https://github.com/sindresorhus/crypto-random-string)
-- [unique-string](https://github.com/sindresorhus/unique-string)
 - [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
 
 ### String
@@ -105,7 +103,7 @@
 - [pify](https://github.com/sindresorhus/pify)
 - [es6-promisify](https://github.com/digitaldesignlabs/es6-promisify)
 - [Promise.prototype.finally](https://github.com/es-shims/Promise.prototype.finally)
-- [p-finally](<[p-finally](https://github.com/sindresorhus/p-finally)>)
+- [p-finally](https://github.com/sindresorhus/p-finally)
 
 ---
 
