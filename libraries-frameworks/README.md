@@ -8,6 +8,9 @@
   - [Icons](#icons)
   - [Polyfill/Shim](#polyfillshim)
   - [Utilities](#utilities)
+    - [String](#string)
+    - [Date](#date)
+    - [Async/Promise](#asyncpromise)
   - [Validation/Check](#validationcheck)
   - [Promise](#promise)
   - [Request](#request)
@@ -80,13 +83,29 @@
 
 - [jquery](https://github.com/jquery/jquery)
 - [lodash](https://github.com/lodash/lodash)
-- [moment](https://github.com/moment/moment)
 - [qs](https://github.com/ljharb/qs)
 - [deepmerge](https://github.com/TehShrike/deepmerge)
-- [node-uuid](https://github.com/kelektiv/node-uuid)
 - [crypto-random-string](https://github.com/sindresorhus/crypto-random-string)
 - [unique-string](https://github.com/sindresorhus/unique-string)
 - [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
+
+### String
+
+- [node-uuid](https://github.com/kelektiv/node-uuid)
+- [crypto-random-string](https://github.com/sindresorhus/crypto-random-string)
+- [unique-string](https://github.com/sindresorhus/unique-string)
+
+### Date
+
+- [moment](https://github.com/moment/moment)
+
+### Async/Promise
+
+- [bluebird](https://github.com/petkaantonov/bluebird)
+- [pify](https://github.com/sindresorhus/pify)
+- [es6-promisify](https://github.com/digitaldesignlabs/es6-promisify)
+- [Promise.prototype.finally](https://github.com/es-shims/Promise.prototype.finally)
+- [p-finally](<[p-finally](https://github.com/sindresorhus/p-finally)>)
 
 ---
 
