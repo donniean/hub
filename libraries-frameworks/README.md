@@ -76,6 +76,7 @@
 - [Modernizr](https://github.com/modernizr/modernizr)
 - [core-js](https://github.com/zloirock/core-js)
 - [es6-shim](https://github.com/paulmillr/es6-shim)
+- [Promise.prototype.finally](https://github.com/es-shims/Promise.prototype.finally)
 
 ---
 
@@ -102,7 +103,6 @@
 - [bluebird](https://github.com/petkaantonov/bluebird)
 - [pify](https://github.com/sindresorhus/pify)
 - [es6-promisify](https://github.com/digitaldesignlabs/es6-promisify)
-- [Promise.prototype.finally](https://github.com/es-shims/Promise.prototype.finally)
 - [p-finally](https://github.com/sindresorhus/p-finally)
 
 ---
