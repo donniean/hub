@@ -28,6 +28,7 @@
   - [Form](#form)
     - [Radio/Checkbox](#radiocheckbox)
     - [Select](#select)
+    - [Switch](#switch)
   - [Size/Position](#sizeposition)
   - [Gesture](#gesture)
   - [Animations](#animations)
@@ -228,6 +229,10 @@
 ### Select
 
 - [react-select](https://github.com/JedWatson/react-select)
+
+### Switch
+
+- [react-switch](https://github.com/markusenglund/react-switch)
 
 ---
 
