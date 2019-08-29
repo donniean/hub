@@ -196,6 +196,7 @@
 ## Animations
 
 - [animate.css](https://github.com/daneden/animate.css)
+- [Waves](https://github.com/fians/Waves)
 
 ---
 
