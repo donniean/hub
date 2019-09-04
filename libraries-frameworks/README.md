@@ -16,7 +16,7 @@
   - [Request](#request)
   - [Event](#event)
   - [Modal/Alert/Toast/Notification/Dialog](#modalalerttoastnotificationdialog)
-  - [List/Infinite](#listinfinite)
+  - [Scroll/Infinite](#scrollinfinite)
   - [Image](#image)
     - [Gallery/Lightbox](#gallerylightbox)
   - [Number/Math](#numbermath)
@@ -147,8 +147,9 @@
 
 ---
 
-## List/Infinite
+## Scroll/Infinite
 
+- [better-scroll](https://github.com/ustbhuangyi/better-scroll)
 - [mescroll](https://github.com/mescroll/mescroll)
 
 ---
