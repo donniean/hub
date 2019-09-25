@@ -40,5 +40,8 @@
     "stylelint-config-prettier": "^6.0.0",
     "stylelint-config-standard": "^19.0.0",
     "stylelint-prettier": "^1.1.1"
+  },
+  "dependencies": {
+    "fs-extra": "^8.1.0"
   }
 }
