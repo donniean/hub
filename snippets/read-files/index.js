@@ -1,7 +1,7 @@
 const path = require('path');
 const fs = require('fs');
 
-const filesPath = path.resolve(__dirname, '..');
+const filesPath = path.resolve('./src');
 const outputFile = 'code.txt';
 
 readDir(filesPath)
