@@ -217,6 +217,7 @@
 ## Form
 
 - [formik](https://github.com/jaredpalmer/formik)
+- [react-hook-form](https://github.com/react-hook-form/react-hook-form)
 - [redux-form](https://github.com/erikras/redux-form)
 - [final-form](https://github.com/final-form/final-form)
   - [react-final-form](https://github.com/final-form/react-final-form)
