@@ -178,6 +178,7 @@
 ## Image
 
 - [react-image](https://github.com/mbrevda/react-image)
+- [react-progressive-image](https://github.com/FormidableLabs/react-progressive-image)
 
 ### Gallery/Lightbox
 
