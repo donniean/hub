@@ -1,15 +1,16 @@
 # Resources
 
-- [Resources](#Resources)
-  - [Read](#Read)
-  - [Interview](#Interview)
-  - [Style Guide](#Style-Guide)
-  - [Utilities](#Utilities)
-  - [Document](#Document)
-  - [Git](#Git)
-  - [Server](#Server)
-  - [ShadowSocks](#ShadowSocks)
-  - [Tools](#Tools)
+- [Resources](#resources)
+  - [Read](#read)
+  - [Interview](#interview)
+  - [Style Guide](#style-guide)
+  - [Utilities](#utilities)
+  - [Document](#document)
+  - [Git](#git)
+  - [Server](#server)
+  - [ShadowSocks](#shadowsocks)
+    - [Rules](#rules)
+  - [Tools](#tools)
 
 ---
 
@@ -76,7 +77,12 @@
 ## ShadowSocks
 
 - [fancyss](https://github.com/hq450/fancyss) - fancyss is a project providing tools to across the GFW on asuswrt/merlin based router.
+
+### Rules
+
+- [Profiles](https://github.com/ConnersHua/Profiles/tree/master) - branches/master
 - [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
+- [Rules](https://github.com/lhie1/Rules)
 
 ---
 
