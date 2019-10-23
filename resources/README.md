@@ -9,6 +9,7 @@
   - [Git](#git)
   - [Server](#server)
   - [ShadowSocks](#shadowsocks)
+    - [Servers](#servers)
     - [Rules](#rules)
   - [Tools](#tools)
 
@@ -77,6 +78,13 @@
 ## ShadowSocks
 
 - [fancyss](https://github.com/hq450/fancyss) - fancyss is a project providing tools to across the GFW on asuswrt/merlin based router.
+
+### Servers
+
+- [rixCloud](https://rixcloud.com/)
+- [魅影极速](https://maying.co/)
+  - [docs](https://docs.maying.co/)
+- [喵帕斯](https://www.xn--i2ru8q2qg.com/)
 
 ### Rules
 
