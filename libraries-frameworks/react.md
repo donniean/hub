@@ -87,6 +87,7 @@
 - [unstated](https://github.com/jamiebuilds/unstated)
   - [unstated-next](https://github.com/jamiebuilds/unstated-next)
 - [constate](https://github.com/diegohaz/constate)
+- [easy-peasy](https://github.com/ctrlplusb/easy-peasy)
 
 ---
 
