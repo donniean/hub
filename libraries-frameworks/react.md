@@ -74,6 +74,7 @@
 
 - [styled-components](https://github.com/styled-components/styled-components)
   - [polished](https://github.com/styled-components/polished)
+- [emotion](https://github.com/emotion-js/emotion)
 
 ---
 
