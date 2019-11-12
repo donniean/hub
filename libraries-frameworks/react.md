@@ -11,6 +11,7 @@
   - [Routing](#routing)
   - [UI](#ui)
   - [Utilities](#utilities)
+    - [Async](#async)
   - [Hooks](#hooks)
   - [Icons](#icons)
   - [Head](#head)
@@ -120,6 +121,11 @@
 
 - [classnames](https://github.com/JedWatson/classnames)
 - [immutable-js](https://github.com/immutable-js/immutable-js)
+
+### Async
+
+- [react-async](https://github.com/async-library/react-async)
+- [swr](https://github.com/zeit/swr)
 
 ---
 
