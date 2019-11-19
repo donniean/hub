@@ -12,6 +12,7 @@ const config = {
     { name: 'npm-check' },
     { name: 'npm-check-updates' },
     { name: 'serve' },
+    { name: 'vorlon' },
     { name: 'yo' }
   ],
   alternativeList: [
