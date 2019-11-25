@@ -4,6 +4,7 @@
   - [Git](#git)
   - [Terminal](#terminal)
   - [npm](#npm)
+  - [Scoop](#scoop)
 
 ## Git
 
@@ -30,6 +31,8 @@ $HOME/.gitconfig
 ---
 
 ## Terminal
+
+Config File
 
 ```shell
 $HOME/.zshrc
@@ -60,3 +63,7 @@ $HOME/.npmrc
 proxy = http://127.0.0.1:1087
 https-proxy = http://127.0.0.1:1087
 ```
+
+## Scoop
+
+https://github.com/lukesampson/scoop/wiki/Using-Scoop-behind-a-proxy
