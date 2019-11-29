@@ -6,13 +6,13 @@ const config = {
   uninstallCommand: 'npm uninstall -g',
   installList: [
     { name: '@acmilank22/generator-configs' },
+    { name: '@tarojs/cli' },
     { name: 'create-react-app' },
     { name: 'http-server' },
     { name: 'npm' },
     { name: 'npm-check' },
     { name: 'npm-check-updates' },
     { name: 'serve' },
-    { name: 'vorlon' },
     { name: 'yo' }
   ],
   alternativeList: [
