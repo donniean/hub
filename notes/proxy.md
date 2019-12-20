@@ -64,6 +64,14 @@ proxy = http://127.0.0.1:1087
 https-proxy = http://127.0.0.1:1087
 ```
 
-## Scoop
+## [Scoop](https://github.com/lukesampson/scoop/wiki/Using-Scoop-behind-a-proxy)
 
-https://github.com/lukesampson/scoop/wiki/Using-Scoop-behind-a-proxy
+Config File
+
+```shell
+
+```
+
+```shell
+scoop config proxy 127.0.0.1:1087
+```
