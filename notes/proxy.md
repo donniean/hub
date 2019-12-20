@@ -69,9 +69,5 @@ https-proxy = http://127.0.0.1:1087
 Config File
 
 ```shell
-
-```
-
-```shell
 scoop config proxy 127.0.0.1:1087
 ```
