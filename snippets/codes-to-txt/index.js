@@ -40,7 +40,8 @@ readdir
     Promise.all(readFiles)
       .then(list => getCode(list))
       .then(code => {
-        fs.writeFile('./dist/code.txt', code, err => {
+        const data = sliceCode(code);
+        fs.writeFile('./dist/codes.txt', data, err => {
           if (err) {
             console.error(err);
           } else {
@@ -69,6 +70,18 @@ exit();
 
 function handleText(data) {
   const rows = data.split(/\n|\r|\n\r|\r\n/);
+  let newRows = [];
+  rows.forEach(row => {
+    const str = row.trim();
+    if (str) {
+      newRows.push(str);
+    }
+  });
+  return newRows.join('\n');
+}
+
+function sliceCode(code) {
+  const rows = code.split(/\n|\r|\n\r|\r\n/);
   const { length } = rows;
   const max = 5000;
   let newRows = rows;
@@ -78,12 +91,6 @@ function handleText(data) {
       ...rows.slice(length - 1 - max / 2, length - 1)
     ];
   }
-  let list = [];
-  newRows.forEach(row => {
-    const str = row.trim();
-    if (str) {
-      list.push(str);
-    }
-  });
-  return list.join('\n');
+  console.log(newRows.length);
+  return newRows.join('\n');
 }
