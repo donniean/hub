@@ -1,5 +1,6 @@
 const path = require('path');
 const fs = require('fs');
+const strip = require('strip-comments');
 
 const filesPath = path.resolve(__dirname, 'src');
 
@@ -25,6 +26,7 @@ readdir
             if (err) {
               reject(err);
             } else {
+              data = strip(data);
               resolve(data);
             }
           });
@@ -38,7 +40,7 @@ readdir
     Promise.all(readFiles)
       .then(list => getCode(list))
       .then(code => {
-        fs.writeFile('code.txt', code, err => {
+        fs.writeFile('./dist/code.txt', code, err => {
           if (err) {
             console.error(err);
           } else {
@@ -59,8 +61,7 @@ function getCode(list) {
   for (const data of list) {
     arr.push(handleText(data));
   }
-  arr.push(`
-alert('成功退出登录')
+  arr.push(`alert('成功退出登录')
 exit();
   `);
   return arr.join('\n');
@@ -68,10 +69,21 @@ exit();
 
 function handleText(data) {
   const rows = data.split(/\n|\r|\n\r|\r\n/);
-  console.log(rows.length);
-  let newRows = [];
-  for (let row of rows) {
-    row.trim() && newRows.push(row);
+  const { length } = rows;
+  const max = 5000;
+  let newRows = rows;
+  if (length > max) {
+    newRows = [
+      ...rows.slice(0, max / 2),
+      ...rows.slice(length - 1 - max / 2, length - 1)
+    ];
   }
-  return newRows.join('\n');
+  let list = [];
+  newRows.forEach(row => {
+    const str = row.trim();
+    if (str) {
+      list.push(str);
+    }
+  });
+  return list.join('\n');
 }
