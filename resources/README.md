@@ -10,6 +10,9 @@
   - [Server](#server)
   - [ShadowSocks](#shadowsocks)
     - [Servers](#servers)
+    - [Clients](#clients)
+      - [Mac](#mac)
+      - [Windows](#windows)
     - [Rules](#rules)
   - [Tools](#tools)
 
@@ -85,6 +88,19 @@
 - [魅影极速](https://maying.co/)
   - [docs](https://docs.maying.co/)
 - [喵帕斯](https://www.xn--i2ru8q2qg.com/)
+
+### Clients
+
+#### Mac
+
+- [ShadowsocksX-NG-R](https://github.com/leadscloud/ShadowsocksX-NG-R)
+- [clashX](https://github.com/WhoJave/clashX) - ShadowSocksR
+
+#### Windows
+
+- [ShadowsocksR-Windows](https://github.com/HMBSbige/ShadowsocksR-Windows)
+- [clashrdev](https://github.com/frainzy1477/clashrdev) - ShadowSocksR
+- [clash](https://github.com/WhoJave/clash) - ShadowSocksR
 
 ### Rules
 
