@@ -94,7 +94,7 @@
 #### Mac
 
 - [ShadowsocksX-NG-R8](https://github.com/leadscloud/ShadowsocksX-NG-R)
-- [clashXR](https://github.com/WhoJave/clashX)
+- [ClashXR](https://github.com/WhoJave/clashX)
 
 #### Windows
 
