@@ -14,7 +14,7 @@ const config = {
     { name: 'openssh' },
     { name: 'smartgit' },
     { name: 'trafficmonitor' },
-    { name: 'yarn0' }
+    { name: 'yarn' }
   ]
 };
 
