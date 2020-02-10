@@ -12,6 +12,7 @@ const config = {
     { name: 'nginx' },
     { name: 'nodejs' },
     { name: 'openssh' },
+    { name: 'smartgit' },
     { name: 'trafficmonitor' },
     { name: 'yarn' }
   ]
