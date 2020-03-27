@@ -104,9 +104,11 @@
 
 ### Rules
 
-- [Profiles](https://github.com/ConnersHua/Profiles/tree/master) - branches/master
-- [Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
-- [Rules](https://github.com/lhie1/Rules)
+- [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
+- [lhie1 墙洞（洞主）规则](https://github.com/lhie1/Rules)
+- [Hackl0us 懒人规则](https://github.com/Hackl0us/SS-Rule-Snippet)
+- [ConnersHua 神机规则](https://github.com/ConnersHua/Profiles/tree/master) - branches/master
+- [h2y Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
 
 ---
 
