@@ -104,10 +104,10 @@
 
 ### Rules
 
-- [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 - [lhie1 墙洞（洞主）规则](https://github.com/lhie1/Rules)
-- [Hackl0us 懒人规则](https://github.com/Hackl0us/SS-Rule-Snippet)
+- [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 - [ConnersHua 神机规则](https://github.com/ConnersHua/Profiles/tree/master) - branches/master
+- [Hackl0us 懒人规则](https://github.com/Hackl0us/SS-Rule-Snippet)
 - [h2y Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
 
 ---
