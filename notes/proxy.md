@@ -1,13 +1,16 @@
 # Proxy
 
 - [Proxy](#proxy)
+  - [Port](#port)
   - [Git](#git)
   - [Terminal](#terminal)
   - [npm](#npm)
   - [Scoop](#scoop)
 
-http port 7890  
-socks5 port 7891
+## Port
+
+http `7890`  
+socks5 `7891`
 
 ## Git
 
