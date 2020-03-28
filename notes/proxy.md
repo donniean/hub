@@ -66,14 +66,26 @@ $HOME/.npmrc
 ```
 
 ```shell
-proxy = http://127.0.0.1:7890
-https-proxy = http://127.0.0.1:7890
+proxy=http://127.0.0.1:7890/
+https-proxy=http://127.0.0.1:7890
 ```
 
 ## [Scoop](https://github.com/lukesampson/scoop/wiki/Using-Scoop-behind-a-proxy)
 
-Config File
+Command
 
 ```shell
 scoop config proxy 127.0.0.1:7890
+```
+
+Config File
+
+```shell
+$HOME/.config/scoop/config.json
+```
+
+```json
+{
+  "proxy": "127.0.0.1:7890"
+}
 ```
