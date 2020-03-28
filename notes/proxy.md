@@ -6,13 +6,16 @@
   - [npm](#npm)
   - [Scoop](#scoop)
 
+http port 7890  
+socks5 port 7891
+
 ## Git
 
 Command
 
 ```shell
-git config --global http.proxy 'socks5://127.0.0.1:1080'
-git config --global https.proxy 'socks5://127.0.0.1:1080'
+git config --global http.proxy 'socks5://127.0.0.1:7891'
+git config --global https.proxy 'socks5://127.0.0.1:7891'
 ```
 
 Config File
@@ -23,9 +26,9 @@ $HOME/.gitconfig
 
 ```shell
 [http]
-  proxy = socks5://127.0.0.1:1080
+  proxy = socks5://127.0.0.1:7891
 [https]
-  proxy = socks5://127.0.0.1:1080
+  proxy = socks5://127.0.0.1:7891
 ```
 
 ---
@@ -39,7 +42,7 @@ $HOME/.zshrc
 ```
 
 ```shell
-export all_proxy=socks5://127.0.0.1:1080
+export all_proxy=socks5://127.0.0.1:7891
 ```
 
 ---
@@ -49,8 +52,8 @@ export all_proxy=socks5://127.0.0.1:1080
 Command
 
 ```shell
-npm config set proxy http://127.0.0.1:1087
-npm config set https-proxy http://127.0.0.1:1087
+npm config set proxy http://127.0.0.1:7890
+npm config set https-proxy http://127.0.0.1:7890
 ```
 
 Config File
@@ -60,8 +63,8 @@ $HOME/.npmrc
 ```
 
 ```shell
-proxy = http://127.0.0.1:1087
-https-proxy = http://127.0.0.1:1087
+proxy = http://127.0.0.1:7890
+https-proxy = http://127.0.0.1:7890
 ```
 
 ## [Scoop](https://github.com/lukesampson/scoop/wiki/Using-Scoop-behind-a-proxy)
@@ -69,5 +72,5 @@ https-proxy = http://127.0.0.1:1087
 Config File
 
 ```shell
-scoop config proxy 127.0.0.1:1087
+scoop config proxy 127.0.0.1:7890
 ```
