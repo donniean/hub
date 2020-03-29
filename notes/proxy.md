@@ -11,7 +11,7 @@
 
 ```js
 const HTTP_Port = 7890; // 1087
-const Socks5_Port = 7891; // ShadowsocksR-Windows = 8123 || HTTP_Port, 1080
+const Socks5_Port = 7891; // ShadowsocksR-Windows = 8123 || HTTP_Port; 1080
 ```
 
 ## Git
