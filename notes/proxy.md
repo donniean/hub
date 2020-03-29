@@ -9,16 +9,18 @@
 
 ## Port
 
-http `7890` (`1087`)  
-socks5 `7891` (`1080`)
+```js
+const HTTP_Port = 7890; // 1087
+const Socks5_Port = 7891; // 1080, ShadowsocksR-Windows = 8123 || HTTP_Port
+```
 
 ## Git
 
 Command
 
 ```shell
-git config --global http.proxy 'socks5://127.0.0.1:7891'
-git config --global https.proxy 'socks5://127.0.0.1:7891'
+git config --global http.proxy 'socks5://127.0.0.1:Socks5_Port'
+git config --global https.proxy 'socks5://127.0.0.1:Socks5_Port'
 ```
 
 Config File
@@ -29,9 +31,9 @@ $HOME/.gitconfig
 
 ```shell
 [http]
-  proxy = socks5://127.0.0.1:7891
+  proxy = socks5://127.0.0.1:Socks5_Port
 [https]
-  proxy = socks5://127.0.0.1:7891
+  proxy = socks5://127.0.0.1:Socks5_Port
 ```
 
 ---
@@ -45,7 +47,7 @@ $HOME/.zshrc
 ```
 
 ```shell
-export all_proxy=socks5://127.0.0.1:7891
+export all_proxy=socks5://127.0.0.1:Socks5_Port
 ```
 
 ---
@@ -55,8 +57,8 @@ export all_proxy=socks5://127.0.0.1:7891
 Command
 
 ```shell
-npm config set proxy http://127.0.0.1:7890
-npm config set https-proxy http://127.0.0.1:7890
+npm config set proxy http://127.0.0.1:HTTP_Port
+npm config set https-proxy http://127.0.0.1:HTTP_Port
 ```
 
 Config File
@@ -66,8 +68,8 @@ $HOME/.npmrc
 ```
 
 ```shell
-proxy=http://127.0.0.1:7890/
-https-proxy=http://127.0.0.1:7890
+proxy=http://127.0.0.1:HTTP_Port/
+https-proxy=http://127.0.0.1:HTTP_Port
 ```
 
 ## [Scoop](https://github.com/lukesampson/scoop/wiki/Using-Scoop-behind-a-proxy)
@@ -75,7 +77,7 @@ https-proxy=http://127.0.0.1:7890
 Command
 
 ```shell
-scoop config proxy 127.0.0.1:7890
+scoop config proxy 127.0.0.1:HTTP_Port
 ```
 
 Config File
@@ -86,6 +88,6 @@ $HOME/.config/scoop/config.json
 
 ```json
 {
-  "proxy": "127.0.0.1:7890"
+  "proxy": "127.0.0.1:HTTP_Port"
 }
 ```
