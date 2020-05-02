@@ -61,9 +61,9 @@ Promise.all(promises).then(res => {
     ({ name, repository, score }, index) =>
       `
         <tr>
-          <td class="col col-no"><span>${index + 1}</span></td>
-          <td class="col col-name"><a href="${repository}" target="_black">${name}</a></th>
-          <td class="col col-score"><span>${score}</span></td>
+          <td class="col-no"><span>${index + 1}</span></td>
+          <td class="col-name"><a href="${repository}" target="_black">${name}</a></th>
+          <td class="col-score"><span>${score}</span></td>
         </tr>
       `
   );
@@ -71,9 +71,9 @@ Promise.all(promises).then(res => {
     <table>
       <thead>
         <tr>
-          <th class="col col-no"><span>No.</span></th>
-          <th class="col col-name"><span>Name</span></th>
-          <th class="col col-score"><span>Score</span></th>
+          <th class="col-no"><span>No.</span></th>
+          <th class="col-name"><span>Name</span></th>
+          <th class="col-score"><span>Score</span></th>
         </tr>
       </thead>
       <tbody>
