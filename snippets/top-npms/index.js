@@ -80,12 +80,24 @@ Promise.all(promises).then(res => {
     ({ name, repository, quality, popularity, maintenance, final }, index) =>
       `
         <tr>
-          <td class="col-no"><span>${index + 1}</span></td>
-          <td class="col-name"><a href="${repository}" target="_black">${name}</a></th>
-          <td class="col-score"><span>${getScore(quality)}</span></td>
-          <td class="col-score"><span>${getScore(popularity)}</span></td>
-          <td class="col-score"><span>${getScore(maintenance)}</span></td>
-          <td class="col-score"><span>${getScore(final)}</span></td>
+          <td class="col-no">
+            <span>${index + 1}</span>
+          </td>
+          <td class="col-name">
+            <a href="${repository}" target="_black">${name}</a>
+          </td>
+          <td class="col-score">
+            <span title="${quality}">${getScore(quality)}</span>
+          </td>
+          <td class="col-score">
+            <span title="${popularity}">${getScore(popularity)}</span>
+          </td>
+          <td class="col-score">
+            <span title="${maintenance}">${getScore(maintenance)}</span>
+          </td>
+          <td class="col-score">
+            <span title="${final}">${getScore(final)}</span>
+          </td>
         </tr>
       `
   );
@@ -93,12 +105,24 @@ Promise.all(promises).then(res => {
     <table>
       <thead>
         <tr>
-          <th class="col-no"><span>No.</span></th>
-          <th class="col-name"><span>Name</span></th>
-          <th class="col-score"><span>Quality</span></th>
-          <th class="col-score"><span>Popularity</span></th>
-          <th class="col-score"><span>Maintenance</span></th>
-          <th class="col-score"><span>Final</span></th>
+          <th class="col-no">
+            <span>No.</span>
+          </th>
+          <th class="col-name">
+            <span>Name</span>
+          </th>
+          <th class="col-score">
+            <span>Quality</span>
+          </th>
+          <th class="col-score">
+            <span>Popularity</span>
+          </th>
+          <th class="col-score">
+            <span>Maintenance</span>
+          </th>
+          <th class="col-score">
+            <span>Final</span>
+          </th>
         </tr>
       </thead>
       <tbody>
@@ -108,6 +132,6 @@ Promise.all(promises).then(res => {
   `;
 });
 
-function getScore(value) {
-  return (value * 100).toFixed(0);
+function getScore(value, fixed = 0) {
+  return (value * 100).toFixed(fixed);
 }
