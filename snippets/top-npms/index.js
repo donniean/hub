@@ -63,17 +63,29 @@ Promise.all(promises).then(res => {
     const { package: packageItem, score } = item;
     const { name, links } = packageItem;
     const { npm, repository } = links;
-    const { final } = score;
-    return { name, npm, repository, score: (final * 100).toFixed(2) };
+    const { detail, final } = score;
+    const { quality, popularity, maintenance } = detail;
+    return {
+      name,
+      npm,
+      repository,
+      quality,
+      popularity,
+      maintenance,
+      final
+    };
   });
   console.log(JSON.stringify(array));
   const trs = array.map(
-    ({ name, repository, score }, index) =>
+    ({ name, repository, quality, popularity, maintenance, final }, index) =>
       `
         <tr>
           <td class="col-no"><span>${index + 1}</span></td>
           <td class="col-name"><a href="${repository}" target="_black">${name}</a></th>
-          <td class="col-score"><span>${score}</span></td>
+          <td class="col-score"><span>${getScore(quality)}</span></td>
+          <td class="col-score"><span>${getScore(popularity)}</span></td>
+          <td class="col-score"><span>${getScore(maintenance)}</span></td>
+          <td class="col-score"><span>${getScore(final)}</span></td>
         </tr>
       `
   );
@@ -83,7 +95,10 @@ Promise.all(promises).then(res => {
         <tr>
           <th class="col-no"><span>No.</span></th>
           <th class="col-name"><span>Name</span></th>
-          <th class="col-score"><span>Score</span></th>
+          <th class="col-score"><span>Quality</span></th>
+          <th class="col-score"><span>Popularity</span></th>
+          <th class="col-score"><span>Maintenance</span></th>
+          <th class="col-score"><span>Final</span></th>
         </tr>
       </thead>
       <tbody>
@@ -92,3 +107,7 @@ Promise.all(promises).then(res => {
     </table>
   `;
 });
+
+function getScore(value) {
+  return (value * 100).toFixed(0);
+}
