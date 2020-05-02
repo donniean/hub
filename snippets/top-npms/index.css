@@ -3,6 +3,10 @@ body {
   padding-bottom: env(safe-area-inset-bottom);
 }
 
+table {
+  border-collapse: collapse;
+}
+
 th,
 td {
   border: 1px solid #666;
