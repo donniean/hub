@@ -2,7 +2,7 @@
 
 - [Proxy](#proxy)
   - [Port](#port)
-    - [Mac](#mac)
+    - [Mac1](#mac1)
     - [Windows](#windows)
   - [Git](#git)
   - [Terminal](#terminal)
@@ -11,7 +11,7 @@
 
 ## Port
 
-### Mac
+### Mac1
 
 ```js
 const [Socks5_Port, HTTP_Port] = [7891, 7890];
