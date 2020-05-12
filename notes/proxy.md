@@ -2,6 +2,8 @@
 
 - [Proxy](#proxy)
   - [Port](#port)
+    - [Mac](#mac)
+    - [Windows](#windows)
   - [Git](#git)
   - [Terminal](#terminal)
   - [npm](#npm)
@@ -9,9 +11,16 @@
 
 ## Port
 
+### Mac
+
 ```js
-const HTTP_Port = 7890; // 1087
-const Socks5_Port = 7891; // ShadowsocksR-Windows = 8123 || HTTP_Port; 1080
+const [Socks5_Port, HTTP_Port] = [7891, 7890];
+```
+
+### Windows
+
+```js
+const [Socks5_Port, HTTP_Port] = [7891, 7891];
 ```
 
 ## Git
