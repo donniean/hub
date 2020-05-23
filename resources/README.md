@@ -4,6 +4,7 @@
   - [Documents](#documents)
   - [Read](#read)
   - [Tutorials](#tutorials)
+  - [Websites](#websites)
   - [Interview](#interview)
   - [Style Guide](#style-guide)
   - [Utilities](#utilities)
@@ -47,6 +48,17 @@
 ## Tutorials
 
 - [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)
+
+---
+
+## Websites
+
+- [CSS-Tricks](https://css-tricks.com/)
+- [Overreacted](https://overreacted.io/)
+- [众成翻译](https://www.zcfy.cc/)
+- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
+- [张鑫旭](https://www.zhangxinxu.com/)
+- [W3cplus](https://www.w3cplus.com/)
 
 ---
 
