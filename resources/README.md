@@ -5,8 +5,10 @@
   - [Read](#read)
   - [Tutorials](#tutorials)
   - [Websites](#websites)
+  - [Articles](#articles)
   - [Interview](#interview)
   - [Style Guide](#style-guide)
+  - [Surveys](#surveys)
   - [Utilities](#utilities)
   - [Git](#git)
   - [Server](#server)
@@ -62,6 +64,17 @@
 
 ---
 
+## Articles
+
+- [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+- [High Performance Animations](https://www.html5rocks.com/zh/tutorials/speed/high-performance-animations/)
+- [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
+- [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
+- [【译】10 种最常见的 Javascript 错误](http://elevenbeans.github.io/2018/02/05/top-10-javascript-errors/)
+- [Promise 与遍历（循环，无穷多的 then）遇到的问题及三个解决方案](https://segmentfault.com/a/1190000004191366)
+
+---
+
 ## Interview
 
 - [Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
@@ -80,9 +93,21 @@
 ## Style Guide
 
 - [javascript](https://github.com/airbnb/javascript) - Airbnb JavaScript Style Guide
+- [standard](https://github.com/standard/standard) - JavaScript Standard Style
+- [styleguide](https://github.com/google/styleguide) - Google Style Guides
+- [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) - Clean Code concepts adapted for JavaScript
 - [project-guidelines](https://github.com/elsewhencode/project-guidelines)
+- [code-guide](https://github.com/mdo/code-guide)
 - [idiomatic-css](https://github.com/necolas/idiomatic-css)
 - [chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) - 中文文案排版指北
+
+---
+
+## Surveys
+
+- [The State Of JavaScript](https://stateofjs.com/)
+- [The State of CSS Survey](https://stateofcss.com/)
+- [The Front-End Tooling Survey 2019](https://ashleynolan.co.uk/blog/frontend-tooling-survey-2019-results)
 
 ---
 
