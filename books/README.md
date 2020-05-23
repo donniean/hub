@@ -28,12 +28,14 @@
 - [JavaScript 忍者秘籍（第 2 版）](https://book.douban.com/subject/30143702/) - 2018
 - [JavaScript 设计模式与开发实践](https://book.douban.com/subject/26382780/) - 2015
 - [你不知道的 JavaScript](https://book.douban.com/series/40642) - 2015 ~ 2018
+  - [You Don't Know JS Yet (book series) - 2nd Edition](https://github.com/getify/You-Dont-Know-JS)
 - [JavaScript. The Core: 2nd Edition](http://dmitrysoshnikov.com/ecmascript/javascript-the-core-2nd-edition/) - 2017
 - [JavaScript-Garden](https://bonsaiden.github.io/JavaScript-Garden/)
 
 ### ECMAScript 2015+
 
 - [深入理解 ES6](https://book.douban.com/subject/27072230/) - 2017
+  - [中文翻译](https://legacy.gitbook.com/book/sagittarius-rev/understanding-ecmascript-6-zh-ver/details)
 - [ES6 标准入门（第 3 版）](https://book.douban.com/subject/25966265/) - 2017
 - [JavaScript Promise 迷你书](http://liubin.org/promises-book/)
 
