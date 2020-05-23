@@ -15,8 +15,8 @@ const config = {
     { name: 'smartgit' },
     { name: 'smartsvn' },
     { name: 'trafficmonitor' },
-    { name: 'yarn' }
-  ]
+    { name: 'yarn' },
+  ],
 };
 
 init(config);

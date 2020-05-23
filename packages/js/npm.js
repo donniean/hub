@@ -12,14 +12,14 @@ const config = {
     { name: 'npm-check' },
     { name: 'npm-check-updates' },
     { name: 'serve' },
-    { name: 'yo' }
+    { name: 'yo' },
   ],
   alternativeList: [
     { name: '@react-native-community/cli' },
-    { name: 'react-native-rename' }
+    { name: 'react-native-rename' },
   ],
   uninstallList: [],
-  url: 'https://npms.io/search?q='
+  url: 'https://npms.io/search?q=',
 };
 
 init(config);

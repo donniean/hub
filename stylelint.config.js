@@ -10,10 +10,10 @@ module.exports = {
     'property-no-vendor-prefix': [true, { severity: 'warning' }],
     'declaration-block-no-redundant-longhand-properties': [
       true,
-      { severity: 'warning' }
+      { severity: 'warning' },
     ],
     'selector-attribute-quotes': ['always', { severity: 'warning' }],
     'selector-list-comma-space-after': ['always-single-line'],
-    'no-unknown-animations': true
-  }
+    'no-unknown-animations': true,
+  },
 };

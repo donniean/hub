@@ -6,14 +6,14 @@ function get1PasswordJson({ filePath }) {
   const { items } = data;
   let loginList = [];
 
-  items.forEach(item => {
+  items.forEach((item) => {
     const { name, fields = [], login } = item;
     if (login) {
       const { uris, username, password } = login;
       const [{ uri }] = uris;
       let fieldsMap = {};
       if (fields.length > 0) {
-        fields.forEach(field => {
+        fields.forEach((field) => {
           const { name, value } = field;
           fieldsMap[name] = value;
         });
@@ -24,7 +24,7 @@ function get1PasswordJson({ filePath }) {
         username,
         password,
         notes: '',
-        ...fieldsMap
+        ...fieldsMap,
       });
     }
   });
@@ -33,7 +33,7 @@ function get1PasswordJson({ filePath }) {
 
 // TODO: fields 未处理
 function get1PasswordLoginCsv({ data }) {
-  const rows = data.map(item => {
+  const rows = data.map((item) => {
     const { title, website, username, password, notes } = item;
     return [title, website, username, password, notes].join(',');
   });

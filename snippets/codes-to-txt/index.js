@@ -15,7 +15,7 @@ const readdir = new Promise((resolve, reject) => {
 });
 
 readdir
-  .then(files => {
+  .then((files) => {
     let readFiles = [];
     const re = /((\.html)|(\.css)|(\.js))$/i;
     for (const file of files) {
@@ -36,12 +36,12 @@ readdir
     }
     return readFiles;
   })
-  .then(readFiles => {
+  .then((readFiles) => {
     Promise.all(readFiles)
-      .then(list => getCode(list))
-      .then(code => {
+      .then((list) => getCode(list))
+      .then((code) => {
         const data = sliceCode(code);
-        fs.writeFile('./dist/codes.txt', data, err => {
+        fs.writeFile('./dist/codes.txt', data, (err) => {
           if (err) {
             console.error(err);
           } else {
@@ -49,11 +49,11 @@ readdir
           }
         });
       })
-      .catch(err => {
+      .catch((err) => {
         console.error(err);
       });
   })
-  .catch(err => {
+  .catch((err) => {
     console.error(err);
   });
 
@@ -71,7 +71,7 @@ exit();
 function handleText(data) {
   const rows = data.split(/\n|\r|\n\r|\r\n/);
   let newRows = [];
-  rows.forEach(row => {
+  rows.forEach((row) => {
     const str = row.trim();
     if (str) {
       newRows.push(str);
@@ -88,7 +88,7 @@ function sliceCode(code) {
   if (length > max) {
     newRows = [
       ...rows.slice(0, max / 2),
-      ...rows.slice(length - 1 - max / 2, length - 1)
+      ...rows.slice(length - 1 - max / 2, length - 1),
     ];
   }
   console.log(newRows.length);

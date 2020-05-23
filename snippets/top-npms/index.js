@@ -34,18 +34,18 @@ const alphabet = [
   '6',
   '7',
   '8',
-  '9'
+  '9',
 ];
 
-const promises = alphabet.map(letter =>
+const promises = alphabet.map((letter) =>
   fetch(
     `https://api.npms.io/v2/search/suggestions?q=${letter}&size=${100}`
-  ).then(res => res.json())
+  ).then((res) => res.json())
 );
 
-Promise.all(promises).then(res => {
+Promise.all(promises).then((res) => {
   let list = [];
-  res.forEach(item => {
+  res.forEach((item) => {
     list = [...list, ...item];
   });
   const data = list.sort((a, b) => {
@@ -59,7 +59,7 @@ Promise.all(promises).then(res => {
     }
     return 0;
   });
-  const array = data.map(item => {
+  const array = data.map((item) => {
     const { package: packageItem, score } = item;
     const { name, links } = packageItem;
     const { npm, repository } = links;
@@ -72,7 +72,7 @@ Promise.all(promises).then(res => {
       quality,
       popularity,
       maintenance,
-      final
+      final,
     };
   });
   console.log(JSON.stringify(array));

@@ -3,7 +3,7 @@ const array = [
   { name: 'Homebrew Cask', url: 'homebrew-cask.html' },
   { name: 'Scoop', url: 'scoop.html' },
   // { name: 'Chocolatey', url: 'chocolatey.html' },
-  { name: 'npm', url: 'npm.html' }
+  { name: 'npm', url: 'npm.html' },
 ];
 
 const list = array.map(

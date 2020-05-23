@@ -8,8 +8,8 @@ const config = {
     { name: 'adoptopenjdk8' }, // brew tap AdoptOpenJDK/openjdk
     { name: 'react-native-debugger' },
     { name: 'smartgit' },
-    { name: 'smartsvn' }
-  ]
+    { name: 'smartsvn' },
+  ],
 };
 
 init(config);

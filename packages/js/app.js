@@ -8,7 +8,7 @@ function init({
   installList = [],
   alternativeList = [],
   uninstallList = [],
-  url
+  url,
 }) {
   let [
     installTotalCommand,
@@ -16,7 +16,7 @@ function init({
     uninstallTotalCommand,
     installCodeList,
     alternativeCodeList,
-    uninstallCodeList
+    uninstallCodeList,
   ] = ['', '', '', [], [], []];
 
   if (installList.length > 0) {

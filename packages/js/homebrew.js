@@ -13,8 +13,8 @@ const config = {
     { name: 'watchman' },
     { name: 'yarn' },
     { name: 'zsh' },
-    { name: 'zsh-completions' }
-  ]
+    { name: 'zsh-completions' },
+  ],
 };
 
 init(config);
