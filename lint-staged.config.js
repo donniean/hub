@@ -3,4 +3,6 @@ module.exports = {
     'prettier --write',
     'git add',
   ],
+  '*.{js,jsx,html,vue}': ['eslint --fix', 'git add'],
+  '*.{css,scss,js,jsx,vue}': ['stylelint --fix', 'git add'],
 };
