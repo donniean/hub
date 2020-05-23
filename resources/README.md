@@ -3,15 +3,18 @@
 - [Resources](#resources)
   - [Docs](#docs)
   - [Collections](#collections)
-  - [Tutorials](#tutorials)
+  - [Navs](#navs)
+  - [Tutorials/Guides](#tutorialsguides)
+  - [Rank](#rank)
   - [Read](#read)
+    - [Websites](#websites)
+    - [Repos](#repos)
     - [Articles](#articles)
       - [iOS](#ios)
-  - [Websites](#websites)
   - [Interview](#interview)
   - [Style Guide](#style-guide)
   - [Surveys](#surveys)
-  - [Utilities/Tools](#utilitiestools)
+  - [Utils/Tools](#utilstools)
   - [Git](#git)
   - [Server](#server)
 
@@ -38,13 +41,45 @@
 
 ---
 
-## Tutorials
+## Navs
+
+- [印记中文](https://www.docschina.org/)
+- [前端文档工具收藏夹](https://www.html.cn/nav/)
+- [Awesomes-Web 前端开发资源库](https://www.awesomes.cn/)
+- [Web 前端导航](http://www.alloyteam.com/nav/)
+- [fetool](https://github.com/nieweidong/fetool) - 大前端工具集
+
+---
+
+## Tutorials/Guides
 
 - [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)
+- [typescript-tutorial](https://github.com/xcatliu/typescript-tutorial) - TypeScript 入门教程
+- [Sass Guidelines](https://sass-guidelin.es/)
+
+---
+
+## Rank
+
+- [npms](https://npms.io/)
+- [npm trends](https://www.npmtrends.com/)
+- [Best of JavaScript](https://bestofjs.org/)
 
 ---
 
 ## Read
+
+### Websites
+
+- [CSS-Tricks](https://css-tricks.com/)
+- [Overreacted](https://overreacted.io/)
+- [Dave Ceddia](https://daveceddia.com/)
+- [众成翻译](https://www.zcfy.cc/)
+- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
+- [张鑫旭](https://www.zhangxinxu.com/)
+- [W3cplus](https://www.w3cplus.com/)
+
+### Repos
 
 - [what-happens-when](https://github.com/alex/what-happens-when)
 - [HEAD](https://github.com/joshbuchea/HEAD)
@@ -63,18 +98,6 @@
 - [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
 - [The iOS Design Guidelines](https://ivomynttinen.com/blog/ios-design-guidelines)
 - [The Ultimate Guide To iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
-
----
-
-## Websites
-
-- [CSS-Tricks](https://css-tricks.com/)
-- [Overreacted](https://overreacted.io/)
-- [Dave Ceddia](https://daveceddia.com/)
-- [众成翻译](https://www.zcfy.cc/)
-- [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
-- [张鑫旭](https://www.zhangxinxu.com/)
-- [W3cplus](https://www.w3cplus.com/)
 
 ---
 
@@ -114,7 +137,7 @@
 
 ---
 
-## Utilities/Tools
+## Utils/Tools
 
 - [CSS Tools: Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
 - [How to Center in CSS](http://howtocenterincss.com/)

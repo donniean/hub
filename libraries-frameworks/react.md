@@ -44,14 +44,15 @@
 
 ## Resources
 
+- [react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
 - [awesome-react](https://github.com/enaqx/awesome-react)
 - [awesome-react-components](https://github.com/brillout/awesome-react-components)
 - [awesome-react-hooks](https://github.com/rehooks/awesome-react-hooks)
 - [awesome-react-hooks](https://github.com/glauberfc/awesome-react-hooks)
 - [react-hooks](https://github.com/nikgraf/react-hooks)
-- [react-developer-roadmap](https://github.com/adam-golab/react-developer-roadmap)
 - [css-in-js](https://github.com/MicheleBertoli/css-in-js) - React: CSS in JS techniques comparison
 - [ReactStateMuseum](https://github.com/GantMan/ReactStateMuseum) - A whirlwind tour of React state management systems by example
+- [React Libraries in 2020](https://www.robinwieruch.de/react-libraries)
 
 ---
 
