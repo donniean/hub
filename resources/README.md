@@ -2,6 +2,7 @@
 
 - [Resources](#resources)
   - [Read](#read)
+  - [Tutorials](#tutorials)
   - [Interview](#interview)
   - [Style Guide](#style-guide)
   - [Utilities](#utilities)
@@ -31,6 +32,12 @@
 - [front-end-collect](https://github.com/foru17/front-end-collect)
 - [frontend-tech-list](https://github.com/alienzhou/frontend-tech-list)
 - [chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
+
+---
+
+## Tutorials
+
+- [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)
 
 ---
 

@@ -1,4 +1,14 @@
-# Fonts
+# Misc
+
+- [Misc](#misc)
+  - [Vocabularies](#vocabularies)
+  - [Fonts](#fonts)
+
+## Vocabularies
+
+- kebab-case
+
+## Fonts
 
 - Monaco
 - Consolas
