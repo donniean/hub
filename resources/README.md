@@ -17,6 +17,7 @@
   - [Utils/Tools](#utilstools)
   - [Git](#git)
   - [Server](#server)
+  - [Fonts](#fonts)
 
 ---
 
@@ -158,3 +159,15 @@
 ## Server
 
 - [acme.sh](https://github.com/Neilpang/acme.sh)
+
+---
+
+## Fonts
+
+- Monaco
+- Consolas
+- DejaVu Sans Mon
+- Inconsolata
+- [Source Code Pro](https://github.com/adobe-fonts/source-code-pro)
+- [Sarasa Gothic](https://github.com/be5invis/Sarasa-Gothic)
+- [mono](https://www.jetbrains.com/lp/mono/)
