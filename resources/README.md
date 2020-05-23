@@ -6,10 +6,11 @@
   - [Tutorials](#tutorials)
   - [Websites](#websites)
   - [Articles](#articles)
+    - [iOS](#ios)
   - [Interview](#interview)
   - [Style Guide](#style-guide)
   - [Surveys](#surveys)
-  - [Utilities](#utilities)
+  - [Utilities/Tools](#utilitiestools)
   - [Git](#git)
   - [Server](#server)
   - [ShadowSocks](#shadowsocks)
@@ -57,6 +58,7 @@
 
 - [CSS-Tricks](https://css-tricks.com/)
 - [Overreacted](https://overreacted.io/)
+- [Dave Ceddia](https://daveceddia.com/)
 - [众成翻译](https://www.zcfy.cc/)
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 - [张鑫旭](https://www.zhangxinxu.com/)
@@ -68,10 +70,14 @@
 
 - [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
 - [High Performance Animations](https://www.html5rocks.com/zh/tutorials/speed/high-performance-animations/)
-- [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
 - [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
 - [【译】10 种最常见的 Javascript 错误](http://elevenbeans.github.io/2018/02/05/top-10-javascript-errors/)
-- [Promise 与遍历（循环，无穷多的 then）遇到的问题及三个解决方案](https://segmentfault.com/a/1190000004191366)
+
+### iOS
+
+- [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
+- [The iOS Design Guidelines](https://ivomynttinen.com/blog/ios-design-guidelines)
+- [The Ultimate Guide To iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
 
 ---
 
@@ -96,9 +102,9 @@
 - [standard](https://github.com/standard/standard) - JavaScript Standard Style
 - [styleguide](https://github.com/google/styleguide) - Google Style Guides
 - [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) - Clean Code concepts adapted for JavaScript
-- [project-guidelines](https://github.com/elsewhencode/project-guidelines)
-- [code-guide](https://github.com/mdo/code-guide)
 - [idiomatic-css](https://github.com/necolas/idiomatic-css)
+- [code-guide](https://github.com/mdo/code-guide)
+- [project-guidelines](https://github.com/elsewhencode/project-guidelines)
 - [chinese-copywriting-guidelines](https://github.com/sparanoid/chinese-copywriting-guidelines) - 中文文案排版指北
 
 ---
@@ -111,9 +117,13 @@
 
 ---
 
-## Utilities
+## Utilities/Tools
 
+- [CSS Tools: Reset CSS](https://meyerweb.com/eric/tools/css/reset/)
+- [How to Center in CSS](http://howtocenterincss.com/)
 - [easings.net](https://github.com/ai/easings.net) - Easing Functions Cheat Sheet
+- [Regex101](https://regex101.com/)
+- [RegExr](https://regexr.com/)
 
 ---
 
