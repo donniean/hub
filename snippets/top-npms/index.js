@@ -84,7 +84,7 @@ Promise.all(promises).then((res) => {
             <span>${index + 1}</span>
           </td>
           <td class="col-name">
-            <a href="${repository}" target="_black">${name}</a>
+            <a href="${repository}" target="_black" title="${name}">${name}</a>
           </td>
           <td class="col-score">
             <span title="${quality}">${getScore(quality)}</span>
@@ -131,6 +131,14 @@ Promise.all(promises).then((res) => {
     </table>
   `;
 });
+
+/* function handleName(name = '') {
+  const { length } = name;
+  if (length > 12) {
+    name = name.substr(0, 12) + '...';
+  }
+  return name;
+} */
 
 function getScore(value, fixed = 0) {
   return (value * 100).toFixed(fixed);
