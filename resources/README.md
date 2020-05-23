@@ -1,29 +1,23 @@
 # Resources
 
 - [Resources](#resources)
-  - [Documents](#documents)
-  - [Read](#read)
+  - [Docs](#docs)
+  - [Collections](#collections)
   - [Tutorials](#tutorials)
+  - [Read](#read)
+    - [Articles](#articles)
+      - [iOS](#ios)
   - [Websites](#websites)
-  - [Articles](#articles)
-    - [iOS](#ios)
   - [Interview](#interview)
   - [Style Guide](#style-guide)
   - [Surveys](#surveys)
   - [Utilities/Tools](#utilitiestools)
   - [Git](#git)
   - [Server](#server)
-  - [ShadowSocks](#shadowsocks)
-    - [Servers](#servers)
-    - [Clients](#clients)
-      - [Mac](#mac)
-      - [Windows](#windows)
-    - [Rules](#rules)
-  - [Tools](#tools)
 
 ---
 
-## Documents
+## Docs
 
 - [MDN](https://developer.mozilla.org/zh-CN/)
 - [Workflower Apps](http://apps.workflower.fi/)
@@ -32,25 +26,43 @@
 
 ---
 
-## Read
+## Collections
 
 - [awesome](https://github.com/sindresorhus/awesome)
 - [free-programming-books](https://github.com/EbookFoundation/free-programming-books)
 - [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
 - [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist)
-- [what-happens-when](https://github.com/alex/what-happens-when)
-- [HEAD](https://github.com/joshbuchea/HEAD)
-- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
 - [fks](https://github.com/JacksonTian/fks) - 前端技能汇总 Frontend Knowledge Structure
 - [front-end-collect](https://github.com/foru17/front-end-collect)
 - [frontend-tech-list](https://github.com/alienzhou/frontend-tech-list)
-- [chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
 
 ---
 
 ## Tutorials
 
 - [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)
+
+---
+
+## Read
+
+- [what-happens-when](https://github.com/alex/what-happens-when)
+- [HEAD](https://github.com/joshbuchea/HEAD)
+- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
+- [chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
+
+### Articles
+
+- [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
+- [High Performance Animations](https://www.html5rocks.com/zh/tutorials/speed/high-performance-animations/)
+- [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
+- [【译】10 种最常见的 Javascript 错误](http://elevenbeans.github.io/2018/02/05/top-10-javascript-errors/)
+
+#### iOS
+
+- [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
+- [The iOS Design Guidelines](https://ivomynttinen.com/blog/ios-design-guidelines)
+- [The Ultimate Guide To iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
 
 ---
 
@@ -63,21 +75,6 @@
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 - [张鑫旭](https://www.zhangxinxu.com/)
 - [W3cplus](https://www.w3cplus.com/)
-
----
-
-## Articles
-
-- [浏览器的工作原理：新式网络浏览器幕后揭秘](https://www.html5rocks.com/zh/tutorials/internals/howbrowserswork/)
-- [High Performance Animations](https://www.html5rocks.com/zh/tutorials/speed/high-performance-animations/)
-- [How to fetch data with React Hooks?](https://www.robinwieruch.de/react-hooks-fetch-data)
-- [【译】10 种最常见的 Javascript 错误](http://elevenbeans.github.io/2018/02/05/top-10-javascript-errors/)
-
-### iOS
-
-- [Designing Websites for iPhone X](https://webkit.org/blog/7929/designing-websites-for-iphone-x/)
-- [The iOS Design Guidelines](https://ivomynttinen.com/blog/ios-design-guidelines)
-- [The Ultimate Guide To iPhone Resolutions](https://www.paintcodeapp.com/news/ultimate-guide-to-iphone-resolutions)
 
 ---
 
@@ -138,45 +135,3 @@
 ## Server
 
 - [acme.sh](https://github.com/Neilpang/acme.sh)
-
----
-
-## ShadowSocks
-
-- [fancyss](https://github.com/hq450/fancyss) - fancyss is a project providing tools to across the GFW on asuswrt/merlin based router.
-
-### Servers
-
-- [rixCloud](https://rixcloud.com/)
-- [魅影极速](https://maying.co/)
-  - [docs](https://docs.maying.co/)
-- [喵帕斯](https://www.xn--i2ru8q2qg.com/)
-
-### Clients
-
-#### Mac
-
-- [ShadowsocksX-NG-R8](https://github.com/leadscloud/ShadowsocksX-NG-R)
-- [ClashXR](https://github.com/WhoJave/clashX)
-
-#### Windows
-
-- [ShadowsocksR-Windows](https://github.com/HMBSbige/ShadowsocksR-Windows)
-- [clashrdev](https://github.com/frainzy1477/clashrdev) - ShadowSocksR
-- [clash](https://github.com/WhoJave/clash) - ShadowSocksR
-
-### Rules
-
-- [lhie1 墙洞（洞主）规则](https://github.com/lhie1/Rules)
-- [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
-- [ConnersHua 神机规则](https://github.com/ConnersHua/Profiles/tree/master) - branches/master
-- [Hackl0us 懒人规则](https://github.com/Hackl0us/SS-Rule-Snippet)
-- [h2y Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
-
----
-
-## Tools
-
-- [sketch-measure](https://github.com/utom/sketch-measure)
-- [SketchI18N](https://github.com/cute/SketchI18N)
-- [baiduyun](https://github.com/syhyz1990/baiduyun) - 🖖 油猴脚本 一个脚本搞定百度网盘下载
