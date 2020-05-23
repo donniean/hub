@@ -12,6 +12,10 @@ tbody tr:nth-child(even) {
   background-color: #f0f0f0;
 }
 
+tbody tr:hover {
+  background-color: rgba(156, 198, 226, 0.5);
+}
+
 th,
 td {
   padding: 6px;
