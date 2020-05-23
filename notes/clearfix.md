@@ -1,13 +1,20 @@
-# 新增空白元素
+# clearfix
+
+- [clearfix](#clearfix)
+  - [新增空白元素](#新增空白元素)
+  - [overflow](#overflow)
+  - [用伪元素充当空白元素](#用伪元素充当空白元素)
+
+## 新增空白元素
 
 - HTML
 
   ```html
   <div>
-      <div>one</div>
-      <div>two</div>
-      <div>three</div>
-      <div class="clearfix"></div>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
+    <div class="clearfix"></div>
   </div>
   ```
 
@@ -24,15 +31,15 @@
 
 ---
 
-# overflow
+## overflow
 
 - HTML
 
   ```html
   <div class="clearfix">
-      <div>one</div>
-      <div>two</div>
-      <div>three</div>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
   </div>
   ```
 
@@ -47,15 +54,15 @@
 
 ---
 
-# 用伪元素充当空白元素
+## 用伪元素充当空白元素
 
 - HTML
 
   ```html
   <div class="clearfix">
-      <div>one</div>
-      <div>two</div>
-      <div>three</div>
+    <div>one</div>
+    <div>two</div>
+    <div>three</div>
   </div>
   ```
 
