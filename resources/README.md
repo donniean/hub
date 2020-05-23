@@ -1,9 +1,46 @@
 # Resources
 
-- [Read](./read.md)
-- [Interview](./interview.md)
+- [Resources](#resources)
+  - [Documents](#documents)
+  - [Read](#read)
+  - [Tutorials](#tutorials)
+  - [Interview](#interview)
+  - [Style Guide](#style-guide)
+  - [Utilities](#utilities)
+  - [Git](#git)
+  - [Server](#server)
+  - [ShadowSocks](#shadowsocks)
+    - [Servers](#servers)
+    - [Clients](#clients)
+      - [Mac](#mac)
+      - [Windows](#windows)
+    - [Rules](#rules)
+  - [Tools](#tools)
+
+---
+
+## Documents
+
+- [MDN](https://developer.mozilla.org/zh-CN/)
+- [Workflower Apps](http://apps.workflower.fi/)
+- [compat-table](https://github.com/kangax/compat-table)
+- [Markdown-Syntax-CN](https://github.com/riku/Markdown-Syntax-CN)
+
+---
 
 ## Read
+
+- [awesome](https://github.com/sindresorhus/awesome)
+- [free-programming-books](https://github.com/EbookFoundation/free-programming-books)
+- [developer-roadmap](https://github.com/kamranahmedse/developer-roadmap)
+- [Front-End-Checklist](https://github.com/thedaviddias/Front-End-Checklist)
+- [what-happens-when](https://github.com/alex/what-happens-when)
+- [HEAD](https://github.com/joshbuchea/HEAD)
+- [javascript-algorithms](https://github.com/trekhleb/javascript-algorithms)
+- [fks](https://github.com/JacksonTian/fks) - 前端技能汇总 Frontend Knowledge Structure
+- [front-end-collect](https://github.com/foru17/front-end-collect)
+- [frontend-tech-list](https://github.com/alienzhou/frontend-tech-list)
+- [chinese-programmer-wrong-pronunciation](https://github.com/shimohq/chinese-programmer-wrong-pronunciation)
 
 ---
 
@@ -40,13 +77,6 @@
 ## Utilities
 
 - [easings.net](https://github.com/ai/easings.net) - Easing Functions Cheat Sheet
-
----
-
-## Documents
-
-- [compat-table](https://github.com/kangax/compat-table)
-- [Markdown-Syntax-CN](https://github.com/riku/Markdown-Syntax-CN)
 
 ---
 
