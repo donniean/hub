@@ -37,8 +37,11 @@
 ## Interview
 
 - [Front-end-Developer-Interview-Questions](https://github.com/h5bp/Front-end-Developer-Interview-Questions)
-- [Front-end-Developer-Questions](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions)
-- [FE-interview](https://github.com/qiu-deqing/FE-interview)
+- [Front-end-Developer-Questions](https://github.com/markyun/My-blog/tree/master/Front-end-Developer-Questions) - 前端开发面试题 by markyun
+- [FE-interview](https://github.com/qiu-deqing/FE-interview) - 收集的前端面试题和答案 by qiu-deqing
+- [front-end-interview](https://github.com/Advanced-Interview-Question/front-end-interview) - 前端面试与进阶指南
+- [fe-interview](https://github.com/azl397985856/fe-interview) - 大前端面试宝典
+- [fe-interview](https://github.com/haizlin/fe-interview) - 前端面试每日 3+1
 
 ---
 
