@@ -5,7 +5,7 @@
   - [Interview](#interview)
   - [Style Guide](#style-guide)
   - [Utilities](#utilities)
-  - [Document](#document)
+  - [Documents](#documents)
   - [Git](#git)
   - [Server](#server)
   - [ShadowSocks](#shadowsocks)
@@ -64,7 +64,7 @@
 
 ---
 
-## Document
+## Documents
 
 - [compat-table](https://github.com/kangax/compat-table)
 - [Markdown-Syntax-CN](https://github.com/riku/Markdown-Syntax-CN)
