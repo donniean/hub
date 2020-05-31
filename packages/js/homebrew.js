@@ -10,7 +10,7 @@ const config = {
     { name: 'node' },
     { name: 'sshpass' },
     { name: 'tree' },
-    { name: 'watchman' },
+    // { name: 'watchman' },
     { name: 'yarn' },
     { name: 'zsh' },
     { name: 'zsh-completions' },
