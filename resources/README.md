@@ -123,6 +123,7 @@
 - [standard](https://github.com/standard/standard) - JavaScript Standard Style
 - [styleguide](https://github.com/google/styleguide) - Google Style Guides
 - [clean-code-javascript](https://github.com/ryanmcdermott/clean-code-javascript) - Clean Code concepts adapted for JavaScript
+- [nodebestpractices](https://github.com/goldbergyoni/nodebestpractices) - Node.js Best Practices
 - [idiomatic-css](https://github.com/necolas/idiomatic-css)
 - [code-guide](https://github.com/mdo/code-guide)
 - [project-guidelines](https://github.com/elsewhencode/project-guidelines)
