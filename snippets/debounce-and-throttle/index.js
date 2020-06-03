@@ -22,4 +22,4 @@ function throttle(func, delay) {
   };
 }
 
-console.log(debounce, throttle);
+export { debounce, throttle };
