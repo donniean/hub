@@ -152,7 +152,7 @@
 ## Git
 
 - [gitignore](https://github.com/github/gitignore)
-- [gitignore.io](https://github.com/joeblau/gitignore.io)
+- [gitignore.io](https://github.com/toptal/gitignore.io)
 - [gitattributes](https://github.com/alexkaratarakis/gitattributes)
 
 ---
