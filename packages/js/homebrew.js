@@ -6,6 +6,7 @@ const config = {
   uninstallCommand: 'brew uninstall',
   installList: [
     { name: 'git' },
+    { name: 'memcached' },
     { name: 'nginx' },
     { name: 'node' },
     { name: 'sshpass' },
