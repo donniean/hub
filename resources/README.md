@@ -54,8 +54,9 @@
 
 ## Tutorials/Guides
 
-- [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)
+- [The Modern JavaScript Tutorial](https://zh.javascript.info/) - 现代 JavaScript 教程
 - [typescript-tutorial](https://github.com/xcatliu/typescript-tutorial) - TypeScript 入门教程
+- [正则表达式 30 分钟入门教程](https://deerchao.cn/tutorials/regex/regex.htm)
 - [Sass Guidelines](https://sass-guidelin.es/)
 
 ---
