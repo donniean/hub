@@ -4,7 +4,7 @@
   - [Resources](#resources)
   - [Style Guide](#style-guide)
   - [Framework](#framework)
-  - [Utilities](#utilities)
+  - [Utils](#utils)
 
 ---
 
@@ -26,6 +26,6 @@
 
 ---
 
-## Utilities
+## Utils
 
 - [node-fs-extra](https://github.com/jprichardson/node-fs-extra)

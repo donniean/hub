@@ -10,7 +10,7 @@
   - [Type Checker](#type-checker)
   - [Routing](#routing)
   - [UI](#ui)
-  - [Utilities](#utilities)
+  - [Utils](#utils)
     - [Async](#async)
   - [Hooks](#hooks)
   - [Icons](#icons)
@@ -118,7 +118,7 @@
 
 ---
 
-## Utilities
+## Utils
 
 - [classnames](https://github.com/JedWatson/classnames)
 - [immutable-js](https://github.com/immutable-js/immutable-js)

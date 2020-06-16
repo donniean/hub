@@ -1,38 +1,39 @@
 # Libraries/Frameworks
 
 - [Libraries/Frameworks](#librariesframeworks)
-  - [Boilerplates](#boilerplates)
+  - [Template](#template)
   - [UI](#ui)
   - [Styles](#styles)
   - [Icons](#icons)
-  - [Polyfill/Shim](#polyfillshim)
-  - [Utilities](#utilities)
-    - [String](#string)
-    - [Date](#date)
-    - [Async/Promise](#asyncpromise)
-  - [Validation/Check](#validationcheck)
+  - [Shim/Polyfill](#shimpolyfill)
+  - [Utils](#utils)
+  - [String](#string)
+  - [Object](#object)
+  - [Date](#date)
   - [Promise](#promise)
   - [Request](#request)
   - [Event](#event)
+  - [Number/Math](#numbermath)
+  - [Currency](#currency)
+  - [Validation/Check](#validationcheck)
   - [Modal/Alert/Toast/Notification/Dialog](#modalalerttoastnotificationdialog)
   - [Scroll/Infinite](#scrollinfinite)
   - [Image](#image)
     - [Gallery/Lightbox](#gallerylightbox)
-  - [Number/Math](#numbermath)
-  - [Currency](#currency)
   - [Gesture](#gesture)
-  - [Device](#device)
   - [Animations](#animations)
-  - [Template](#template)
-  - [Debugger](#debugger)
+  - [Device](#device)
+  - [Misc](#misc)
+  - [Templating](#templating)
   - [Mock](#mock)
+  - [Debugger](#debugger)
   - [Monorepo](#monorepo)
   - [React](#react)
   - [Node.js](#nodejs)
 
 ---
 
-## Boilerplates
+## Template
 
 - [html5-boilerplate](https://github.com/h5bp/html5-boilerplate)
 - [umd](https://github.com/umdjs/umd)
@@ -67,55 +68,49 @@
 
 ---
 
-## Polyfill/Shim
+## Shim/Polyfill
 
 - [Modernizr](https://github.com/modernizr/modernizr)
 - [core-js](https://github.com/zloirock/core-js)
 - [es6-shim](https://github.com/paulmillr/es6-shim)
-- [Promise.prototype.finally](https://github.com/es-shims/Promise.prototype.finally)
+- [es6-promise](https://github.com/stefanpenner/es6-promise)
+  - [promise-polyfill](https://github.com/taylorhakes/promise-polyfill)
 
 ---
 
-## Utilities
+## Utils
 
 - [jquery](https://github.com/jquery/jquery)
 - [lodash](https://github.com/lodash/lodash)
 - [qs](https://github.com/ljharb/qs)
-- [deepmerge](https://github.com/TehShrike/deepmerge)
-- [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
-
-### String
-
-- [node-uuid](https://github.com/kelektiv/node-uuid)
-- [crypto-random-string](https://github.com/sindresorhus/crypto-random-string)
-- [unique-string](https://github.com/sindresorhus/unique-string)
-
-### Date
-
-- [moment](https://github.com/moment/moment)
-
-### Async/Promise
-
-- [bluebird](https://github.com/petkaantonov/bluebird)
-- [pify](https://github.com/sindresorhus/pify)
-- [es6-promisify](https://github.com/digitaldesignlabs/es6-promisify)
-- [p-finally](https://github.com/sindresorhus/p-finally)
 
 ---
 
-## Validation/Check
+## String
 
-- [joi](https://github.com/hapijs/joi)
-- [yup](https://github.com/jquense/yup)
-- [validator.js](https://github.com/chriso/validator.js)
-- [is](https://github.com/enricomarino/is)
-- [is.js](https://github.com/arasatasaygin/is.js)
+- [uuid](https://github.com/kelektiv/node-uuid)
+- [crypto-random-string](https://github.com/sindresorhus/crypto-random-string)
+- [unique-string](https://github.com/sindresorhus/unique-string)
+
+---
+
+## Object
+
+- [deepmerge](https://github.com/TehShrike/deepmerge)
+
+---
+
+## Date
+
+- [moment](https://github.com/moment/moment)
 
 ---
 
 ## Promise
 
 - [bluebird](https://github.com/petkaantonov/bluebird)
+- [pify](https://github.com/sindresorhus/pify)
+  - [es6-promisify](https://github.com/digitaldesignlabs/es6-promisify)
 
 ---
 
@@ -131,6 +126,32 @@
 
 - [events](https://github.com/Gozala/events)
 - [eventemitter3](https://github.com/primus/eventemitter3)
+
+---
+
+## Number/Math
+
+- [big.js](https://github.com/MikeMcl/big.js/)
+- [Numeral-js](https://github.com/adamwdraper/Numeral-js)
+- [mathjs](https://github.com/josdejong/mathjs)
+
+---
+
+## Currency
+
+- [accounting.js](https://github.com/openexchangerates/accounting.js)
+- [dinero.js](https://github.com/sarahdayan/dinero.js)
+- [currency.js](https://github.com/scurker/currency.js)
+
+---
+
+## Validation/Check
+
+- [joi](https://github.com/hapijs/joi)
+- [yup](https://github.com/jquense/yup)
+- [validator.js](https://github.com/chriso/validator.js)
+- [is](https://github.com/enricomarino/is)
+- [is.js](https://github.com/arasatasaygin/is.js)
 
 ---
 
@@ -161,25 +182,16 @@
 
 ---
 
-## Number/Math
-
-- [big.js](https://github.com/MikeMcl/big.js/)
-- [Numeral-js](https://github.com/adamwdraper/Numeral-js)
-- [mathjs](https://github.com/josdejong/mathjs)
-
----
-
-## Currency
-
-- [accounting.js](https://github.com/openexchangerates/accounting.js)
-- [dinero.js](https://github.com/sarahdayan/dinero.js)
-- [currency.js](https://github.com/scurker/currency.js)
-
----
-
 ## Gesture
 
 - [hammer.js](https://github.com/hammerjs/hammer.js/)
+
+---
+
+## Animations
+
+- [animate.css](https://github.com/daneden/animate.css)
+- [Waves](https://github.com/fians/Waves)
 
 ---
 
@@ -192,17 +204,24 @@
 
 ---
 
-## Animations
+## Misc
 
-- [animate.css](https://github.com/daneden/animate.css)
-- [Waves](https://github.com/fians/Waves)
+- [coordtransform](https://github.com/wandergis/coordtransform) - 提供了百度坐标（BD09）、国测局坐标（火星坐标，GCJ02）、和 WGS84 坐标系之间的转换
 
 ---
 
-## Template
+## Templating
 
 - [handlebars.js](https://github.com/wycats/handlebars.js)
 - [pug](https://github.com/pugjs/pug)
+
+---
+
+## Mock
+
+- [json-server](https://github.com/typicode/json-server)
+- [faker.js](https://github.com/marak/Faker.js/)
+- [Mock](https://github.com/nuysoft/Mock)
 
 ---
 
@@ -212,14 +231,6 @@
 - [vConsole](https://github.com/Tencent/vConsole)
 - [Vorlonjs](https://github.com/MicrosoftDX/Vorlonjs)
 - [spy-debugger](https://github.com/wuchangming/spy-debugger)
-
----
-
-## Mock
-
-- [json-server](https://github.com/typicode/json-server)
-- [faker.js](https://github.com/marak/Faker.js/)
-- [Mock](https://github.com/nuysoft/Mock)
 
 ---
 
