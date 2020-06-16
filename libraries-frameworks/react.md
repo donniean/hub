@@ -1,11 +1,10 @@
 # [React](https://github.com/facebook/react)
 
 - [React](#react)
-  - [Official](#official)
   - [Resources](#resources)
   - [Tools](#tools)
   - [Starter Kit/Boilerplates](#starter-kitboilerplates)
-  - [Style](#style)
+  - [Styles](#styles)
   - [State](#state)
   - [Type Checker](#type-checker)
   - [Routing](#routing)
@@ -33,12 +32,6 @@
   - [Size/Position](#sizeposition)
   - [Gesture](#gesture)
   - [Animations](#animations)
-
----
-
-## Official
-
-[react](https://github.com/facebook/react)
 
 ---
 
@@ -72,7 +65,7 @@
 
 ---
 
-## Style
+## Styles
 
 - [styled-components](https://github.com/styled-components/styled-components)
   - [polished](https://github.com/styled-components/polished)
