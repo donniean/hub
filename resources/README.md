@@ -12,7 +12,7 @@
     - [Articles](#articles)
       - [iOS](#ios)
   - [Interview](#interview)
-  - [Style Guide](#style-guide)
+  - [Style Guide/Best Practice](#style-guidebest-practice)
   - [Surveys](#surveys)
   - [Utils/Tools](#utilstools)
   - [Git](#git)
@@ -118,7 +118,7 @@
 
 ---
 
-## Style Guide
+## Style Guide/Best Practice
 
 - [javascript](https://github.com/airbnb/javascript) - Airbnb JavaScript Style Guide
 - [standard](https://github.com/standard/standard) - JavaScript Standard Style

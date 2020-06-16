@@ -2,7 +2,7 @@
 
 - [Node.js](#nodejs)
   - [Resources](#resources)
-  - [Style Guide](#style-guide)
+  - [Style Guide/Best Practices](#style-guidebest-practices)
   - [Framework](#framework)
   - [Utils](#utils)
 
@@ -14,7 +14,7 @@
 
 ---
 
-## Style Guide
+## Style Guide/Best Practices
 
 - [nodebestpractices](https://github.com/goldbergyoni/nodebestpractices) - Node.js Best Practices
 
