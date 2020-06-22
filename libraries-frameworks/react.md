@@ -118,8 +118,9 @@
 
 ### Async
 
-- [react-async](https://github.com/async-library/react-async)
 - [swr](https://github.com/zeit/swr)
+- [react-query](https://github.com/tannerlinsley/react-query)
+- [react-async](https://github.com/async-library/react-async)
 
 ---
 
