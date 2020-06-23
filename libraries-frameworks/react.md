@@ -31,6 +31,7 @@
     - [Switch](#switch)
   - [Size/Position](#sizeposition)
   - [Gesture](#gesture)
+    - [Drag](#drag)
   - [Animations](#animations)
 
 ---
@@ -253,6 +254,12 @@
 ## Gesture
 
 - [react-swipeable](https://github.com/dogfessional/react-swipeable)
+
+### Drag
+
+- [react-rnd](https://github.com/bokuweb/react-rnd)
+- [re-resizable](https://github.com/bokuweb/re-resizable)
+- [react-split-pane](https://github.com/tomkp/react-split-pane)
 
 ---
 
