@@ -9,6 +9,8 @@
       - [Mac](#mac)
       - [Windows](#windows)
     - [Rules](#rules)
+      - [ACL](#acl)
+        - [ShadowsocksX-NG-R8 1.4.6-R8 (1) by leadscloud](#shadowsocksx-ng-r8-146-r8-1-by-leadscloud)
   - [Sketch](#sketch)
 
 ---
@@ -54,6 +56,26 @@
 - [ConnersHua 神机规则](https://github.com/ConnersHua/Profiles/tree/master) - branches/master
 - [Hackl0us 懒人规则](https://github.com/Hackl0us/SS-Rule-Snippet)
 - [h2y Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
+
+#### ACL
+
+##### ShadowsocksX-NG-R8 1.4.6-R8 (1) by leadscloud
+
+GFW LIST URL
+
+https://raw.githubusercontent.com/gfwlist/gfwlist/master/gfwlist.txt
+
+ACL 白名单列表 URL
+
+https://raw.githubusercontent.com/shadowsocks/shadowsocks-libev/master/acl/chn.acl
+
+ACL GFW LIST 列表 URL
+
+https://raw.githubusercontent.com/shadowsocks/shadowsocks-libev/master/acl/gfwlist.acl
+
+ACL Back China URL
+
+https://raw.githubusercontent.com/shadowsocks/shadowsocks-libev/master/acl/server_block_chn.acl
 
 ---
 
