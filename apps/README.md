@@ -37,7 +37,8 @@
 
 #### Mac
 
-- [ShadowsocksX-NG-R8](https://github.com/leadscloud/ShadowsocksX-NG-R)
+- [ShadowsocksX-NG-R8](https://github.com/leadscloud/ShadowsocksX-NG-R) - leadscloud
+  - [ShadowsocksX-NG-R8](https://github.com/paradiseduo/ShadowsocksX-NG-R8) - paradiseduo
 - [ClashXR](https://github.com/WhoJave/clashX)
 
 #### Windows
