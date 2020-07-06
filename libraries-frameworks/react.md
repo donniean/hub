@@ -257,9 +257,9 @@
 
 ### Drag
 
-- [react-rnd](https://github.com/bokuweb/react-rnd)
-- [re-resizable](https://github.com/bokuweb/re-resizable)
 - [react-split-pane](https://github.com/tomkp/react-split-pane)
+- [re-resizable](https://github.com/bokuweb/re-resizable)
+- [react-rnd](https://github.com/bokuweb/react-rnd)
 
 ---
 
