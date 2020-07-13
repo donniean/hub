@@ -43,7 +43,7 @@
 ## UI
 
 - [bulma](https://github.com/jgthms/bulma)
-- [material-components-web](https://github.com/material-components/material-components-web)
+- [materialize](https://github.com/Dogfalo/materialize)
 
 ---
 
