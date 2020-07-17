@@ -85,6 +85,7 @@
 - [jquery](https://github.com/jquery/jquery)
 - [lodash](https://github.com/lodash/lodash)
 - [qs](https://github.com/ljharb/qs)
+  - [qs](https://github.com/lukeed/qss)
 
 ---
 
