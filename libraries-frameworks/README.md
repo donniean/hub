@@ -25,6 +25,8 @@
   - [Device](#device)
   - [Misc](#misc)
   - [Templating](#templating)
+  - [Store](#store)
+  - [Database](#database)
   - [Mock](#mock)
   - [Debugger](#debugger)
   - [Monorepo](#monorepo)
@@ -214,6 +216,20 @@
 
 - [handlebars.js](https://github.com/wycats/handlebars.js)
 - [pug](https://github.com/pugjs/pug)
+
+---
+
+## Store
+
+- [store](https://github.com/nbubna/store) - store2
+- [localForage](https://github.com/localForage/localForage)
+
+---
+
+## Database
+
+- [lowdb](https://github.com/typicode/lowdb)
+- [LokiJS](https://github.com/techfort/LokiJS)
 
 ---
 
