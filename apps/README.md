@@ -54,6 +54,7 @@
 - [ACL4SSR](https://github.com/ACL4SSR/ACL4SSR)
 - [ConnersHua 神机规则](https://github.com/ConnersHua/Profiles/tree/master) - branches/master
   - [DivineEngine](https://github.com/DivineEngine/Profiles) - branches/master
+- [eHpo](https://github.com/eHpo1/Rules)
 - [Hackl0us 懒人规则](https://github.com/Hackl0us/SS-Rule-Snippet)
 - [h2y Shadowrocket-ADBlock-Rules](https://github.com/h2y/Shadowrocket-ADBlock-Rules)
 
