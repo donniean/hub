@@ -3,7 +3,7 @@
 - [Resources](#resources)
   - [Docs](#docs)
   - [Collections](#collections)
-  - [Navs](#navs)
+  - [Nav](#nav)
   - [Tutorials/Guides](#tutorialsguides)
   - [Rank](#rank)
   - [Read](#read)
@@ -42,7 +42,7 @@
 
 ---
 
-## Navs
+## Nav
 
 - [印记中文](https://www.docschina.org/)
 - [前端文档工具收藏夹](https://www.html.cn/nav/)

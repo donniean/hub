@@ -1,6 +1,7 @@
 # Apps
 
 - [Apps](#apps)
+  - [Nav](#nav)
   - [Chrome](#chrome)
   - [ShadowSocks](#shadowsocks)
     - [Servers](#servers)
@@ -11,6 +12,12 @@
     - [Rules](#rules)
       - [ACL](#acl)
   - [Sketch](#sketch)
+
+---
+
+## Nav
+
+-[Best-App](https://github.com/hzlzh/Best-App)
 
 ---
 
