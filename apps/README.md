@@ -48,6 +48,7 @@
 - [ShadowsocksX-NG-R8](https://github.com/leadscloud/ShadowsocksX-NG-R) - leadscloud
   - [ShadowsocksX-NG-R8](https://github.com/paradiseduo/ShadowsocksX-NG-R8) - paradiseduo
 - [clashX](https://github.com/yichengchen/clashX)
+- [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg)
 
 #### Windows
 
