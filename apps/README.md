@@ -47,13 +47,12 @@
 
 - [ShadowsocksX-NG-R8](https://github.com/leadscloud/ShadowsocksX-NG-R) - leadscloud
   - [ShadowsocksX-NG-R8](https://github.com/paradiseduo/ShadowsocksX-NG-R8) - paradiseduo
-- [ClashXR](https://github.com/WhoJave/clashX)
+- [clashX](https://github.com/yichengchen/clashX)
 
 #### Windows
 
 - [ShadowsocksR-Windows](https://github.com/HMBSbige/ShadowsocksR-Windows)
-- [clashrdev](https://github.com/frainzy1477/clashrdev) - ShadowSocksR
-- [clash](https://github.com/WhoJave/clash) - ShadowSocksR
+- [clash_for_windows_pkg](https://github.com/Fndroid/clash_for_windows_pkg)
 
 ### Rules
 
