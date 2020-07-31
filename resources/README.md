@@ -8,6 +8,7 @@
   - [Rank](#rank)
   - [Read](#read)
     - [Websites](#websites)
+    - [Journals](#journals)
     - [Repos](#repos)
     - [Articles](#articles)
       - [iOS](#ios)
@@ -80,6 +81,12 @@
 - [阮一峰的网络日志](http://www.ruanyifeng.com/blog/)
 - [张鑫旭](https://www.zhangxinxu.com/)
 - [W3cplus](https://www.w3cplus.com/)
+
+### Journals
+
+- [奇舞周刊](https://weekly.75team.com/)
+- [印记中文周刊](http://weekly.docschina.org/)
+- [FEX 技术周刊](https://fex.baidu.com/weekly/)
 
 ### Repos
 
