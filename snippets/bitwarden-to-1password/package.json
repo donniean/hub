@@ -1,0 +1,7 @@
+{
+  "name": "bitwarden-to-1password",
+  "main": "index.js",
+  "dependencies": {
+    "fs-extra": "^9.0.1"
+  }
+}

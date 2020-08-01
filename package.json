@@ -25,9 +25,7 @@
       "pre-commit": "lint-staged"
     }
   },
-  "dependencies": {
-    "fs-extra": "^9.0.0"
-  },
+  "dependencies": {},
   "devDependencies": {
     "babel-eslint": "^10.1.0",
     "eslint": "^7.1.0",
