@@ -2,8 +2,8 @@
 
 - [Proxy](#proxy)
   - [Port](#port)
-    - [Mac](#mac)
-    - [Windows](#windows)
+    - [ShadowsocksR](#shadowsocksr)
+    - [Clash](#clash)
   - [Git](#git)
   - [Terminal](#terminal)
   - [npm](#npm)
@@ -11,16 +11,24 @@
 
 ## Port
 
-### Mac
+### ShadowsocksR
+
+Mac
 
 ```js
 const [Socks5_Port, HTTP_Port] = [7891, 7890];
 ```
 
-### Windows
+Windows
 
 ```js
 const [Socks5_Port, HTTP_Port] = [7891, 7891];
+```
+
+### Clash
+
+```js
+const [Socks5_Port, HTTP_Port] = [7890, 7890];
 ```
 
 ## Git
