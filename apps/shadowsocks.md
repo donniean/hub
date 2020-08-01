@@ -73,3 +73,5 @@ https://raw.githubusercontent.com/shadowsocks/shadowsocks-libev/master/acl/serve
 ---
 
 ## [subconverter](https://github.com/tindy2013/subconverter)
+
+- [sub-web](https://github.com/CareyWang/sub-web)
