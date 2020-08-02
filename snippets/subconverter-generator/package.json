@@ -1,0 +1,11 @@
+{
+  "name": "subconverter-generator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {},
+  "dependencies": {
+    "lodash": "^4.17.19",
+    "qs": "^6.9.4"
+  }
+}
