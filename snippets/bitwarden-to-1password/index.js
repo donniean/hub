@@ -4,18 +4,18 @@ const { readJsonSync, outputFileSync } = require('fs-extra');
 function get1PasswordJson({ filePath }) {
   const data = readJsonSync(filePath);
   const { items } = data;
-  let loginList = [];
+  const loginList = [];
 
   items.forEach((item) => {
     const { name, fields = [], login } = item;
     if (login) {
       const { uris, username, password } = login;
       const [{ uri }] = uris;
-      let fieldsMap = {};
+      const fieldsMap = {};
       if (fields.length > 0) {
         fields.forEach((field) => {
-          const { name, value } = field;
-          fieldsMap[name] = value;
+          const { name: n, value } = field;
+          fieldsMap[n] = value;
         });
       }
       loginList.push({

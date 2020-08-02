@@ -3,7 +3,7 @@ const { readFileSync, outputFileSync } = require('fs-extra');
 
 const data = readFileSync(resolve('data.csv'), { encoding: 'utf-8' });
 const array = data.split(/\n|\r|\n\r|\r\n/);
-let list = [];
+const list = [];
 
 array.forEach((item) => {
   if (!list.includes(item)) {

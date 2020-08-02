@@ -1,22 +1,22 @@
 function debounce(func, delay) {
   let id = null;
-  return function () {
+  return function fn(...args) {
     clearTimeout(id);
     id = setTimeout(() => {
-      func.apply(this, arguments);
+      func.apply(this, args);
     }, delay);
   };
 }
 
 function throttle(func, delay) {
   let isExec = true;
-  return function () {
+  return function fn(...args) {
     if (!isExec) {
       return;
     }
     isExec = false;
     setTimeout(() => {
-      func.apply(this, arguments);
+      func.apply(this, args);
       isExec = true;
     }, delay);
   };
