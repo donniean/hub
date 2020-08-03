@@ -9,6 +9,7 @@ const config = {
     { name: 'commitizen' },
     { name: 'create-react-app' },
     { name: 'http-server' },
+    { name: 'nodemon' },
     { name: 'npm' },
     { name: 'npm-check' },
     { name: 'npm-check-updates' },
