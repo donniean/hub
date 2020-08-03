@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {},
   "dependencies": {
+    "clipboardy": "^2.3.0",
     "lodash": "^4.17.19",
     "qs": "^6.9.4"
   }

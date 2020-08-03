@@ -1,1 +1,3 @@
-// https://github.com/tindy2013/subconverter/blob/master/README-cn.md
+// https://github.com/tindy2013/subconverter
+
+require('./src/index');

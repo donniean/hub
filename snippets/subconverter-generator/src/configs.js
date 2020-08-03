@@ -1,5 +1,5 @@
 module.exports = {
   target: 'clash',
-  url: 'URL',
+  url: 'https://www.google.com/',
   config: '',
 };
