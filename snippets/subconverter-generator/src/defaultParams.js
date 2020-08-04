@@ -9,6 +9,5 @@ module.exports = {
   config,
   emoji: true,
   udp: true,
-  list: true,
   new_name: true,
 };
