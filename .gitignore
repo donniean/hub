@@ -368,3 +368,5 @@ $RECYCLE.BIN/
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/code,grunt,jetbrains,jetbrains+all,macos,node,osx,sass,visualstudiocode,windows
+
+snippets\subconverter-generator\src\params.js

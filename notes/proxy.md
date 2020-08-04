@@ -22,7 +22,7 @@ const [Socks5_Port, HTTP_Port] = [7891, 7890];
 Windows
 
 ```js
-const [Socks5_Port, HTTP_Port] = [7891, 7891];
+const [Socks5_Port, HTTP_Port] = [7890, 7890];
 ```
 
 ### Clash
@@ -30,6 +30,8 @@ const [Socks5_Port, HTTP_Port] = [7891, 7891];
 ```js
 const [Socks5_Port, HTTP_Port] = [7890, 7890];
 ```
+
+---
 
 ## Git
 
