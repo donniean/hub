@@ -1,15 +1,12 @@
-const get = require('lodash/get');
 const { stringify } = require('qs');
 const { writeSync } = require('clipboardy');
 
-const { configs } = require('./constants');
-const defaultConfigs = require('./defaultConfigs');
-const { target, url, config: configPath, ...rest } = require('./configs');
+const defaultParams = require('./defaultParams');
+const params = require('./params');
 
-const config = get(configs, configPath);
-const object = { ...defaultConfigs, target, url, config, rest };
+const object = { ...defaultParams, ...params };
 const string = stringify(object);
-const a = `http://127.0.0.1:25500/sub?${string}`;
-writeSync(a);
+const profileURL = `http://127.0.0.1:25500/sub?${string}`;
+writeSync(profileURL);
 
-console.log(a);
+console.log(profileURL);
