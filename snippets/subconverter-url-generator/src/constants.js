@@ -6,6 +6,8 @@ const configs = {
   ACL4SSR: {
     Online_NoAuto:
       'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini',
+    Online_Full_NoAuto:
+      'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_Full_NoAuto.ini',
   },
   // https://github.com/DivineEngine/Profiles
   DivineEngine:
