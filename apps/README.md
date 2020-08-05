@@ -3,7 +3,6 @@
 - [Apps](#apps)
   - [Nav](#nav)
   - [Chrome](#chrome)
-  - [ShadowSocks](#shadowsocks)
   - [Sketch](#sketch)
 
 ---
@@ -17,10 +16,6 @@
 ## Chrome
 
 - [baiduyun](https://github.com/syhyz1990/baiduyun) - 🖖 油猴脚本 一个脚本搞定百度网盘下载
-
----
-
-## [ShadowSocks](./shadowsocks.md)
 
 ---
 
