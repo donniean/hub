@@ -75,3 +75,6 @@ https://raw.githubusercontent.com/shadowsocks/shadowsocks-libev/master/acl/serve
 ## [subconverter](https://github.com/tindy2013/subconverter)
 
 - [sub-web](https://github.com/CareyWang/sub-web)
+- [ACL4SSR](https://acl4ssr.netlify.app/)
+- [py6.pw](https://subcon.py6.pw/)
+- [acl4ssr-sub](https://acl4ssr-sub.github.io/)
