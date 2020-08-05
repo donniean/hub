@@ -4,8 +4,8 @@ const configs = {
     'https://raw.githubusercontent.com/lhie1/Rules/master/Shadowrocket/Complete.conf',
   // https://github.com/ACL4SSR/ACL4SSR
   ACL4SSR: {
-    Online:
-      'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online.ini',
+    Online_NoAuto:
+      'https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/config/ACL4SSR_Online_NoAuto.ini',
   },
   // https://github.com/DivineEngine/Profiles
   DivineEngine:
