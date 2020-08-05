@@ -9,5 +9,6 @@ module.exports = {
   config,
   emoji: true,
   udp: true,
+  filename: 'ACL4SSR_Online_NoAuto',
   new_name: true,
 };
