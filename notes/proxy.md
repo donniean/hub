@@ -16,7 +16,7 @@
 Mac
 
 ```js
-const [Socks5_Port, HTTP_Port] = [7891, 7890];
+const [Socks5_Port, HTTP_Port] = [7890, 7891];
 ```
 
 Windows
