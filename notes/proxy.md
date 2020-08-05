@@ -16,19 +16,19 @@
 Mac
 
 ```js
-const [Socks5_Port, HTTP_Port] = [7890, 7891];
+const [SOCKS5_PORT, HTTP_PORT] = [7890, 7891];
 ```
 
 Windows
 
 ```js
-const [Socks5_Port, HTTP_Port] = [7890, 7890];
+const [SOCKS5_PORT, HTTP_PORT] = [7890, 7890];
 ```
 
 ### Clash
 
 ```js
-const [Socks5_Port, HTTP_Port] = [7890, 7890];
+const [SOCKS5_PORT, HTTP_PORT] = [7890, 7890];
 ```
 
 ---
@@ -38,8 +38,18 @@ const [Socks5_Port, HTTP_Port] = [7890, 7890];
 Command
 
 ```shell
-git config --global http.proxy 'socks5://127.0.0.1:Socks5_Port'
-git config --global https.proxy 'socks5://127.0.0.1:Socks5_Port'
+git config --global --get http.proxy
+git config --global --get https.proxy
+```
+
+```shell
+git config --global http.proxy 'socks5://127.0.0.1:SOCKS5_PORT'
+git config --global https.proxy 'socks5://127.0.0.1:SOCKS5_PORT'
+```
+
+```shell
+git config --global --unset http.proxy
+git config --global --unset https.proxy
 ```
 
 Config File
@@ -48,11 +58,11 @@ Config File
 $HOME/.gitconfig
 ```
 
-```shell
+```ini
 [http]
-  proxy = socks5://127.0.0.1:Socks5_Port
+  proxy = socks5://127.0.0.1:SOCKS5_PORT
 [https]
-  proxy = socks5://127.0.0.1:Socks5_Port
+  proxy = socks5://127.0.0.1:SOCKS5_PORT
 ```
 
 ---
@@ -66,7 +76,7 @@ $HOME/.zshrc
 ```
 
 ```shell
-export all_proxy=socks5://127.0.0.1:Socks5_Port
+export all_proxy=socks5://127.0.0.1:SOCKS5_PORT
 ```
 
 ---
@@ -76,8 +86,17 @@ export all_proxy=socks5://127.0.0.1:Socks5_Port
 Command
 
 ```shell
-npm config set proxy http://127.0.0.1:HTTP_Port
-npm config set https-proxy http://127.0.0.1:HTTP_Port
+npm config get https-proxy
+```
+
+```shell
+npm config set proxy http://127.0.0.1:HTTP_PORT
+npm config set https-proxy http://127.0.0.1:HTTP_PORT
+```
+
+```shell
+npm config delete proxy
+npm config delete https-proxy
 ```
 
 Config File
@@ -86,9 +105,9 @@ Config File
 $HOME/.npmrc
 ```
 
-```shell
-proxy=http://127.0.0.1:HTTP_Port/
-https-proxy=http://127.0.0.1:HTTP_Port
+```ini
+proxy=http://127.0.0.1:HTTP_PORT/
+https-proxy=http://127.0.0.1:HTTP_PORT
 ```
 
 ## [Scoop](https://github.com/lukesampson/scoop/wiki/Using-Scoop-behind-a-proxy)
@@ -96,7 +115,11 @@ https-proxy=http://127.0.0.1:HTTP_Port
 Command
 
 ```shell
-scoop config proxy 127.0.0.1:HTTP_Port
+scoop config proxy
+```
+
+```shell
+scoop config proxy 127.0.0.1:HTTP_PORT
 ```
 
 Config File
@@ -107,6 +130,6 @@ $HOME/.config/scoop/config.json
 
 ```json
 {
-  "proxy": "127.0.0.1:HTTP_Port"
+  "proxy": "127.0.0.1:HTTP_PORT"
 }
 ```
