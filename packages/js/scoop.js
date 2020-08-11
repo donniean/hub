@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/extensions
 import init from './app.js';
 
 const config = {
@@ -12,8 +13,8 @@ const config = {
     { name: 'nginx' },
     { name: 'nodejs' },
     { name: 'openssh' },
-    { name: 'smartgit' },
     { name: 'smartsvn' },
+    { name: 'sourcetree' },
     { name: 'trafficmonitor' },
     { name: 'yarn' },
   ],
