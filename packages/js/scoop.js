@@ -14,7 +14,6 @@ const config = {
     { name: 'nodejs' },
     { name: 'openssh' },
     { name: 'smartsvn' },
-    { name: 'sourcetree' },
     { name: 'trafficmonitor' },
     { name: 'yarn' },
   ],
