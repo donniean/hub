@@ -1,3 +1,4 @@
+// eslint-disable-next-line import/extensions
 import init from './app.js';
 
 const config = {

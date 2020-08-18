@@ -7,6 +7,7 @@ const config = {
   uninstallCommand: 'scoop uninstall',
   installList: [
     { name: '7zip' },
+    { name: 'fork' },
     { name: 'geekuninstaller' },
     { name: 'git' },
     { name: 'git-lfs' },
