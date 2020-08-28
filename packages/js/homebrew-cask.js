@@ -5,7 +5,17 @@ const config = {
   elementId: 'wrapper',
   installCommand: 'brew cask install',
   uninstallCommand: 'brew cask install',
-  installList: [{ name: 'fork' }, { name: 'smartsvn' }],
+  installList: [
+    {
+      name: 'fork',
+    },
+    {
+      name: 'notion',
+    },
+    {
+      name: 'smartsvn',
+    },
+  ],
 };
 
 init(config);
