@@ -14,6 +14,7 @@ const config = {
     { name: 'nginx' },
     { name: 'nodejs' },
     { name: 'openssh' },
+    { name: 'potplayer' },
     { name: 'smartsvn' },
     { name: 'trafficmonitor' },
     { name: 'yarn' },
