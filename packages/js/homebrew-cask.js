@@ -19,6 +19,9 @@ const config = {
       name: 'smartsvn',
     },
     {
+      name: 'thunder',
+    },
+    {
       name: 'webstorm',
     },
   ],
