@@ -6,7 +6,7 @@ const config = {
   installCommand: 'npm install -g',
   uninstallCommand: 'npm uninstall -g',
   installList: [
-    { name: '@acmilank22/generator-configs' },
+    { name: '@donniean/generator-configs' },
     { name: 'commitizen' },
     { name: 'create-react-app' },
     { name: 'http-server' },
