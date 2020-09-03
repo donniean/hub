@@ -2,13 +2,13 @@
   "name": "collections",
   "version": "1.0.0",
   "description": "",
-  "homepage": "https://github.com/acmilank22/collections#readme",
+  "homepage": "https://github.com/donniean/collections#readme",
   "bugs": {
-    "url": "https://github.com/acmilank22/collections/issues"
+    "url": "https://github.com/donniean/collections/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/acmilank22/collections.git"
+    "url": "git+https://github.com/donniean/collections.git"
   },
   "license": "MIT",
   "author": "",
