@@ -32,6 +32,7 @@
   - [Monorepo](#monorepo)
   - [React](#react)
   - [Node.js](#nodejs)
+  - [Wechat Miniprogram](#wechat-miniprogram)
 
 ---
 
@@ -263,3 +264,7 @@
 ---
 
 ## [Node.js](./nodejs.md)
+
+---
+
+## [Wechat Miniprogram](./wechat-miniprogram.md)
