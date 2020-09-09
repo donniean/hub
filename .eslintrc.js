@@ -21,6 +21,7 @@ module.exports = {
     parser: 'babel-eslint',
   },
   rules: {
+    'node/no-missing-import': 'off',
     'node/no-unsupported-features/es-builtins': [
       'error',
       { version: '>=12.0.0', ignores: [] },
@@ -45,9 +46,6 @@ module.exports = {
         'gulpfile.*.js',
         'postcss.config.js',
         'postcss.*.js',
-        'config-overrides.js',
-        'config-overrides.*.js',
-        '**/config-overrides/**/*.js',
       ],
       rules: {
         'node/no-unpublished-import': 'off',
