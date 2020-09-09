@@ -16,10 +16,7 @@ const config = {
     { name: 'sort-package-json' },
     { name: 'yo' },
   ],
-  alternativeList: [
-    { name: '@react-native-community/cli' },
-    { name: 'react-native-rename' },
-  ],
+  alternativeList: [],
   uninstallList: [],
   url: 'https://npms.io/search?q=',
 };
