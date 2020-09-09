@@ -7,9 +7,6 @@ const config = {
   uninstallCommand: 'brew cask install',
   installList: [
     {
-      name: 'clash-for-windows',
-    },
-    {
       name: 'fork',
     },
     {
