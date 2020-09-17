@@ -6,7 +6,7 @@ const config = {
   installCommand: 'npm install -g',
   uninstallCommand: 'npm uninstall -g',
   installList: [
-    { name: '@donniean/generator-configs' },
+    { name: '@donniean/configs' },
     { name: 'http-server' },
     { name: 'nodemon' },
     { name: 'npm' },
@@ -14,7 +14,6 @@ const config = {
     { name: 'npm-check-updates' },
     { name: 'serve' },
     { name: 'sort-package-json' },
-    { name: 'yo' },
   ],
   alternativeList: [],
   uninstallList: [],
