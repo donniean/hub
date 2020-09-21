@@ -13,9 +13,6 @@ const config = {
       name: 'notion',
     },
     {
-      name: 'smartsvn',
-    },
-    {
       name: 'thunder',
     },
     {
