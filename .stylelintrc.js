@@ -1,11 +1,16 @@
 module.exports = {
-  extends: ['stylelint-config-standard', 'stylelint-prettier/recommended'],
+  extends: [
+    'stylelint-config-standard',
+    'stylelint-config-rational-order',
+    'stylelint-prettier/recommended',
+  ],
+  plugins: ['stylelint-order'],
   rules: {
     'color-named': ['never', { ignore: ['inside-function'] }],
     'font-family-name-quotes': 'always-where-recommended',
     'unit-no-unknown': [true, { ignoreUnits: ['rpx'] }],
     'selector-type-no-unknown': [true, { ignoreTypes: ['page'] }],
-    'value-keyword-case': 'lower',
+    'value-keyword-case': ['lower', { ignoreKeywords: [{}] }],
     'shorthand-property-no-redundant-values': [true, { severity: 'warning' }],
     'property-no-vendor-prefix': [true, { severity: 'warning' }],
     'declaration-block-no-redundant-longhand-properties': [
