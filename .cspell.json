@@ -2,7 +2,6 @@
   "version": "0.1",
   "language": "en",
   "words": [
-    "appcan",
     "browserslistrc",
     "builtins",
     "chunkhash",
@@ -13,6 +12,7 @@
     "devtool",
     "donniean",
     "editorconfig",
+    "eslint",
     "eslintignore",
     "favicons",
     "gitattributes",
@@ -40,6 +40,7 @@
     "**/package.json",
     "**/package-lock.json",
     "**/.gitattributes",
-    "**/.gitignore"
+    "**/.gitignore",
+    "**/.htmlhintrc"
   ]
 }

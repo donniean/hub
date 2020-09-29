@@ -13,15 +13,27 @@ module.exports = {
     es6: true,
     es2017: true,
     es2020: true,
+    es2021: true,
   },
   plugins: ['html'],
   root: true,
-  parserOptions: {
-    ecmaVersion: 2020,
-    sourceType: 'module',
-    parser: 'babel-eslint',
-  },
   rules: {
+    'no-useless-call': 'error',
+    'init-declarations': ['error', 'always'],
+    'import/order': [
+      'error',
+      {
+        groups: [
+          'builtin',
+          'external',
+          'internal',
+          ['parent', 'sibling', 'index'],
+          'object',
+          'unknown',
+        ],
+        'newlines-between': 'always',
+      },
+    ],
     'node/no-missing-import': 'off',
     'node/no-unsupported-features/es-builtins': [
       'error',
@@ -35,6 +47,11 @@ module.exports = {
       'error',
       { version: '>=12.0.0', ignores: [] },
     ],
+  },
+  parserOptions: {
+    ecmaVersion: 2021,
+    sourceType: 'module',
+    parser: 'babel-eslint',
   },
   overrides: [
     {
