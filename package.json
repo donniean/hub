@@ -11,7 +11,7 @@
     "url": "git+https://github.com/donniean/collections.git"
   },
   "license": "MIT",
-  "author": "",
+  "author": "Donnie An",
   "main": "index.js",
   "scripts": {
     "prettier": "npx prettier \"**/*.{js,css,html,json,md}\"",
