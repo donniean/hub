@@ -24,6 +24,7 @@
     "miniprogram",
     "prettierignore",
     "sourcemap",
+    "sshpass",
     "stylelint",
     "stylelintignore",
     "stylelintrc",
