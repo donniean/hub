@@ -119,9 +119,8 @@
 
 ### Async
 
-- [swr](https://github.com/zeit/swr)
+- [swr](https://github.com/vercel/swr) ![GitHub Repo stars](https://img.shields.io/github/stars/vercel/swr?logo=github&style=flat) ![GitHub last commit](https://img.shields.io/github/last-commit/vercel/swr?logo=github&style=flat) ![npm](https://img.shields.io/npm/dw/swr?logo=npm) ![npms score](https://badges.npms.io/swr.svg)
 - [react-query](https://github.com/tannerlinsley/react-query)
-- [react-async](https://github.com/async-library/react-async)
 
 ---
 
