@@ -82,10 +82,12 @@
   - [redux-saga](https://github.com/redux-saga/redux-saga)
   - [redux-observable](https://github.com/redux-observable/redux-observable)
 - [mobx](https://github.com/mobxjs/mobx)
+- [Recoil](https://github.com/facebookexperimental/Recoil)
 - [unstated](https://github.com/jamiebuilds/unstated)
   - [unstated-next](https://github.com/jamiebuilds/unstated-next)
 - [constate](https://github.com/diegohaz/constate)
 - [easy-peasy](https://github.com/ctrlplusb/easy-peasy)
+- [xstate](https://github.com/davidkpiano/xstate)
 
 ---
 
