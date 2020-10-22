@@ -6,6 +6,7 @@
   - [Starter Kit/Boilerplates](#starter-kitboilerplates)
   - [Styles](#styles)
   - [State](#state)
+    - [Immutable](#immutable)
   - [Type Checker](#type-checker)
   - [Routing](#routing)
   - [UI](#ui)
@@ -88,6 +89,11 @@
 - [constate](https://github.com/diegohaz/constate)
 - [easy-peasy](https://github.com/ctrlplusb/easy-peasy)
 - [xstate](https://github.com/davidkpiano/xstate)
+
+### Immutable
+
+- [immer](https://github.com/immerjs/immer)
+- [immutable-js](https://github.com/immutable-js/immutable-js)
 
 ---
 
