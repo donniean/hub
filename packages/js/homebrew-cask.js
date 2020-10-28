@@ -5,7 +5,12 @@ const config = {
   elementId: 'wrapper',
   installCommand: 'brew cask install',
   uninstallCommand: 'brew cask install',
-  installList: [{ name: 'fork' }, { name: 'thunder' }, { name: 'webstorm' }],
+  installList: [
+    { name: 'cheatsheet' },
+    { name: 'fork' },
+    { name: 'thunder' },
+    { name: 'webstorm' },
+  ],
 };
 
 init(config);
