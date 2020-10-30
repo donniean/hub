@@ -12,7 +12,6 @@ const config = {
     { name: 'nginx' },
     { name: 'node@12' },
     { name: 'sshpass' },
-    { name: 'subversion' },
     { name: 'tree' },
     { name: 'yarn' },
     { name: 'zsh' },
