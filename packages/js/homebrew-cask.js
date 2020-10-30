@@ -6,8 +6,10 @@ const config = {
   installCommand: 'brew cask install',
   uninstallCommand: 'brew cask uninstall',
   installList: [
+    { name: 'appcleaner' },
     { name: 'cheatsheet' },
     { name: 'fork' },
+    { name: 'iina' },
     { name: 'thunder' },
     { name: 'webstorm' },
   ],
