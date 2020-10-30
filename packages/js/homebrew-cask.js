@@ -4,7 +4,7 @@ import init from './app.js';
 const config = {
   elementId: 'wrapper',
   installCommand: 'brew cask install',
-  uninstallCommand: 'brew cask install',
+  uninstallCommand: 'brew cask uninstall',
   installList: [
     { name: 'cheatsheet' },
     { name: 'fork' },
