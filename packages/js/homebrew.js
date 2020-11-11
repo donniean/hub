@@ -10,7 +10,7 @@ const config = {
     { name: 'git-lfs' },
     { name: 'memcached' },
     { name: 'nginx' },
-    { name: 'node@12' },
+    { name: 'node@14' },
     { name: 'sshpass' },
     { name: 'tree' },
     { name: 'yarn' },
