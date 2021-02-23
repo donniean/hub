@@ -95,6 +95,7 @@
 - [uuid](https://github.com/kelektiv/node-uuid)
 - [crypto-random-string](https://github.com/sindresorhus/crypto-random-string)
 - [unique-string](https://github.com/sindresorhus/unique-string)
+- [nanoid](https://github.com/ai/nanoid/)
 
 ---
 
