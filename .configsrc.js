@@ -10,6 +10,7 @@ module.exports = {
     cspell: true,
     commitlint: true,
     'lint-staged': true,
+    husky: true,
     gitignore: true,
     gitattributes: true,
     license: true,
