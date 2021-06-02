@@ -1,24 +1,32 @@
-function debounce(func, delay) {
+function debounce(func, wait) {
   let id = null;
+
   return function fn(...args) {
-    clearTimeout(id);
+    if (id) {
+      clearTimeout(id);
+    }
+
     id = setTimeout(() => {
       func.apply(this, args);
-    }, delay);
+    }, wait);
   };
 }
 
-function throttle(func, delay) {
+function throttle(func, wait) {
   let isExec = true;
+
   return function fn(...args) {
     if (!isExec) {
       return;
     }
+
     isExec = false;
+
+    func.apply(this, args);
+
     setTimeout(() => {
-      func.apply(this, args);
       isExec = true;
-    }, delay);
+    }, wait);
   };
 }
 
