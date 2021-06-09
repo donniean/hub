@@ -1,12 +1,12 @@
 function debounce(func, wait) {
-  let id = null;
+  let timer = null;
 
   return function fn(...args) {
-    if (id) {
-      clearTimeout(id);
+    if (timer) {
+      clearTimeout(timer);
     }
 
-    id = setTimeout(() => {
+    timer = setTimeout(() => {
       func.apply(this, args);
     }, wait);
   };
