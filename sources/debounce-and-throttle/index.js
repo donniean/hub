@@ -30,4 +30,18 @@ function throttle(func, wait) {
   };
 }
 
-export { debounce, throttle };
+function throttle2(func, wait) {
+  let lastTime = null;
+
+  return function fn(...args) {
+    if (new Date().getTime() - lastTime < wait) {
+      return;
+    }
+
+    lastTime = new Date().getTime();
+
+    func.apply(this, args);
+  };
+}
+
+module.exports = { debounce, throttle, throttle2 };
