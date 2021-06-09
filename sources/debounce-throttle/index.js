@@ -1,3 +1,4 @@
+// TODO: immediate
 function debounce(func, wait) {
   let timer = null;
 

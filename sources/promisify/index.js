@@ -1,26 +1,37 @@
-const fs = require('fs');
-
 function promisify(func) {
   return function fn(...args) {
     return new Promise((resolve, reject) => {
-      func(...args, (err, value) => {
+      const callback = (err, ...values) => {
         if (err) {
           reject(err);
         } else {
-          resolve(value);
+          resolve(...values);
         }
-      });
+      };
+
+      func.call(this, ...args, callback);
     });
   };
 }
 
-const f = promisify(fs.stat);
+function asyncFunc(success) {
+  console.log(this);
+  setTimeout(() => {
+    success(0, 'hello');
+  }, 1000);
+}
 
-f('.')
+const o = {
+  a: 'n',
+  p: promisify(asyncFunc),
+};
+
+o.p()
   .then((value) => {
-    console.log('resolve');
-    console.log(value);
+    console.log('resolve', value);
   })
   .catch((err) => {
-    console.log(err);
+    console.log('reject', err);
   });
+
+module.exports = promisify;
