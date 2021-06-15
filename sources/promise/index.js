@@ -53,7 +53,7 @@ class CustomPromise {
   }
 
   catch(onRejected) {
-    this.then(() => {}, onRejected);
+    this.then(null, onRejected);
   }
 }
 
