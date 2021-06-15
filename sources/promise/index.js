@@ -16,7 +16,11 @@ class CustomPromise {
       if (this.status === STATUS_MAP.PENDING) {
         this.status = STATUS_MAP.FULFILLED;
         this.value = value;
-        this.resolvedCallbacks.forEach((callback) => callback(value));
+        this.resolvedCallbacks.forEach((callback) => {
+          if (typeof callback === 'function') {
+            callback(value);
+          }
+        });
       }
     };
 
@@ -24,7 +28,11 @@ class CustomPromise {
       if (this.status === STATUS_MAP.PENDING) {
         this.status = STATUS_MAP.REJECTED;
         this.reason = reason;
-        this.rejectedCallbacks.forEach((callback) => callback(reason));
+        this.rejectedCallbacks.forEach((callback) => {
+          if (typeof callback === 'function') {
+            callback(reason);
+          }
+        });
       }
     };
 
@@ -57,10 +65,10 @@ class CustomPromise {
   }
 }
 
-const p = new CustomPromise((resolve) => {
+const p = new CustomPromise((resolve, reject) => {
   setTimeout(() => {
-    resolve(56);
-    // reject(new Error('oops'));
+    // resolve(56);
+    reject('oops');
   }, 2000);
 });
 
@@ -72,7 +80,7 @@ p.then((value) => {
     console.log('then 2', value);
   })
   .catch((err) => {
-    console.log('catch', err);
+    console.error('catch', err);
   });
 
 module.exports = CustomPromise;
