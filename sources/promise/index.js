@@ -5,7 +5,7 @@ const STATUS_MAP = {
 };
 
 class CustomPromise {
-  constructor(func) {
+  constructor(executor) {
     this.status = STATUS_MAP.PENDING;
     this.value = undefined;
     this.reason = undefined;
@@ -29,7 +29,7 @@ class CustomPromise {
     };
 
     try {
-      func(resolve, reject);
+      executor(resolve, reject);
     } catch (error) {
       reject(error);
     }
