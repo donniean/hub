@@ -4,6 +4,7 @@
   "words": [
     "browserslistrc",
     "builtins",
+    "camelcase",
     "chunkhash",
     "commitlint",
     "commitlintrc",
