@@ -1,5 +1,18 @@
 /* eslint-disable camelcase */
 
+// eslint-disable-next-line no-extend-native, func-names
+Promise.prototype.finally = function (callback) {
+  const P = this.constructor;
+
+  return this.then(
+    (value) => P.resolve(callback()).then(() => value),
+    (reason) =>
+      P.resolve(callback()).then(() => {
+        throw reason;
+      })
+  );
+};
+
 Promise.first = function first(promises = []) {
   const { length } = promises;
 
