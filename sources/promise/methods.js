@@ -7,12 +7,14 @@ Promise.first = function first(promises = []) {
     let count = 0;
 
     promises.forEach((promise) => {
-      promise.then(resolve).catch(() => {
-        count += 1;
-        if (count === length) {
-          reject(new Error('no resolved'));
-        }
-      });
+      Promise.resolve(promise)
+        .then(resolve)
+        .catch(() => {
+          count += 1;
+          if (count === length) {
+            reject(new Error('no resolved'));
+          }
+        });
     });
   });
 };
@@ -24,11 +26,11 @@ Promise.last = function last(promises = []) {
     let count = 0;
 
     promises.forEach((promise) => {
-      promise
-        .then(() => {
+      Promise.resolve(promise)
+        .then((value) => {
           count += 1;
           if (count === length) {
-            resolve(promise);
+            resolve(value);
           }
         })
         .catch(() => {
@@ -39,6 +41,44 @@ Promise.last = function last(promises = []) {
         });
     });
   });
+};
+
+Promise.none = function none(promises) {
+  const list = promises.map(
+    (promise) =>
+      new Promise((resolve, reject) =>
+        Promise.resolve(promise).then(reject, resolve)
+      )
+  );
+
+  return Promise.all(list);
+};
+
+Promise.any = function any(promises) {
+  const res = [];
+  const list = promises.map((promise) =>
+    Promise.resolve(promise)
+      .then((value) => res.push(value))
+      .catch(() => {})
+  );
+
+  return Promise.all(list).then(
+    () =>
+      new Promise((resolve, reject) => {
+        const { length } = res;
+        if (length > 0) {
+          resolve(res);
+        } else {
+          reject();
+        }
+      })
+  );
+};
+
+Promise.every = function every(promises) {
+  return Promise.all(promises)
+    .then(() => Promise.resolve(true))
+    .catch(() => Promise.resolve(false));
 };
 
 function sleep(flag, duration) {
@@ -56,9 +96,9 @@ function sleep(flag, duration) {
 const promise_100 = sleep(false, 100);
 const promise_200 = sleep(true, 200);
 const promise_300 = sleep(true, 300);
-const promise_400 = sleep(false, 400);
-const promise_500 = sleep(true, 500);
-const promise_600 = sleep(false, 600);
+const promise_400 = sleep(true, 400);
+const promise_500 = sleep(false, 500);
+const promise_600 = sleep(true, 600);
 const promises = [
   promise_600,
   promise_200,
@@ -70,16 +110,32 @@ const promises = [
 
 Promise.first(promises)
   .then((value) => {
-    console.log(value);
+    console.log('first then', value);
   })
   .catch((reason) => {
-    console.error(reason);
+    console.error('first catch', reason);
   });
 
 Promise.last(promises)
   .then((value) => {
-    console.log(value);
+    console.log('last then', value);
   })
   .catch((reason) => {
-    console.error(reason);
+    console.error('last catch', reason);
+  });
+
+Promise.none(promises)
+  .then((value) => {
+    console.log('none then', value);
+  })
+  .catch((reason) => {
+    console.error('none catch', reason);
+  });
+
+Promise.any(promises)
+  .then((value) => {
+    console.log('any then', value);
+  })
+  .catch((reason) => {
+    console.error('any catch', reason);
   });
