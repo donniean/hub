@@ -49,14 +49,21 @@ class CustomPromise {
       this.rejectedCallbacks.push(onRejected);
     }
 
-    if (this.status === STATUS_MAP.FULFILLED) {
+    if (
+      this.status === STATUS_MAP.FULFILLED &&
+      typeof onFulfilled === 'function'
+    ) {
       onFulfilled(this.value);
     }
 
-    if (this.status === STATUS_MAP.REJECTED) {
+    if (
+      this.status === STATUS_MAP.REJECTED &&
+      typeof onRejected === 'function'
+    ) {
       onRejected(this.reason);
     }
 
+    // TODO: promise chain
     return this;
   }
 
