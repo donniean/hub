@@ -84,6 +84,37 @@ Promise.any = function any(promises) {
         }
       })
   );
+
+  /* return new Promise((resolve, reject) => {
+    const { length } = promises;
+    const res = [];
+    let count = 0;
+
+    promises.forEach((promise) => {
+      Promise.resolve(promise)
+        .then((value) => {
+          count += 1;
+          res.push(value);
+          if (count === length) {
+            if (res.length > 0) {
+              resolve(res);
+            } else {
+              reject();
+            }
+          }
+        })
+        .catch(() => {
+          count += 1;
+          if (count === length) {
+            if (res.length > 0) {
+              resolve(res);
+            } else {
+              reject();
+            }
+          }
+        });
+    });
+  }); */
 };
 
 Promise.every = function every(promises) {
