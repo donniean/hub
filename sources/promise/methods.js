@@ -14,9 +14,8 @@ Promise.prototype.finally = function (callback) {
 };
 
 Promise.first = function first(promises = []) {
-  const { length } = promises;
-
   return new Promise((resolve, reject) => {
+    const { length } = promises;
     let count = 0;
 
     promises.forEach((promise) => {
@@ -33,9 +32,8 @@ Promise.first = function first(promises = []) {
 };
 
 Promise.last = function last(promises = []) {
-  const { length } = promises;
-
   return new Promise((resolve, reject) => {
+    const { length } = promises;
     let count = 0;
 
     promises.forEach((promise) => {
