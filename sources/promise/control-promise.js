@@ -21,13 +21,12 @@ function controlPromise(urls, max) {
   return new Promise((resolve) => {
     const func = () => {
       const index = sentCount++;
+      const url = urls[index];
 
       if (completedCount >= total) {
         resolve(res);
         return;
       }
-
-      const url = urls[index];
 
       if (url) {
         simRequest(url, {

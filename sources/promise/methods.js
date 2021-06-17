@@ -49,7 +49,7 @@ Promise.last = function last(promises = []) {
         .catch(() => {
           count += 1;
           if (count === length) {
-            reject(promise);
+            reject(new Error('no resolved'));
           }
         });
     });
