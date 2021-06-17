@@ -1,4 +1,4 @@
-function create(Func, ...args) {
+function customNew(Func, ...args) {
   // 1. 创建一个空的简单 JavaScript 对象（即{}）
   const object = {};
 
@@ -22,8 +22,8 @@ Person.prototype.showName = function sayName() {
   console.log(this.name);
 };
 
-const jack = create(Person, 'jack', 20);
+const jack = customNew(Person, 'jack', 20);
 console.log(jack);
 jack.showName();
 
-module.exports = create;
+module.exports = customNew;
