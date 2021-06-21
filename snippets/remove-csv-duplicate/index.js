@@ -1,4 +1,5 @@
 const { resolve } = require('path');
+
 const { readFileSync, outputFileSync } = require('fs-extra');
 
 const data = readFileSync(resolve('data.csv'), { encoding: 'utf-8' });
@@ -12,4 +13,4 @@ array.forEach((item) => {
 });
 
 const csv = list.join('\n');
-outputFileSync('new-data.csv', csv);
+outputFileSync('new-create-data.csv', csv);

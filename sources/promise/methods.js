@@ -85,7 +85,7 @@ Promise.any = function any(promises) {
       })
   );
 
-  /* return new Promise((resolve, reject) => {
+  /* return new-create Promise((resolve, reject) => {
     const { length } = promises;
     const res = [];
     let count = 0;

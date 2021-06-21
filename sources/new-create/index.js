@@ -1,8 +1,8 @@
 function customNew(Func, ...args) {
-  // 1. 创建一个空的简单 JavaScript 对象（即{}）
+  // 1. 创建一个空的简单JavaScript对象（即{}）
   const object = {};
 
-  // 2. 将空对象的原型赋值为构造器函数的原型
+  // 2. 将空对象的原型赋值为构造函数的原型
   // eslint-disable-next-line no-proto
   object.__proto__ = Func.prototype;
 
@@ -11,6 +11,13 @@ function customNew(Func, ...args) {
 
   // 4. 如果该函数没有返回对象，则返回 this
   return ret instanceof Object ? ret : object;
+}
+
+function customCreate(o) {
+  function F() {}
+
+  F.prototype = o;
+  return new F();
 }
 
 function Person(name, age) {
@@ -26,4 +33,4 @@ const jack = customNew(Person, 'jack', 20);
 console.log(jack);
 jack.showName();
 
-module.exports = customNew;
+module.exports = { customNew, customCreate };
