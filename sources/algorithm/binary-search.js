@@ -1,5 +1,7 @@
 function binarySearch(nums, target) {
-  let [left, mid, right] = [0, 0, nums.length - 1];
+  let left = 0;
+  let right = nums.length - 1;
+  let mid = 0;
 
   while (left <= right) {
     mid = Math.floor(left + (right - left) / 2);
@@ -10,10 +12,10 @@ function binarySearch(nums, target) {
       return mid;
     }
 
-    if (target > value) {
-      left = mid + 1;
-    } else if (target < value) {
+    if (target < value) {
       right = mid - 1;
+    } else if (target > value) {
+      left = mid + 1;
     }
   }
 
