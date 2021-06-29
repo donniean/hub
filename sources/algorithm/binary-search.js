@@ -6,12 +6,14 @@ function binarySearch(nums, target) {
 
     const value = nums[mid];
 
+    if (target === value) {
+      return mid;
+    }
+
     if (target > value) {
       left = mid + 1;
     } else if (target < value) {
       right = mid - 1;
-    } else if (target === value) {
-      return mid;
     }
   }
 
