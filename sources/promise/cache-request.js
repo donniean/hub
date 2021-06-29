@@ -1,6 +1,6 @@
 const requestCache = new Map();
 
-function Request(key, { expire = 300 } = {}) {
+function Request(key, { expires = 300 } = {}) {
   const value = requestCache.get(key);
 
   const func = () => {
@@ -17,7 +17,7 @@ function Request(key, { expire = 300 } = {}) {
   if (value) {
     const { timestamp, promise } = value;
 
-    if (new Date().getTime() - timestamp < expire) {
+    if (new Date().getTime() - timestamp < expires) {
       return promise;
     }
 
