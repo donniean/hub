@@ -31,13 +31,13 @@ function DFS(tree, res = []) {
 // 循环
 function DFS2(tree) {
   const res = [];
-  const queue = [...tree];
+  const stack = [...tree];
 
-  while (queue.length > 0) {
-    const { children = [], ...rest } = queue.shift();
+  while (stack.length > 0) {
+    const { children = [], ...rest } = stack.pop();
     res.push(rest);
     if (children.length > 0) {
-      queue.unshift(...children);
+      stack.push(...children);
     }
   }
 
