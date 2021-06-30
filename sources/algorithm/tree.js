@@ -19,23 +19,8 @@ function BFS(tree) {
   return res;
 }
 
-// 递归
-function DFS(tree, res = []) {
-  const result = res || [];
-
-  tree.forEach((node) => {
-    const { children = [], ...rest } = node;
-    res.push(rest);
-    if (children.length > 0) {
-      DFS(children, result);
-    }
-  });
-
-  return res;
-}
-
 // 循环
-function DFS2(tree) {
+function DFS(tree) {
   const res = [];
   const stack = [...tree];
 
@@ -46,6 +31,21 @@ function DFS2(tree) {
       stack.push(...children);
     }
   }
+
+  return res;
+}
+
+// 递归
+function DFS2(tree, res = []) {
+  const result = res || [];
+
+  tree.forEach((node) => {
+    const { children = [], ...rest } = node;
+    res.push(rest);
+    if (children.length > 0) {
+      DFS(children, result);
+    }
+  });
 
   return res;
 }
