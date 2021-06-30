@@ -80,4 +80,29 @@ function listToTree(list) {
   return tree;
 }
 
-module.exports = { BFS, DFS, DFS2, listToTree };
+function findPath(tree, id, prevPath) {
+  const path = prevPath || [];
+
+  // eslint-disable-next-line no-restricted-syntax
+  for (const node of tree) {
+    const { id: nodeId, children } = node;
+    const tempPath = [...path];
+
+    tempPath.push(nodeId);
+
+    if (id === nodeId) {
+      return tempPath;
+    }
+
+    if (Array.isArray(children) && children.length > 0) {
+      const res = findPath(children, id, tempPath);
+      if (res) {
+        return res;
+      }
+    }
+  }
+
+  return null;
+}
+
+module.exports = { BFS, DFS, DFS2, listToTree, findPath };
