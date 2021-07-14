@@ -20,7 +20,7 @@ function BFS(tree) {
 }
 
 // 循环
-function DFS(tree) {
+function DFS1(tree) {
   const res = [];
   const stack = [...tree];
 
@@ -41,13 +41,13 @@ function DFS2(tree, res = []) {
 
   tree.forEach((node) => {
     const { children = [], ...rest } = node;
-    res.push(rest);
+    result.push(rest);
     if (children.length > 0) {
-      DFS(children, result);
+      DFS2(children, result);
     }
   });
 
-  return res;
+  return result;
 }
 
 /* const node = {
@@ -105,4 +105,4 @@ function findPath(tree, id, prevPath) {
   return null;
 }
 
-module.exports = { BFS, DFS, DFS2, listToTree, findPath };
+module.exports = { BFS, DFS1, DFS2, listToTree, findPath };
