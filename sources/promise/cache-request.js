@@ -1,6 +1,6 @@
 const requestCache = new Map();
 
-function Request(key, { expires = 300 } = {}) {
+function request(key, { expires = 300 } = {}) {
   const value = requestCache.get(key);
 
   const func = () => {
@@ -33,4 +33,4 @@ setInterval(() => {
   });
 }, 500);
 
-module.exports = Request;
+module.exports = request;
