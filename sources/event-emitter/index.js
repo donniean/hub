@@ -39,3 +39,5 @@ class EventEmitter {
     }
   }
 }
+
+module.exports = EventEmitter;

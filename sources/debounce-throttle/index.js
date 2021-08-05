@@ -2,7 +2,7 @@
 function debounce(func, wait) {
   let timer = null;
 
-  return function fn(...args) {
+  return function debounced(...args) {
     if (timer) {
       clearTimeout(timer);
     }
@@ -16,7 +16,7 @@ function debounce(func, wait) {
 function throttle(func, wait) {
   let isExec = true;
 
-  return function fn(...args) {
+  return function throttled(...args) {
     if (!isExec) {
       return;
     }
@@ -34,7 +34,7 @@ function throttle(func, wait) {
 function throttle2(func, wait) {
   let lastTime = null;
 
-  return function fn(...args) {
+  return function throttled(...args) {
     if (new Date().getTime() - lastTime < wait) {
       return;
     }
