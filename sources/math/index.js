@@ -10,4 +10,8 @@ function add(a, b) {
   return (a * rate + b * rate) / rate;
 }
 
-module.exports = { add };
+function random(min, max) {
+  console.log(min, max);
+}
+
+module.exports = { add, random };
