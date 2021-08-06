@@ -1,11 +1,14 @@
 function curry(fn, args) {
   return function func(...innerArgs) {
-    let a = [...innerArgs];
+    let finalArgs = [...innerArgs];
     if (args) {
-      a = [...args, ...innerArgs];
+      finalArgs = [...args, ...innerArgs];
+    }
+    if (finalArgs.length < fn.length) {
+      return curry(fn, finalArgs);
     }
 
-    return fn.call(this, ...a);
+    return fn.call(this, ...finalArgs);
   };
 }
 
