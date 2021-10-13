@@ -17,6 +17,7 @@ module.exports = {
     es2020: true,
     es2021: true,
   },
+  plugins: ['html'],
   extends: [
     'airbnb-base',
     'plugin:node/recommended',
