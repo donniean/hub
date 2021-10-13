@@ -1,3 +1,7 @@
+function getScore(value, fixed = 0) {
+  return (value * 100).toFixed(fixed);
+}
+
 const alphabet = [
   'a',
   'b',
@@ -139,7 +143,3 @@ Promise.all(promises).then((res) => {
   }
   return name;
 } */
-
-function getScore(value, fixed = 0) {
-  return (value * 100).toFixed(fixed);
-}
