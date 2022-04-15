@@ -1,9 +1,3 @@
-/* const node = {
-  id: '1',
-  title: '节点 1',
-  children: [],
-}; */
-
 function BFS(tree) {
   const result = [];
   const queue = [...tree];
@@ -62,14 +56,8 @@ function DFS2(tree, res = []) {
   return result;
 }
 
-/* const node = {
-  id: '1',
-  title: '节点 1',
-  parentId: '',
-}; */
-
 function listToTree(list) {
-  const tree = [];
+  const result = [];
   const map = {};
 
   list.forEach((node) => {
@@ -85,11 +73,11 @@ function listToTree(list) {
       parentNode.children = parentNode.children || [];
       parentNode.children.push(node);
     } else {
-      tree.push(node);
+      result.push(node);
     }
   });
 
-  return tree;
+  return result;
 }
 
 function findPath(tree, id, prevPath) {
@@ -118,3 +106,67 @@ function findPath(tree, id, prevPath) {
 }
 
 module.exports = { BFS, DFS1, DFS2, listToTree, findPath };
+
+/* const tree = [
+  {
+    id: '1',
+    title: 'node 1',
+    children: [
+      {
+        id: '1-1',
+        title: 'node 1-1',
+        children: [
+          {
+            id: '1-1-1',
+            title: 'node 1-1-1',
+          },
+          {
+            id: '1-1-2',
+            title: 'node 1-1-2',
+          },
+          {
+            id: '1-1-3',
+            title: 'node 1-1-3',
+          },
+        ],
+      },
+      {
+        id: '1-2',
+        title: 'node 1-2',
+        children: [
+          {
+            id: '1-2-1',
+            title: 'node 1-2-1',
+          },
+          {
+            id: '1-2-2',
+            title: 'node 1-2-2',
+          },
+        ],
+      },
+    ],
+  },
+  {
+    id: '2',
+    title: 'node 2',
+    children: [
+      {
+        id: '2-1',
+        title: 'node 2-1',
+      },
+    ],
+  },
+];
+
+const list = [
+  { id: '1', title: 'node 1' },
+  { id: '2', title: 'node 2' },
+  { id: '1-1', title: 'node 1-1', parentId: '1' },
+  { id: '1-2', title: 'node 1-2', parentId: '1' },
+  { id: '2-1', title: 'node 2-1', parentId: '2' },
+  { id: '1-1-1', title: 'node 1-1-1', parentId: '1-1' },
+  { id: '1-1-2', title: 'node 1-1-2', parentId: '1-1' },
+  { id: '1-1-3', title: 'node 1-1-3', parentId: '1-1' },
+  { id: '1-2-1', title: 'node 1-2-1', parentId: '1-2' },
+  { id: '1-2-2', title: 'node 1-2-2', parentId: '1-2' },
+]; */

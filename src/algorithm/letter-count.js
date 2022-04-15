@@ -1,4 +1,27 @@
 /* 1 */
+function transformString(str = '') {
+  const letters = str.split('');
+
+  let tempLetters = [];
+  let res = '';
+
+  letters.forEach((letter, index) => {
+    if (tempLetters.includes(letter)) {
+      tempLetters.push(letter);
+    } else {
+      if (index > 0) {
+        res += `${tempLetters.length}${tempLetters[0]}`;
+      }
+      tempLetters = [letter];
+    }
+  });
+
+  res += `${tempLetters.length}${tempLetters[0]}`;
+
+  return res;
+}
+
+/* 2 */
 /* function transformString(str = '') {
   const letters = str.split('');
   const counter = [];
@@ -24,29 +47,6 @@
 
   return res;
 } */
-
-/* 2 */
-function transformString(str = '') {
-  const letters = str.split('');
-
-  let tempLetters = [];
-  let res = '';
-
-  letters.forEach((letter, index) => {
-    if (tempLetters.includes(letter)) {
-      tempLetters.push(letter);
-    } else {
-      if (index > 0) {
-        res += `${tempLetters.length}${tempLetters[0]}`;
-      }
-      tempLetters = [letter];
-    }
-  });
-
-  res += `${tempLetters.length}${tempLetters[0]}`;
-
-  return res;
-}
 
 /* cspell:disable-next-line */
 const str = 'aaabbccdddaa';
