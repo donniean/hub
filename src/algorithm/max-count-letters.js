@@ -1,9 +1,37 @@
-/* cspell:disable-next-line */
-const str1 = 'abbcccdddd'; // { d: 4 }
-/* cspell:disable-next-line */
-const str2 = 'aaaabbcccc'; // { a: 4, c: 4 }
+/* 1 */
+function getMaxCountLetters(str = '') {
+  const letters = str.split('');
+  const counter = {};
+  const maxLetters = new Set();
+  let maxCount = 0;
 
-function getLetterCount(str = '') {
+  letters.forEach((letter) => {
+    if (counter[letter]) {
+      counter[letter] += 1;
+    } else {
+      counter[letter] = 1;
+    }
+
+    if (counter[letter] > maxCount) {
+      maxCount = counter[letter];
+      maxLetters.clear();
+      maxLetters.add(letter);
+    } else if (counter[letter] === maxCount) {
+      maxLetters.add(letter);
+    }
+  });
+
+  const res = {};
+
+  maxLetters.forEach((letter) => {
+    res[letter] = maxCount;
+  });
+
+  return res;
+}
+
+/* 2 */
+/* function getLetterCount(str = '') {
   const res = {};
   const letters = str.split('');
 
@@ -39,8 +67,9 @@ function getMaxCountLetters(str = '') {
   });
 
   return res;
-}
+} */
 
+/* 3 */
 /* function getMaxCountLetters(str = '') {
   const counter = getLetterCount(str);
   const arr = Object.entries(counter).map(([letter, count]) => ({
@@ -60,6 +89,11 @@ function getMaxCountLetters(str = '') {
 
   return res;
 } */
+
+/* cspell:disable-next-line */
+const str1 = 'abbcccdddd'; // { d: 4 }
+/* cspell:disable-next-line */
+const str2 = 'aaaabbcccc'; // { a: 4, c: 4 }
 
 const res1 = getMaxCountLetters(str1);
 const res2 = getMaxCountLetters(str2);
