@@ -1,22 +1,26 @@
 /* const node = {
   id: '1',
-  title: '节点1',
+  title: '节点 1',
   children: [],
 }; */
 
 function BFS(tree) {
-  const res = [];
+  const result = [];
   const queue = [...tree];
 
   while (queue.length > 0) {
-    const { children = [], ...rest } = queue.shift();
-    res.push(rest);
-    if (children.length > 0) {
-      queue.push(...children);
+    const { children, ...rest } = queue.shift();
+
+    result.push(rest);
+
+    if (Array.isArray(children) && children.length > 0) {
+      const { id: parentId } = rest;
+      const newChildren = children.map((node) => ({ ...node, parentId }));
+      queue.push(...newChildren);
     }
   }
 
-  return res;
+  return result;
 }
 
 // 循环
@@ -25,10 +29,14 @@ function DFS1(tree) {
   const stack = [...tree];
 
   while (stack.length > 0) {
-    const { children = [], ...rest } = stack.pop();
+    const { children, ...rest } = stack.pop();
+
     res.push(rest);
-    if (children.length > 0) {
-      stack.push(...children);
+
+    if (Array.isArray(children) && children.length > 0) {
+      const { id: parentId } = rest;
+      const newChildren = children.map((item) => ({ ...item, parentId }));
+      stack.push(...newChildren);
     }
   }
 
@@ -52,7 +60,7 @@ function DFS2(tree, res = []) {
 
 /* const node = {
   id: '1',
-  title: '节点1',
+  title: '节点 1',
   parentId: '',
 }; */
 
