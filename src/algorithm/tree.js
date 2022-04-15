@@ -45,15 +45,19 @@ function DFS1(tree) {
 
 // 递归
 function DFS2(tree, res = []) {
-  const result = res || [];
+  const result = [...res];
 
-  tree.forEach((node) => {
-    const { children = [], ...rest } = node;
-    result.push(rest);
-    if (children.length > 0) {
-      DFS2(children, result);
-    }
-  });
+  if (Array.isArray(tree)) {
+    tree.forEach(({ children, ...rest }) => {
+      result.push(rest);
+
+      if (Array.isArray(children) && children.length > 0) {
+        const { id: parentId } = rest;
+        const newChildren = children.map((item) => ({ ...item, parentId }));
+        DFS2(newChildren, result);
+      }
+    });
+  }
 
   return result;
 }
