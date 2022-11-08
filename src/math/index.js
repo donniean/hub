@@ -4,7 +4,6 @@ function add(a, b) {
   const aLength = aDecimals.length;
   const bLength = bDecimals.length;
   const maxLength = Math.max(aLength, bLength);
-  // eslint-disable-next-line no-restricted-properties
   const rate = 10 ** maxLength;
 
   return (a * rate + b * rate) / rate;
