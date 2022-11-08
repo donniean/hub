@@ -45,6 +45,10 @@ module.exports = {
       'error',
       { version: '>=14.0.0', ignores: ['modules'] },
     ],
+    'node/no-unsupported-features/es-builtins': [
+      'error',
+      { version: '>=14.0.0' },
+    ],
   },
   overrides: [
     {
