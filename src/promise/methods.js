@@ -1,12 +1,10 @@
-/* eslint-disable camelcase */
-
 // eslint-disable-next-line no-extend-native, func-names
 Promise.prototype.finally = function (callback) {
   const P = this.constructor;
 
   return this.then(
-    (value) => P.resolve(callback()).then(() => value),
-    (reason) =>
+    value => P.resolve(callback()).then(() => value),
+    reason =>
       P.resolve(callback()).then(() => {
         throw reason;
       })
@@ -18,7 +16,7 @@ Promise.first = function first(promises = []) {
     const { length } = promises;
     let count = 0;
 
-    promises.forEach((promise) => {
+    promises.forEach(promise => {
       Promise.resolve(promise)
         .then(resolve)
         .catch(() => {
@@ -36,9 +34,9 @@ Promise.last = function last(promises = []) {
     const { length } = promises;
     let count = 0;
 
-    promises.forEach((promise) => {
+    promises.forEach(promise => {
       Promise.resolve(promise)
-        .then((value) => {
+        .then(value => {
           count += 1;
           if (count === length) {
             resolve(value);
@@ -56,10 +54,10 @@ Promise.last = function last(promises = []) {
 
 Promise.none = function none(promises) {
   const list = promises.map(
-    (promise) =>
-      new Promise((resolve, reject) =>
-        Promise.resolve(promise).then(reject, resolve)
-      )
+    promise =>
+      new Promise((resolve, reject) => {
+        Promise.resolve(promise).then(reject, resolve);
+      })
   );
 
   return Promise.all(list);
@@ -67,9 +65,9 @@ Promise.none = function none(promises) {
 
 Promise.any = function any(promises) {
   const res = [];
-  const list = promises.map((promise) =>
+  const list = promises.map(promise =>
     Promise.resolve(promise)
-      .then((value) => res.push(value))
+      .then(value => res.push(value))
       .catch(() => {})
   );
 
@@ -135,49 +133,49 @@ function sleep(flag, duration) {
   });
 }
 
-const promise_100 = sleep(false, 100);
-const promise_200 = sleep(true, 200);
-const promise_300 = sleep(true, 300);
-const promise_400 = sleep(true, 400);
-const promise_500 = sleep(false, 500);
-const promise_600 = sleep(true, 600);
+const promise100 = sleep(false, 100);
+const promise200 = sleep(true, 200);
+const promise300 = sleep(true, 300);
+const promise400 = sleep(true, 400);
+const promise500 = sleep(false, 500);
+const promise600 = sleep(true, 600);
 const promises = [
-  promise_600,
-  promise_200,
-  promise_500,
-  promise_300,
-  promise_400,
-  promise_100,
+  promise600,
+  promise200,
+  promise500,
+  promise300,
+  promise400,
+  promise100,
 ];
 
 Promise.first(promises)
-  .then((value) => {
+  .then(value => {
     console.log('first then', value);
   })
-  .catch((reason) => {
+  .catch(reason => {
     console.error('first catch', reason);
   });
 
 Promise.last(promises)
-  .then((value) => {
+  .then(value => {
     console.log('last then', value);
   })
-  .catch((reason) => {
+  .catch(reason => {
     console.error('last catch', reason);
   });
 
 Promise.none(promises)
-  .then((value) => {
+  .then(value => {
     console.log('none then', value);
   })
-  .catch((reason) => {
+  .catch(reason => {
     console.error('none catch', reason);
   });
 
 Promise.any(promises)
-  .then((value) => {
+  .then(value => {
     console.log('any then', value);
   })
-  .catch((reason) => {
+  .catch(reason => {
     console.error('any catch', reason);
   });

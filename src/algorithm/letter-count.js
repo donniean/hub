@@ -48,7 +48,7 @@ function transformString(str = '') {
   return res;
 } */
 
-/* cspell:disable-next-line */
+/* cspell: disable-next-line */
 const str = 'aaabbccdddaa';
 const res = transformString(str);
 

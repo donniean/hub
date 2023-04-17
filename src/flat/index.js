@@ -1,7 +1,7 @@
 function flat(array) {
   const res = [];
 
-  array.forEach((item) => {
+  array.forEach(item => {
     if (Array.isArray(item)) {
       res.push(...flat(item));
     } else {

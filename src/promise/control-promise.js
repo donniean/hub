@@ -1,3 +1,4 @@
+/* cspell: disable-next-line */
 /* eslint-disable no-plusplus */
 
 function simRequest(url, { duration = 3000, isSuccess = true } = {}) {
@@ -18,7 +19,7 @@ function controlPromise(urls, max) {
   let sentCount = 0;
   let completedCount = 0;
 
-  return new Promise((resolve) => {
+  return new Promise(resolve => {
     const func = () => {
       const index = sentCount++;
       const url = urls[index];
@@ -33,14 +34,14 @@ function controlPromise(urls, max) {
           duration: (total - index) * 500,
           isSuccess: index % 2 === 0,
         })
-          .then((data) => {
+          .then(data => {
             if (completedCount < total) {
               completedCount++;
               res[index] = data;
               func();
             }
           })
-          .catch((error) => {
+          .catch(error => {
             if (completedCount < total) {
               completedCount++;
               res[index] = error;
@@ -57,10 +58,10 @@ function controlPromise(urls, max) {
 }
 
 controlPromise(['a', 'b', 'c', 'd', 'e', 'f'], 3)
-  .then((res) => {
+  .then(res => {
     console.log(res);
   })
-  .catch((error) => {
+  .catch(error => {
     console.log(error);
   });
 

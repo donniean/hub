@@ -9,7 +9,7 @@ function BFS(tree) {
 
     if (Array.isArray(children) && children.length > 0) {
       const { id: parentId } = rest;
-      const newChildren = children.map((node) => ({ ...node, parentId }));
+      const newChildren = children.map(node => ({ ...node, parentId }));
       queue.push(...newChildren);
     }
   }
@@ -29,7 +29,7 @@ function DFS1(tree) {
 
     if (Array.isArray(children) && children.length > 0) {
       const { id: parentId } = rest;
-      const newChildren = children.map((item) => ({ ...item, parentId }));
+      const newChildren = children.map(item => ({ ...item, parentId }));
       stack.push(...newChildren);
     }
   }
@@ -47,7 +47,7 @@ function DFS2(tree, res = []) {
 
       if (Array.isArray(children) && children.length > 0) {
         const { id: parentId } = rest;
-        const newChildren = children.map((item) => ({ ...item, parentId }));
+        const newChildren = children.map(item => ({ ...item, parentId }));
         DFS2(newChildren, result);
       }
     });
@@ -60,12 +60,12 @@ function listToTree(list) {
   const result = [];
   const map = {};
 
-  list.forEach((node) => {
+  list.forEach(node => {
     const { id } = node;
     map[id] = node;
   });
 
-  list.forEach((node) => {
+  list.forEach(node => {
     const { parentId } = node;
 
     if (parentId) {
