@@ -5,7 +5,7 @@ function getMaxCountLetters(str = '') {
   const maxLetters = new Set();
   let maxCount = 0;
 
-  letters.forEach((letter) => {
+  letters.forEach(letter => {
     if (counter[letter]) {
       counter[letter] += 1;
     } else {
@@ -23,7 +23,7 @@ function getMaxCountLetters(str = '') {
 
   const res = {};
 
-  maxLetters.forEach((letter) => {
+  maxLetters.forEach(letter => {
     res[letter] = maxCount;
   });
 
@@ -90,9 +90,9 @@ function getMaxCountLetters(str = '') {
   return res;
 } */
 
-/* cspell:disable-next-line */
+/* cspell: disable-next-line */
 const str1 = 'abbcccdddd'; // { d: 4 }
-/* cspell:disable-next-line */
+/* cspell: disable-next-line */
 const str2 = 'aaaabbcccc'; // { a: 4, c: 4 }
 
 const res1 = getMaxCountLetters(str1);

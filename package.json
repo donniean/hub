@@ -13,26 +13,22 @@
   "license": "MIT",
   "author": "Donnie An",
   "scripts": {
-    "prettier": "npx prettier --write \"**/*.{js,css,html,json,md}\"",
-    "eslint": "npx eslint --fix \"**/*.{js,html}\"",
-    "stylelint": "npx stylelint --fix \"**/*.css\"",
-    "cspell": "cspell \"**\"",
+    "commit": "cz",
+    "lint:cspell": "cspell lint --no-progress --relative --no-must-find-files --dot --gitignore \"**\"",
+    "lint:markdownlint": "markdownlint --fix \"**/*.md\"",
+    "lint:prettier": "prettier --check --ignore-unknown \"**/*.{js,cjs,json,md,yaml,yml}\"",
+    "lint:prettier:fix": "prettier --write --ignore-unknown \"**/*.{js,cjs,json,md,yaml,yml}\"",
+    "pre-commit": "lint-staged --concurrent false",
     "prepare": "husky install",
-    "pre-commit": "lint-staged",
-    "commit": "git-cz"
-  },
-  "config": {
-    "commitizen": {
-      "path": "cz-conventional-changelog"
-    }
+    "sort-package-json": "sort-package-json"
   },
   "devDependencies": {
     "@babel/core": "^7.20.2",
     "@babel/eslint-parser": "^7.19.1",
-    "@commitlint/cli": "^17.2.0",
-    "@commitlint/config-conventional": "^17.2.0",
-    "commitizen": "^4.2.5",
-    "cspell": "^6.14.1",
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
+    "commitizen": "^4.3.0",
+    "cspell": "^6.31.1",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.27.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -41,15 +37,10 @@
     "eslint-plugin-import": "^2.26.0",
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-prettier": "^4.2.1",
-    "htmlhint": "^1.1.4",
-    "husky": "^8.0.2",
-    "lint-staged": "^13.0.3",
-    "prettier": "^2.7.1",
-    "stylelint": "^14.14.1",
-    "stylelint-config-prettier": "^9.0.3",
-    "stylelint-config-rational-order": "^0.1.2",
-    "stylelint-config-standard": "^29.0.0",
-    "stylelint-order": "^5.0.0",
-    "stylelint-prettier": "^2.0.0"
+    "husky": "^8.0.3",
+    "lint-staged": "^13.2.1",
+    "markdownlint-cli": "^0.33.0",
+    "prettier": "^2.8.7",
+    "sort-package-json": "^2.4.1"
   }
 }

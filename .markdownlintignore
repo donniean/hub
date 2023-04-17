@@ -3,3 +3,4 @@ lib/
 build/
 dist/
 **/*.min.*
+CHANGELOG.md

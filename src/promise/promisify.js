@@ -27,10 +27,10 @@ const o = {
 };
 
 o.p()
-  .then((value) => {
+  .then(value => {
     console.log('resolve', value);
   })
-  .catch((err) => {
+  .catch(err => {
     console.log('reject', err);
   });
 

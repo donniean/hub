@@ -1,0 +1,10 @@
+commitlint
+corepack
+cssnano
+depcheck
+htmlhint
+immer
+markdownlint
+sonarjs
+stylelint
+svgr
