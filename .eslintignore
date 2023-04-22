@@ -1,11 +1,5 @@
-**/.git/
-**/.svn/
-**/.hg/
-**/CVS/
-**/.DS_Store/
-**/.cache/
-**/node_modules/
-**/libs/
-**/build/
-**/dist/
-**/*.min.*
+.git/
+.history/
+node_modules/
+coverage/
+dist/
