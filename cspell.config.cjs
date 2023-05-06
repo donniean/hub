@@ -20,6 +20,7 @@ module.exports = {
     'pnpm-lock.yaml',
     'CHANGELOG.md',
     'Dockerfile',
+    'mac/',
   ],
   dictionaries: [
     'user-apps',
