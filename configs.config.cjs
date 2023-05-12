@@ -8,15 +8,13 @@ module.exports = {
     },
     eslint: {
       patterns: ['**/*.{js,mjs,cjs}'],
-      plugins: {
-        node: true,
-      },
     },
     markdownlint: {
       patterns: ['**/*.md'],
     },
     cspell: {
       patterns: ['**'],
+      ignorePatterns: ['mac/'],
     },
     'sort-package-json': true,
     commitlint: true,

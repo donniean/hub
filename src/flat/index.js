@@ -17,4 +17,4 @@ const r = flat(a);
 
 console.log(r);
 
-module.exports = flat;
+export { flat };

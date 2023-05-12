@@ -29,9 +29,11 @@ const o = {
 o.p()
   .then(value => {
     console.log('resolve', value);
+    return value;
   })
-  .catch(err => {
-    console.log('reject', err);
+  // eslint-disable-next-line unicorn/prefer-top-level-await
+  .catch(error => {
+    console.log('reject', error);
   });
 
-module.exports = promisify;
+export { promisify };

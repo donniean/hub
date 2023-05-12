@@ -1,5 +1,6 @@
 function customNew(Func, ...args) {
   // 1. 创建一个空的简单JavaScript对象（即{}）
+  // eslint-disable-next-line sonarjs/prefer-object-literal
   const object = {};
 
   // 2. 将空对象的原型赋值为构造函数的原型
@@ -14,6 +15,7 @@ function customNew(Func, ...args) {
 }
 
 function customCreate(o) {
+  // eslint-disable-next-line unicorn/consistent-function-scoping
   function F() {}
 
   F.prototype = o;
@@ -34,4 +36,4 @@ const jack = customNew(Person, 'jack', 20);
 console.log(jack);
 jack.showName();
 
-module.exports = { customNew, customCreate };
+export { customNew, customCreate };

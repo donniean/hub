@@ -1,6 +1,6 @@
 /* 1 */
 function transformString(str = '') {
-  const letters = str.split('');
+  const letters = [...str];
 
   let tempLetters = [];
   let res = '';
@@ -23,7 +23,7 @@ function transformString(str = '') {
 
 /* 2 */
 /* function transformString(str = '') {
-  const letters = str.split('');
+  const letters = [...str];
   const counter = [];
 
   let prevLetter = '';

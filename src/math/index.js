@@ -13,4 +13,4 @@ function random(min, max) {
   console.log(min, max);
 }
 
-module.exports = { add, random };
+export { add, random };

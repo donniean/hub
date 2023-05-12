@@ -13,4 +13,4 @@ function useState(defaultState) {
   return [states[index], setState];
 }
 
-module.exports = { useState };
+export { useState };

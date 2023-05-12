@@ -105,7 +105,7 @@ function findPath(tree, id, prevPath) {
   return null;
 }
 
-module.exports = { BFS, DFS1, DFS2, listToTree, findPath };
+export { BFS, DFS1, DFS2, findPath, listToTree };
 
 /* const tree = [
   {

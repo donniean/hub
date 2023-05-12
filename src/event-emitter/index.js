@@ -21,6 +21,7 @@ class EventEmitter {
   }
 
   once(eventName, listener) {
+    // eslint-disable-next-line unicorn/no-this-assignment
     const self = this;
 
     function func(...args) {
@@ -38,4 +39,4 @@ class EventEmitter {
   }
 }
 
-module.exports = EventEmitter;
+export { EventEmitter };

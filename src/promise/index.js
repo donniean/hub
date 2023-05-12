@@ -43,6 +43,7 @@ class CustomPromise {
     }
   }
 
+  // eslint-disable-next-line unicorn/no-thenable
   then(onFulfilled, onRejected) {
     if (this.status === STATUS_MAP.PENDING) {
       this.resolvedCallbacks.push(onFulfilled);
@@ -85,9 +86,11 @@ p.then(value => {
 })
   .then(value => {
     console.log('then 2', value);
+    return value;
   })
-  .catch(err => {
-    console.error('catch', err);
+  // eslint-disable-next-line unicorn/prefer-top-level-await
+  .catch(error => {
+    console.error('catch', error);
   });
 
-module.exports = CustomPromise;
+export { CustomPromise };
