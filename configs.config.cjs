@@ -14,6 +14,7 @@ module.exports = {
     },
     cspell: {
       patterns: ['**'],
+      ignorePatterns: ['mac/'],
     },
     'sort-package-json': true,
     commitlint: true,

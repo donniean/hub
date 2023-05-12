@@ -1,31 +1,60 @@
+/** @type {import("eslint").Linter.Config} */
 module.exports = {
   root: true,
-  parser: '@babel/eslint-parser',
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module',
-    requireConfigFile: false,
   },
   env: {
-    browser: true,
+    browser: false,
     node: true,
     commonjs: true,
     'shared-node-browser': true,
-    amd: true,
     es6: true,
+    es2016: true,
     es2017: true,
+    es2018: true,
+    es2019: true,
     es2020: true,
     es2021: true,
+    es2022: true,
+    worker: false,
   },
-  plugins: ['html'],
   extends: [
     'airbnb-base',
-    'plugin:node/recommended',
-    'plugin:prettier/recommended',
+    'plugin:eslint-comments/recommended',
+    'plugin:promise/recommended',
+    'plugin:unicorn/recommended',
+    'plugin:sonarjs/recommended',
+    'prettier',
   ],
   rules: {
+    'arrow-body-style': ['error', 'as-needed'],
+    'no-restricted-imports': [
+      'error',
+      {
+        patterns: ['../..'],
+      },
+    ],
     'no-useless-call': 'error',
-    'init-declarations': ['error', 'always'],
+    'import/no-extraneous-dependencies': [
+      'error',
+      {
+        devDependencies: [
+          'test/**',
+          'tests/**',
+          'spec/**',
+          '**/__tests__/**',
+          '**/__mocks__/**',
+          'test.{js,jsx}',
+          'test-*.{js,jsx}',
+          '**/*{.,_}{test,spec}.{js,jsx}',
+          '**/*.{mjs,cjs}',
+          '**/.*.{mjs,cjs}',
+        ],
+        optionalDependencies: false,
+      },
+    ],
     'import/order': [
       'error',
       {
@@ -35,33 +64,41 @@ module.exports = {
           'internal',
           ['parent', 'sibling', 'index'],
           'object',
+          'type',
           'unknown',
         ],
         'newlines-between': 'always',
+        alphabetize: {
+          order: 'asc',
+          orderImportKind: 'asc',
+        },
+        warnOnUnassignedImports: true,
       },
     ],
-    'node/no-missing-import': 'off',
-    'node/no-unsupported-features/es-syntax': [
+    'import/prefer-default-export': 'off',
+    'unicorn/filename-case': [
       'error',
-      { version: '>=14.0.0', ignores: ['modules'] },
+      {
+        cases: {
+          kebabCase: true,
+          camelCase: true,
+          pascalCase: true,
+        },
+      },
     ],
-    'node/no-unsupported-features/es-builtins': [
-      'error',
-      { version: '>=14.0.0' },
-    ],
+    'unicorn/no-array-for-each': 'off',
+    'unicorn/no-null': 'off',
+    'unicorn/prevent-abbreviations': 'off',
   },
   overrides: [
     {
-      files: [
-        '**/webpack.js',
-        '**/webpack.*.js',
-        '**/webpack.ts',
-        '**/webpack.*.ts',
-        '**/postcss.*.js',
-      ],
+      files: ['**/*.mjs'],
+      plugins: ['simple-import-sort'],
       rules: {
-        'node/no-unpublished-import': 'off',
-        'node/no-unpublished-require': 'off',
+        'sort-imports': 'off',
+        'import/order': 'off',
+        'simple-import-sort/imports': 'error',
+        'simple-import-sort/exports': 'error',
       },
     },
   ],

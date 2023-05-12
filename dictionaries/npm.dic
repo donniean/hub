@@ -1,6 +1,7 @@
 commitlint
 corepack
 cssnano
+deepmerge
 depcheck
 htmlhint
 immer
@@ -8,3 +9,4 @@ markdownlint
 sonarjs
 stylelint
 svgr
+tanstack
