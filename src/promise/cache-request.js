@@ -8,16 +8,16 @@ function request(key, { expires = 300 } = {}) {
       .then(res => res.json())
       .catch(error => {
         requestCache.delete(key);
-        return Promise.reject(error);
+        throw error;
       });
-    requestCache.set(key, { timestamp: new Date().getTime(), promise: p });
+    requestCache.set(key, { timestamp: Date.now(), promise: p });
     return p;
   };
 
   if (value) {
     const { timestamp, promise } = value;
 
-    if (new Date().getTime() - timestamp < expires) {
+    if (Date.now() - timestamp < expires) {
       return promise;
     }
 
@@ -28,9 +28,12 @@ function request(key, { expires = 300 } = {}) {
 }
 
 setInterval(() => {
-  Request('https://api.github.com/search/repositories?q=react').then(res => {
-    console.log(res);
-  });
+  Request('https://api.github.com/search/repositories?q=react')
+    .then(res => {
+      console.log(res);
+      return res;
+    })
+    .catch(console.error);
 }, 500);
 
-module.exports = request;
+export { request };

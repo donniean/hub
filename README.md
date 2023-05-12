@@ -1,1 +1,6 @@
 # Collections
+
+## TODOs
+
+- [ ] TypeScript
+- [ ] testing

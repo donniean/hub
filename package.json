@@ -12,6 +12,7 @@
   },
   "license": "MIT",
   "author": "Donnie An",
+  "type": "module",
   "scripts": {
     "commit": "cz",
     "preinstall": "npx only-allow npm",

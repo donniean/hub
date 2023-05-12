@@ -1,6 +1,3 @@
-/* cspell: disable-next-line */
-/* eslint-disable no-plusplus */
-
 function simRequest(url, { duration = 3000, isSuccess = true } = {}) {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
@@ -21,6 +18,8 @@ function controlPromise(urls, max) {
 
   return new Promise(resolve => {
     const func = () => {
+      /* cspell: disable-next-line */
+      // eslint-disable-next-line no-plusplus
       const index = sentCount++;
       const url = urls[index];
 
@@ -35,7 +34,10 @@ function controlPromise(urls, max) {
           isSuccess: index % 2 === 0,
         })
           .then(data => {
+            // eslint-disable-next-line promise/always-return
             if (completedCount < total) {
+              /* cspell: disable-next-line */
+              // eslint-disable-next-line no-plusplus
               completedCount++;
               res[index] = data;
               func();
@@ -43,6 +45,8 @@ function controlPromise(urls, max) {
           })
           .catch(error => {
             if (completedCount < total) {
+              /* cspell: disable-next-line */
+              // eslint-disable-next-line no-plusplus
               completedCount++;
               res[index] = error;
               func();
@@ -60,9 +64,11 @@ function controlPromise(urls, max) {
 controlPromise(['a', 'b', 'c', 'd', 'e', 'f'], 3)
   .then(res => {
     console.log(res);
+    return res;
   })
+  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch(error => {
     console.log(error);
   });
 
-module.exports = controlPromise;
+export { controlPromise };

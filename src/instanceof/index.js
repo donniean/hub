@@ -17,4 +17,4 @@ function customInstanceof(object, constructor) {
   }
 }
 
-module.exports = customInstanceof;
+export { customInstanceof };

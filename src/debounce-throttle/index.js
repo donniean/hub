@@ -35,14 +35,14 @@ function throttle2(func, wait) {
   let lastTime = null;
 
   return function throttled(...args) {
-    if (new Date().getTime() - lastTime < wait) {
+    if (Date.now() - lastTime < wait) {
       return;
     }
 
-    lastTime = new Date().getTime();
+    lastTime = Date.now();
 
     func.apply(this, args);
   };
 }
 
-module.exports = { debounce, throttle, throttle2 };
+export { debounce, throttle, throttle2 };

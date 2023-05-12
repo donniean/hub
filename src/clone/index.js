@@ -10,4 +10,4 @@ function cloneDeep(target) {
   return target;
 }
 
-module.exports = { cloneDeep };
+export { cloneDeep };

@@ -19,4 +19,4 @@ const res = sum(1)(2)(3);
 
 console.log(res);
 
-module.exports = curry;
+export { curry };

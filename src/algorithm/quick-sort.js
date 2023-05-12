@@ -21,4 +21,4 @@ function quickSort(data) {
   return [...quickSort(left), pivot, ...quickSort(right)];
 }
 
-module.exports = quickSort;
+export { quickSort };
