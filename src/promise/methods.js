@@ -7,7 +7,7 @@ Promise.prototype.finally = function (callback) {
     error =>
       P.resolve(callback()).then(() => {
         throw error;
-      })
+      }),
   );
 };
 
@@ -58,8 +58,8 @@ Promise.none = function none(promises) {
     promise =>
       new Promise((resolve, reject) =>
         // eslint-disable-next-line no-promise-executor-return
-        Promise.resolve(promise).then(reject, resolve)
-      )
+        Promise.resolve(promise).then(reject, resolve),
+      ),
   );
 
   return Promise.all(list);
@@ -70,7 +70,7 @@ Promise.any = function any(promises) {
   const list = promises.map(promise =>
     Promise.resolve(promise)
       .then(value => res.push(value))
-      .catch(() => {})
+      .catch(() => {}),
   );
 
   return Promise.all(list).then(
@@ -82,7 +82,7 @@ Promise.any = function any(promises) {
         } else {
           reject();
         }
-      })
+      }),
   );
 
   /* return new-create Promise((resolve, reject) => {
