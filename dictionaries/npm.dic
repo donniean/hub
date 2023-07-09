@@ -1,3 +1,4 @@
+clsx
 commitlint
 corepack
 cssnano
@@ -9,4 +10,7 @@ markdownlint
 sonarjs
 stylelint
 svgr
+tailwindcss
 tanstack
+vitest
+zustand
