@@ -5,5 +5,5 @@ export default {
     'cspell lint --no-progress --relative --no-must-find-files --dot --gitignore',
   ],
   '*.{js,mjs,cjs}': 'eslint --fix',
-  '*.md': 'markdownlint  --dot --fix',
+  '*.md': 'markdownlint --dot --fix',
 };
