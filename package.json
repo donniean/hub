@@ -29,7 +29,7 @@
     "prepare": "husky install"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.1.0",
+    "@commitlint/cli": "^18.2.0",
     "@commitlint/config-conventional": "^18.1.0",
     "@types/eslint": "^8.44.6",
     "commitizen": "^4.3.0",
