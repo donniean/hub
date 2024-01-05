@@ -6,8 +6,12 @@ module.exports = {
     prettier: {
       patterns: ['**'],
     },
+    tsc: {
+      patterns: ['**/*.ts'],
+    },
     eslint: {
-      patterns: ['**/*.{js,mjs,cjs}'],
+      patterns: ['**/*.{js,mjs,cjs,ts}'],
+      // vitestPatterns: ['**/*.test.ts'],
     },
     markdownlint: {
       patterns: ['**/*.md'],
