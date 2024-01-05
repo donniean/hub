@@ -92,13 +92,41 @@ module.exports = {
   },
   overrides: [
     {
-      files: ['**/*.mjs'],
+      files: ['**/*.{mjs,ts}'],
       plugins: ['simple-import-sort'],
       rules: {
         'sort-imports': 'off',
         'import/order': 'off',
         'simple-import-sort/imports': 'error',
         'simple-import-sort/exports': 'error',
+      },
+    },
+    {
+      files: ['**/*.ts'],
+      parserOptions: {
+        project: true,
+      },
+      settings: {
+        'import/resolver': {
+          typescript: {
+            alwaysTryTypes: true,
+          },
+        },
+      },
+      extends: [
+        'plugin:@typescript-eslint/recommended-type-checked',
+        'plugin:@typescript-eslint/stylistic-type-checked',
+        'airbnb-typescript/base',
+        'prettier',
+      ],
+      rules: {
+        '@typescript-eslint/consistent-type-exports': 'error',
+        '@typescript-eslint/consistent-type-imports': [
+          'error',
+          {
+            prefer: 'type-imports',
+          },
+        ],
       },
     },
   ],
