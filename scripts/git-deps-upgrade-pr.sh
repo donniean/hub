@@ -1,6 +1,7 @@
 function pr() {
   echo "\n"
   echo "upgrading $1"
+  echo ""
   git checkout -b chore
   ncu -u
   rm -rf node_modules
