@@ -1,13 +1,19 @@
-cd ~/Workspaces/collections && git checkout main && git pull --all
+function update() {
+  echo "\ncd ~/Workspaces/$1 && git checkout main && git pull --all"
+  cd ~/Workspaces/$1 && git checkout main && git pull --all
+}
 
-cd ~/Workspaces/configs && git checkout main && git pull --all
+names=(
+  collections
+  configs
+  next-app
+  private
+  react-app
+  styles
+)
 
-cd ~/Workspaces/next-app && git checkout main && git pull --all
-
-cd ~/Workspaces/proxy && git checkout main && git pull --all
-
-cd ~/Workspaces/react-app && git checkout main && git pull --all
-
-cd ~/Workspaces/styles && git checkout main && git pull --all
+for name in ${names[@]}; do
+  update $name
+done
 
 cd ~/Workspaces/collections
