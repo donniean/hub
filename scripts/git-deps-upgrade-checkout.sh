@@ -2,6 +2,7 @@ function checkout() {
   echo "\n"
   echo "checkout $1"
   echo ""
+  cd ~/Workspaces/$1
   git checkout main
   git branch -D chore
   git pull --all
