@@ -1,5 +1,5 @@
 function update() {
-  echo "cd ~/Workspaces/$1 && git checkout main && git pull --all\n"
+  echo "\ncd ~/Workspaces/$1 && git checkout main && git pull --all"
   cd ~/Workspaces/$1 && git checkout main && git pull --all
 }
 
