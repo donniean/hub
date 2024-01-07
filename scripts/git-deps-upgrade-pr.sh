@@ -8,7 +8,7 @@ function pr() {
   rm -rf node_modules
   rm package-lock.json
   npm install
-  git commit -a -m 'chore: upgrade dependencies' && git push --set-upstream origin chore
+  git commit -a -s -m 'chore: upgrade dependencies' && git push --set-upstream origin chore
   open "https://github.com/donniean/$1/compare/main...chore"
 }
 
