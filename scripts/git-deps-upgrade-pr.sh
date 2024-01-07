@@ -2,6 +2,7 @@ function pr() {
   echo "\n"
   echo "upgrading $1"
   echo ""
+  cd ~/Workspaces/$1
   git checkout -b chore
   ncu -u
   rm -rf node_modules
