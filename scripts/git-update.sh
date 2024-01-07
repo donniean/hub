@@ -17,7 +17,14 @@ function update() {
   cd ~/Workspaces/$1 && git checkout main && git pull --all
 }
 
-names=(collections configs next-app private react-app styles)
+names=(
+  collections
+  configs
+  next-app
+  private
+  react-app
+  styles
+)
 
 for name in ${names[@]}; do
   update $name
