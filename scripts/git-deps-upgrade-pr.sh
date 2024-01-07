@@ -1,4 +1,5 @@
 function pr() {
+  echo "\n"
   echo "upgrading $1"
   git checkout -b chore
   ncu -u
