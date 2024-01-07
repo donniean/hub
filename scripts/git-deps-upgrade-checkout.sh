@@ -1,9 +1,10 @@
 function checkout() {
   echo "\n"
   echo "checkout $1"
+  echo ""
   git checkout main
-  git pull --all
   git branch -D chore
+  git pull --all
   rm -rf node_modules/
   npm install
 }
