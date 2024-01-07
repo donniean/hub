@@ -1,4 +1,5 @@
 function pr() {
+  echo "upgrading $1"
   git checkout -b chore
   ncu -u
   rm -rf node_modules
@@ -12,7 +13,6 @@ names=(
   collections
   configs
   next-app
-  private
   react-app
   styles
 )

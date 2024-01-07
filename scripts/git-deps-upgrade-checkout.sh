@@ -1,4 +1,5 @@
 function checkout() {
+  echo "checkout $1"
   git checkout main
   git branch -D chore
   git pull --all
@@ -10,7 +11,6 @@ names=(
   collections
   configs
   next-app
-  private
   react-app
   styles
 )
