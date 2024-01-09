@@ -1,4 +1,7 @@
-basePath=$(cd "$(dirname "$0")" || exit;pwd)
+basePath=$(
+  cd "$(dirname "$0")" || exit
+  pwd
+)
 
 source "${basePath}"/brew-upgrade.sh
 

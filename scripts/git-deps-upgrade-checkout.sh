@@ -1,8 +1,8 @@
-function checkout() {
+checkout() {
   echo "\n"
   echo "checkout $1"
   echo ""
-  cd ~/Workspaces/$1
+  cd ~/Workspaces/"$1" || exit
   git checkout main
   git branch -D chore
   git pull --all
@@ -18,8 +18,8 @@ names=(
   styles
 )
 
-for name in ${names[@]}; do
-  checkout $name
+for name in "${names[@]}"; do
+  checkout "$name"
 done
 
-cd ~/Workspaces/collections
+cd ~/Workspaces/collections || exit
