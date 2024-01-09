@@ -1,8 +1,8 @@
-function pr() {
+pr() {
   echo "\n"
   echo "upgrading $1"
   echo ""
-  cd ~/Workspaces/$1
+  cd ~/Workspaces/"$1" || exit
   git checkout -b chore
   ncu -u
   rm -rf node_modules
@@ -20,8 +20,8 @@ names=(
   styles
 )
 
-for name in ${names[@]}; do
-  pr $name
+for name in "${names[@]}"; do
+  pr "$name"
 done
 
-cd ~/Workspaces/collections
+cd ~/Workspaces/collections || exit
