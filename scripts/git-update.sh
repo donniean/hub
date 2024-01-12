@@ -1,4 +1,5 @@
 update() {
+  echo "\n"
   echo "cd ~/Workspaces/$1 && git checkout main && git pull --all --prune"
   echo ""
   cd ~/Workspaces/"$1" && git checkout main && git pull --all --prune
@@ -14,9 +15,7 @@ names=(
 )
 
 for name in "${names[@]}"; do
-  update "$name" &
+  update "$name"
 done
-
-wait
 
 cd ~/Workspaces/collections || exit
