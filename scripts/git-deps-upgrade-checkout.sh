@@ -5,7 +5,7 @@ checkout() {
   cd ~/Workspaces/"$1" || exit
   git checkout main
   git branch -D chore
-  git pull --all
+  git pull --all --prune
   rm -rf node_modules/
   npm install
 }
