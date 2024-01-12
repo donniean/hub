@@ -15,7 +15,9 @@ names=(
 )
 
 for name in "${names[@]}"; do
-  update "$name"
+  update "$name" &
 done
+
+wait
 
 cd ~/Workspaces/collections || exit
