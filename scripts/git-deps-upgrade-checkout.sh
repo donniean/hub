@@ -1,5 +1,4 @@
 checkout() {
-  echo "\n"
   echo "checkout $1"
   echo ""
   cd ~/Workspaces/"$1" || exit
