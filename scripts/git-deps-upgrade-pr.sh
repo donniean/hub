@@ -1,5 +1,4 @@
 pr() {
-  echo "\n"
   echo "upgrading $1"
   echo ""
   cd ~/Workspaces/"$1" || exit
@@ -21,7 +20,9 @@ names=(
 )
 
 for name in "${names[@]}"; do
-  pr "$name"
+  pr "$name" &
 done
+
+wait
 
 cd ~/Workspaces/collections || exit
