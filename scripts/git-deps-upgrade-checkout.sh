@@ -19,7 +19,9 @@ names=(
 )
 
 for name in "${names[@]}"; do
-  checkout "$name"
+  checkout "$name" &
 done
+
+wait
 
 cd ~/Workspaces/collections || exit
