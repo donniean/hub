@@ -52,7 +52,7 @@
     "eslint-plugin-unicorn": "^50.0.1",
     "husky": "^9.0.6",
     "lint-staged": "^15.2.0",
-    "markdownlint-cli": "^0.38.0",
+    "markdownlint-cli": "^0.39.0",
     "prettier": "^3.2.4",
     "sort-package-json": "^2.6.0",
     "typescript": "^5.3.3"
