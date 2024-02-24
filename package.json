@@ -35,7 +35,7 @@
     "@tsconfig/node-lts": "^20.1.1",
     "@types/eslint": "^8.56.2",
     "@typescript-eslint/eslint-plugin": "^6.21.0",
-    "@typescript-eslint/parser": "^6.21.0",
+    "@typescript-eslint/parser": "^7.0.2",
     "commitizen": "^4.3.0",
     "cspell": "^8.3.2",
     "cz-conventional-changelog": "^3.3.0",
