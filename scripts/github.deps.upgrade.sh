@@ -1,13 +1,16 @@
+#!/usr/bin/env bash
+
+original_dir=$(pwd)
+
 pr() {
-  echo "upgrading $1"
-  echo ""
-  cd ~/Workspaces/"$1" || exit
+  cd HOME/Workspaces/"$1" || exit
   git checkout -b chore
-  ncu -u
+  ncu --upgrade
   rm -rf node_modules
   rm package-lock.json
   npm install
-  git commit -a -s -m 'chore: upgrade dependencies' && git push --set-upstream origin chore
+  git commit --all --signoff --gpg-sign --message 'chore: upgrade dependencies'
+  git push --set-upstream origin chore
   open "https://github.com/donniean/$1/compare/main...chore"
 }
 
@@ -25,4 +28,4 @@ done
 
 wait
 
-cd ~/Workspaces/collections || exit
+cd "$original_dir" || exit

@@ -1,7 +1,9 @@
+#!/usr/bin/env bash
+
+original_dir=$(pwd)
+
 checkout() {
-  echo "checkout $1"
-  echo ""
-  cd ~/Workspaces/"$1" || exit
+  cd HOME/Workspaces/"$1" || exit
   git checkout main
   git branch -D chore
   git pull --all --prune
@@ -23,4 +25,4 @@ done
 
 wait
 
-cd ~/Workspaces/collections || exit
+cd "$original_dir" || exit
