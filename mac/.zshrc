@@ -3,11 +3,20 @@ export ZSH=/Users/Donnie/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(docker git node npm nvm yarn zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-better-npm-completion yarn-autocompletions pnpm-shell-completion)
+plugins=(docker git node npm nvm yarn zsh-completions zsh-autosuggestions zsh-better-npm-completion yarn-autocompletions pnpm-shell-completion)
 
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
+
+# plugins by homebrew
+
+# https://github.com/zsh-users/zsh-completions
+
+# https://github.com/zsh-users/zsh-autosuggestions
+
+# https://github.com/zsh-users/zsh-syntax-highlighting
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
 
 # Powerlevel10k
@@ -18,7 +27,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
