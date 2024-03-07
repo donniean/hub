@@ -37,7 +37,7 @@
     "@typescript-eslint/eslint-plugin": "^7.1.1",
     "@typescript-eslint/parser": "^7.1.1",
     "commitizen": "^4.3.0",
-    "cspell": "^8.5.0",
+    "cspell": "^8.6.0",
     "cz-conventional-changelog": "^3.3.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
@@ -55,6 +55,6 @@
     "markdownlint-cli": "^0.39.0",
     "prettier": "^3.2.5",
     "sort-package-json": "^2.8.0",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   }
 }
