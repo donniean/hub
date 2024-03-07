@@ -28,6 +28,7 @@ module.exports = {
     'user-brands',
     'user-custom',
     'user-files',
+    'user-git',
     'user-npm',
   ],
   dictionaryDefinitions: [
@@ -49,6 +50,11 @@ module.exports = {
     {
       name: 'user-files',
       path: './dictionaries/files.dic',
+      addWords: true,
+    },
+    {
+      name: 'user-git',
+      path: './dictionaries/git.dic',
       addWords: true,
     },
     {

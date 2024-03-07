@@ -1,7 +1,14 @@
 #!/usr/bin/env bash
 
-echo 'npm uninstall -g depcheck http-server npm-check-updates npm-check serve sort-package-json ts-node corepack'
-npm uninstall -g depcheck http-server npm-check-updates npm-check serve sort-package-json ts-node corepack
+npm uninstall --global \
+  @donniean/configs \
+  corepack \
+  depcheck \
+  http-server \
+  npm-check-updates \
+  npm-check \
+  serve \
+  sort-package-json \
+  ts-node
 
-echo 'npm uninstall -g npm'
-npm uninstall -g npm
+npm uninstall --global npm
