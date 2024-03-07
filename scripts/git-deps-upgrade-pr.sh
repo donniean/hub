@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 pr() {
   echo "upgrading $1"
   echo ""

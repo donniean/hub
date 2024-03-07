@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 echo 'cd ${ZSH_CUSTOM:=~/.oh-my-zsh/custom}/plugins/zsh-completions && git pull'
 cd "${ZSH_CUSTOM:=~/.oh-my-zsh/custom}"/plugins/zsh-completions && git pull
 

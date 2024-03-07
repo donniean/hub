@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 basePath=$(
   cd "$(dirname "$0")" || exit
   pwd

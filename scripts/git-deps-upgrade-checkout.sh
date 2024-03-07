@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 checkout() {
   echo "checkout $1"
   echo ""

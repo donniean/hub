@@ -1,3 +1,5 @@
+#!/usr/bin/env bash
+
 update() {
   echo "\n"
   echo "cd ~/Workspaces/$1 && git checkout main && git pull --all --prune"
