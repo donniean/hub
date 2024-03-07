@@ -3,12 +3,24 @@ export ZSH=/Users/Donnie/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(docker git node npm nvm yarn zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-better-npm-completion yarn-autocompletions pnpm-shell-completion)
+plugins=(
+  docker \
+  git \
+  node \
+  npm \
+  nvm \
+  yarn \
+  zsh-completions \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting \
+  zsh-better-npm-completion \
+  yarn-autocompletions \
+  pnpm-shell-completion
+)
 
 autoload -U compinit && compinit
 
 source $ZSH/oh-my-zsh.sh
-
 
 # Powerlevel10k
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
@@ -18,7 +30,8 @@ if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]
   source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
 fi
 
-source /usr/local/opt/powerlevel10k/powerlevel10k.zsh-theme
+source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
 
