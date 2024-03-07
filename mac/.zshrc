@@ -3,7 +3,20 @@ export ZSH=/Users/Donnie/.oh-my-zsh
 
 ZSH_THEME="robbyrussell"
 
-plugins=(docker git node npm nvm yarn zsh-completions zsh-autosuggestions zsh-syntax-highlighting zsh-better-npm-completion yarn-autocompletions pnpm-shell-completion)
+plugins=(
+  docker \
+  git \
+  node \
+  npm \
+  nvm \
+  yarn \
+  zsh-completions \
+  zsh-autosuggestions \
+  zsh-syntax-highlighting \
+  zsh-better-npm-completion \
+  yarn-autocompletions \
+  pnpm-shell-completion
+)
 
 autoload -U compinit && compinit
 
