@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
 # http-server
-# npm-check-updates
+# npm-check
 
 npm install --global \
   @donniean/configs \
   depcheck \
-  npm-check \
+  npm-check-updates \
   serve \
   sort-package-json \
   ts-node
