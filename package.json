@@ -30,8 +30,8 @@
     "prepare": "husky"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.0.3",
-    "@commitlint/config-conventional": "^19.0.3",
+    "@commitlint/cli": "^19.1.0",
+    "@commitlint/config-conventional": "^19.1.0",
     "@tsconfig/node-lts": "^20.1.1",
     "@types/eslint": "^8.56.5",
     "@typescript-eslint/eslint-plugin": "^7.2.0",
