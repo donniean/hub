@@ -26,10 +26,12 @@ module.exports = {
   dictionaries: [
     'user-apps',
     'user-brands',
-    'user-custom',
+    'user-docker',
     'user-files',
     'user-git',
+    'user-nginx',
     'user-npm',
+    'user-typescript',
   ],
   dictionaryDefinitions: [
     {
@@ -43,8 +45,8 @@ module.exports = {
       addWords: true,
     },
     {
-      name: 'user-custom',
-      path: './dictionaries/custom.dic',
+      name: 'user-docker',
+      path: './dictionaries/docker.dic',
       addWords: true,
     },
     {
@@ -58,9 +60,20 @@ module.exports = {
       addWords: true,
     },
     {
+      name: 'user-nginx',
+      path: './dictionaries/nginx.dic',
+      addWords: true,
+    },
+    {
       name: 'user-npm',
       path: './dictionaries/npm.dic',
       addWords: true,
     },
+    {
+      name: 'user-typescript',
+      path: './dictionaries/typescript.dic',
+      addWords: true,
+    },
   ],
+  words: ['fpath'],
 };

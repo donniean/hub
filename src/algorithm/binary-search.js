@@ -1,12 +1,12 @@
-function binarySearch(nums, target) {
+function binarySearch(n, target) {
   let left = 0;
-  let right = nums.length - 1;
+  let right = n.length - 1;
   let mid = 0;
 
   while (left <= right) {
     mid = Math.floor(left + (right - left) / 2);
 
-    const value = nums[mid];
+    const value = n[mid];
 
     if (target === value) {
       return mid;
