@@ -1,5 +1,5 @@
 function customNew(Func, ...args) {
-  // 1. 创建一个空的简单JavaScript对象（即{}）
+  // 1. 创建一个空的简单 JavaScript 对象（即{}）
   // eslint-disable-next-line sonarjs/prefer-object-literal
   const object = {};
 
