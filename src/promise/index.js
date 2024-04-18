@@ -12,11 +12,11 @@ class CustomPromise {
     this.resolvedCallbacks = [];
     this.rejectedCallbacks = [];
 
-    const resolve = value => {
+    const resolve = (value) => {
       if (this.status === STATUS_MAP.PENDING) {
         this.status = STATUS_MAP.FULFILLED;
         this.value = value;
-        this.resolvedCallbacks.forEach(callback => {
+        this.resolvedCallbacks.forEach((callback) => {
           if (typeof callback === 'function') {
             callback(value);
           }
@@ -24,11 +24,11 @@ class CustomPromise {
       }
     };
 
-    const reject = reason => {
+    const reject = (reason) => {
       if (this.status === STATUS_MAP.PENDING) {
         this.status = STATUS_MAP.REJECTED;
         this.reason = reason;
-        this.rejectedCallbacks.forEach(callback => {
+        this.rejectedCallbacks.forEach((callback) => {
           if (typeof callback === 'function') {
             callback(reason);
           }
@@ -80,16 +80,16 @@ const p = new CustomPromise((resolve, reject) => {
   }, 2000);
 });
 
-p.then(value => {
+p.then((value) => {
   console.log('then 1', value);
   return value + 1;
 })
-  .then(value => {
+  .then((value) => {
     console.log('then 2', value);
     return value;
   })
   // eslint-disable-next-line unicorn/prefer-top-level-await
-  .catch(error => {
+  .catch((error) => {
     console.error('catch', error);
   });
 

@@ -27,12 +27,12 @@ const o = {
 };
 
 o.p()
-  .then(value => {
+  .then((value) => {
     console.log('resolve', value);
     return value;
   })
   // eslint-disable-next-line unicorn/prefer-top-level-await
-  .catch(error => {
+  .catch((error) => {
     console.log('reject', error);
   });
 

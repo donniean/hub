@@ -3,8 +3,8 @@ Promise.prototype.finally = function (callback) {
   const P = this.constructor;
 
   return this.then(
-    value => P.resolve(callback()).then(() => value),
-    error =>
+    (value) => P.resolve(callback()).then(() => value),
+    (error) =>
       P.resolve(callback()).then(() => {
         throw error;
       }),
@@ -16,7 +16,7 @@ Promise.first = function first(promises = []) {
     const { length } = promises;
     let count = 0;
 
-    promises.forEach(promise => {
+    promises.forEach((promise) => {
       Promise.resolve(promise)
         .then(resolve)
         .catch(() => {
@@ -34,9 +34,9 @@ Promise.last = function last(promises = []) {
     const { length } = promises;
     let count = 0;
 
-    promises.forEach(promise => {
+    promises.forEach((promise) => {
       Promise.resolve(promise)
-        .then(value => {
+        .then((value) => {
           count += 1;
           // eslint-disable-next-line promise/always-return
           if (count === length) {
@@ -55,7 +55,7 @@ Promise.last = function last(promises = []) {
 
 Promise.none = function none(promises) {
   const list = promises.map(
-    promise =>
+    (promise) =>
       new Promise((resolve, reject) =>
         // eslint-disable-next-line no-promise-executor-return
         Promise.resolve(promise).then(reject, resolve),
@@ -67,9 +67,9 @@ Promise.none = function none(promises) {
 
 Promise.any = function any(promises) {
   const res = [];
-  const list = promises.map(promise =>
+  const list = promises.map((promise) =>
     Promise.resolve(promise)
-      .then(value => res.push(value))
+      .then((value) => res.push(value))
       .catch(() => {}),
   );
 
@@ -151,41 +151,41 @@ const promises = [
 ];
 
 Promise.first(promises)
-  .then(value => {
+  .then((value) => {
     console.log('first then', value);
     return value;
   })
   // eslint-disable-next-line unicorn/prefer-top-level-await
-  .catch(error => {
+  .catch((error) => {
     console.error('first catch', error);
   });
 
 Promise.last(promises)
-  .then(value => {
+  .then((value) => {
     console.log('last then', value);
     return value;
   })
   // eslint-disable-next-line unicorn/prefer-top-level-await
-  .catch(error => {
+  .catch((error) => {
     console.error('last catch', error);
   });
 
 Promise.none(promises)
-  .then(value => {
+  .then((value) => {
     console.log('none then', value);
     return value;
   })
   // eslint-disable-next-line unicorn/prefer-top-level-await
-  .catch(error => {
+  .catch((error) => {
     console.error('none catch', error);
   });
 
 Promise.any(promises)
-  .then(value => {
+  .then((value) => {
     console.log('any then', value);
     return value;
   })
   // eslint-disable-next-line unicorn/prefer-top-level-await
-  .catch(error => {
+  .catch((error) => {
     console.error('any catch', error);
   });
