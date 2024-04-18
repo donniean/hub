@@ -3,7 +3,7 @@ let count = 0;
 
 function useState(defaultState) {
   const index = count;
-  const setState = value => {
+  const setState = (value) => {
     states[index] = value;
   };
 

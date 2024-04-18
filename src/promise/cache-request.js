@@ -5,8 +5,8 @@ function request(key, { expires = 300 } = {}) {
 
   const func = () => {
     const p = fetch(key)
-      .then(res => res.json())
-      .catch(error => {
+      .then((res) => res.json())
+      .catch((error) => {
         requestCache.delete(key);
         throw error;
       });
@@ -29,7 +29,7 @@ function request(key, { expires = 300 } = {}) {
 
 setInterval(() => {
   Request('https://api.github.com/search/repositories?q=react')
-    .then(res => {
+    .then((res) => {
       console.log(res);
       return res;
     })

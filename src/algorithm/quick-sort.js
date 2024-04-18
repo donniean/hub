@@ -10,7 +10,7 @@ function quickSort(data) {
   const right = [];
   const [pivot] = data.splice(pivotIndex, 1);
 
-  data.forEach(value => {
+  data.forEach((value) => {
     if (value < pivot) {
       left.push(value);
     } else {
