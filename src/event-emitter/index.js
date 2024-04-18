@@ -34,7 +34,9 @@ class EventEmitter {
 
   emit(eventName, ...args) {
     if (this.events[eventName]) {
-      this.events[eventName].forEach(listener => listener.call(this, ...args));
+      this.events[eventName].forEach((listener) =>
+        listener.call(this, ...args),
+      );
     }
   }
 }
