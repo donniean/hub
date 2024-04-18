@@ -1,4 +1,7 @@
-module.exports = {
+// eslint-disable-next-line import/no-unresolved
+import { defineConfig } from '@donniean/configs';
+
+export default defineConfig({
   features: {
     gitignore: true,
     gitattributes: true,
@@ -27,4 +30,4 @@ module.exports = {
     'lint-staged': true,
     husky: true,
   },
-};
+});
