@@ -6,7 +6,7 @@ module.exports = {
     sourceType: 'module',
   },
   env: {
-    browser: false,
+    browser: true,
     node: true,
     commonjs: true,
     'shared-node-browser': true,
@@ -18,7 +18,7 @@ module.exports = {
     es2020: true,
     es2021: true,
     es2022: true,
-    worker: false,
+    worker: true,
   },
   extends: [
     'airbnb-base',

@@ -1,4 +1,6 @@
-module.exports = {
+import { defineConfig } from '@donniean/configs';
+
+export default defineConfig({
   features: {
     gitignore: true,
     gitattributes: true,
@@ -27,4 +29,4 @@ module.exports = {
     'lint-staged': true,
     husky: true,
   },
-};
+});

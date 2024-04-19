@@ -20,6 +20,8 @@ jobs:
           cache: npm
       - name: Install Dependencies
         run: npm ci
+      # - name: Lint All
+      #   run: npm run lint-all
       # Linters
       - name: Prettier
         run: npm run lint:prettier
