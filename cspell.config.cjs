@@ -57,6 +57,7 @@ module.exports = {
     'svgr',
     'tailwindcss',
     'tanstack',
+    'tsup',
     'vitest',
     'zustand',
     'classname',
