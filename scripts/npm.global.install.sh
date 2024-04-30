@@ -5,6 +5,7 @@
 
 npm install --global \
   @donniean/configs \
+  concurrently \
   depcheck \
   npm-check-updates \
   serve \
