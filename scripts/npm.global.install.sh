@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 
-# http-server
-# npm-check
+original_dir=$(pwd)
+
+cd "$HOME" || exit
 
 npm install --global \
   @donniean/configs \
@@ -11,3 +12,8 @@ npm install --global \
   serve \
   sort-package-json \
   ts-node
+
+# http-server
+# npm-check
+
+cd "$original_dir" || exit
