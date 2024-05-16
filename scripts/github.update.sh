@@ -5,7 +5,7 @@ original_dir=$(pwd)
 checkout() {
   cd "$HOME"/Workspaces/"$1" || exit
   git checkout main
-  git branch --delete chore
+  git branch -D chore
   git pull --all --prune
   rm -rf node_modules/
   npm install
