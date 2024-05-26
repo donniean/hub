@@ -58,8 +58,8 @@
     "eslint-plugin-sonarjs": "^0.25.1",
     "eslint-plugin-unicorn": "^53.0.0",
     "husky": "^9.0.11",
-    "lint-staged": "^15.2.4",
-    "markdownlint-cli": "^0.40.0",
+    "lint-staged": "^15.2.5",
+    "markdownlint-cli": "^0.41.0",
     "prettier": "^3.2.5",
     "sort-package-json": "^2.10.0",
     "typescript": "^5.4.5"
