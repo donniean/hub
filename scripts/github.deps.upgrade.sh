@@ -3,7 +3,7 @@
 original_dir=$(pwd)
 
 pr() {
-  cd "$HOME"/Workspaces/"$1" || exit
+  cd "$HOME"/repos/"$1" || exit
   git checkout -b chore
   ncu --upgrade
   rm -rf node_modules
