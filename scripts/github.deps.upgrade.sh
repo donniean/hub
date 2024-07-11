@@ -9,7 +9,7 @@ pr() {
   rm -rf node_modules
   rm package-lock.json
   npm install
-  git commit --all --signoff --gpg-sign --message 'chore: upgrade dependencies'
+  git commit --all --signoff --gpg-sign --message 'chore: bump dependencies'
   git push --set-upstream origin chore
   open "https://github.com/donniean/$1/compare/main...chore"
 }
