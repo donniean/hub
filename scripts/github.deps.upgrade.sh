@@ -29,9 +29,9 @@ pr() {
   gh pr view --web
 
   # checkout and pull
-  git checkout main
-  git branch -D chore
-  git pull --all --prune
+  # git checkout main
+  # git branch -D chore
+  # git pull --all --prune
 }
 
 names=(
