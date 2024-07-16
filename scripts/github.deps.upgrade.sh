@@ -27,6 +27,11 @@ pr() {
   # pr_url=$(echo "$pr_output" | grep -o 'https://github\.com/[^ ]*')
   gh pr merge --auto --squash
   gh pr view --web
+
+  # checkout and pull
+  git checkout main
+  git branch -D chore
+  git pull --all --prune
 }
 
 names=(
