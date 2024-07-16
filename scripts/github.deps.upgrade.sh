@@ -5,16 +5,15 @@ original_dir=$(pwd)
 pr() {
   cd "$HOME"/repos/"$1" || exit
 
-  # checkout and pull
+  # update main branch
   git checkout main
-  git branch -D chore
   git pull --all --prune
 
-  # upgrade dependencies
+  # bump dependencies
   git checkout -b chore
   ncu --upgrade
-  rm -rf node_modules
-  rm package-lock.json
+  rm -rf -- **/node_modules/
+  rm -- **/package-lock.json
   npm install
 
   # commit and push
@@ -23,15 +22,8 @@ pr() {
 
   # create and merge Pull Request
   gh pr create --fill
-  # pr_output=$(gh pr create --fill)
-  # pr_url=$(echo "$pr_output" | grep -o 'https://github\.com/[^ ]*')
   gh pr merge --auto --squash
   gh pr view --web
-
-  # checkout and pull
-  # git checkout main
-  # git branch -D chore
-  # git pull --all --prune
 }
 
 names=(
