@@ -12,8 +12,8 @@ pr() {
   # bump dependencies
   git checkout -b chore
   ncu --upgrade
-  rm -rf -- **/node_modules/
-  rm -rf -- **/package-lock.json
+  rm -rf node_modules/
+  rm package-lock.json
   npm install
 
   # commit and push
