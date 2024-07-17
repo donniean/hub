@@ -11,7 +11,7 @@ npm install --global \
   npm-check-updates \
   serve \
   sort-package-json \
-  ts-node
+  tsx
 
 # http-server
 # npm-check
