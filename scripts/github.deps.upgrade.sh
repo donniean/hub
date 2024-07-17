@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-shopt -s globstar
-
 original_dir=$(pwd)
 
 pr() {
@@ -14,8 +12,8 @@ pr() {
   # bump dependencies
   git checkout -b chore
   ncu --upgrade
-  rm -rf -- **/node_modules/
-  rm -- **/package-lock.json
+  rm -rf node_modules/
+  rm package-lock.json
   npm install
 
   # commit and push
