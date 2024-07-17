@@ -37,6 +37,7 @@ module.exports = {
     'huskyrc',
     'lintstagedrc',
     'markdownlintignore',
+    'npmjs',
     'stylelintignore',
     'stylelintrc',
     'signoff',
