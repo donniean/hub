@@ -12,7 +12,7 @@ npm uninstall --global \
   npm-check-updates \
   serve \
   sort-package-json \
-  ts-node
+  tsx
 
 # npm uninstall --global npm
 
