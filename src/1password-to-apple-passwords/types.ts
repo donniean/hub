@@ -1,4 +1,4 @@
-interface Data {
+interface OnePasswordData {
   accounts: Account[];
 }
 
@@ -147,4 +147,13 @@ type SectionFiledValue =
       creditCardType: string;
     };
 
-export type { Data };
+interface ApplePassword {
+  title: string;
+  url: string;
+  username: string;
+  password: string;
+  notes: string;
+  otpAuth: string;
+}
+
+export type { ApplePassword, OnePasswordData };

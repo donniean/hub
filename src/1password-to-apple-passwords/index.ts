@@ -1,3 +1,3 @@
-import { onePasswordToApplePasswords } from './main';
+import { main } from './main';
 
-onePasswordToApplePasswords();
+main();
