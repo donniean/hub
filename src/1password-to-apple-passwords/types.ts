@@ -16,23 +16,29 @@ interface Account {
 
 interface Vault {
   attrs: {
-    uuid: 'string';
-    desc: 'string';
-    avatar: 'string';
-    name: 'string';
-    type: 'string';
+    uuid: string;
+    desc: string;
+    avatar: string;
+    name: string;
+    type: string;
   };
   items: Item[];
 }
 
 interface Item {
-  uuid: 'string';
+  uuid: string;
   favIndex: number;
   createdAt: number;
   updatedAt: number;
   state: 'active';
-  categoryUuid: number;
+  categoryUuid: string;
   details: {
+    htmlForm?: {
+      htmlMethod?: string;
+      htmlAction?: string;
+      htmlId?: string;
+      htmlName?: string;
+    };
     loginFields: LoginField[];
     notesPlain?: string;
     sections: Section[];
@@ -40,21 +46,23 @@ interface Item {
       value: string;
       time: number;
     }[];
+    password?: '';
   };
   overview: {
     subtitle: string;
     icons: null;
-    urls: {
+    urls?: {
       label: string;
       url: string;
       mode: string;
     }[];
+    tags?: string[];
     title: string;
     url: string;
-    ps: number;
-    pbe: number;
+    ps?: number;
+    pbe?: number;
     // cspell: disable-next-line
-    pgrng: boolean;
+    pgrng?: boolean;
     watchtowerExclusions: null;
   };
 }
@@ -62,22 +70,20 @@ interface Item {
 interface LoginField {
   value: string;
   id: string;
-  name: string;
-  fieldType: 'T' | 'P' | '';
-  designation: string;
+  name?: string;
+  fieldType: string;
+  designation?: string;
 }
 
 interface Section {
   title: string;
-  name: string;
+  name?: string;
   fields: {
     title: string;
     id: string;
-    value: {
-      // cspell: disable-next-line
-      totp: string;
-    };
+    value: SectionFiledValue;
     guarded: boolean;
+    clipboardFilter?: string;
     multiline: boolean;
     // cspell: disable-next-line
     dontGenerate: boolean;
@@ -87,6 +93,58 @@ interface Section {
       capitalization: string;
     };
   }[];
+  hideAddAnotherField?: boolean;
 }
+
+type SectionFiledValue =
+  | {
+      // cspell: disable-next-line
+      totp: string;
+    }
+  | { concealed: string }
+  | { url: string }
+  | { phone: string }
+  | { string: string }
+  | { menu: string }
+  | { date: number }
+  | {
+      monthYear: number;
+    }
+  | {
+      email: {
+        email_address: string;
+        provider: null;
+      };
+    }
+  | {
+      sshKey: {
+        privateKey: string;
+        metadata: {
+          privateKey: string;
+          publicKey: string;
+          fingerprint: string;
+          keyType:
+            | string
+            | {
+                rsa: 4096;
+              };
+        };
+      };
+    }
+  | {
+      address: {
+        street: string;
+        city: string;
+        country: string;
+        zip: string;
+        state: string;
+      };
+    }
+  | {
+      creditCardNumber: string;
+    }
+  | {
+      creditCardType: string;
+    };
 
 export type { Data };
