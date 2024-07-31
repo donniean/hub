@@ -23,7 +23,8 @@ pr() {
   # create and merge Pull Request
   gh pr create --fill
   gh pr merge --auto --squash
-  gh pr view --web
+  # gh pr view --web
+  gh pr list --web
 }
 
 names=(
