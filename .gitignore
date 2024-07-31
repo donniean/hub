@@ -84,3 +84,6 @@ next-env.d.ts
 
 # Vercel
 .vercel/
+
+
+src/1password-to-apple-passwords/data.json
