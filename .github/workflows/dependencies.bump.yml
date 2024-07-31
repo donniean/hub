@@ -36,4 +36,5 @@ jobs:
           commit-message: ${{ env.COMMIT_MESSAGE }}
           signoff: true
           delete-branch: true
+          branch-suffix: timestamp
           title: ${{ env.COMMIT_MESSAGE }}
