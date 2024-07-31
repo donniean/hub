@@ -1,4 +1,4 @@
-name: Bump
+name: Bump Dependencies
 
 on:
   workflow_dispatch:
@@ -7,7 +7,7 @@ on:
 
 jobs:
   lint:
-    name: Bump
+    name: dependencies-bump
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
