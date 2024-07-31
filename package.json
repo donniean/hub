@@ -39,7 +39,7 @@
     "@donniean/configs": "^6.23.3",
     "@tsconfig/node-lts": "^20.1.3",
     "@types/eslint": "^9.6.0",
-    "@typescript-eslint/eslint-plugin": "^7.18.0",
+    "@typescript-eslint/eslint-plugin": "^8.0.0",
     "@typescript-eslint/parser": "^7.18.0",
     "autocorrect-node": "^2.11.1",
     "commitizen": "^4.3.0",
