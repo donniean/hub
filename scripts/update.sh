@@ -11,4 +11,4 @@ source "${basePath}"/oh-my-zsh.plugins.update.sh
 
 source "${basePath}"/npm.global.update.sh
 
-source "${basePath}"/github.update.sh
+source "${basePath}"/github.repos.update.sh
