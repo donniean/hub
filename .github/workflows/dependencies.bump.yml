@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  dependencies-bump:
+  bump:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
