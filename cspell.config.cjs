@@ -38,6 +38,7 @@ module.exports = {
     'lintstagedrc',
     'markdownlintignore',
     'npmjs',
+    'rimraf',
     'stylelintignore',
     'stylelintrc',
     'signoff',
