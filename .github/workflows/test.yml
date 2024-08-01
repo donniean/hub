@@ -15,8 +15,8 @@ jobs:
     steps:
       - name: echo
         run: |
-          echo actor ${{github.actor}}
-          echo repository_owner ${{github.repository_owner}}
-          echo pull_request.title ${{github.event.pull_request.title}}
-          echo pull_request.user.login ${{github.event.pull_request.user.login}}
-          echo pull_request.user.name ${{github.event.pull_request.user.name}}
+          echo "actor ${{github.actor}}"
+          echo "repository_owner ${{github.repository_owner}}"
+          echo "pull_request.title ${{github.event.pull_request.title}}"
+          echo "pull_request.user.login ${{github.event.pull_request.user.login}}"
+          echo "pull_request.user.name ${{github.event.pull_request.user.name}}"
