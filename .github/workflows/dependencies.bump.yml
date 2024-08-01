@@ -1,4 +1,4 @@
-name: Bump Dependencies
+name: Dependencies Bump
 
 on:
   schedule:
@@ -8,7 +8,6 @@ on:
 
 jobs:
   dependencies-bump:
-    name: dependencies-bump
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
