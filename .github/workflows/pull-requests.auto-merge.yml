@@ -18,8 +18,8 @@ jobs:
       (
         github.actor == github.repository_owner &&
         github.event.pull_request.user.login == 'github-actions[bot]' &&
-        contains(github.event.pull_request.title, 'chore(bot)') &&
-        contains(github.event.pull_request.title, 'bump dependencies')
+        startsWith(github.event.pull_request.title, 'chore(bot)') &&
+        endsWith(github.event.pull_request.title, 'bump dependencies')
       )
     steps:
       - name: Auto-merge Pull Requests
