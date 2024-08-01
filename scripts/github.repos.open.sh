@@ -2,7 +2,7 @@
 
 original_dir=$(pwd)
 
-pr() {
+func() {
   cd "$HOME"/repos/"$1" || exit
   gh pr list --web
 }
@@ -16,7 +16,7 @@ names=(
 )
 
 for name in "${names[@]}"; do
-  pr "$name" &
+  func "$name" &
 done
 
 wait
