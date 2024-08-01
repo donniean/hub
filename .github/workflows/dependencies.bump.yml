@@ -39,6 +39,7 @@ jobs:
           COMMIT_MESSAGE: 'chore(bot): bump dependencies'
         uses: peter-evans/create-pull-request@v6
         with:
+          token: ${{ secrets.GH_TOKEN }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
           signoff: true
           delete-branch: true
