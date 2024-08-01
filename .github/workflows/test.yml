@@ -1,6 +1,8 @@
 name: test
 on:
   workflow_dispatch:
+  schedule:
+    - cron: '30 5 * * *'
 
 permissions:
   contents: write
@@ -10,5 +12,8 @@ jobs:
   test:
     runs-on: ubuntu-latest
     steps:
-      - name: echo
-        run: echo ${{github}}
+      - name: actor
+        run: echo ${{github.actor}}
+
+      - name: actor_id
+        run: echo ${{github.actor_id}}
