@@ -16,7 +16,10 @@ jobs:
       github.actor == 'dependabot[bot]' ||
       (
         github.actor == github.repository_owner &&
-        github.event.pull_request.user.login == 'github-actions[bot]' &&
+        (
+          github.event.pull_request.user.login == 'github-actions[bot]' ||
+          github.event.pull_request.user.login == github.repository_owner
+        ) &&
         startsWith(github.event.pull_request.title, 'chore(bot)') &&
         endsWith(github.event.pull_request.title, 'bump dependencies')
       )
