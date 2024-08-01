@@ -1,6 +1,7 @@
 name: test
 on:
   workflow_dispatch:
+  pull_request:
   schedule:
     - cron: '30 5 * * *'
 
@@ -15,5 +16,11 @@ jobs:
       - name: actor
         run: echo ${{github.actor}}
 
-      - name: actor_id
-        run: echo ${{github.actor_id}}
+      - name: repository_owner
+        run: echo ${{github.repository_owner}}
+
+      - name: pull_request.title
+        run: echo ${{github.event.pull_request.title}}
+
+      - name: pull_request.user
+        run: echo ${{github.event.pull_request.user}}
