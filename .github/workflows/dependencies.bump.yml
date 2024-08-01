@@ -22,17 +22,17 @@ jobs:
           node-version: 'lts/*'
           cache: npm
 
-      - name: Install npm-check-updates
-        run: npm install --global npm-check-updates
+      - name: Install Global Dependencies
+        run: npm install --global npm-check-updates rimraf
 
       - name: Bump Dependencies
         run: ncu --upgrade && ls
 
       - name: Remove node_modules
-        run: rm -rf **/node_modules/ && ls
+        run: rimraf --glob **/node_modules/ && ls
 
       - name: Remove package-lock.json
-        run: rm -rf **/package-lock.json && ls
+        run: rimraf --glob **/package-lock.json && ls
 
       - name: Install Dependencies
         run: npm install && ls
