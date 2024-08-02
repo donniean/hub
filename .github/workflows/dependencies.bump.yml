@@ -37,7 +37,7 @@ jobs:
       - name: Install Dependencies
         run: npm install && ls
 
-      - name: Generate a token
+      - name: Generate a Token
         id: generate-token
         uses: actions/create-github-app-token@v1
         with:
