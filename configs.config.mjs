@@ -16,6 +16,12 @@ export default defineConfig({
       patterns: ['**/*.{js,mjs,cjs,ts}'],
       // vitestPatterns: ['**/*.test.ts'],
     },
+    stylelint: {
+      patterns: ['**/*.css'],
+    },
+    htmlhint: {
+      patterns: ['**/*.html'],
+    },
     markdownlint: {
       patterns: ['**/*.md'],
     },
