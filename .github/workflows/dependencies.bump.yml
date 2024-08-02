@@ -38,6 +38,7 @@ jobs:
         run: npm install && ls
 
       - name: 'Create Pull Request'
+        id: create-pull-request
         env:
           COMMIT_MESSAGE: 'chore(bot): bump dependencies'
         uses: peter-evans/create-pull-request@v6
@@ -48,3 +49,9 @@ jobs:
           delete-branch: true
           branch-suffix: timestamp
           title: ${{ env.COMMIT_MESSAGE }}
+
+      - name: Auto-Merge Pull Request
+        if: ${{ steps.create-pull-request.outputs.pull-request-number }}
+        run: gh pr merge --auto --squash "${{ steps.create-pull-request.outputs.pull-request-url }}"
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
