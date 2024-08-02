@@ -23,15 +23,19 @@
     "lint:cspell": "cspell lint --no-progress --relative --no-must-find-files --dot --gitignore \"**\"",
     "lint:eslint": "eslint \"**/*.{js,mjs,cjs,ts}\"",
     "lint:eslint:fix": "npm run lint:eslint -- --fix",
+    "lint:htmlhint": "htmlhint --ignore=\"**/coverage/**\" \"**/*.html\"",
     "lint:markdownlint": "markdownlint --dot \"**/*.md\"",
     "lint:markdownlint:fix": "npm run lint:markdownlint -- --fix",
     "lint:prettier": "prettier --check --ignore-unknown \"**\"",
     "lint:prettier:fix": "prettier --write --ignore-unknown \"**\"",
     "lint:sort-package-json": "npm run lint:sort-package-json:fix -- --check",
     "lint:sort-package-json:fix": "sort-package-json",
+    "lint:stylelint": "stylelint \"**/*.css\"",
+    "lint:stylelint:fix": "npm run lint:stylelint -- --fix",
     "lint:tsc": "tsc --noEmit",
     "pre-commit": "lint-staged --concurrent false",
-    "prepare": "husky"
+    "prepare": "husky",
+    "serve": "serve src/styles/"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.3.0",
@@ -57,11 +61,16 @@
     "eslint-plugin-simple-import-sort": "^12.1.1",
     "eslint-plugin-sonarjs": "^0.25.1",
     "eslint-plugin-unicorn": "^55.0.0",
+    "htmlhint": "^1.1.4",
     "husky": "^9.1.4",
     "lint-staged": "^15.2.7",
     "markdownlint-cli": "^0.41.0",
     "prettier": "^3.3.3",
+    "serve": "^14.2.3",
     "sort-package-json": "^2.10.0",
+    "stylelint": "^16.8.1",
+    "stylelint-config-recess-order": "^5.0.1",
+    "stylelint-config-standard": "^36.0.1",
     "typescript": "^5.5.4"
   }
 }

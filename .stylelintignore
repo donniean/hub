@@ -4,5 +4,3 @@ node_modules/
 coverage/
 dist/
 .next/
-.changeset/
-CHANGELOG.md

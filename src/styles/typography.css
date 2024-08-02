@@ -1,0 +1,28 @@
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    'Segoe UI',
+    'Noto Sans',
+    Roboto,
+    Oxygen,
+    Cantarell,
+    'Fira Sans',
+    'Liberation Sans',
+    'Droid Sans',
+    Ubuntu,
+    'PingFang SC',
+    'Noto Sans CJK SC',
+    'Noto Sans SC',
+    /*cspell: disable-line*/ 'Hiragino Sans GB',
+    /*cspell: disable-line*/ 'WenQuanYi Micro Hei',
+    'Microsoft YaHei',
+    'Helvetica Neue',
+    Helvetica,
+    Arial,
+    sans-serif,
+    'Apple Color Emoji',
+    'Segoe UI Emoji',
+    'Segoe UI Symbol';
+}

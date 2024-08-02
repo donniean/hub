@@ -16,7 +16,7 @@
     "noUnusedParameters": true,
     // checkJs
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
     // custom
     "module": "esnext",
     "moduleResolution": "node",
