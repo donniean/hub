@@ -11,24 +11,20 @@ jobs:
   auto-merge:
     runs-on: ubuntu-latest
     steps:
-      # https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions#enable-auto-merge-on-a-pull-request
-      - name: Auto-Merge Dependabot Pull Requests
-        if: github.actor == 'dependabot[bot]'
-        run: gh pr merge --auto --squash "$PR_URL"
-        env:
-          PR_URL: ${{ github.event.pull_request.html_url }}
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: echo
-        # if: >
-        #   github.actor == github.repository_owner &&
-        #   (
-        #     github.event.pull_request.user.login == 'github-actions[bot]' ||
-        #     github.event.pull_request.user.login == github.repository_owner
-        #   ) &&
-        #   startsWith(github.event.pull_request.title, 'chore(bot)') &&
-        #   endsWith(github.event.pull_request.title, 'bump dependencies')
         run: |
           echo "github.actor ${{ github.actor }}"
           echo "github.repository_owner ${{ github.repository_owner }}"
           echo "github.event.pull_request.user.login ${{ github.event.pull_request.user.login }}"
           echo "github.event.pull_request.title ${{ github.event.pull_request.title }}"
+
+      # https://docs.github.com/en/code-security/dependabot/working-with-dependabot/automating-dependabot-with-github-actions#enable-auto-merge-on-a-pull-request
+      - name: Auto-Merge Dependabot Pull Requests
+        if: >
+          github.actor == env.DEPENDABOT_USERNAME ||
+          github.event.pull_request.user.login == env.DEPENDABOT_USERNAME
+        run: gh pr merge --auto --squash "$PR_URL"
+        env:
+          DEPENDABOT_USERNAME: dependabot[bot]
+          PR_URL: ${{ github.event.pull_request.html_url }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
