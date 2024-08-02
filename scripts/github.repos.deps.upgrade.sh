@@ -32,7 +32,6 @@ names=(
   configs
   next-app
   react-app
-  styles
 )
 
 for name in "${names[@]}"; do
