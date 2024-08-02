@@ -2,7 +2,9 @@ name: Pull Requests Auto-Update
 on:
   workflow_call:
     secrets:
-      GH_TOKEN:
+      APP_ID:
+        required: true
+      APP_PRIVATE_KEY:
         required: true
   push:
 
@@ -10,7 +12,14 @@ jobs:
   auto-update:
     runs-on: ubuntu-latest
     steps:
+      - name: Generate a Token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
       # cspell:disable-next-line
       - uses: docker://chinthakagodawita/autoupdate-action:v1
         env:
-          GITHUB_TOKEN: '${{ secrets.GH_TOKEN }}'
+          GITHUB_TOKEN: '${{ steps.generate-token.outputs.token }}'
