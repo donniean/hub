@@ -37,13 +37,21 @@ jobs:
       - name: Install Dependencies
         run: npm install && ls
 
+      - name: Generate a token
+        id: generate-token
+        uses: actions/create-github-app-token@v1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - name: 'Create Pull Request'
         id: create-pull-request
         env:
           COMMIT_MESSAGE: 'chore(bot): bump dependencies'
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          # token: ${{ secrets.GH_TOKEN }}
+          token: ${{ steps.generate-token.outputs.token }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
           signoff: true
           delete-branch: true
