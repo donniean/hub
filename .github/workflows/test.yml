@@ -10,7 +10,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  bump:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -48,6 +48,7 @@ jobs:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
           committer: github-actions[bot] <12584040+donniean@users.noreply.github.com>
+          author: github-actions[bot] <12584040+donniean@users.noreply.github.com>
           signoff: true
           delete-branch: true
           branch-suffix: timestamp
