@@ -7,6 +7,8 @@ on:
         required: true
       GPG_PASSPHRASE:
         required: true
+      GH_TOKEN:
+        required: true
   schedule:
     - cron: '0 10 * * *'
   workflow_dispatch:
@@ -51,11 +53,13 @@ jobs:
         id: create-pull-request
         env:
           COMMIT_MESSAGE: 'chore(bot): bump dependencies'
+          COMMITTER: github-actions[bot] <12584040+donniean@users.noreply.github.com>
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
-          committer: github-actions[bot] <12584040+donniean@users.noreply.github.com>
+          committer: ${{ env.COMMITTER}}
+          author: ${{ env.COMMITTER}}
           signoff: true
           delete-branch: true
           branch-suffix: timestamp
