@@ -3,9 +3,9 @@ name: Dependencies Bump
 on:
   workflow_call:
     secrets:
-      APP_ID:
+      GPG_PRIVATE_KEY:
         required: true
-      APP_PRIVATE_KEY:
+      GPG_PASSPHRASE:
         required: true
   schedule:
     - cron: '0 10 * * *'
@@ -36,12 +36,16 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Generate a Token
-        id: generate-token
-        uses: actions/create-github-app-token@v1
+      - name: Import GPG Key
+        # cspell: disable-next-line
+        uses: crazy-max/ghaction-import-gpg@v6
         with:
-          app-id: ${{ secrets.APP_ID }}
-          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+          passphrase: ${{ secrets.GPG_PASSPHRASE }}
+          # cspell: disable-next-line
+          git_user_signingkey: true
+          # cspell: disable-next-line
+          git_commit_gpgsign: true
 
       - name: 'Create Pull Request'
         id: create-pull-request
@@ -49,8 +53,9 @@ jobs:
           COMMIT_MESSAGE: 'chore(bot): bump dependencies'
         uses: peter-evans/create-pull-request@v6
         with:
-          token: ${{ steps.generate-token.outputs.token }}
+          token: ${{ secrets.GH_TOKEN }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
+          committer: github-actions[bot] <12584040+donniean@users.noreply.github.com>
           signoff: true
           delete-branch: true
           branch-suffix: timestamp
