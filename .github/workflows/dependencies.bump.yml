@@ -38,16 +38,16 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Import GPG Key
-        # cspell: disable-next-line
-        uses: crazy-max/ghaction-import-gpg@v6
-        with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.GPG_PASSPHRASE }}
-          # cspell: disable-next-line
-          git_user_signingkey: true
-          # cspell: disable-next-line
-          git_commit_gpgsign: true
+      # - name: Import GPG Key
+      #   # cspell: disable-next-line
+      #   uses: crazy-max/ghaction-import-gpg@v6
+      #   with:
+      #     gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
+      #     passphrase: ${{ secrets.GPG_PASSPHRASE }}
+      #     # cspell: disable-next-line
+      #     git_user_signingkey: true
+      #     # cspell: disable-next-line
+      #     git_commit_gpgsign: true
 
       - name: 'Create Pull Request'
         id: create-pull-request
@@ -56,17 +56,18 @@ jobs:
           COMMITTER: github-actions[bot] <12584040+donniean@users.noreply.github.com>
         uses: peter-evans/create-pull-request@v7
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          # token: ${{ secrets.GH_TOKEN }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
-          committer: ${{ env.COMMITTER}}
-          author: ${{ env.COMMITTER}}
+          # committer: ${{ env.COMMITTER}}
+          # author: ${{ env.COMMITTER}}
           signoff: true
           delete-branch: true
           branch-suffix: timestamp
+          sign-commits: true
           title: ${{ env.COMMIT_MESSAGE }}
 
-      - name: Auto-Merge Pull Request
-        if: ${{ steps.create-pull-request.outputs.pull-request-number }}
-        run: gh pr merge --auto --squash "${{ steps.create-pull-request.outputs.pull-request-url }}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      # - name: Auto-Merge Pull Request
+      #   if: ${{ steps.create-pull-request.outputs.pull-request-number }}
+      #   run: gh pr merge --auto --squash "${{ steps.create-pull-request.outputs.pull-request-url }}"
+      #   env:
+      #     GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
