@@ -3,7 +3,7 @@ import { defineConfig } from '@donniean/configs';
 export default defineConfig({
   features: {
     gitignore: {
-      ignorePatterns: ['src/1password-to-apple-passwords/data.json'],
+      ignorePatterns: ['src/1password-to-apple-passwords/1password-data.json'],
     },
     gitattributes: true,
     editorconfig: true,

@@ -2,6 +2,7 @@ import * as console from 'node:console';
 import { readFileSync } from 'node:fs';
 import path from 'node:path';
 
+import { onePasswordDataSchema } from './schemas';
 import type { ApplePassword, OnePasswordData } from './types';
 
 function onePasswordToApplePasswords({
@@ -15,11 +16,12 @@ function onePasswordToApplePasswords({
 
 export function main() {
   const { dirname } = import.meta;
-  const inputFilePath = path.resolve(dirname, 'data.json');
+  const inputFilePath = path.resolve(dirname, '1password-data.json');
 
   const json = readFileSync(inputFilePath, 'utf8');
 
-  const input = JSON.parse(json) as OnePasswordData;
+  const data: unknown = JSON.parse(json);
+  const input = onePasswordDataSchema.parse(data);
 
   onePasswordToApplePasswords({ input });
 }

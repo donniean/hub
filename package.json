@@ -37,6 +37,9 @@
     "prepare": "husky",
     "serve": "serve src/styles/"
   },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
   "devDependencies": {
     "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
