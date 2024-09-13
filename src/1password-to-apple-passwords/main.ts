@@ -15,7 +15,7 @@ function onePasswordToApplePasswords({
 
 export function main() {
   const { dirname } = import.meta;
-  const inputFilePath = path.resolve(dirname, 'data.json');
+  const inputFilePath = path.resolve(dirname, '1password-data.json');
 
   const json = readFileSync(inputFilePath, 'utf8');
 
