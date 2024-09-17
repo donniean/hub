@@ -5,10 +5,21 @@ import path from 'node:path';
 import { onePasswordDataSchema } from './schemas';
 import type { ApplePassword, OnePasswordData } from './types';
 
+interface OnePasswordToApplePasswordsOptions {
+  input: OnePasswordData;
+}
+
 function onePasswordToApplePasswords({
   input,
 }: OnePasswordToApplePasswordsOptions): ApplePassword[] {
-  console.debug(input);
+  const flattedVaults = (input?.accounts ?? []).flatMap(
+    (account) => account.vaults,
+  );
+  const flattedItems = flattedVaults.flatMap((vault) =>
+    vault.items.map((item) => ({ vaultAttrs: vault.attrs, ...item })),
+  );
+  console.log(flattedItems, flattedItems.length);
+
   return [
     { title: '', url: '', username: '', password: '', notes: '', otpAuth: '' },
   ];
@@ -24,8 +35,4 @@ export function main() {
   const input = onePasswordDataSchema.parse(data);
 
   onePasswordToApplePasswords({ input });
-}
-
-interface OnePasswordToApplePasswordsOptions {
-  input: OnePasswordData;
 }
