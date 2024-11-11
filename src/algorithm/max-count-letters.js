@@ -90,9 +90,9 @@ function getMaxCountLetters(str = '') {
   return res;
 } */
 
-/* cspell: disable-next-line */
+/* cSpell: disable-next-line */
 const str1 = 'abbcccdddd'; // { d: 4 }
-/* cspell: disable-next-line */
+/* cSpell: disable-next-line */
 const str2 = 'aaaabbcccc'; // { a: 4, c: 4 }
 
 const res1 = getMaxCountLetters(str1);

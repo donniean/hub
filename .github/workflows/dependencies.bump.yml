@@ -39,14 +39,14 @@ jobs:
         run: npm install
 
       - name: Import GPG Key
-        # cspell: disable-next-line
+        # cSpell: disable-next-line
         uses: crazy-max/ghaction-import-gpg@v6
         with:
           gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
           passphrase: ${{ secrets.GPG_PASSPHRASE }}
-          # cspell: disable-next-line
+          # cSpell: disable-next-line
           git_user_signingkey: true
-          # cspell: disable-next-line
+          # cSpell: disable-next-line
           git_commit_gpgsign: true
 
       - name: 'Create Pull Request'
