@@ -96,8 +96,8 @@ const casksCommand = `brew install --cask \\
   ${casks.join(' \\\n  ')}
 `;
 
-console.log(`${formulas.length} formulas`);
-console.log(formulasCommand);
+console.info(`${formulas.length} formulas`);
+console.info(formulasCommand);
 
-console.log(`${casks.length} casks`);
-console.log(casksCommand);
+console.info(`${casks.length} casks`);
+console.info(casksCommand);
