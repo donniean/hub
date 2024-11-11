@@ -38,6 +38,8 @@
     "serve": "serve src/styles/"
   },
   "dependencies": {
+    "@notionhq/client": "^2.2.15",
+    "dotenv-flow": "^4.1.0",
     "zod": "^3.23.8"
   },
   "devDependencies": {
