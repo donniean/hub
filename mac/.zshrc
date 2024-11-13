@@ -34,7 +34,6 @@ source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
 
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-
 # nvm
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -72,5 +71,3 @@ load-nvmrc
 # export http_proxy=http://127.0.0.1:6152
 # export https_proxy=http://127.0.0.1:6152
 # export all_proxy=socks5://127.0.0.1:6153
-
-alias qnpm="npm --registry=http://172.16.0.60:7001/ --cache=${HOME}/.npm/.cache/qnpm --disturl=http://node.mirror.bshy.me/dist/ --userconfig=${HOME}/.qnpmrc"
