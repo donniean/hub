@@ -5,11 +5,6 @@ ignorecase = false
 name = donniean
 email = donniean1@gmail.com
 signingkey = A89815A5A7570349
-[filter "lfs"]
-# smudge = git-lfs smudge -- %f
-# process = git-lfs filter-process
-# required = true
-# clean = git-lfs clean -- %f
 [http]
 # proxy = socks5://127.0.0.1:6153
 [https]
