@@ -8,6 +8,6 @@ brew upgrade
 
 brew upgrade --cask --greedy
 
-brew cleanup
-
 brew autoremove
+
+brew cleanup
