@@ -2,38 +2,21 @@
 
 export ZSH="$HOME/.oh-my-zsh"
 
-ZSH_THEME="robbyrussell"
-
-plugins=(
-  docker \
-  git \
-  node \
-  npm \
-  nvm \
-  yarn \
-  zsh-completions \
-  zsh-autosuggestions \
-  zsh-syntax-highlighting \
-  zsh-better-npm-completion \
-  yarn-autocompletions \
-  pnpm-shell-completion
-)
-
-autoload -U compinit && compinit
-
-source $ZSH/oh-my-zsh.sh
-
-# Powerlevel10k
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
+# https://github.com/warpdotdev/Warp/issues/3988#issuecomment-1871507929
+if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
+  ZSH_THEME="robbyrussell"
 fi
 
-source /usr/local/share/powerlevel10k/powerlevel10k.zsh-theme
+plugins=(
+  docker
+  git
+  node
+  npm
+  nvm
+  yarn
+)
 
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+source $ZSH/oh-my-zsh.sh
 
 # nvm
 
@@ -65,13 +48,3 @@ load-nvmrc() {
 
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
-
-# tabtab source for packages
-# uninstall by removing these lines
-[[ -f ~/.config/tabtab/zsh/__tabtab.zsh ]] && . ~/.config/tabtab/zsh/__tabtab.zsh || true
-
-# User configuration
-
-# export http_proxy=http://127.0.0.1:6152
-# export https_proxy=http://127.0.0.1:6152
-# export all_proxy=socks5://127.0.0.1:6153
