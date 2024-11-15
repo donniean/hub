@@ -7,7 +7,7 @@ basePath=$(
 
 source "${basePath}"/brew.upgrade.sh
 
-source "${basePath}"/oh-my-zsh.plugins.update.sh
+# source "${basePath}"/oh-my-zsh.plugins.update.sh
 
 source "${basePath}"/npm.global.update.sh
 
