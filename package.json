@@ -43,8 +43,8 @@
     "zod": "^3.23.8"
   },
   "devDependencies": {
-    "@commitlint/cli": "^19.5.0",
-    "@commitlint/config-conventional": "^19.5.0",
+    "@commitlint/cli": "^19.6.0",
+    "@commitlint/config-conventional": "^19.6.0",
     "@donniean/configs": "^6.23.5",
     "@tsconfig/node-lts": "^22.0.0",
     "@types/eslint": "^9.6.0",
@@ -72,7 +72,7 @@
     "markdownlint-cli": "^0.42.0",
     "prettier": "^3.3.3",
     "serve": "^14.2.4",
-    "sort-package-json": "^2.10.1",
+    "sort-package-json": "^2.11.0",
     "stylelint": "^16.10.0",
     "stylelint-config-recess-order": "^5.1.1",
     "stylelint-config-standard": "^36.0.1",
