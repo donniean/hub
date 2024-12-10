@@ -40,7 +40,7 @@
   "dependencies": {
     "@notionhq/client": "^2.2.15",
     "dotenv-flow": "^4.1.0",
-    "zod": "^3.23.8"
+    "zod": "^3.24.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^19.6.0",
