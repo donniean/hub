@@ -45,7 +45,7 @@
   "devDependencies": {
     "@commitlint/cli": "^19.6.1",
     "@commitlint/config-conventional": "^19.6.0",
-    "@donniean/configs": "^6.23.6",
+    "@donniean/configs": "^6.23.7",
     "@tsconfig/node-lts": "^22.0.1",
     "@types/eslint": "^9.6.0",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
