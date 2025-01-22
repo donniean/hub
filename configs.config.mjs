@@ -29,7 +29,7 @@ export default defineConfig({
     },
     cspell: {
       patterns: ['**'],
-      ignorePatterns: ['mac/'],
+      ignorePatterns: ['macOS/'],
     },
     'sort-package-json': true,
     commitlint: true,
