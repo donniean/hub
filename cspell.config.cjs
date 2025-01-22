@@ -21,7 +21,7 @@ module.exports = {
     'pnpm-lock.yaml',
     'Dockerfile',
     'CHANGELOG.md',
-    'mac/',
+    'macOS/',
   ],
   words: [
     'webstorm',
