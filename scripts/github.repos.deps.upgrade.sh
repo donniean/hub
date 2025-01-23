@@ -30,7 +30,6 @@ func() {
 names=(
   collections
   configs
-  next-app
   react-app
 )
 
