@@ -26,8 +26,8 @@
     "outDir": "dist/",
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"]
+      "@/*": ["snippets/*"]
     }
   },
-  "include": ["src/"]
+  "include": ["snippets/"]
 }

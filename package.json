@@ -35,7 +35,7 @@
     "lint:tsc": "tsc --noEmit",
     "pre-commit": "lint-staged --concurrent false",
     "prepare": "husky",
-    "serve": "serve src/styles/"
+    "serve": "serve snippets/styles/"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.15",
