@@ -2,4 +2,4 @@ FROM alpine:latest
 
 RUN apk update && apk add bash curl
 
-CMD bash <(curl -Ls IP.Check.Place)
+CMD ["bash", "-c", "curl -Ls IP.Check.Place"]
