@@ -1,5 +1,5 @@
 FROM alpine:latest
 
-RUN apk update && apk add bash curl
+RUN apk update && apk add bash curl jq bc netcat dnsutils iproute
 
-CMD ["bash", "-c", "curl -Ls IP.Check.Place"]
+CMD ["bash", "-c", "bash <(curl -Ls IP.Check.Place)"]
