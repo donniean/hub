@@ -8,4 +8,4 @@ RUN apk update && apk add \
   netcat-openbsd \
   iproute2
 
-CMD ["bash", "-c", "bash <(curl -Ls IP.Check.Place)"]
+CMD ["bash", "-c", "echo 'y' | bash <(curl -Ls IP.Check.Place)"]
