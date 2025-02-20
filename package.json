@@ -15,9 +15,9 @@
   "type": "module",
   "scripts": {
     "commit": "cz",
-    "docker:ip-quality:build": "docker build --tag ip-quality ./docker/IPQuality",
-    "docker:ip-quality:commit": "docker commit IPQuality ip-quality",
-    "docker:ip-quality:run": "docker run --name IPQuality -it --rm ip-quality",
+    "docker:ip-quality:build": "docker build --tag donniean/ip-quality ./docker/IPQuality",
+    "docker:ip-quality:commit": "docker commit IPQuality donniean/ip-quality",
+    "docker:ip-quality:run": "docker run --name IPQuality -it --rm donniean/ip-quality",
     "preinstall": "npx only-allow npm",
     "lint-all": "concurrently --group --timings --prefix-colors=auto \"npm:lint:*(!:fix)\"",
     "lint-all:fix": "concurrently --max-processes=1 --group --timings --prefix-colors=auto \"npm:lint:*:fix\"",
