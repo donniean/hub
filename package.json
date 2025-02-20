@@ -17,6 +17,8 @@
     "commit": "cz",
     "docker:ip-quality:build": "docker build --tag donniean/ip-quality ./docker/IPQuality",
     "docker:ip-quality:commit": "docker commit IPQuality donniean/ip-quality",
+    "docker:ip-quality:pull": "docker pull donniean/ip-quality",
+    "docker:ip-quality:push": "docker pull donniean/ip-quality",
     "docker:ip-quality:run": "docker run --name IPQuality -it --rm donniean/ip-quality",
     "preinstall": "npx only-allow npm",
     "lint-all": "concurrently --group --timings --prefix-colors=auto \"npm:lint:*(!:fix)\"",
