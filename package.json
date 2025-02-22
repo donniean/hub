@@ -75,7 +75,7 @@
     "husky": "^9.1.7",
     "lint-staged": "^15.4.3",
     "markdownlint-cli": "^0.44.0",
-    "prettier": "^3.5.1",
+    "prettier": "^3.5.2",
     "serve": "^14.2.4",
     "sort-package-json": "^2.14.0",
     "stylelint": "^16.14.1",
