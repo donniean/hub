@@ -8,7 +8,6 @@ npm uninstall --global \
   @donniean/configs \
   concurrently \
   corepack \
-  depcheck \
   npm-check-updates \
   serve \
   sort-package-json \
