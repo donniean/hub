@@ -1,28 +1,25 @@
-// eslint-disable-next-line no-extend-native
 Function.prototype.customCall = function customCall(context, ...args) {
   const ctx = context || globalThis;
-  // eslint-disable-next-line no-param-reassign
+
   ctx.func = this;
   const res = ctx.func(...args);
-  // eslint-disable-next-line no-param-reassign
+
   delete ctx.func;
 
   return res;
 };
 
-// eslint-disable-next-line no-extend-native
 Function.prototype.customApply = function customApply(context, args) {
   const ctx = context || globalThis;
-  // eslint-disable-next-line no-param-reassign
+
   ctx.func = this;
   const res = ctx.func(...args);
-  // eslint-disable-next-line no-param-reassign
+
   delete ctx.func;
 
   return res;
 };
 
-// eslint-disable-next-line no-extend-native
 Function.prototype.customBind = function customBind(context, ...args) {
   // eslint-disable-next-line unicorn/no-this-assignment
   const func = this;
