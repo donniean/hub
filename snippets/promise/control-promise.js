@@ -19,7 +19,7 @@ function controlPromise(urls, max) {
   return new Promise((resolve) => {
     const func = () => {
       /* cSpell: disable-next-line */
-      // eslint-disable-next-line no-plusplus
+
       const index = sentCount++;
       const url = urls[index];
 
@@ -37,7 +37,7 @@ function controlPromise(urls, max) {
             // eslint-disable-next-line promise/always-return
             if (completedCount < total) {
               /* cSpell: disable-next-line */
-              // eslint-disable-next-line no-plusplus
+
               completedCount++;
               res[index] = data;
               func();
@@ -46,7 +46,7 @@ function controlPromise(urls, max) {
           .catch((error) => {
             if (completedCount < total) {
               /* cSpell: disable-next-line */
-              // eslint-disable-next-line no-plusplus
+
               completedCount++;
               res[index] = error;
               func();

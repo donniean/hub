@@ -56,7 +56,7 @@ const formulas: string[] = [];
 const casks: string[] = [];
 
 // @ts-expect-error - The response object is not typed
-// eslint-disable-next-line consistent-return
+
 response.results.forEach((page) => {
   if (!isFullPage(page)) {
     return null;

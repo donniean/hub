@@ -83,7 +83,6 @@ function listToTree(list) {
 function findPath(tree, id, prevPath) {
   const path = prevPath || [];
 
-  // eslint-disable-next-line no-restricted-syntax
   for (const node of tree) {
     const { id: nodeId, children } = node;
     const tempPath = [...path];

@@ -1,4 +1,3 @@
-// eslint-disable-next-line no-extend-native, func-names
 Promise.prototype.finally = function (callback) {
   const P = this.constructor;
 
@@ -57,7 +56,6 @@ Promise.none = function none(promises) {
   const list = promises.map(
     (promise) =>
       new Promise((resolve, reject) =>
-        // eslint-disable-next-line no-promise-executor-return
         Promise.resolve(promise).then(reject, resolve),
       ),
   );
