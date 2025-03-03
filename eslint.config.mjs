@@ -4,13 +4,14 @@ import eslint from '@eslint/js';
 import eslintPluginEslintCommentsConfigs from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import eslintPluginVitest from '@vitest/eslint-plugin';
 import eslintConfigPrettier from 'eslint-config-prettier';
-import * as eslintPluginImport from 'eslint-plugin-import';
+import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
+import eslintPluginImportX from 'eslint-plugin-import-x';
 import eslintPluginPromise from 'eslint-plugin-promise';
 import eslintPluginSimpleImportSort from 'eslint-plugin-simple-import-sort';
 import eslintPluginSonarjs from 'eslint-plugin-sonarjs';
 import eslintPluginUnicorn from 'eslint-plugin-unicorn';
 import globals from 'globals';
-// eslint-disable-next-line import/no-unresolved
+// eslint-disable-next-line import-x/no-unresolved
 import typescriptEslint from 'typescript-eslint';
 
 /**
@@ -58,7 +59,7 @@ export default typescriptEslint.config([
     name: 'eslint/recommended',
   },
   eslintPluginEslintCommentsConfigs.recommended,
-  eslintPluginImport.flatConfigs?.recommended,
+  eslintPluginImportX.flatConfigs.recommended,
   eslintPluginPromise.configs['flat/recommended'],
   eslintPluginUnicorn.configs.recommended,
   eslintPluginSonarjs.configs.recommended,
@@ -100,7 +101,7 @@ export default typescriptEslint.config([
     extends: [
       typescriptEslint.configs.recommendedTypeChecked,
       typescriptEslint.configs.stylisticTypeChecked,
-      eslintPluginImport.flatConfigs?.typescript,
+      eslintPluginImportX.flatConfigs.typescript,
     ],
     languageOptions: {
       parserOptions: {
@@ -109,11 +110,9 @@ export default typescriptEslint.config([
       },
     },
     settings: {
-      'import/resolver': {
-        typescript: {
-          alwaysTryTypes: true,
-        },
-      },
+      'import-x/resolver-next': [
+        createTypeScriptImportResolver({ alwaysTryTypes: true }),
+      ],
     },
   },
   {
