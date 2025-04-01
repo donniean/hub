@@ -3,8 +3,11 @@ ignorecase = false
 [user]
 name = donniean
 email = donniean1@gmail.com
-signingkey = A89815A5A7570349
+signingkey = 2B151E91C65509C82472B142A89815A5A7570349
 [commit]
 gpgsign = true
 [gpg]
 program = /opt/homebrew/bin/gpg # for Obsidian Git
+# [http]
+# postBuffer = 2147483648
+# maxRequestBuffer = 2147483648
