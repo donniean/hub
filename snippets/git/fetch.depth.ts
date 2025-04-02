@@ -3,7 +3,7 @@ function getCommands(start: number, end: number) {
   const commands: string[] = [];
 
   for (let i = start; i < end; i++) {
-    const echo = `echo ${i}`;
+    const echo = `echo "" ; echo ${i} ; echo ""`;
     const finalCommand = `${command} ${i}`;
     commands.push(echo, finalCommand);
   }
