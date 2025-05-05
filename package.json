@@ -44,7 +44,7 @@
     "serve": "serve snippets/styles/"
   },
   "dependencies": {
-    "@notionhq/client": "^2.3.0",
+    "@notionhq/client": "^3.0.0",
     "dotenv-flow": "^4.1.0"
   },
   "devDependencies": {
