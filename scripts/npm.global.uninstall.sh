@@ -6,7 +6,6 @@ cd "$HOME" || exit
 
 npm uninstall --global \
   @donniean/configs \
-  concurrently \
   corepack \
   npm-check-updates \
   serve \

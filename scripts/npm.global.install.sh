@@ -6,7 +6,6 @@ cd "$HOME" || exit
 
 npm install --global \
   @donniean/configs \
-  concurrently \
   npm-check-updates \
   serve \
   sort-package-json \
