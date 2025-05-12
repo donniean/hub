@@ -31,6 +31,7 @@ names=(
   collections
   configs
   react-app
+  vault
 )
 
 for name in "${names[@]}"; do
