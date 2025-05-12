@@ -5,11 +5,7 @@ original_dir=$(pwd)
 cd "$HOME" || exit
 
 npm uninstall --global \
-  @donniean/configs \
   corepack \
-  npm-check-updates \
-  serve \
-  sort-package-json \
   tsx
 
 # npm uninstall --global npm

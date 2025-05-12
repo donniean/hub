@@ -11,7 +11,7 @@ func() {
 
   # bump dependencies
   git checkout -b chore
-  ncu --upgrade
+  ncu --deep --upgrade
   rm -rf node_modules/
   rm package-lock.json
   npm install
