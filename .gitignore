@@ -83,5 +83,3 @@ atlassian-ide-plugin.xml
 
 # Vercel
 **/.vercel/
-
-snippets/1password-to-apple-passwords/1password-data.json

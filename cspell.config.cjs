@@ -64,7 +64,5 @@ module.exports = {
     'vitest',
     'zustand',
     'classname',
-    // custom
-    'fpath',
   ],
 };
