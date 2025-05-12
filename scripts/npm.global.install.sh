@@ -4,14 +4,12 @@ original_dir=$(pwd)
 
 cd "$HOME" || exit
 
-npm install --global \
-  @donniean/configs \
-  npm-check-updates \
-  serve \
-  sort-package-json \
-  tsx
+npm install --global tsx
 
-# http-server
-# npm-check
+# @donniean/configs
+# concurrently
+# npm-check-updates
+# serve
+# sort-package-json
 
 cd "$original_dir" || exit
