@@ -2,11 +2,7 @@ import { defineConfig } from '@donniean/configs';
 
 export default defineConfig({
   features: {
-    gitignore: {
-      ignorePatterns: [
-        'snippets/1password-to-apple-passwords/1password-data.json',
-      ],
-    },
+    gitignore: true,
     gitattributes: true,
     editorconfig: true,
     prettier: {
@@ -22,6 +18,7 @@ export default defineConfig({
     },
     stylelint: {
       patterns: ['**/*.css'],
+      cssModules: false,
     },
     htmlhint: {
       patterns: ['**/*.html'],
@@ -38,5 +35,7 @@ export default defineConfig({
     commitizen: true,
     'lint-staged': true,
     husky: true,
+    'npm-check-updates': true,
+    knip: true,
   },
 });
