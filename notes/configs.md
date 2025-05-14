@@ -113,6 +113,8 @@ rm \
   cspell.config.mjs
 ```
 
+## [editorconfig](https://editorconfig.org/)
+
 ---
 
 ## ESLint
