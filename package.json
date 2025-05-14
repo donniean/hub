@@ -14,7 +14,6 @@
   "author": "Donnie An",
   "type": "module",
   "scripts": {
-    "commit": "cz",
     "docker:ip-quality:build": "docker build --tag donniean/ip-quality ./docker/IPQuality",
     "docker:ip-quality:commit": "docker commit IPQuality donniean/ip-quality",
     "docker:ip-quality:pull": "docker pull donniean/ip-quality",
@@ -59,10 +58,8 @@
     "@types/node": "^22.15.18",
     "@vitest/eslint-plugin": "^1.1.44",
     "autocorrect-node": "^2.14.0",
-    "commitizen": "^4.3.1",
     "concurrently": "^9.1.2",
     "cspell": "^9.0.1",
-    "cz-conventional-changelog": "^3.3.0",
     "eslint": "^9.26.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-import-resolver-typescript": "^4.3.4",

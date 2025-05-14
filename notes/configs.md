@@ -5,7 +5,8 @@
 Install
 
 ```shell
-npm install --save-dev autocorrect-node
+npm install --save-dev \
+  autocorrect-node
 
 npm pkg set \
   scripts.lint:text='autocorrect --lint' \
@@ -28,6 +29,36 @@ rm \
   .autocorrectrc \
   .autocorrectignore
 ```
+
+## [Commitizen](https://github.com/commitizen-tools/commitizen)
+
+Install
+
+```shell
+npm install --save-dev \
+  commitizen \
+  cz-conventional-changelog
+
+npm pkg set \
+  scripts.commit='cz'
+
+curl \
+  -O https://raw.githubusercontent.com/donniean/react-app/main/.cz.json
+```
+
+Uninstall
+
+```shell
+npm pkg delete \
+  devDependencies.commitizen \
+  devDependencies.cz-conventional-changelog \
+  scripts.commit
+
+rm \
+  .cz.json
+```
+
+---
 
 ## ESLint
 
