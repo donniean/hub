@@ -11,8 +11,9 @@ npm pkg set \
   scripts.lint:text='autocorrect --lint' \
   scripts.lint:text:fix='autocorrect --fix'
 
-curl --remote-name https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectrc
-curl --remote-name https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectignore
+curl \
+  -O https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectrc \
+  -O https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectignore
 ```
 
 Uninstall
