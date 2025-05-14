@@ -58,6 +58,61 @@ rm \
   .cz.json
 ```
 
+## [commitlint](https://github.com/conventional-changelog/commitlint)
+
+Install
+
+```shell
+npm install --save-dev \
+  @commitlint/cli \
+  @commitlint/config-conventional
+
+curl \
+  -O https://raw.githubusercontent.com/donniean/react-app/main/commitlint.config.mjs
+```
+
+Uninstall
+
+```shell
+npm pkg delete \
+  devDependencies.@commitlint/cli \
+  devDependencies.@commitlint/config-conventional
+
+rm \
+  commitlint.config.mjs
+```
+
+TODOs
+
+- [ ] <https://commitlint.js.org/guides/local-setup.html>
+- [ ] <https://commitlint.js.org/guides/ci-setup.html>
+
+## [CSpell](https://github.com/streetsidesoftware/cspell)
+
+Install
+
+```shell
+npm install --save-dev \
+  cspell
+
+npm pkg set \
+  scripts.lint:spell='cspell lint --no-progress --no-must-find-files --gitignore .'
+
+curl \
+  -O https://raw.githubusercontent.com/donniean/react-app/main/cspell.config.mjs
+```
+
+Uninstall
+
+```shell
+npm pkg delete \
+  devDependencies.cspell \
+  scripts.lint:spell
+
+rm \
+  cspell.config.mjs
+```
+
 ---
 
 ## ESLint
