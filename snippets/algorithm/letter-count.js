@@ -5,7 +5,7 @@ function transformString(str = '') {
   let tempLetters = [];
   let res = '';
 
-  letters.forEach((letter, index) => {
+  for (const [index, letter] of letters.entries()) {
     if (tempLetters.includes(letter)) {
       tempLetters.push(letter);
     } else {
@@ -14,7 +14,7 @@ function transformString(str = '') {
       }
       tempLetters = [letter];
     }
-  });
+  }
 
   res += `${tempLetters.length}${tempLetters[0]}`;
 

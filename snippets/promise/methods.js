@@ -15,7 +15,7 @@ Promise.first = function first(promises = []) {
     const { length } = promises;
     let count = 0;
 
-    promises.forEach((promise) => {
+    for (const promise of promises) {
       Promise.resolve(promise)
         .then(resolve)
         .catch(() => {
@@ -24,7 +24,7 @@ Promise.first = function first(promises = []) {
             reject(new Error('no resolved'));
           }
         });
-    });
+    }
   });
 };
 
@@ -33,7 +33,7 @@ Promise.last = function last(promises = []) {
     const { length } = promises;
     let count = 0;
 
-    promises.forEach((promise) => {
+    for (const promise of promises) {
       Promise.resolve(promise)
         .then((value) => {
           count += 1;
@@ -48,7 +48,7 @@ Promise.last = function last(promises = []) {
             reject(new Error('no resolved'));
           }
         });
-    });
+    }
   });
 };
 

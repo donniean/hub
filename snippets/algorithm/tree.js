@@ -42,7 +42,7 @@ function DFS2(tree, res = []) {
   const result = [...res];
 
   if (Array.isArray(tree)) {
-    tree.forEach(({ children, ...rest }) => {
+    for (const { children, ...rest } of tree) {
       result.push(rest);
 
       if (Array.isArray(children) && children.length > 0) {
@@ -50,7 +50,7 @@ function DFS2(tree, res = []) {
         const newChildren = children.map((item) => ({ ...item, parentId }));
         DFS2(newChildren, result);
       }
-    });
+    }
   }
 
   return result;
@@ -60,12 +60,12 @@ function listToTree(list) {
   const result = [];
   const map = {};
 
-  list.forEach((node) => {
+  for (const node of list) {
     const { id } = node;
     map[id] = node;
-  });
+  }
 
-  list.forEach((node) => {
+  for (const node of list) {
     const { parentId } = node;
 
     if (parentId) {
@@ -75,7 +75,7 @@ function listToTree(list) {
     } else {
       result.push(node);
     }
-  });
+  }
 
   return result;
 }

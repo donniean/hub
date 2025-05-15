@@ -57,27 +57,31 @@ const casks: string[] = [];
 
 // @ts-expect-error - The response object is not typed
 
-response.results.forEach((page) => {
+for (const page of response.results) {
   if (!isFullPage(page)) {
-    return null;
+    null;
+    continue;
   }
 
   const properties = page.properties as unknown as Properties;
   const installedField = properties.Installed;
   const isInstalled = installedField.checkbox;
   if (!isInstalled) {
-    return null;
+    null;
+    continue;
   }
 
   const installation = properties.Installation.select?.name ?? '';
   if (!['Homebrew', 'Homebrew Cask'].includes(installation)) {
-    return null;
+    null;
+    continue;
   }
 
   const formulaField = properties['formula / cask'];
   const formula = formulaField.rich_text[0]?.plain_text;
   if (!formula) {
-    return null;
+    null;
+    continue;
   }
 
   if (installation === 'Homebrew') {
@@ -87,7 +91,7 @@ response.results.forEach((page) => {
   if (installation === 'Homebrew Cask') {
     casks.push(formula.trim());
   }
-});
+}
 
 const formulasCommand = `brew install \\
   ${formulas.join(' \\\n  ')}
