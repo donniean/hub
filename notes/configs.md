@@ -40,7 +40,7 @@ npm install --save-dev \
   cz-conventional-changelog
 
 npm pkg set \
-  scripts.commit='cz'
+  scripts.commit="cz"
 
 curl \
   -O https://raw.githubusercontent.com/donniean/react-app/main/.cz.json
@@ -82,11 +82,6 @@ rm \
   commitlint.config.mjs
 ```
 
-TODOs
-
-- [ ] <https://commitlint.js.org/guides/local-setup.html>
-- [ ] <https://commitlint.js.org/guides/ci-setup.html>
-
 ## [CSpell](https://github.com/streetsidesoftware/cspell)
 
 Install
@@ -96,7 +91,7 @@ npm install --save-dev \
   cspell
 
 npm pkg set \
-  scripts.lint:spell='cspell lint --no-progress --no-must-find-files --gitignore .'
+  scripts.lint:spell="cspell lint --no-progress --no-must-find-files --gitignore ."
 
 curl \
   -O https://raw.githubusercontent.com/donniean/react-app/main/cspell.config.mjs
@@ -114,15 +109,3 @@ rm \
 ```
 
 ## [editorconfig](https://editorconfig.org/)
-
----
-
-## ESLint
-
-References
-
-- <https://github.com/alan2207/bulletproof-react/blob/master/apps/react-vite/.eslintrc.cjs>
-- <https://biomejs.dev/linter/rules-sources/>
-- <https://github.com/antfu/eslint-config>
-- <https://github.com/iamturns/eslint-config-airbnb-typescript/blob/master/lib/shared.js>
-- <https://github.com/airbnb/javascript/blob/master/packages/eslint-config-airbnb/index.js>
