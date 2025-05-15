@@ -13,15 +13,17 @@ npm pkg set \
   scripts.lint:text:fix="autocorrect --fix"
 
 curl \
-    -O https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectrc \
-    -O https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectignore
+  -O https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectrc \
+  -O https://raw.githubusercontent.com/donniean/react-app/main/.autocorrectignore
 ```
 
 Uninstall
 
 ```shell
 npm pkg delete \
-  devDependencies.autocorrect-node \
+  devDependencies.autocorrect-node
+
+npm pkg delete \
   scripts.lint:text \
   scripts.lint:text:fix
 
@@ -51,7 +53,9 @@ Uninstall
 ```shell
 npm pkg delete \
   devDependencies.commitizen \
-  devDependencies.cz-conventional-changelog \
+  devDependencies.cz-conventional-changelog
+
+npm pkg delete \
   scripts.commit
 
 rm \
@@ -101,7 +105,9 @@ Uninstall
 
 ```shell
 npm pkg delete \
-  devDependencies.cspell \
+  devDependencies.cspell
+
+npm pkg delete \
   scripts.lint:spell
 
 rm \
