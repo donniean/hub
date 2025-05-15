@@ -36,4 +36,4 @@ const jack = customNew(Person, 'jack', 20);
 console.log(jack);
 jack.showName();
 
-export { customNew, customCreate };
+export { customCreate, customNew };

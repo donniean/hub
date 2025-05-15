@@ -16,11 +16,11 @@ class CustomPromise {
       if (this.status === STATUS_MAP.PENDING) {
         this.status = STATUS_MAP.FULFILLED;
         this.value = value;
-        this.resolvedCallbacks.forEach((callback) => {
+        for (const callback of this.resolvedCallbacks) {
           if (typeof callback === 'function') {
             callback(value);
           }
-        });
+        }
       }
     };
 
@@ -28,11 +28,11 @@ class CustomPromise {
       if (this.status === STATUS_MAP.PENDING) {
         this.status = STATUS_MAP.REJECTED;
         this.reason = reason;
-        this.rejectedCallbacks.forEach((callback) => {
+        for (const callback of this.rejectedCallbacks) {
           if (typeof callback === 'function') {
             callback(reason);
           }
-        });
+        }
       }
     };
 

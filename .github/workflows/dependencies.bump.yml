@@ -30,7 +30,7 @@ jobs:
         run: npm install --global npm-check-updates rimraf
 
       - name: Bump Dependencies
-        run: ncu --upgrade
+        run: ncu --deep --upgrade
 
       - name: Remove package-lock.json
         run: rimraf --glob **/package-lock.json

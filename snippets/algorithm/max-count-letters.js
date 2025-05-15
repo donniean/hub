@@ -5,7 +5,7 @@ function getMaxCountLetters(str = '') {
   const maxLetters = new Set();
   let maxCount = 0;
 
-  letters.forEach((letter) => {
+  for (const letter of letters) {
     if (counter[letter]) {
       counter[letter] += 1;
     } else {
@@ -19,13 +19,13 @@ function getMaxCountLetters(str = '') {
     } else if (counter[letter] === maxCount) {
       maxLetters.add(letter);
     }
-  });
+  }
 
   const res = {};
 
-  maxLetters.forEach((letter) => {
+  for (const letter of maxLetters) {
     res[letter] = maxCount;
-  });
+  }
 
   return res;
 }

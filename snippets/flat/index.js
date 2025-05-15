@@ -1,13 +1,13 @@
 function flat(array) {
   const res = [];
 
-  array.forEach((item) => {
+  for (const item of array) {
     if (Array.isArray(item)) {
       res.push(...flat(item));
     } else {
       res.push(item);
     }
-  });
+  }
 
   return res;
 }
