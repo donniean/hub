@@ -68,7 +68,5 @@ export default defineConfig({
     '**/.htmlhintrc',
     '.*ignore',
     '.gitattributes',
-    // custom
-    'macOS/',
   ],
 });
