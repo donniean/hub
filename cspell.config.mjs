@@ -69,6 +69,6 @@ export default defineConfig({
     '.*ignore',
     '.gitattributes',
     // custom
-    'macOS',
+    'macOS/',
   ],
 });
