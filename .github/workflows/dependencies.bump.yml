@@ -30,7 +30,7 @@ jobs:
         run: npm ci
 
       - name: Bump Dependencies
-        run: npm run ncu:upgrade
+        run: npx npm-check-updates --deep --upgrade
 
       - name: Remove Dependencies
         run: npx rimraf --glob "**/package-lock.json" "**/node_modules"
