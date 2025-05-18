@@ -26,17 +26,17 @@ jobs:
           node-version: 'lts/*'
           cache: npm
 
-      - name: Install Global Dependencies
-        run: npm install --global npm-check-updates rimraf
+      - name: Install Dependencies
+        run: npm ci
 
       - name: Bump Dependencies
-        run: ncu --deep --upgrade
+        run: npm run ncu:upgrade
 
-      - name: Remove package-lock.json
-        run: rimraf --glob **/package-lock.json
+      - name: Remove Dependencies
+        run: npx rimraf --glob "**/package-lock.json" "**/node_modules"
 
-      - name: Install Dependencies
-        run: npm install
+      - name: Install New Dependencies
+        run: npm ci
 
       - name: Import GPG Key
         # cSpell: disable-next-line
