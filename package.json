@@ -1,14 +1,14 @@
 {
-  "name": "collections",
+  "name": "hub",
   "version": "0.0.0",
   "private": true,
-  "homepage": "https://github.com/donniean/collections#readme",
+  "homepage": "https://github.com/donniean/hub#readme",
   "bugs": {
-    "url": "https://github.com/donniean/collections/issues"
+    "url": "https://github.com/donniean/hub/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/donniean/collections.git"
+    "url": "git+https://github.com/donniean/hub.git"
   },
   "license": "MIT",
   "author": "Donnie An",

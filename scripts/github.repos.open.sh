@@ -8,8 +8,8 @@ func() {
 }
 
 names=(
-  collections
   configs
+  hub
   react-app
   vault
 )
