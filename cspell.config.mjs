@@ -22,6 +22,7 @@ export default defineConfig({
     'huskyrc',
     'lintstagedrc',
     'markdownlintignore',
+    'nvmrc',
     'stylelintignore',
     'stylelintrc',
     // Git
@@ -68,7 +69,5 @@ export default defineConfig({
     '**/.htmlhintrc',
     '.*ignore',
     '.gitattributes',
-    // custom
-    'macOS/',
   ],
 });
