@@ -6,7 +6,6 @@ export NVM_DIR="$HOME/.nvm"
 
 if command -v nvm >/dev/null 2>&1; then
   nvm install
-  nvm use
 else
   echo "Warn: nvm not found, please install nvm to auto-switch Node.js version."
 fi
