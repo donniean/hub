@@ -3,6 +3,7 @@
 export ZSH="$HOME/.oh-my-zsh"
 
 # https://github.com/warpdotdev/Warp/issues/3988#issuecomment-1871507929
+
 if [[ $TERM_PROGRAM != "WarpTerminal" ]]; then
   ZSH_THEME="robbyrussell"
 fi
@@ -23,6 +24,8 @@ source $ZSH/oh-my-zsh.sh
 export NVM_DIR="$HOME/.nvm"
 [ -s "/opt/homebrew/opt/nvm/nvm.sh" ] && \. "/opt/homebrew/opt/nvm/nvm.sh"                                       # This loads nvm
 [ -s "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/opt/homebrew/opt/nvm/etc/bash_completion.d/nvm" # This loads nvm bash_completion
+
+# https://github.com/nvm-sh/nvm?tab=readme-ov-file#zsh
 
 # place this after nvm initialization!
 autoload -U add-zsh-hook
