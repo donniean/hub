@@ -13,13 +13,17 @@ TAG=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest |
 
 echo "$PREFIX Latest nvm version: $TAG"
 
-echo "$PREFIX Downloading and running the official install script..."
-
 # https://github.com/nvm-sh/nvm?tab=readme-ov-file#install--update-script
 
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/"$TAG"/install.sh |
-  bash
+INSTALL_CMD="curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/$TAG/install.sh | bash"
 
+echo "$PREFIX Running install command"
+echo
+
+echo "$INSTALL_CMD"
+echo
+
+eval "$INSTALL_CMD"
+
+echo
 echo "$PREFIX nvm installation or update complete."
-
-echo "$PREFIX All done."
