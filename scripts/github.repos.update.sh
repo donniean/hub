@@ -7,7 +7,6 @@ original_dir=$(pwd)
 func() {
   cd "$HOME"/repos/"$1" || exit
   git checkout main
-  git branch -D chore
   git pull --all --prune
   # rm -rf node_modules/
   npm install
