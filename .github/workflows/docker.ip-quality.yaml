@@ -1,4 +1,4 @@
-name: Build and Push Docker Image
+name: Build ip-quality
 
 permissions:
   contents: read
@@ -7,8 +7,12 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'docker/ip-quality/**'
     tags:
       - '*'
+  schedule:
+    - cron: '0 16 * * *'
   workflow_dispatch:
 
 jobs:
