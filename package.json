@@ -14,8 +14,7 @@
   "author": "Donnie An",
   "type": "module",
   "scripts": {
-    "docker:ip-quality:build": "docker build --tag donniean/ip-quality ./docker/IPQuality",
-    "docker:ip-quality:commit": "docker commit IPQuality donniean/ip-quality",
+    "docker:ip-quality:build": "docker build --tag donniean/ip-quality ./docker/ip-quality",
     "docker:ip-quality:pull": "docker pull donniean/ip-quality",
     "docker:ip-quality:push": "docker push donniean/ip-quality",
     "docker:ip-quality:run": "docker run --name IPQuality -it --rm donniean/ip-quality",

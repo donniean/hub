@@ -71,6 +71,6 @@ export default defineConfig({
     '.*ignore',
     '.gitattributes',
     // custom
-    'macOS/',
+    'resources/macos/',
   ],
 });
