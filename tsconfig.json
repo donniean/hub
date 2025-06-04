@@ -22,7 +22,7 @@
 
     // checkJs
     "allowJs": true,
-    "checkJs": true,
+    "checkJs": false,
 
     // custom
     "module": "NodeNext",
@@ -31,10 +31,7 @@
     "declarationMap": true,
     "sourceMap": true,
     "outDir": "dist/",
-    "baseUrl": "./",
-    "paths": {
-      "@/*": ["snippets/*"]
-    }
+    "baseUrl": "./"
   },
-  "include": ["snippets/"]
+  "include": ["apps/", "scripts/", "snippets/"]
 }

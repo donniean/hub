@@ -41,7 +41,7 @@
     "ncu": "npx npm-check-updates --deep",
     "ncu:upgrade": "npm run ncu -- --upgrade",
     "prepare": "husky",
-    "serve": "serve snippets/styles/"
+    "serve": "serve apps/styles/"
   },
   "dependencies": {
     "@notionhq/client": "^3.1.3",
