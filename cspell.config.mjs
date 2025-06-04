@@ -17,7 +17,6 @@ export default defineConfig({
     'autocorrectrc',
     'browserslistrc',
     'commitlintrc',
-    'configsrc',
     'htmlhintrc',
     'huskyrc',
     'lintstagedrc',
@@ -39,6 +38,8 @@ export default defineConfig({
     'donniean',
     'htmlhint',
     'immer',
+    'lingui',
+    'mantine',
     'markdownlint',
     'npmjs',
     'numbro',
@@ -54,6 +55,8 @@ export default defineConfig({
     // TypeScript
     'nodenext',
     'classname',
+    // Vite
+    'VITE',
   ],
   ignorePaths: [
     '.git/',
