@@ -30,8 +30,8 @@ func() {
 }
 
 names=(
-  configs
   hub
+  node-app
   react-app
   vault
 )
