@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 # https://github.com/nvm-sh/nvm
 
 TAG=$(curl -s https://api.github.com/repos/nvm-sh/nvm/releases/latest |
