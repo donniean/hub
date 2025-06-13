@@ -1,7 +1,5 @@
 #!/usr/bin/env bash
 
-set -e
-
 original_dir=$(pwd)
 
 func() {
