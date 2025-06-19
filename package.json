@@ -41,7 +41,7 @@
     "ncu": "npx npm-check-updates --deep",
     "ncu:upgrade": "npm run ncu -- --upgrade",
     "prepare": "husky",
-    "serve": "serve apps/styles/",
+    "serve": "serve apps/playground/",
     "test": "vitest run --passWithNoTests",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
