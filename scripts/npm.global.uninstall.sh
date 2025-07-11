@@ -5,7 +5,6 @@ original_dir=$(pwd)
 cd "$HOME" || exit
 
 npm uninstall --global \
-  @google/gemini-cli \
   corepack \
   tsx
 
