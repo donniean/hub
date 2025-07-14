@@ -30,7 +30,7 @@ jobs:
         run: npm run ncu:upgrade
 
       - name: Remove Dependencies
-        run: npx rimraf --glob "**/package-lock.json"
+        run: npx rimraf --glob "**/node_modules/" "**/package-lock.json"
 
       - name: Install Dependencies
         run: npm install
