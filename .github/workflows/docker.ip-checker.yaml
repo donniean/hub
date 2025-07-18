@@ -1,4 +1,4 @@
-name: Build ip-quality
+name: Build ip-checker
 
 permissions:
   contents: read
@@ -8,7 +8,7 @@ on:
     branches:
       - main
     paths:
-      - 'docker/ip-quality/**'
+      - 'docker/ip-checker/**'
     tags:
       - '*'
   schedule:
@@ -57,7 +57,7 @@ jobs:
       - name: Build and Push
         uses: docker/build-push-action@v6
         with:
-          context: docker/ip-quality
+          context: docker/ip-checker
           platforms: linux/amd64,linux/arm64
-          tags: donniean/ip-quality:${{ env.TAG }}
+          tags: donniean/ip-checker:${{ env.TAG }}
           push: true
