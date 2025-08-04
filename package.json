@@ -14,10 +14,6 @@
   "author": "Donnie An",
   "type": "module",
   "scripts": {
-    "docker:ip-checker:build": "docker build --tag donniean/ip-checker ./docker/ip-checker",
-    "docker:ip-checker:pull": "docker pull donniean/ip-checker",
-    "docker:ip-checker:push": "docker push donniean/ip-checker",
-    "docker:ip-checker:run": "docker run --name IPChecker -it --rm --privileged --network host donniean/ip-checker",
     "preinstall": "npx only-allow npm",
     "knip": "knip",
     "knip:fix": "npm run knip -- --fix",
