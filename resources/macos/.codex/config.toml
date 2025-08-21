@@ -1,2 +1,7 @@
+preferred_auth_method = "chatgpt"
+
 model = "gpt-5"
 model_reasoning_effort = "high"
+
+[sandbox_workspace_write]
+network_access = true
