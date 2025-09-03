@@ -70,7 +70,7 @@
     "htmlhint": "^1.6.3",
     "husky": "^9.1.7",
     "knip": "^5.63.0",
-    "lint-staged": "^16.1.5",
+    "lint-staged": "^16.1.6",
     "markdownlint-cli": "^0.45.0",
     "prettier": "^3.6.2",
     "serve": "^14.2.4",
