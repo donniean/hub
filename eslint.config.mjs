@@ -1,11 +1,10 @@
-// @ts-check
-
 import path from 'node:path';
 
 import { includeIgnoreFile } from '@eslint/compat';
 import eslint from '@eslint/js';
 import eslintPluginEslintCommentsConfigs from '@eslint-community/eslint-plugin-eslint-comments/configs';
 import eslintPluginVitest from '@vitest/eslint-plugin';
+import { defineConfig } from 'eslint/config';
 import eslintConfigPrettier from 'eslint-config-prettier/flat';
 import { createTypeScriptImportResolver } from 'eslint-import-resolver-typescript';
 import * as eslintPluginImportX from 'eslint-plugin-import-x';
@@ -29,7 +28,6 @@ const nodeGlobs = [
   '**/cspell.config.{js,mjs,cjs,ts}',
   '**/eslint.config.{js,mjs,cjs,ts}',
   '**/jest.config.{js,mjs,cjs,ts}',
-  '**/lingui.config.{js,mjs,cjs,ts}',
   '**/lint-staged.config.{js,mjs,cjs,ts}',
   '**/prettier.config.{js,mjs,cjs,ts}',
   '**/rollup.config.{js,mjs,cjs,ts}',
@@ -40,7 +38,7 @@ const nodeGlobs = [
   'scripts/**/*.{js,cjs,mjs,ts}',
 ];
 
-export default typescriptEslint.config([
+export default defineConfig([
   {
     ...includeIgnoreFile(gitignorePath),
     name: 'custom/gitignore',
@@ -155,6 +153,7 @@ export default typescriptEslint.config([
           // 'newlines-between-types': 'always',
         },
       ],
+      'import-x/prefer-namespace-import': 'error',
     },
     settings: {
       'import-x/resolver-next': [eslintPluginImportX.createNodeResolver()],
