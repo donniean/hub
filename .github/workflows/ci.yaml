@@ -12,42 +12,47 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v5
 
+      - name: Set up pnpm
+        uses: pnpm/action-setup@v4
+        with:
+          version: latest
+
       - name: Set up Node.js
         uses: actions/setup-node@v5
         with:
           node-version-file: .nvmrc
-          cache: npm
+          cache: pnpm
 
       - name: Install Dependencies
-        run: npm ci
+        run: pnpm install
 
       # - name: Lint
-      #   run: npm run lint
+      #   run: pnpm run lint
       # Linters
 
       - name: lint:package-json
-        run: npm run lint:package-json
+        run: pnpm run lint:package-json
 
       - name: lint:format
-        run: npm run lint:format
+        run: pnpm run lint:format
 
       # - name: lint:types
-      #   run: npm run lint:types
+      #   run: pnpm run lint:types
 
       # - name: lint:js
-      #   run: npm run lint:js
+      #   run: pnpm run lint:js
 
       - name: lint:css
-        run: npm run lint:css
+        run: pnpm run lint:css
 
       - name: lint:html
-        run: npm run lint:html
+        run: pnpm run lint:html
 
       - name: lint:md
-        run: npm run lint:md
+        run: pnpm run lint:md
 
       - name: lint:text
-        run: npm run lint:text
+        run: pnpm run lint:text
 
       - name: lint:spell
-        run: npm run lint:spell
+        run: pnpm run lint:spell

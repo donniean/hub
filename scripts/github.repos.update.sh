@@ -7,7 +7,7 @@ func() {
   git checkout main
   git pull --all --prune
   # rm -rf node_modules/
-  npm install
+  pnpm install
 }
 
 names=(
