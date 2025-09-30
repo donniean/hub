@@ -4,6 +4,8 @@ original_dir=$(pwd)
 
 cd "$HOME" || exit
 
+npm list --global
+
 npm outdated --global
 
 npm update --global
