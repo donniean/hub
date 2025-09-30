@@ -27,7 +27,9 @@ jobs:
           cache: npm
 
       - name: Install npm
-        run: npm install --global npm@latest
+        run: |
+          npm install --global npm@latest
+          npm --version
 
       - name: Bump Dependencies
         run: npm run ncu:upgrade
