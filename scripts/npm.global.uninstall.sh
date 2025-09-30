@@ -5,8 +5,7 @@ original_dir=$(pwd)
 cd "$HOME" || exit
 
 npm uninstall --global \
-  corepack \
-  tsx
+  corepack
 
 # npm uninstall --global npm
 
