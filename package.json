@@ -14,7 +14,7 @@
   "author": "Donnie An",
   "type": "module",
   "scripts": {
-    "preinstall": "npx only-allow pnpm",
+    "preinstall": "pnpm dlx only-allow pnpm",
     "knip": "knip",
     "knip:fix": "pnpm run knip --fix",
     "lint": "concurrently --group --timings --prefix-colors=auto \"pnpm:lint:*(!:fix)\"",
@@ -44,7 +44,7 @@
     "test:watch": "vitest watch"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.0.0",
+    "@commitlint/cli": "20.1.0",
     "@commitlint/config-conventional": "20.0.0",
     "@eslint-community/eslint-plugin-eslint-comments": "4.5.0",
     "@eslint/compat": "1.4.0",
