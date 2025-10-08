@@ -13,6 +13,10 @@ on:
     - cron: '0 10 * * *'
   workflow_dispatch:
 
+permissions:
+  contents: write
+  pull-requests: write
+
 jobs:
   bump:
     runs-on: ubuntu-latest
@@ -69,6 +73,9 @@ jobs:
 
       - name: Auto-Merge Pull Request
         if: ${{ steps.create-pull-request.outputs.pull-request-number }}
-        run: gh pr merge --auto --squash "${{ steps.create-pull-request.outputs.pull-request-url }}"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          url="${{ steps.create-pull-request.outputs.pull-request-url }}"
+          # gh pr merge --disable-auto "$url" || true
+          gh pr merge --auto --squash "$url"
