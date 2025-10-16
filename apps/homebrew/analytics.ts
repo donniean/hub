@@ -35,6 +35,7 @@ const result = {
   ...rest,
   items: top100,
 };
+const json = JSON.stringify(result, null, 2);
 
 // eslint-disable-next-line no-console
-console.info(result);
+console.info(json);
