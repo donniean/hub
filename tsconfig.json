@@ -2,9 +2,6 @@
   "compilerOptions": {
     /* base */
 
-    /* Projects */
-    "composite": true,
-
     /* Language and Environment */
     "target": "es2022",
     "moduleDetection": "force",
