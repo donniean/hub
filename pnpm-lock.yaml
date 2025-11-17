@@ -33,8 +33,8 @@ importers:
         specifier: 4.0.9
         version: 4.0.9(vitest@4.0.9)
       '@vitest/eslint-plugin':
-        specifier: 1.4.2
-        version: 1.4.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.9)
+        specifier: 1.4.3
+        version: 1.4.3(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.9)
       '@vitest/ui':
         specifier: 4.0.9
         version: 4.0.9(vitest@4.0.9)
@@ -150,14 +150,13 @@ packages:
     resolution: {integrity: sha512-6zABk/ECA/QYSCQ1NGiVwwbQerUCZ+TQbp64Q3AgmfNvurHH0j8TtXa1qbShXA6qqkpAj4V5W8pP6mLe1mcMqA==}
     engines: {node: '>=18'}
 
-  '@cacheable/memoize@2.0.3':
-    resolution: {integrity: sha512-hl9wfQgpiydhQEIv7fkjEzTGE+tcosCXLKFDO707wYJ/78FVOlowb36djex5GdbSyeHnG62pomYLMuV/OT8Pbw==}
+  '@cacheable/memory@2.0.5':
+    resolution: {integrity: sha512-fkiAxCvssEyJZ5fxX4tcdZFRmW9JehSTGvvqmXn6rTzG5cH6V/3C4ad8yb01vOjp2xBydHkHrgpW0qeGtzt6VQ==}
 
-  '@cacheable/memory@2.0.4':
-    resolution: {integrity: sha512-cCmJKCKlT1t7hNBI1+gFCwmKFd9I4pS3zqBeNGXTSODnpa0EeDmORHY8oEMTuozfdg3cgsVh8ojLaPYb6eC7Cg==}
-
-  '@cacheable/utils@2.2.0':
-    resolution: {integrity: sha512-7xaQayO3msdVcxXLYcLU5wDqJBNdQcPPPHr6mdTEIQI7N7TbtSVVTpWOTfjyhg0L6AQwQdq7miKdWtTDBoBldQ==}
+  '@cacheable/utils@2.3.0':
+    resolution: {integrity: sha512-qznqu6bpEei96zojGW+/IX1VXTOihznnVOK/kzyQWcqgn7SqkC3216nsX7M4BQfGwQgnxUXZ1xX7xiUoedqLPA==}
+    peerDependencies:
+      keyv: ^5.5.4
 
   '@commitlint/cli@20.1.0':
     resolution: {integrity: sha512-pW5ujjrOovhq5RcYv5xCpb4GkZxkO2+GtOdBW2/qrr0Ll9tl3PX0aBBobGQl3mdZUbOBgwAexEQLeH6uxL0VYg==}
@@ -1177,8 +1176,8 @@ packages:
       '@vitest/browser':
         optional: true
 
-  '@vitest/eslint-plugin@1.4.2':
-    resolution: {integrity: sha512-7rENIOOk6eqgtf2FsQWilgfQheeuGRiU3lB2H+pmtbcA4jOdtBfQHVqS7f/KCOJ2JKjrIJgow8yUeANi34rj9w==}
+  '@vitest/eslint-plugin@1.4.3':
+    resolution: {integrity: sha512-ba+YDKyZdViNAOg8P86a9tIEawPA/O+nLbwhg8g7nkqsLOAVum6GoZhkNxgwX621oqWAbB8N2xb+G5kkpXehcA==}
     engines: {node: '>=18'}
     peerDependencies:
       eslint: '>=8.57.0'
@@ -1386,8 +1385,8 @@ packages:
     resolution: {integrity: sha512-/Nf7TyzTx6S3yRJObOAV7956r8cr2+Oj8AC5dt8wSP3BQAoeX58NoHyCU8P8zGkNXStjTSi6fzO6F0pBdcYbEg==}
     engines: {node: '>= 0.8'}
 
-  cacheable@2.1.1:
-    resolution: {integrity: sha512-LmF4AXiSNdiRbI2UjH8pAp9NIXxeQsTotpEaegPiDcnN0YPygDJDV3l/Urc0mL72JWdATEorKqIHEx55nDlONg==}
+  cacheable@2.2.0:
+    resolution: {integrity: sha512-LEJxRqfeomiiRd2t0uON6hxAtgOoWDfY3fugebbz+J3vDLO+SkdfFChQcOHTZhj9SYa9iwE9MGYNX72dKiOE4w==}
 
   callsites@3.1.0:
     resolution: {integrity: sha512-P8BjAsXvZS+VIDUI11hHCQEv74YT67YUi5JJFNWIqL235sBmjX4+qx9Muvls5ivyNENctx46xQLQ3aTuE7ssaQ==}
@@ -1952,8 +1951,8 @@ packages:
     resolution: {integrity: sha512-f7ccFPK3SXFHpx15UIGyRJ/FJQctuKZ0zVuN3frBo4HnK3cay9VEW0R6yPYFHC0AgqhukPzKjq22t5DmAyqGyw==}
     engines: {node: '>=16'}
 
-  flat-cache@6.1.18:
-    resolution: {integrity: sha512-JUPnFgHMuAVmLmoH9/zoZ6RHOt5n9NlUw/sDXsTbROJ2SFoS2DS4s+swAV6UTeTbGH/CAsZIE6M8TaG/3jVxgQ==}
+  flat-cache@6.1.19:
+    resolution: {integrity: sha512-l/K33newPTZMTGAnnzaiqSl6NnH7Namh8jBNjrgjprWxGmZUuxx/sJNIRaijOh3n7q7ESbhNZC+pvVZMFdeU4A==}
 
   flatted@3.3.3:
     resolution: {integrity: sha512-GX+ysw4PBCz0PzosHDepZGANEuFCMLrnRTiEy9McGjmkCQYwRq4A/X786G/fjM/+OjsWSU1ZrY5qyARZmO/uwg==}
@@ -2585,9 +2584,9 @@ packages:
   node-releases@2.0.27:
     resolution: {integrity: sha512-nmh3lCkYZ3grZvqcCH+fjmQ7X+H0OeZgP40OierEaAptX4XofMh5kwNbWh7lBduUzCcV/8kZ+NDLCwm2iorIlA==}
 
-  node-sarif-builder@3.2.0:
-    resolution: {integrity: sha512-kVIOdynrF2CRodHZeP/97Rh1syTUHBNiw17hUCIVhlhEsWlfJm19MuO56s4MdKbr22xWx6mzMnNAgXzVlIYM9Q==}
-    engines: {node: '>=18'}
+  node-sarif-builder@3.3.0:
+    resolution: {integrity: sha512-8taRy2nQs1xNs8iO2F0XbkZJEliiijpKgFVcyiwKjJ2+3X59LVI3wY84qRdJwRDpIo5GK8wvb1pxcJ+JVu3jrg==}
+    engines: {node: '>=20'}
 
   normalize-path@3.0.0:
     resolution: {integrity: sha512-6eZs5Ls3WtCisHWp9S2GUy8dqkpGi4BVSz3GaqiE6ezub0512ESztXUwUB6C6IKbQkY2Pnb/mD4WYojCRwcwLA==}
@@ -3312,19 +3311,16 @@ snapshots:
 
   '@bcoe/v8-coverage@1.0.2': {}
 
-  '@cacheable/memoize@2.0.3':
+  '@cacheable/memory@2.0.5':
     dependencies:
-      '@cacheable/utils': 2.2.0
-
-  '@cacheable/memory@2.0.4':
-    dependencies:
-      '@cacheable/utils': 2.2.0
+      '@cacheable/utils': 2.3.0(keyv@5.5.4)
       '@keyv/bigmap': 1.2.0(keyv@5.5.4)
       hookified: 1.13.0
       keyv: 5.5.4
 
-  '@cacheable/utils@2.2.0':
+  '@cacheable/utils@2.3.0(keyv@5.5.4)':
     dependencies:
+      hashery: 1.2.0
       keyv: 5.5.4
 
   '@commitlint/cli@20.1.0(@types/node@24.10.1)(typescript@5.9.3)':
@@ -4229,7 +4225,7 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@vitest/eslint-plugin@1.4.2(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.9)':
+  '@vitest/eslint-plugin@1.4.3(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)(vitest@4.0.9)':
     dependencies:
       '@typescript-eslint/scope-manager': 8.46.4
       '@typescript-eslint/utils': 8.46.4(eslint@9.39.1(jiti@2.6.1))(typescript@5.9.3)
@@ -4435,11 +4431,10 @@ snapshots:
 
   bytes@3.1.2: {}
 
-  cacheable@2.1.1:
+  cacheable@2.2.0:
     dependencies:
-      '@cacheable/memoize': 2.0.3
-      '@cacheable/memory': 2.0.4
-      '@cacheable/utils': 2.2.0
+      '@cacheable/memory': 2.0.5
+      '@cacheable/utils': 2.3.0(keyv@5.5.4)
       hookified: 1.13.0
       keyv: 5.5.4
       qified: 0.5.2
@@ -5057,7 +5052,7 @@ snapshots:
 
   file-entry-cache@10.1.4:
     dependencies:
-      flat-cache: 6.1.18
+      flat-cache: 6.1.19
 
   file-entry-cache@8.0.0:
     dependencies:
@@ -5085,9 +5080,9 @@ snapshots:
       flatted: 3.3.3
       keyv: 4.5.4
 
-  flat-cache@6.1.18:
+  flat-cache@6.1.19:
     dependencies:
-      cacheable: 2.1.1
+      cacheable: 2.2.0
       flatted: 3.3.3
       hookified: 1.13.0
 
@@ -5215,7 +5210,7 @@ snapshots:
       commander: 11.1.0
       glob: 9.3.5
       is-glob: 4.0.3
-      node-sarif-builder: 3.2.0
+      node-sarif-builder: 3.3.0
       strip-json-comments: 3.1.1
       xml: 1.0.1
 
@@ -5764,7 +5759,7 @@ snapshots:
 
   node-releases@2.0.27: {}
 
-  node-sarif-builder@3.2.0:
+  node-sarif-builder@3.3.0:
     dependencies:
       '@types/sarif': 2.1.7
       fs-extra: 11.3.2
