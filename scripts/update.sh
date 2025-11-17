@@ -7,7 +7,7 @@ basePath=$(
 
 source "${basePath}"/brew.upgrade.sh
 
-source "${basePath}"/mas.upgrade.sh
+# source "${basePath}"/mas.upgrade.sh
 
 source "${basePath}"/nvm.install.sh
 
