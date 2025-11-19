@@ -126,6 +126,7 @@
   "dotenv.enableAutocloaking": false,
   "editor.acceptSuggestionOnEnter": "smart",
   "editor.aiStats.enabled": true,
+  "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
   "editor.codeActionsOnSave": {
     "source.addMissingImports": "explicit",
     "source.fixAll.eslint": "explicit",
