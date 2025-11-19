@@ -41,7 +41,9 @@
     "test": "vitest run --passWithNoTests",
     "test:coverage": "vitest run --coverage",
     "test:ui": "vitest --ui",
-    "test:watch": "vitest watch"
+    "test:watch": "vitest watch",
+    "vscode:dest-to-src": "sh scripts/vscode/dest-to-src.sh",
+    "vscode:src-to-dest": "sh scripts/vscode/src-to-dest.sh"
   },
   "devDependencies": {
     "@commitlint/cli": "20.1.0",

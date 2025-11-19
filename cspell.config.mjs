@@ -78,5 +78,6 @@ export default defineConfig({
     '.gitattributes',
     // custom
     'resources/macos/',
+    'resources/vscode/settings.json',
   ],
 });
