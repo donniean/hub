@@ -4,4 +4,4 @@ dir_path=$(dirname "$0")
 
 source "${dir_path}"/paths.sh
 
-cp "$src_path" "$dest_path"
+cp "$dest_path" "$src_path"
