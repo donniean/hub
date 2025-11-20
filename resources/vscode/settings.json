@@ -149,7 +149,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
-  "editor.tokenColorCustomizations": {
+  /* "editor.tokenColorCustomizations": {
     "[*Dark*]": {
       "textMateRules": [
         {
@@ -171,7 +171,7 @@
       ]
     },
     "textMateRules": []
-  },
+  }, */
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 1,
   "editor.wrappingIndent": "indent",
@@ -234,7 +234,7 @@
     ".env": "*.env, .env.*, .envrc, env.d.ts",
     ".gitignore": ".gitattributes, .gitmodules, .gitmessage, .lfsconfig, .mailmap, .git-blame*",
     ".project": ".classpath",
-    "//": "Last update at 2025/11/19 22:32:27",
+    "//": "Last update at 2025/11/20 10:07:17",
     "AGENTS.md": ".clinerules, .cursorrules, .replit.md, .windsurfrules, AGENT.md, CLAUDE.local.md, CLAUDE.md, GEMINI.md",
     "BUILD.bazel": "*.bzl, *.bazel, *.bazelrc, bazel.rc, .bazelignore, .bazelproject, .bazelversion, MODULE.bazel.lock, WORKSPACE",
     "CMakeLists.txt": "*.cmake, *.cmake.in, .cmake-format.yaml, CMakePresets.json, CMakeCache.txt",
@@ -479,10 +479,14 @@
   "window.nativeTabs": true,
   "window.newWindowDimensions": "inherit",
   "window.restoreFullscreen": true,
-  "workbench.colorCustomizations": {
-    "editorCursor.foreground": "#fff"
-  },
-  "workbench.colorTheme": "One Dark Pro",
+  /* "workbench.colorCustomizations": {
+    "[*Dark*]": {
+      "editorCursor.foreground": "#fff"
+    },
+    "[*Light*]": {
+      "editorCursor.foreground": "#000"
+    }
+  }, */
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": "vscode-icons"
