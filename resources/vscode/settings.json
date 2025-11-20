@@ -93,29 +93,6 @@
   "editor.renderWhitespace": "boundary",
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
-  /* "editor.tokenColorCustomizations": {
-    "[*Light*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#000"
-          }
-        }
-      ]
-    },
-    "[*Dark*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#fff"
-          }
-        }
-      ]
-    },
-    "textMateRules": []
-  }, */
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 1,
   "editor.wrappingIndent": "indent",
@@ -423,14 +400,6 @@
   "window.nativeTabs": true,
   "window.newWindowDimensions": "inherit",
   "window.restoreFullscreen": true,
-  /* "workbench.colorCustomizations": {
-    "[*Dark*]": {
-      "editorCursor.foreground": "#fff"
-    },
-    "[*Light*]": {
-      "editorCursor.foreground": "#000"
-    }
-  }, */
   "workbench.editor.highlightModifiedTabs": true,
   "workbench.editor.wrapTabs": true,
   "workbench.iconTheme": "vscode-icons"
