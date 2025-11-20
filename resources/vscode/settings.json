@@ -1,8 +1,4 @@
 {
-  "CSSNavigation.enableClassNameDefinitionDiagnostic": true,
-  "CSSNavigation.enableClassNameReferenceDiagnostic": true,
-  "CSSNavigation.enableDefinitionCodeLens": true,
-  "CSSNavigation.enableReferenceCodeLens": true,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -98,22 +94,22 @@
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
   /* "editor.tokenColorCustomizations": {
-    "[*Dark*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#fff"
-          }
-        }
-      ]
-    },
     "[*Light*]": {
       "textMateRules": [
         {
           "scope": "ref.matchtext",
           "settings": {
             "foreground": "#000"
+          }
+        }
+      ]
+    },
+    "[*Dark*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#fff"
           }
         }
       ]
