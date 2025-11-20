@@ -291,9 +291,6 @@
       "siblings_only": true
     }
   },
-  "path-autocomplete.pathMappings": {
-    "/": "${folder}/public/"
-  },
   "path-intellisense.mappings": {
     "/": "${workspaceFolder}/public/"
   },
