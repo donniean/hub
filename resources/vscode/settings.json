@@ -1,4 +1,8 @@
 {
+  "CSSNavigation.enableClassNameDefinitionDiagnostic": true,
+  "CSSNavigation.enableClassNameReferenceDiagnostic": true,
+  "CSSNavigation.enableDefinitionCodeLens": true,
+  "CSSNavigation.enableReferenceCodeLens": true,
   "[css]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
@@ -66,24 +70,6 @@
   "css.lint.zeroUnits": "warning",
   "css.validate": false,
   "cssModules.camelCase": true,
-  "cssVariables.languages": [
-    "astro",
-    "svelte",
-    "vue",
-    "vue-html",
-    "vue-postcss",
-    "scss",
-    "postcss",
-    "less",
-    "css",
-    "html",
-    "javascript",
-    "javascriptreact",
-    "tailwindcss",
-    "typescript",
-    "typescriptreact",
-    "source.css.styled"
-  ],
   "docker.extension.enableComposeLanguageServer": false,
   "dotenv.enableAutocloaking": false,
   "editor.acceptSuggestionOnEnter": "smart",
