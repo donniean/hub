@@ -93,17 +93,7 @@
   "editor.renderWhitespace": "boundary",
   "editor.smoothScrolling": true,
   "editor.tabSize": 2,
-  /* "editor.tokenColorCustomizations": {
-    "[*Light*]": {
-      "textMateRules": [
-        {
-          "scope": "ref.matchtext",
-          "settings": {
-            "foreground": "#000"
-          }
-        }
-      ]
-    },
+  "editor.tokenColorCustomizations": {
     "[*Dark*]": {
       "textMateRules": [
         {
@@ -114,8 +104,18 @@
         }
       ]
     },
+    "[*Light*]": {
+      "textMateRules": [
+        {
+          "scope": "ref.matchtext",
+          "settings": {
+            "foreground": "#000"
+          }
+        }
+      ]
+    },
     "textMateRules": []
-  }, */
+  },
   "editor.wordWrap": "on",
   "editor.wordWrapColumn": 1,
   "editor.wrappingIndent": "indent",
