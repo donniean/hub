@@ -62,10 +62,9 @@
     "*": true,
     "markdown": true
   },
-  "css.lint.duplicateProperties": "warning",
-  "css.lint.zeroUnits": "warning",
   "css.validate": false,
   "cssModules.camelCase": true,
+  "diffEditor.ignoreTrimWhitespace": false,
   "docker.extension.enableComposeLanguageServer": false,
   "dotenv.enableAutocloaking": false,
   "editor.acceptSuggestionOnEnter": "smart",
@@ -117,7 +116,6 @@
     "textMateRules": []
   },
   "editor.wordWrap": "on",
-  "editor.wordWrapColumn": 1,
   "editor.wrappingIndent": "indent",
   "emmet.includeLanguages": {
     "wxml": "html"
@@ -227,9 +225,9 @@
   "fileNestingUpdater.promptOnAutoUpdate": false,
   "files.associations": {
     ".*ignore": "ignore",
+    ".autocorrectrc": "json",
     ".env*": "dotenv",
     ".nvmrc": "plaintext",
-    "*.*rc": "json",
     "*.base": "yaml",
     "*.cjson": "jsonc",
     "*.css": "tailwindcss",
@@ -302,8 +300,6 @@
   "html.format.wrapLineLength": 0,
   "javascript.format.insertSpaceAfterFunctionKeywordForAnonymousFunctions": false,
   "javascript.referencesCodeLens.enabled": true,
-  "less.lint.duplicateProperties": "warning",
-  "less.lint.zeroUnits": "warning",
   "less.validate": false,
   "markdown-preview-enhanced.frontMatterRenderingOption": "table",
   "markdown-preview-enhanced.previewTheme": "github-dark.css",
@@ -325,8 +321,6 @@
   "projectManager.vscode.baseFolders": ["$home/repos"],
   "redhat.telemetry.enabled": true,
   "scm.defaultViewMode": "tree",
-  "scss.lint.duplicateProperties": "warning",
-  "scss.lint.zeroUnits": "warning",
   "scss.validate": false,
   "search.exclude": {
     ".history/**": true,
@@ -344,17 +338,6 @@
   "search.showLineNumbers": true,
   "security.promptForLocalFileProtocolHandling": false,
   "security.workspace.trust.untrustedFiles": "open",
-  "sortJSON.contextMenu": {
-    "sortJSONAlphaNum": false,
-    "sortJSONAlphaNumReverse": false,
-    "sortJSONKeyLength": false,
-    "sortJSONKeyLengthReverse": false,
-    "sortJSONReverse": false,
-    "sortJSONType": false,
-    "sortJSONTypeReverse": false,
-    "sortJSONValues": false,
-    "sortJSONValuesReverse": false
-  },
   "stylelint.validate": [
     "css",
     "scss",
@@ -409,12 +392,19 @@
   "typescript.preferences.importModuleSpecifier": "non-relative",
   "typescript.referencesCodeLens.enabled": true,
   "typescript.reportStyleChecksAsWarnings": false,
+  // https://github.com/vscode-icons/vscode-icons/blob/master/src/iconsManifest/supportedExtensions.ts
   "vsicons.associations.files": [
     {
       "extensionsGlob": ["mjs", "ts"],
       "filename": true,
       "filenamesGlob": ["cspell.config", "cspell", ".cspell"],
       "icon": "cspell"
+    },
+    {
+      "extensionsGlob": ["mjs"],
+      "filename": true,
+      "filenamesGlob": [".htmlvalidate"],
+      "icon": "htmlvalidate"
     }
   ],
   "window.nativeTabs": true,
