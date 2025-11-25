@@ -54,7 +54,7 @@
     "@eslint/js": "9.39.1",
     "@types/node": "24.10.1",
     "@vitest/coverage-v8": "4.0.13",
-    "@vitest/eslint-plugin": "1.4.4",
+    "@vitest/eslint-plugin": "1.5.0",
     "@vitest/ui": "4.0.13",
     "autocorrect-node": "2.14.0",
     "concurrently": "9.2.1",
@@ -72,7 +72,7 @@
     "globals": "16.5.0",
     "html-validate": "10.4.0",
     "husky": "9.1.7",
-    "knip": "5.70.1",
+    "knip": "5.70.2",
     "lint-staged": "16.2.7",
     "markdownlint-cli": "0.46.0",
     "prettier": "3.6.2",
@@ -82,7 +82,7 @@
     "stylelint-config-recess-order": "7.4.0",
     "stylelint-config-standard": "39.0.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.47.0",
+    "typescript-eslint": "8.48.0",
     "vitest": "4.0.13"
   },
   "engines": {
