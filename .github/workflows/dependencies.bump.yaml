@@ -60,7 +60,7 @@ jobs:
         env:
           COMMIT_MESSAGE: 'chore(bot): bump dependencies'
           COMMITTER: github-actions[bot] <12584040+donniean@users.noreply.github.com>
-        uses: peter-evans/create-pull-request@v7
+        uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ secrets.GH_TOKEN }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
