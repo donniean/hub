@@ -52,7 +52,7 @@
     "@eslint-community/eslint-plugin-eslint-comments": "4.5.0",
     "@eslint/compat": "2.0.0",
     "@eslint/js": "9.39.1",
-    "@types/node": "24.10.1",
+    "@types/node": "24.10.2",
     "@vitest/coverage-v8": "4.0.15",
     "@vitest/eslint-plugin": "1.5.2",
     "@vitest/ui": "4.0.15",
@@ -77,12 +77,12 @@
     "markdownlint-cli": "0.46.0",
     "prettier": "3.7.4",
     "serve": "14.2.5",
-    "sort-package-json": "3.5.0",
+    "sort-package-json": "3.5.1",
     "stylelint": "16.26.1",
     "stylelint-config-recess-order": "7.4.0",
     "stylelint-config-standard": "39.0.1",
     "typescript": "5.9.3",
-    "typescript-eslint": "8.48.1",
+    "typescript-eslint": "8.49.0",
     "vitest": "4.0.15"
   },
   "engines": {
