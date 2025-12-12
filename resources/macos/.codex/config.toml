@@ -1,7 +1,22 @@
 preferred_auth_method = "chatgpt"
 
-model = "gpt-5.1-codex-max"
+model = "gpt-5.2"
 model_reasoning_effort = "xhigh"
 
 [sandbox_workspace_write]
 network_access = true
+
+[projects."/Users/donniean/repos"]
+trust_level = "trusted"
+
+[projects."/Users/donniean/repos/hub"]
+trust_level = "trusted"
+
+[projects."/Users/donniean/repos/node-app"]
+trust_level = "trusted"
+
+[projects."/Users/donniean/repos/react-app"]
+trust_level = "trusted"
+
+[projects."/Users/donniean/repos/vault"]
+trust_level = "trusted"
