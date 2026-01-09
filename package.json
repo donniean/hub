@@ -44,9 +44,9 @@
     "test:watch": "vitest watch"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.3.0",
-    "@commitlint/config-conventional": "20.3.0",
-    "@commitlint/types": "20.2.0",
+    "@commitlint/cli": "20.3.1",
+    "@commitlint/config-conventional": "20.3.1",
+    "@commitlint/types": "20.3.1",
     "@eslint-community/eslint-plugin-eslint-comments": "4.5.0",
     "@eslint/compat": "2.0.0",
     "@eslint/js": "9.39.2",
@@ -70,7 +70,7 @@
     "globals": "17.0.0",
     "html-validate": "10.5.0",
     "husky": "9.1.7",
-    "knip": "5.80.0",
+    "knip": "5.80.2",
     "lint-staged": "16.2.7",
     "markdownlint-cli": "0.47.0",
     "prettier": "3.7.4",
