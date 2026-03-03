@@ -44,7 +44,7 @@
     "test:watch": "vitest watch"
   },
   "devDependencies": {
-    "@commitlint/cli": "20.4.2",
+    "@commitlint/cli": "20.4.3",
     "@commitlint/config-conventional": "20.4.2",
     "@commitlint/types": "20.4.3",
     "@eslint-community/eslint-plugin-eslint-comments": "4.7.1",
