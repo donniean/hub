@@ -85,9 +85,7 @@ function findPath(tree, id, prevPath) {
 
   for (const node of tree) {
     const { id: nodeId, children } = node;
-    const tempPath = [...path];
-
-    tempPath.push(nodeId);
+    const tempPath = [...path, nodeId];
 
     if (id === nodeId) {
       return tempPath;
