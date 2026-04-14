@@ -35,6 +35,7 @@ export default defineConfig({
     'corepack',
     'cssnano',
     'deepmerge',
+    'envinfo',
     'immer',
     'mantine',
     'markdownlint',
