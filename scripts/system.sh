@@ -33,7 +33,11 @@ echo "======"
 brew leaves --installed-as-dependency
 echo "======"
 brew list --cask --versions
+echo "======"
+
+npm list --global
+echo "======"
 
 bat --paging=never --style=full \
-  ~/.zshrc \
-  ~/.zprofile
+  ~/.zprofile \
+  ~/.zshrc
