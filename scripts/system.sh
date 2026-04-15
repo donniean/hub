@@ -39,5 +39,5 @@ npm list --global
 echo "======"
 
 bat --paging=never --style=full \
-  ~/.zshrc \
-  ~/.zprofile
+  ~/.zprofile \
+  ~/.zshrc
