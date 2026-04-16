@@ -15,8 +15,8 @@ repo_names=(
   vault
 )
 
-for repo in "${repo_names[@]}"; do
-  cd "$HOME/repos/$repo"
+for repo_name in "${repo_names[@]}"; do
+  cd "$HOME/repos/$repo_name"
 
   git switch main
   git pull --all --prune
