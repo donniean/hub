@@ -4,11 +4,15 @@ set -uo pipefail
 
 export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
 
-date '+%Y-%m-%d %H:%M:%S %z'
+set -x
+
+date '+%Y-%m-%dT%H:%M:%S%z'
 
 original_dir=$(pwd)
 
 cd "$HOME" || exit
+
+fnm use default
 
 npm list --global
 

@@ -1,20 +1,19 @@
 #!/usr/bin/env bash
 
-set -uo pipefail
+set -euo pipefail
 
 export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
 
-date '+%Y-%m-%d %H:%M:%S %z'
+set -x
 
-basePath=$(
-  cd "$(dirname "$0")" || exit
-  pwd
+date '+%Y-%m-%dT%H:%M:%S%z'
+
+base_path=$(
+  cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
+  pwd -P
 )
 
-source "${basePath}"/brew.upgrade.sh
-
-source "${basePath}"/mas.upgrade.sh
-
-source "${basePath}"/npm.global.update.sh
-
-source "${basePath}"/github.repos.update.sh
+bash "${base_path}/brew.upgrade.sh"
+bash "${base_path}/mas.upgrade.sh"
+bash "${base_path}/npm.global.update.sh"
+bash "${base_path}/repos.update.sh"
