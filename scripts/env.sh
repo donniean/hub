@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-export PS4='+ [${BASH_SOURCE##*/}:${LINENO}:${FUNCNAME[0]:-main}] '
+export PS4='+ [${BASH_SOURCE##*/}:${LINENO}] '
 
 echo "Time: $(date '+%Y-%m-%d %H:%M:%S %z')"
 
