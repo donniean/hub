@@ -4,7 +4,7 @@ set -uo pipefail
 
 export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
 
-date '+%Y-%m-%d %H:%M:%S %z'
+date '+%Y-%m-%dT%H:%M:%S%z'
 
 original_dir=$(pwd)
 

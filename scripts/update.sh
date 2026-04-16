@@ -6,7 +6,7 @@ set -euo pipefail
 
 export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
 
-date '+%Y-%m-%d %H:%M:%S %z'
+date '+%Y-%m-%dT%H:%M:%S%z'
 
 base_path=$(
   cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P
