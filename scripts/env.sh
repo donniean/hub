@@ -4,7 +4,7 @@ set -euo pipefail
 
 export PS4='+ [${BASH_SOURCE##*/}:${LINENO}] '
 
-echo "Time: $(date '+%Y-%m-%d %H:%M:%S %z')"
+date '+%Y-%m-%d %H:%M:%S %z'
 
 npx --yes envinfo
 

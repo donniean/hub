@@ -4,11 +4,11 @@ set -euo pipefail
 
 export PS4='+ [${BASH_SOURCE##*/}:${LINENO}] '
 
-echo "Time: $(date '+%Y-%m-%d %H:%M:%S %z')"
-echo "Model: $(sysctl -n hw.model)"
-echo "Kernel: $(uname -sr)"
-echo "Arch: $(uname -m)"
+date '+%Y-%m-%d %H:%M:%S %z'
 
+sysctl -n hw.model
+uname -sr
+uname -m
 sw_vers
 
 xcode-select --print-path
@@ -18,7 +18,6 @@ pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
 npx --yes envinfo
 
 brew config
-
 brew doctor
 
 brew list --versions
