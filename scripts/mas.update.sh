@@ -12,4 +12,9 @@ mas list
 
 mas outdated
 
-mas upgrade
+if mas --help 2>&1 | grep -qE '^[[:space:]]+update[[:space:]]'; then
+  mas update
+else
+  # for old version
+  mas upgrade
+fi
