@@ -9,11 +9,11 @@ brew update
 brew outdated
 brew outdated --cask --greedy
 
-brew upgrade --dry-run
-brew upgrade --cask --greedy --dry-run
+brew upgrade --display-times --dry-run
+brew upgrade --display-times --cask --greedy --dry-run
 
-brew upgrade
-brew upgrade --cask --greedy
+brew upgrade --display-times
+brew upgrade --display-times --cask --greedy
 
 brew autoremove
 brew cleanup
