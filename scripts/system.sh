@@ -17,7 +17,7 @@ xcode-select --print-path
 xcodebuild -version
 pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
 
-npx --yes envinfo
+npx --yes envinfo@latest
 
 brew config
 brew doctor

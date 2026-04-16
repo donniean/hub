@@ -12,4 +12,4 @@ bat --paging=never --style=full \
   ~/.codex/config.toml \
   ~/.codex/AGENTS.md
 
-npx --yes skills list --global
+npx --yes skills@latest list --global

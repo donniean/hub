@@ -39,7 +39,7 @@ jobs:
         run: pnpm run ncu:upgrade
 
       - name: Remove Dependencies
-        run: pnpm dlx rimraf --glob "**/node_modules/" "**/pnpm-lock.yaml"
+        run: pnpm dlx rimraf@latest --glob "**/node_modules/" "**/pnpm-lock.yaml"
 
       - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile

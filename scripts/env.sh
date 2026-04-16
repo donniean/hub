@@ -53,4 +53,4 @@ command -V zsh
 type -a zsh
 zsh --version
 
-npx --yes --package=@playwright/cli playwright-cli --version
+npx --yes --package=@playwright/cli@latest playwright-cli --version
