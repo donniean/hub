@@ -8,11 +8,13 @@ set -x
 
 date '+%Y-%m-%dT%H:%M:%S%z'
 
-fnm use default
+(
+  cd "$HOME"
 
-npm list --global
+  npm list --global
 
-npm outdated --global
+  npm outdated --global
 
-npm update --global--dry-run
-npm update --global
+  npm update --global--dry-run
+  npm update --global
+)
