@@ -14,4 +14,4 @@ base_path=$(
 bash "${base_path}/brew.upgrade.sh"
 bash "${base_path}/mas.upgrade.sh"
 bash "${base_path}/npm.global.update.sh"
-bash "${base_path}/github.repos.update.sh"
+bash "${base_path}/repos.update.sh"
