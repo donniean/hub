@@ -18,6 +18,6 @@ date '+%Y-%m-%dT%H:%M:%S%z'
 
   npm outdated --global
 
-  npm update --global--dry-run
+  npm update --global --dry-run
   npm update --global
 )
