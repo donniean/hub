@@ -11,7 +11,7 @@ base_path=$(
   pwd -P
 )
 
-"${base_path}/brew.upgrade.sh"
-"${base_path}/mas.upgrade.sh"
-"${base_path}/npm.global.update.sh"
-"${base_path}/github.repos.update.sh"
+bash "${base_path}/brew.upgrade.sh"
+bash "${base_path}/mas.upgrade.sh"
+bash "${base_path}/npm.global.update.sh"
+bash "${base_path}/github.repos.update.sh"
