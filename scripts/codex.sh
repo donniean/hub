@@ -2,7 +2,7 @@
 
 set -euo pipefail
 
-export PS4='+ [${BASH_SOURCE##*/}:${LINENO}] '
+export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
 
 bat --paging=never --style=full \
   ~/.codex/config.toml \
