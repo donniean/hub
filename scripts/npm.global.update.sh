@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -uo pipefail
+set -euo pipefail
 
 export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
 
@@ -8,16 +8,16 @@ set -x
 
 date '+%Y-%m-%dT%H:%M:%S%z'
 
-original_dir=$(pwd)
+(
+  cd "$HOME"
 
-cd "$HOME" || exit
+  fnm use default
+  node --version
 
-fnm use default
+  npm list --global
 
-npm list --global
+  npm outdated --global
 
-npm outdated --global
-
-npm update --global
-
-cd "$original_dir" || exit
+  npm update --global --dry-run
+  npm update --global
+)
