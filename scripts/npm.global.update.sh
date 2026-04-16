@@ -11,6 +11,9 @@ date '+%Y-%m-%dT%H:%M:%S%z'
 (
   cd "$HOME"
 
+  fnm use default
+  node --version
+
   npm list --global
 
   npm outdated --global
