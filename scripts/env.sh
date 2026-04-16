@@ -1,25 +1,54 @@
 #!/usr/bin/env bash
 
-echo "Time: $(date '+%Y-%m-%d %H:%M:%S %z')"
+set -uo pipefail
 
-npx --yes envinfo
+export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
 
-echo "Git remote"
-git remote --verbose
-echo "Current Git Branch"
-git branch --show-current
-echo
+date '+%Y-%m-%d %H:%M:%S %z'
 
-echo "Project Structure"
-eza --tree --all --group-directories-first --git-ignore
-echo
+command -V ast-grep
+type -a ast-grep
+ast-grep --version
 
-bat --paging=never --style=full \
-  .vscode/settings.json \
-  .nvmrc \
-  package.json \
-  tsconfig.base.json \
-  tsconfig.app.json \
-  tsconfig.node.json \
-  tsconfig.json \
-  eslint.config.mjs
+command -V bash
+type -a bash
+bash --version
+
+command -V curl
+type -a curl
+curl --version
+
+command -V fd
+type -a fd
+fd --version
+
+command -V gh
+type -a gh
+gh --version
+gh auth status
+
+command -V git
+type -a git
+git --version
+
+command -V jq
+type -a jq
+jq --version
+
+command -V rg
+type -a rg
+rg --version
+
+command -V uv
+type -a uv
+uv --version
+
+command -V yq
+type -a yq
+yq --version
+
+command -V zsh
+type -a zsh
+zsh --version
+
+npx --yes --package=@playwright/cli playwright-cli --version

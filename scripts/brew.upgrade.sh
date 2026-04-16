@@ -1,15 +1,21 @@
 #!/usr/bin/env bash
 
+set -uo pipefail
+
+export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
+
+date '+%Y-%m-%d %H:%M:%S %z'
+
 brew update
 
 brew outdated
 brew outdated --cask --greedy
 
-brew upgrade --dry-run
-brew upgrade --cask --greedy --dry-run
+brew upgrade --display-times --dry-run
+brew upgrade --display-times --cask --greedy --dry-run
 
-brew upgrade
-brew upgrade --cask --greedy
+brew upgrade --display-times
+brew upgrade --display-times --cask --greedy
 
 brew autoremove
 brew cleanup
