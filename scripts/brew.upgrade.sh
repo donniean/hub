@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+set -x
+
 set -uo pipefail
 
 export PS4='+CMD [${BASH_SOURCE##*/}:${LINENO}] '
