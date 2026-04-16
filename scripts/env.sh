@@ -1,18 +1,17 @@
 #!/usr/bin/env bash
 
+set -euo pipefail
+
+export PS4='+ [${BASH_SOURCE##*/}:${LINENO}:${FUNCNAME[0]:-main}] '
+
 echo "Time: $(date '+%Y-%m-%d %H:%M:%S %z')"
 
 npx --yes envinfo
 
-echo "Git remote"
 git remote --verbose
-echo "Current Git Branch"
 git branch --show-current
-echo
 
-echo "Project Structure"
 eza --tree --all --group-directories-first --git-ignore
-echo
 
 bat --paging=never --style=full \
   .vscode/settings.json \
