@@ -8,7 +8,7 @@ set -x
 
 date '+%Y-%m-%dT%H:%M:%S%z'
 
-npx --yes envinfo
+npx --yes envinfo@latest
 
 git remote --verbose
 git branch --show-current
