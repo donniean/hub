@@ -12,4 +12,6 @@ bat --paging=never --style=full \
   ~/.codex/config.toml \
   ~/.codex/AGENTS.md
 
+codex mcp list
+
 npx --yes skills@latest list --global
