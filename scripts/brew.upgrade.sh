@@ -10,14 +10,10 @@ date '+%Y-%m-%dT%H:%M:%S%z'
 
 brew update
 
-brew outdated
+brew outdated --formula
 brew outdated --cask --greedy
 
-brew upgrade --display-times --dry-run
-brew upgrade --display-times --cask --greedy --dry-run
+brew upgrade --display-times --greedy --dry-run
+brew upgrade --display-times --greedy
 
-brew upgrade --display-times
-brew upgrade --display-times --cask --greedy
-
-brew autoremove
 brew cleanup
