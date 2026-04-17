@@ -23,7 +23,7 @@ for repo_name in "${repo_names[@]}"; do
   (
     cd "$repo_path"
 
-    # git switch main
+    git switch main
     git pull --all --prune
     # rm -rf node_modules/
     pnpm install
