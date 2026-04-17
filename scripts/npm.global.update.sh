@@ -16,11 +16,6 @@ date '+%Y-%m-%dT%H:%M:%S%z'
   node --version
   npm --version
 
-
-
-
-
-
   npm ls --global --depth=0
   npm outdated --global
 
