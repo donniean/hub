@@ -9,8 +9,8 @@ set -x
 date '+%Y-%m-%dT%H:%M:%S%z'
 
 bat --paging=never --style=full \
-  ~/.codex/config.toml \
-  ~/.codex/AGENTS.md
+  "$HOME/.codex/config.toml" \
+  "$HOME/.codex/AGENTS.md"
 
 codex mcp list
 
