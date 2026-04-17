@@ -22,6 +22,7 @@ for repo_name in "${repo_names[@]}"; do
 
   (
     cd "$repo_path"
+
     fnm use
 
     git switch main
