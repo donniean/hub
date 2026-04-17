@@ -31,7 +31,7 @@ brew leaves --installed-on-request
 brew leaves --installed-as-dependency
 brew list --cask --versions
 
-npm list --global
+npm ls --global
 
 bat --paging=never --style=full \
   ~/.zprofile \

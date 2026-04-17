@@ -9,13 +9,15 @@ set -x
 date '+%Y-%m-%dT%H:%M:%S%z'
 
 (
-  cd "$HOME"
+  "$HOME/repos"
 
+  eval "$(fnm env --shell bash)"
   fnm use default
+
   node --version
+  npm --version
 
-  npm list --global
-
+  npm ls --global --depth=0
   npm outdated --global
 
   npm update --global --dry-run
