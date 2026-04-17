@@ -28,7 +28,6 @@ brew list --formula --installed-as-dependency
 brew list --pinned
 brew leaves
 brew leaves --installed-on-request
-brew leaves --installed-as-dependency
 brew list --cask --versions
 
 fnm --version
