@@ -11,7 +11,6 @@ date '+%Y-%m-%dT%H:%M:%S%z'
 (
   cd "$HOME/repos"
 
-  eval "$(fnm env --shell bash)"
   fnm use default
 
   node --version
