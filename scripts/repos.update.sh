@@ -26,6 +26,6 @@ for repo_name in "${repo_names[@]}"; do
     # git switch main
     git pull --all --prune
     # rm -rf node_modules/
-  pnpm install
+    pnpm install
   )
 done
