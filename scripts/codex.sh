@@ -8,6 +8,12 @@ set -x
 
 date '+%Y-%m-%dT%H:%M:%S%z'
 
+brew info codex
+brew info codex-app
+
+type -a codex
+codex --version
+
 bat --paging=never --style=full \
   "$HOME/.codex/config.toml" \
   "$HOME/.codex/AGENTS.md"
