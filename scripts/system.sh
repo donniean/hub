@@ -37,4 +37,4 @@ bat --paging=never --style=full \
 
 fnm --version
 fnm list
-npm ls --global
+npm ls --global --depth=0
