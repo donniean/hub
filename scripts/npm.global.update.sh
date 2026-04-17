@@ -9,7 +9,7 @@ set -x
 date '+%Y-%m-%dT%H:%M:%S%z'
 
 (
-  "$HOME/repos"
+  cd "$HOME/repos"
 
   eval "$(fnm env --shell bash)"
   fnm use default
