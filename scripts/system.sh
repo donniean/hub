@@ -30,10 +30,11 @@ brew leaves
 brew leaves --installed-on-request
 brew list --cask --versions
 
-fnm --version
-fnm list
-npm ls --global
-
+zsh --version
 bat --paging=never --style=full \
   "$HOME/.zprofile" \
   "$HOME/.zshrc"
+
+fnm --version
+fnm list
+npm ls --global
