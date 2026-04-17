@@ -31,6 +31,8 @@ brew leaves --installed-on-request
 brew leaves --installed-as-dependency
 brew list --cask --versions
 
+fnm --version
+fnm list
 npm ls --global
 
 bat --paging=never --style=full \
