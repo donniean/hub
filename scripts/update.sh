@@ -8,12 +8,11 @@ set -x
 
 date '+%Y-%m-%dT%H:%M:%S%z'
 
-base_path=$(
-  cd -- "$(dirname -- "${BASH_SOURCE[0]}")"
-  pwd -P
+script_dir=$(
+  cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P
 )
 
-bash "${base_path}/brew.upgrade.sh"
-bash "${base_path}/mas.update.sh"
-bash "${base_path}/npm.global.update.sh"
-bash "${base_path}/repos.update.sh"
+bash "${script_dir}/brew.upgrade.sh"
+bash "${script_dir}/mas.update.sh"
+bash "${script_dir}/npm.global.update.sh"
+bash "${script_dir}/repos.update.sh"
