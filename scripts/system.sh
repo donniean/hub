@@ -22,10 +22,10 @@ npx --yes envinfo@latest
 brew config
 brew doctor
 
-brew list --versions
-brew list --pinned
+brew list --formula --versions
 brew list --formula --installed-on-request
 brew list --formula --installed-as-dependency
+brew list --pinned
 brew leaves
 brew leaves --installed-on-request
 brew leaves --installed-as-dependency
