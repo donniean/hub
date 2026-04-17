@@ -34,5 +34,5 @@ brew list --cask --versions
 npm ls --global
 
 bat --paging=never --style=full \
-  ~/.zprofile \
-  ~/.zshrc
+  "$HOME/.zprofile" \
+  "$HOME/.zshrc"
