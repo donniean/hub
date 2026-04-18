@@ -8,6 +8,8 @@ set -x
 
 date '+%Y-%m-%dT%H:%M:%S%z'
 
+repo_root="$HOME/repos"
+
 repo_names=(
   hub
   node-app
@@ -16,10 +18,16 @@ repo_names=(
 )
 
 for repo_name in "${repo_names[@]}"; do
-  cd "$HOME/repos/$repo_name"
+  repo_path="${repo_root}/${repo_name}"
 
-  git switch main
-  git pull --all --prune
-  # rm -rf node_modules/
-  pnpm install
+  (
+    cd "$repo_path"
+
+    fnm use
+
+    git switch main
+    git pull --all --prune
+    # rm -rf node_modules/
+    pnpm install
+  )
 done
