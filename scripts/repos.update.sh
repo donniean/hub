@@ -6,8 +6,6 @@ export PS4=$'\n+CMD [\D{%Y-%m-%dT%H:%M:%S%z}] [${BASH_SOURCE##*/}:${LINENO}] '
 
 set -x
 
-date '+%Y-%m-%dT%H:%M:%S%z'
-
 repo_root="$HOME/repos"
 
 repo_names=(
