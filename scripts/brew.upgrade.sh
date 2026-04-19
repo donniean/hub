@@ -8,6 +8,9 @@ set -x
 
 date '+%Y-%m-%dT%H:%M:%S%z'
 
+brew tap-info
+brew tap
+
 brew update
 
 brew outdated --formula --verbose

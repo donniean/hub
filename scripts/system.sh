@@ -22,6 +22,9 @@ npx --yes envinfo@latest
 brew config
 brew doctor
 
+brew tap-info
+brew tap
+
 brew list --formula --versions
 brew list --formula --installed-on-request
 brew list --formula --installed-as-dependency
