@@ -6,38 +6,49 @@ export PS4=$'\n+CMD [\D{%Y-%m-%dT%H:%M:%S%z}] [${BASH_SOURCE##*/}:${LINENO}] '
 
 set -x
 
-type -a ast-grep
-ast-grep --version
+brew config
+brew doctor
 
-type -a bash
-bash --version
+brew tap-info
+brew tap
 
-type -a curl
-curl --version
+brew list --formula --versions
+brew list --formula --installed-on-request
+brew list --formula --installed-as-dependency
+brew list --pinned
+brew leaves
+brew leaves --installed-on-request
+brew list --cask --versions
 
-type -a fd
-fd --version
+items=(
+  ast-grep
+  bash
+  curl
+  fd
+  fnm
+  gh
+  git
+  jq
+  rg
+  uv
+  yq
+  zsh
+)
 
-type -a gh
-gh --version
+for item in "${items[@]}"; do
+  (
+    type -a "$item"
+    "$item" --version
+  )
+done
+
+bat --paging=never --style=full \
+  "$HOME/.zprofile" \
+  "$HOME/.zshrc"
+
+fnm list
+npm ls --global --depth=0
+
 gh auth status
-
-type -a git
-git --version
-
-type -a jq
-jq --version
-
-type -a rg
-rg --version
-
-type -a uv
-uv --version
-
-type -a yq
-yq --version
-
-type -a zsh
-zsh --version
 
 npx --yes --package=@playwright/cli@latest playwright-cli --version
