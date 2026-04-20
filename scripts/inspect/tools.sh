@@ -23,6 +23,7 @@ brew list --cask --versions
 items=(
   ast-grep
   bash
+  codex
   curl
   fd
   fnm
