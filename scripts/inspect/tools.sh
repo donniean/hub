@@ -41,8 +41,8 @@ items=(
   uv
   yarn
   yq
-  zsh
   zoxide
+  zsh
 )
 
 for item in "${items[@]}"; do
