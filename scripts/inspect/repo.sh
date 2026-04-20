@@ -8,6 +8,9 @@ set -x
 
 npx --yes envinfo@latest
 
+fnm list
+npm ls --global --depth=0
+
 git status
 git remote --verbose
 git branch --show-current

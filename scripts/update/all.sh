@@ -10,7 +10,7 @@ script_dir=$(
   cd -- "$(dirname -- "${BASH_SOURCE[0]}")" && pwd -P
 )
 
-bash "${script_dir}/brew.upgrade.sh"
-bash "${script_dir}/mas.update.sh"
-bash "${script_dir}/npm.global.update.sh"
-bash "${script_dir}/repos.update.sh"
+bash "${script_dir}/brew.sh"
+bash "${script_dir}/mas.sh"
+bash "${script_dir}/npm-global.sh"
+bash "${script_dir}/repos.sh"

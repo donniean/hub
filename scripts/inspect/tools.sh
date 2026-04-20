@@ -6,17 +6,6 @@ export PS4=$'\n+CMD [\D{%Y-%m-%dT%H:%M:%S%z}] [${BASH_SOURCE##*/}:${LINENO}] '
 
 set -x
 
-sysctl -n hw.model
-uname -sr
-uname -m
-sw_vers
-
-xcode-select --print-path
-xcodebuild -version
-pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
-
-npx --yes envinfo@latest
-
 brew config
 brew doctor
 
@@ -31,11 +20,45 @@ brew leaves
 brew leaves --installed-on-request
 brew list --cask --versions
 
-zsh --version
+items=(
+  ast-grep
+  bash
+  bat
+  codex
+  curl
+  eza
+  fd
+  fnm
+  gh
+  git
+  jq
+  mas
+  node
+  npm
+  npx
+  pnpm
+  rg
+  uv
+  yarn
+  yq
+  zoxide
+  zsh
+)
+
+for item in "${items[@]}"; do
+  (
+    type -a "$item"
+    "$item" --version
+  )
+done
+
 bat --paging=never --style=full \
   "$HOME/.zprofile" \
   "$HOME/.zshrc"
 
-fnm --version
 fnm list
 npm ls --global --depth=0
+
+gh auth status
+
+npx --yes --package=@playwright/cli@latest playwright-cli --version
