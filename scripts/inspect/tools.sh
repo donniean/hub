@@ -23,17 +23,26 @@ brew list --cask --versions
 items=(
   ast-grep
   bash
+  bat
   codex
   curl
+  eza
   fd
   fnm
   gh
   git
   jq
+  mas
+  node
+  npm
+  npx
+  pnpm
   rg
   uv
+  yarn
   yq
   zsh
+  zoxide
 )
 
 for item in "${items[@]}"; do
