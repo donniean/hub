@@ -6,7 +6,13 @@ export PS4=$'\n+CMD [\D{%Y-%m-%dT%H:%M:%S%z}] [${BASH_SOURCE##*/}:${LINENO}] '
 
 set -x
 
-TARGET_DIR="${HOME}/.codex/archived_sessions/"
+target_dir="${HOME}/.codex/archived_sessions/"
 
-eza --tree --all --group-directories-first "${TARGET_DIR}"
-rm -rf "${TARGET_DIR}"
+if [[ ! -d "${target_dir}" ]]; then
+  echo "Directory does not exist: ${target_dir}"
+  exit 0
+fi
+
+eza --tree --all --group-directories-first "${target_dir}"
+
+rm -rf "${target_dir}"
