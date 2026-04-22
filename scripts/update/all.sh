@@ -13,4 +13,5 @@ script_dir=$(
 bash "${script_dir}/brew.sh"
 bash "${script_dir}/mas.sh"
 bash "${script_dir}/npm-global.sh"
+bash "${script_dir}/skills.sh"
 bash "${script_dir}/repos.sh"
