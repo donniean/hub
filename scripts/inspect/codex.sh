@@ -19,3 +19,4 @@ bat --paging=never --style=full \
 codex mcp list
 
 npx --yes skills@latest list --global
+eza --oneline --all --group-directories-first --git-ignore ~/.agents/skills/
