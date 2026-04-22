@@ -52,8 +52,18 @@ for item in "${items[@]}"; do
   )
 done
 
+printenv | LC_ALL=C sort | awk -F= '
+BEGIN { IGNORECASE=1 }
+$1 ~ /(TOKEN|SECRET|PASS(WOR)?D|API[_-]?KEY|PRIVATE[_-]?KEY|ACCESS[_-]?KEY|SESSION|COOKIE|AUTH|BEARER|CREDENTIAL|AWS_|GCP_|AZURE_|SSH_|GITHUB_|OPENAI_|ANTHROPIC_|GOOGLE_)/ {
+  print $1 "=<redacted>"
+  next
+}
+{ print }
+'
+
 bat --paging=never --style=full \
   "$HOME/.zprofile" \
+  "$HOME/.zshenv" \
   "$HOME/.zshrc"
 
 fnm list
