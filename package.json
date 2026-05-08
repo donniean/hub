@@ -45,7 +45,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "20.5.3",
-    "@commitlint/config-conventional": "20.5.3",
+    "@commitlint/config-conventional": "21.0.0",
     "@commitlint/types": "20.5.0",
     "@eslint-community/eslint-plugin-eslint-comments": "4.7.1",
     "@eslint/compat": "2.0.5",
