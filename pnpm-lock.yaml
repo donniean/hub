@@ -105,14 +105,14 @@ importers:
         specifier: 3.6.1
         version: 3.6.1
       stylelint:
-        specifier: 17.11.0
-        version: 17.11.0(typescript@5.9.3)
+        specifier: 17.11.1
+        version: 17.11.1(typescript@5.9.3)
       stylelint-config-recess-order:
         specifier: 7.7.0
-        version: 7.7.0(stylelint-order@8.1.1(stylelint@17.11.0(typescript@5.9.3)))(stylelint@17.11.0(typescript@5.9.3))
+        version: 7.7.0(stylelint-order@8.1.1(stylelint@17.11.1(typescript@5.9.3)))(stylelint@17.11.1(typescript@5.9.3))
       stylelint-config-standard:
         specifier: 40.0.0
-        version: 40.0.0(stylelint@17.11.0(typescript@5.9.3))
+        version: 40.0.0(stylelint@17.11.1(typescript@5.9.3))
       typescript:
         specifier: 5.9.3
         version: 5.9.3
@@ -471,8 +471,8 @@ packages:
     resolution: {integrity: sha512-q+0pHQ8DbqjemyaOn/mTtBRbCuKDqhnsVbZ6J9zkTsxPgMpccjy0s5oLXwomfrrxMRBH+UcbERwtUmE+SbnoIQ==}
     engines: {node: '>=22.18.0'}
 
-  '@csstools/css-calc@3.2.0':
-    resolution: {integrity: sha512-bR9e6o2BDB12jzN/gIbjHa5wLJ4UjD1CB9pM7ehlc0ddk6EBz+yYS1EV2MF55/HUxrHcB/hehAyt5vhsA3hx7w==}
+  '@csstools/css-calc@3.2.1':
+    resolution: {integrity: sha512-DtdHlgXh5ZkA43cwBcAm+huzgJiwx3ZTWVjBs94kwz2xKqSimDA3lBgCjphYgwgVUMWatSM0pDd8TILB1yrVVg==}
     engines: {node: '>=20.19.0'}
     peerDependencies:
       '@csstools/css-parser-algorithms': ^4.0.0
@@ -484,8 +484,8 @@ packages:
     peerDependencies:
       '@csstools/css-tokenizer': ^4.0.0
 
-  '@csstools/css-syntax-patches-for-csstree@1.1.3':
-    resolution: {integrity: sha512-SH60bMfrRCJF3morcdk57WklujF4Jr/EsQUzqkarfHXEFcAR1gg7fS/chAE922Sehgzc1/+Tz5H3Ypa1HiEKrg==}
+  '@csstools/css-syntax-patches-for-csstree@1.1.4':
+    resolution: {integrity: sha512-wgsqt92b7C7tQhIdPNxj0n9zuUbQlvAuI1exyzeNrOKOi62SD7ren8zqszmpVREjAOqg8cD2FqYhQfAuKjk4sw==}
     peerDependencies:
       css-tree: ^3.2.1
     peerDependenciesMeta:
@@ -2212,10 +2212,6 @@ packages:
     resolution: {integrity: sha512-+Pgi+vMuUNkJyExiMBt5IlFoMyKnr5zhJ4Uspz58WOhBF5QoIZkFyNHIbBAtHwzVAgk5RtndVNsDRN61/mmDqg==}
     engines: {node: '>=12'}
 
-  is-plain-object@5.0.0:
-    resolution: {integrity: sha512-VRSzKkbMm5jMDoKLbltAkFQ5Qr7VDiTFGXxYFXXowVj387GeGNOCsOH6Msy00SGZ3Fp84b1Naa1psqgcCIEP5Q==}
-    engines: {node: '>=0.10.0'}
-
   is-port-reachable@4.0.0:
     resolution: {integrity: sha512-9UoipoxYmSk6Xy7QFgRv2HDyaysmgSG75TFQs6S+3pDM7ZhKTF/bskZV+0UlABHzKjNVhPjYCLfeZUEg1wXxig==}
     engines: {node: ^12.20.0 || ^14.13.1 || >=16.0.0}
@@ -2994,8 +2990,8 @@ packages:
     peerDependencies:
       stylelint: ^16.18.0 || ^17.0.0
 
-  stylelint@17.11.0:
-    resolution: {integrity: sha512-/3czzmbF9XdGWvReDF3Ex4R23Ajolo7j8RB2bFNEqk6Ht356nlpVV+G5bG2Qt8AW1ofJzXztBRDnAtd7cgowWA==}
+  stylelint@17.11.1:
+    resolution: {integrity: sha512-+smN/HqVTggUx3iuAzOi9fPh8SrH+cJWlZrYVldXoJ06orWBhZ4Ue/QEp64oei6pVrAh4w3tG+Y12Vw7MbCFRQ==}
     engines: {node: '>=20.19.0'}
     hasBin: true
 
@@ -3663,7 +3659,7 @@ snapshots:
 
   '@cspell/url@10.0.0': {}
 
-  '@csstools/css-calc@3.2.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)':
+  '@csstools/css-calc@3.2.1(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)':
     dependencies:
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-tokenizer': 4.0.0
@@ -3672,7 +3668,7 @@ snapshots:
     dependencies:
       '@csstools/css-tokenizer': 4.0.0
 
-  '@csstools/css-syntax-patches-for-csstree@1.1.3(css-tree@3.2.1)':
+  '@csstools/css-syntax-patches-for-csstree@1.1.4(css-tree@3.2.1)':
     optionalDependencies:
       css-tree: 3.2.1
 
@@ -5197,8 +5193,6 @@ snapshots:
 
   is-plain-obj@4.1.0: {}
 
-  is-plain-object@5.0.0: {}
-
   is-port-reachable@4.0.0: {}
 
   is-safe-filename@0.1.1: {}
@@ -6067,31 +6061,31 @@ snapshots:
 
   strip-json-comments@5.0.3: {}
 
-  stylelint-config-recess-order@7.7.0(stylelint-order@8.1.1(stylelint@17.11.0(typescript@5.9.3)))(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-config-recess-order@7.7.0(stylelint-order@8.1.1(stylelint@17.11.1(typescript@5.9.3)))(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 17.11.0(typescript@5.9.3)
-      stylelint-order: 8.1.1(stylelint@17.11.0(typescript@5.9.3))
+      stylelint: 17.11.1(typescript@5.9.3)
+      stylelint-order: 8.1.1(stylelint@17.11.1(typescript@5.9.3))
 
-  stylelint-config-recommended@18.0.0(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-config-recommended@18.0.0(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 17.11.0(typescript@5.9.3)
+      stylelint: 17.11.1(typescript@5.9.3)
 
-  stylelint-config-standard@40.0.0(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-config-standard@40.0.0(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
-      stylelint: 17.11.0(typescript@5.9.3)
-      stylelint-config-recommended: 18.0.0(stylelint@17.11.0(typescript@5.9.3))
+      stylelint: 17.11.1(typescript@5.9.3)
+      stylelint-config-recommended: 18.0.0(stylelint@17.11.1(typescript@5.9.3))
 
-  stylelint-order@8.1.1(stylelint@17.11.0(typescript@5.9.3)):
+  stylelint-order@8.1.1(stylelint@17.11.1(typescript@5.9.3)):
     dependencies:
       postcss: 8.5.14
       postcss-sorting: 10.0.0(postcss@8.5.14)
-      stylelint: 17.11.0(typescript@5.9.3)
+      stylelint: 17.11.1(typescript@5.9.3)
 
-  stylelint@17.11.0(typescript@5.9.3):
+  stylelint@17.11.1(typescript@5.9.3):
     dependencies:
-      '@csstools/css-calc': 3.2.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
+      '@csstools/css-calc': 3.2.1(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/css-parser-algorithms': 4.0.0(@csstools/css-tokenizer@4.0.0)
-      '@csstools/css-syntax-patches-for-csstree': 1.1.3(css-tree@3.2.1)
+      '@csstools/css-syntax-patches-for-csstree': 1.1.4(css-tree@3.2.1)
       '@csstools/css-tokenizer': 4.0.0
       '@csstools/media-query-list-parser': 5.0.0(@csstools/css-parser-algorithms@4.0.0(@csstools/css-tokenizer@4.0.0))(@csstools/css-tokenizer@4.0.0)
       '@csstools/selector-resolve-nested': 4.0.0(postcss-selector-parser@7.1.1)
@@ -6110,7 +6104,6 @@ snapshots:
       html-tags: 5.1.0
       ignore: 7.0.5
       import-meta-resolve: 4.2.0
-      is-plain-object: 5.0.0
       mathml-tag-names: 4.0.0
       meow: 14.1.0
       micromatch: 4.0.8
