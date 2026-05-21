@@ -51,7 +51,7 @@
     "@eslint/compat": "2.1.0",
     "@eslint/js": "10.0.1",
     "@types/node": "25.9.1",
-    "@vitest/coverage-v8": "4.1.6",
+    "@vitest/coverage-v8": "4.1.7",
     "@vitest/eslint-plugin": "1.6.17",
     "@vitest/ui": "4.1.6",
     "autocorrect-node": "2.14.0",
