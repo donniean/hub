@@ -81,8 +81,8 @@ importers:
         specifier: 17.6.0
         version: 17.6.0
       html-validate:
-        specifier: 11.5.1
-        version: 11.5.1(@vitest/expect@4.1.8)(vitest@4.1.8)
+        specifier: 11.5.2
+        version: 11.5.2(@vitest/expect@4.1.8)(vitest@4.1.8)
       husky:
         specifier: 9.1.7
         version: 9.1.7
@@ -2086,8 +2086,8 @@ packages:
     resolution: {integrity: sha512-n6l5uca7/y5joxZ3LUePhzmBFUJ+U2YWzhMa8XUTecSeSlQiZdF5XAd/Q3/WUl0VsXgUwWi8I7CNIwdI5WN1SQ==}
     engines: {node: '>=20.10'}
 
-  html-validate@11.5.1:
-    resolution: {integrity: sha512-Z0LaO7SAYjZsR382nzJoNlFASWYbsEeGomi5PVtwl1bcNVLfC1FWL4lnt2vjWhI+qijh1d14l1FV8Jf0G8aLkg==}
+  html-validate@11.5.2:
+    resolution: {integrity: sha512-qOkPTxklpUTXzNeBVtB9/Ps6w1WPsOvyOK/lM/LQjrnhXMvtpkyMmaEtfbAngaAxjdulxiSxHvlOp5ikMAJYOw==}
     engines: {node: ^22.22.0 || >= 24.8.0}
     hasBin: true
     peerDependencies:
@@ -2838,6 +2838,11 @@ packages:
     engines: {node: '>=10'}
     hasBin: true
 
+  semver@7.8.2:
+    resolution: {integrity: sha512-c8jsqUZm3omBOI66G90z1Dyw5z622G8oLG+omfsHBJf3CWQTlOcwOjvOG6wtiNfW6anKm/eA39LMwMtMez2TiQ==}
+    engines: {node: '>=10'}
+    hasBin: true
+
   serve-handler@6.1.7:
     resolution: {integrity: sha512-CinAq1xWb0vR3twAv9evEU8cNWkXCb9kd5ePAHUKJBkOsUpR1wt/CvGdeca7vqumL1U5cSaeVQ6zZMxiJ3yWsg==}
 
@@ -3348,7 +3353,7 @@ snapshots:
   '@commitlint/is-ignored@21.0.2':
     dependencies:
       '@commitlint/types': 21.0.1
-      semver: 7.8.1
+      semver: 7.8.2
 
   '@commitlint/lint@21.0.2':
     dependencies:
@@ -3420,7 +3425,7 @@ snapshots:
     dependencies:
       '@simple-libs/child-process-utils': 1.0.2
       '@simple-libs/stream-utils': 1.2.0
-      semver: 7.8.1
+      semver: 7.8.2
     optionalDependencies:
       conventional-commits-parser: 6.4.0
 
@@ -4086,7 +4091,7 @@ snapshots:
       '@typescript-eslint/visitor-keys': 8.60.1
       debug: 4.4.3
       minimatch: 10.2.5
-      semver: 7.8.1
+      semver: 7.8.2
       tinyglobby: 0.2.17
       ts-api-utils: 2.5.0(typescript@5.9.3)
       typescript: 5.9.3
@@ -4730,7 +4735,7 @@ snapshots:
   eslint-compat-utils@0.5.1(eslint@10.4.1(jiti@2.7.0)):
     dependencies:
       eslint: 10.4.1(jiti@2.7.0)
-      semver: 7.8.1
+      semver: 7.8.2
 
   eslint-config-prettier@10.1.8(eslint@10.4.1(jiti@2.7.0)):
     dependencies:
@@ -5090,14 +5095,14 @@ snapshots:
 
   html-tags@5.1.0: {}
 
-  html-validate@11.5.1(@vitest/expect@4.1.8)(vitest@4.1.8):
+  html-validate@11.5.2(@vitest/expect@4.1.8)(vitest@4.1.8):
     dependencies:
       '@html-validate/stylish': 6.0.0
       '@sidvind/better-ajv-errors': 7.0.0(ajv@8.20.0)
       ajv: 8.20.0
       kleur: 4.1.5
       prompts: 2.4.2
-      semver: 7.8.1
+      semver: 7.8.2
     optionalDependencies:
       '@vitest/expect': 4.1.8
       vitest: 4.1.8(@types/node@25.9.1)(@vitest/coverage-v8@4.1.8)(@vitest/ui@4.1.8)(vite@8.0.16(@types/node@25.9.1)(jiti@2.7.0)(yaml@2.9.0))
@@ -5144,7 +5149,7 @@ snapshots:
 
   is-bun-module@2.0.0:
     dependencies:
-      semver: 7.8.1
+      semver: 7.8.2
 
   is-decimal@2.0.1: {}
 
@@ -5371,7 +5376,7 @@ snapshots:
 
   make-dir@4.0.0:
     dependencies:
-      semver: 7.8.1
+      semver: 7.8.2
 
   markdown-it@14.1.1:
     dependencies:
@@ -5898,6 +5903,8 @@ snapshots:
       regexp-ast-analysis: 0.7.1
 
   semver@7.8.1: {}
+
+  semver@7.8.2: {}
 
   serve-handler@6.1.7:
     dependencies:
