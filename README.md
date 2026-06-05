@@ -3,7 +3,7 @@
 [![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE)
 [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-本仓库是个人 public collection，不是单一 app、service 或 npm package。主要内容包括 workflows、小型应用、本机维护脚本和代码片段等。
+A personal public collection，不是单一 app、service 或 npm package。主要内容包括 workflows、小型应用、本机维护脚本和代码片段等。
 
 ## 内容范围
 
