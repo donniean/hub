@@ -3,7 +3,7 @@
 ## 仓库边界
 
 - 以 [README.md](README.md) 作为仓库用途、目录范围和常用命令的 single source of truth；更细的执行约束以本文件和相关源码为准。
-- 本仓库公开，但部分脚本会读取或修改本机状态。执行前按下面的脚本安全规则处理。
+- 本仓库公开；不要提交或公开私有配置、账号信息、令牌、日志、本机路径输出或未经审查的脚本输出。
 
 ## 实现约定
 
@@ -25,14 +25,15 @@ scripts/cleanup/codex.sh
 
 影响范围：
 
-- [`scripts/update/brew.sh`](scripts/update/brew.sh) 会升级 Homebrew formulae / casks，并清理不再需要的依赖和缓存。
+- [`scripts/update/all.sh`](scripts/update/all.sh) 会串行运行 `brew`、`mas`、global npm packages、global skills 和多个本地 repositories 的更新脚本。
+- [`scripts/update/brew.sh`](scripts/update/brew.sh) 会执行 Homebrew update / upgrade / cleanup，并移除不再需要的依赖。
 - [`scripts/update/mas.sh`](scripts/update/mas.sh) 会执行 Mac App Store app upgrade。
 - [`scripts/update/npm-global.sh`](scripts/update/npm-global.sh) 会更新 global npm packages。
 - [`scripts/update/skills.sh`](scripts/update/skills.sh) 会更新 global skills。
-- [`scripts/update/repos.sh`](scripts/update/repos.sh) 会切换并拉取 `~/repos/hub`、`~/repos/node-app`、`~/repos/react-app`、`~/repos/vault`。
+- [`scripts/update/repos.sh`](scripts/update/repos.sh) 会切换到 `main`、拉取并安装 `~/repos/hub`、`~/repos/node-app`、`~/repos/react-app`、`~/repos/vault`。
 - [`scripts/cleanup/codex.sh`](scripts/cleanup/codex.sh) 会删除本机 Codex archived sessions 和 `~/Documents/Codex`。
 
-[`scripts/inspect/tools.sh`](scripts/inspect/tools.sh) 主要是只读检查，但会输出本机环境变量、shell 配置、Homebrew 信息、global npm packages 和 GitHub auth status。不要在未审查输出的情况下把结果发布或转发。
+[`scripts/inspect/`](scripts/inspect/) 下的脚本主要用于只读排查，但输出可能包含本机环境、shell 配置、Homebrew 信息、global npm packages、GitHub auth 状态、Codex 配置或仓库状态。不要在未审查和脱敏的情况下发布、转发或写入公开 issue / pull request。
 
 ## 验证
 
@@ -53,6 +54,10 @@ pnpm run lint:js
 pnpm run lint:types
 pnpm run lint:css
 pnpm run lint:html
+pnpm run lint:format
+pnpm run lint:spell
+pnpm run lint:text
+pnpm run lint:package-json
 ```
 
 对应的 `fix` 命令包括：
@@ -60,6 +65,8 @@ pnpm run lint:html
 - `pnpm run lint:md:fix`
 - `pnpm run lint:js:fix`
 - `pnpm run lint:css:fix`
-- `pnpm run lint:format:fix`。
+- `pnpm run lint:format:fix`
+- `pnpm run lint:text:fix`
+- `pnpm run lint:package-json:fix`
 
-CI 当前只运行部分 lint steps，且没有覆盖完整 `pnpm run lint`、`pnpm run test` 或所有本地脚本。涉及未被 CI 覆盖的 JavaScript、TypeScript、CSS、HTML、Markdown 或 shell script 改动时，应在本地补充验证。
+CI 当前只运行部分 lint steps，没有覆盖完整 `pnpm run lint`、`pnpm run test` 或本机脚本。涉及未被 CI 覆盖的 JavaScript、TypeScript、CSS、HTML、Markdown、shell script 或本机维护脚本改动时，应在本地补充验证。
