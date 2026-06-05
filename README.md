@@ -2,14 +2,14 @@
 
 [![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE) [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-一个公开的个人集合仓库，用于存放可复用但不需要独立成项目的内容，未来可继续扩展更多不同种类的公开内容。它不是单一 apps、services 或 npm packages。
+一个公开的个人集合仓库，用于存放可复用但不需要独立成项目的内容，未来可继续扩展更多不同种类的公开内容。它不是单一 app、service 或 npm package。
 
 ## 内容范围
 
-- `.github/workflows/`：部分是可复用的 workflows，部分是仓库特有的 workflows。
-- `apps/`：小型应用、实验代码和可独立查看的页面（例如 `apps/playground/`）。
-- `scripts/`：日常使用和维护的脚本。
-- `snippets/`：学习、练习、面试、实用或可复用的 snippets。
+- [`.github/workflows/`](.github/workflows/)：部分是可复用的 workflows，部分是仓库特有的 workflows。
+- [`apps/`](apps/)：小型应用、实验代码和可独立查看的页面（例如 [`apps/playground/`](apps/playground/)）。
+- [`scripts/`](scripts/)：日常使用和维护的脚本。
+- [`snippets/`](snippets/)：学习、练习、面试、实用或可复用的 snippets。
 
 ## 环境要求
 
