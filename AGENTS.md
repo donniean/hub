@@ -5,6 +5,10 @@
 - 以 [README.md](README.md) 作为仓库用途、目录范围和常用命令的 single source of truth；更细的执行约束以本文件和相关源码为准。
 - 本仓库公开，但部分脚本会读取或修改本机状态。执行前按下面的脚本安全规则处理。
 
+## 实现约定
+
+- 修改 TypeScript / JavaScript imports 前，先读取 `tsconfig.json` / `jsconfig.json` 中的 `compilerOptions.paths`。优先使用已配置的 paths alias，避免使用深层相对路径。
+
 ## 脚本安全
 
 可以直接读取脚本内容。未经用户明确确认，不要运行以下脚本或等价命令：
