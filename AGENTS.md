@@ -26,3 +26,7 @@ pnpm run test
 ```
 
 CI 当前只运行部分 lint step；如果改动涉及未被 CI 覆盖的脚本、TypeScript 或 JavaScript，应在本地补充相关验证。
+
+## License
+
+[MIT](./LICENSE)
