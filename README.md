@@ -1,7 +1,6 @@
 # hub
 
-[![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE)
-[![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
+[![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE) [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
 一个公开的个人集合仓库，用于存放可复用但不需要独立成项目的内容，未来可继续扩展更多不同种类的公开内容。它不是单一 apps、services 或 npm packages。
 

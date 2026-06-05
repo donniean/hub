@@ -2,7 +2,7 @@
 
 ## 仓库边界
 
-- 以 [README.md](README.md) 作为仓库用途与目录范围的单一说明来源。
+- 以 [README.md](README.md) 作为仓库用途与目录范围的 single source of truth。
 - 本仓库公开，但部分脚本会读取或修改本机状态。执行前按下面的脚本安全规则处理。
 
 ## 脚本安全
