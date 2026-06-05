@@ -1,36 +1,32 @@
 # hub
 
-- 你先要判读我的质疑没有到道理，是否合理？
-- v2 新增什么 badges 了？我没注意。
+[![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE)
+[![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-## General
+本仓库是个人 public collection，不是单一 app、service 或 npm package。主要内容包括 workflows、小型应用、本机维护脚本和代码片段等。
 
-### `README.md`
+## 内容范围
 
-### `AGENTS.md`
+- `.github/workflows/`：可复用和自动化 workflows。
+- `apps/`：小型应用和实验代码。
+- `scripts/`：本机检查、更新和清理脚本。
+- `snippets/`：可复用或练习用代码片段。
 
-## `hub`
+## 环境要求
 
-### `README.md`
+Node.js 和 package manager 版本以 [`.nvmrc`](.nvmrc) 与 [`package.json`](package.json) 的 `packageManager` / `engines` 字段为准。
 
-### `AGENTS.md`
+## 常用命令
 
-## `node-app`
+```bash
+pnpm install
+pnpm run lint
+pnpm run test
+pnpm run serve
+```
 
-### `README.md`
+`pnpm run serve` 会启动 `apps/playground/` 的静态服务。
 
-### `AGENTS.md`
+## License
 
-## `react-app`
-
-### `README.md`
-
-- 先不要删除 `Styling` 部分
-
-### `AGENTS.md`
-
-## `vault`
-
-### `README.md`
-
-### `AGENTS.md`
+MIT
