@@ -2,7 +2,7 @@
 
 ## 仓库边界
 
-- 以 [README.md](README.md) 作为仓库用途、目录范围和常用命令的 single source of truth。
+- 以 [README.md](README.md) 作为仓库用途、目录范围和常用命令的 single source of truth；更细的执行约束以本文件和相关源码为准。
 - 本仓库公开，但部分脚本会读取或修改本机状态。执行前按下面的脚本安全规则处理。
 
 ## 脚本安全
@@ -51,7 +51,7 @@ pnpm run lint:css
 pnpm run lint:html
 ```
 
-对应的 fix 命令包括：
+对应的 `fix` 命令包括：
 
 - `pnpm run lint:md:fix`
 - `pnpm run lint:js:fix`
