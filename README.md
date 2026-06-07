@@ -2,13 +2,13 @@
 
 [![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE) [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-一个个人自用的集合仓库，用于存放可复用但不需要独立成项目的公开内容，并允许后续继续扩展更多不同类型的公开内容。它不是单一 app、service 或 npm package。
+一个个人自用的 collection repository，用于存放可复用但不需要独立成项目的公开内容，并允许后续继续扩展更多不同类型的公开内容。它不是单一 app、service 或 npm package。
 
 ## 内容范围
 
 - [`.github/workflows/`](.github/workflows/)：可复用 GitHub Actions workflows 和本仓库自己的 CI / dependency workflows。
 - [`apps/`](apps/)：小型应用、实验代码和可独立查看的页面。
-- [`scripts/`](scripts/)：日常使用和维护脚本，包括只读检查脚本、本机更新脚本和清理脚本。
+- [`scripts/`](scripts/)：日常使用和维护脚本，包括只读检查、本机更新和清理脚本。
 - [`snippets/`](snippets/)：学习、练习、面试、实用或可复用的 snippets。
 
 运行 `scripts/` 下脚本前应先阅读脚本内容；更新和清理脚本可能修改本机环境或删除本机数据。
