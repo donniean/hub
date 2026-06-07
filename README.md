@@ -2,7 +2,7 @@
 
 [![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE) [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-一个个人自用的 collection repository，用于存放可复用但不需要独立成项目的公开内容，并允许后续继续扩展更多不同类型的公开内容。它不是单一 app、service 或 npm package。
+一个个人自用的集合仓库，用于存放各种适合 version control 但不需要独立成仓库的任何公开内容，并允许后续继续扩展更多不同类型的任何公开内容。
 
 ## 内容范围
 
