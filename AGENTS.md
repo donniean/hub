@@ -4,6 +4,7 @@
 
 - 以 [README.md](README.md) 作为仓库用途、目录范围和常用命令的 single source of truth；更细的执行约束以本文件和相关源码为准。
 - 本仓库公开；不要提交或公开私有配置、账号信息、令牌、日志、本机路径输出或未经审查的脚本输出。
+- 本仓库不是单一 app、service 或 npm package。不要在没有用户要求和实际目录支撑的情况下引入发布包、后端服务或大型应用约定。
 
 ## 实现约定
 
@@ -69,4 +70,4 @@ pnpm run lint:package-json
 - `pnpm run lint:text:fix`
 - `pnpm run lint:package-json:fix`
 
-CI 当前只运行部分 lint steps，没有覆盖完整 `pnpm run lint`、`pnpm run test` 或本机脚本。涉及未被 CI 覆盖的 JavaScript、TypeScript、CSS、HTML、Markdown、shell script 或本机维护脚本改动时，应在本地补充验证。
+CI 当前只运行 `lint:package-json`、`lint:format`、`lint:css`、`lint:html`、`lint:md`、`lint:text` 和 `lint:spell`。`lint:types`、`lint:js`、`pnpm run test` 和本机维护脚本不在当前 CI 覆盖范围内；相关改动应在本地补充验证。

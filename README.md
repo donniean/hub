@@ -8,8 +8,10 @@
 
 - [`.github/workflows/`](.github/workflows/)：可复用 GitHub Actions workflows 和本仓库自己的 CI / dependency workflows。
 - [`apps/`](apps/)：小型应用、实验代码和可独立查看的页面。
-- [`scripts/`](scripts/)：日常使用和维护的脚本，例如：本机检查、更新和清理脚本。
+- [`scripts/`](scripts/)：日常使用和维护脚本，包括只读检查脚本、本机更新脚本和清理脚本。
 - [`snippets/`](snippets/)：学习、练习、面试、实用或可复用的 snippets。
+
+运行 `scripts/` 下脚本前应先阅读脚本内容；更新和清理脚本可能修改本机环境或删除本机数据。
 
 ## 环境要求
 
