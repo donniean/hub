@@ -36,6 +36,12 @@ scripts/cleanup/codex.sh
 
 [`scripts/inspect/`](scripts/inspect/) 下的脚本主要用于只读排查，但输出可能包含本机环境、shell 配置、Homebrew 信息、global npm packages、GitHub auth 状态、Codex 配置或仓库状态。不要在未审查和脱敏的情况下发布、转发或写入公开 issue / pull request。
 
+## GitHub Workflows
+
+- [`.github/workflows/ci.yaml`](.github/workflows/ci.yaml) 是本仓库 CI。
+- [`.github/workflows/dependencies.bump.yaml`](.github/workflows/dependencies.bump.yaml)、[`.github/workflows/pull-requests.auto-merge.yaml`](.github/workflows/pull-requests.auto-merge.yaml) 和 [`.github/workflows/pull-requests.auto-update.yaml`](.github/workflows/pull-requests.auto-update.yaml) 也作为 reusable workflows 被其他个人仓库调用。
+- 修改 reusable workflows 前，检查本仓库行为和已知调用方；没有读取调用方配置前，不要推断其 secrets、permissions 或触发条件。
+
 ## 验证
 
 根据改动范围运行相关检查：
