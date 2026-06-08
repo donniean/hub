@@ -46,9 +46,14 @@ Scripts under [`scripts/inspect/`](scripts/inspect/) are intended for read-only 
 Run checks relevant to the change scope:
 
 ```bash
-pnpm run lint
+pnpm run lint:md
+pnpm run lint:format
+pnpm run lint:spell
+pnpm run lint:text
 pnpm run test
 ```
+
+`pnpm run lint` includes `lint:js`. `lint:js` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
 
 If check results can be fixed automatically, prefer the smallest relevant `fix` command instead of running a full-repository fix indiscriminately.
 
