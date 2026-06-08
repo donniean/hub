@@ -5,7 +5,7 @@
 - Repository purpose, current directories, and common commands are documented in [README.md](README.md) as the single source of truth; this file contains only repository constraints for coding agents.
 - Do not commit or disclose private configuration, account information, tokens, logs, local paths, or script output that has not been reviewed.
 
-## Implementation Conventions
+## Conventions
 
 - Before changing TypeScript / JavaScript imports, read `compilerOptions.paths` in `tsconfig.json` / `jsconfig.json`. Prefer configured path aliases, and avoid deep relative paths.
 
