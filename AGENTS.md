@@ -30,8 +30,8 @@ Impact summary:
 - [`scripts/update/mas.sh`](scripts/update/mas.sh) upgrades Mac App Store apps.
 - [`scripts/update/npm-global.sh`](scripts/update/npm-global.sh) updates global npm packages.
 - [`scripts/update/skills.sh`](scripts/update/skills.sh) updates global skills.
-- [`scripts/update/repos.sh`](scripts/update/repos.sh) switches `~/repos/hub`, `~/repos/node-app`, `~/repos/react-app`, and `~/repos/vault` to `main`, pulls changes, and installs dependencies.
-- [`scripts/cleanup/codex.sh`](scripts/cleanup/codex.sh) deletes local Codex archived sessions and `~/Documents/Codex`.
+- [`scripts/update/repos.sh`](scripts/update/repos.sh) switches the local repositories listed in the script to `main`, pulls changes, and installs dependencies.
+- [`scripts/cleanup/codex.sh`](scripts/cleanup/codex.sh) deletes the local Codex output directories listed in the script.
 
 Scripts under [`scripts/inspect/`](scripts/inspect/) are intended for read-only diagnostics, but their output may include local environment details, shell configuration, Homebrew information, global npm packages, GitHub authentication state, Codex configuration, or repository status. Do not publish, forward, or write that output into a public issue or pull request without review and redaction.
 
