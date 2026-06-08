@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE) [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-A public collection repository maintained for personal use. It stores public material that belongs in version control but does not warrant a standalone repository. The scope is intentionally broad; the current directories describe how the repository is organized today, not fixed long-term categories, and other public material can be added over time.
+A public collection repository for personal use. It stores public material that belongs in version control but does not warrant a standalone repository. The scope is intentionally broad; the current directories describe how the repository is organized today, not fixed long-term categories, and other public material can be added over time.
 
-## Current Contents
+## Contents
 
 - [`.github/workflows/`](.github/workflows/): GitHub Actions workflows for CI, dependency updates, and pull request automation; some workflows are reusable workflows used by other personal repositories.
 - [`apps/`](apps/): Small apps, experiments, and pages that can be viewed independently.
@@ -15,13 +15,13 @@ Review the script before running anything under `scripts/`. Update and cleanup s
 
 Output from inspection scripts may include local environment details, account state, config paths, or other information that is not suitable for public sharing. Review and redact it before external reuse.
 
-## Environment Requirements
+## Requirements
 
 - The Node.js version is defined by [`.nvmrc`](.nvmrc) and `engines.node` in [`package.json`](package.json).
 - The pnpm version is defined by `packageManager` and `engines.pnpm` in [`package.json`](package.json).
 - Use `pnpm`. `preinstall` enforces this with `only-allow`.
 
-## Common Commands
+## Commands
 
 ```bash
 pnpm install

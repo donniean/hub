@@ -1,6 +1,6 @@
 # AGENTS.md
 
-## Repository Scope
+## Scope
 
 - Repository purpose, current directories, and common commands are documented in [README.md](README.md) as the single source of truth; this file contains only repository constraints for coding agents.
 - Do not commit or disclose private configuration, account information, tokens, logs, local paths, or script output that has not been reviewed.
@@ -9,7 +9,7 @@
 
 - Before changing TypeScript / JavaScript imports, read `compilerOptions.paths` in `tsconfig.json` / `jsconfig.json`. Prefer configured path aliases, and avoid deep relative paths.
 
-## Script Safety
+## Scripts
 
 Reading scripts is allowed. Without explicit user confirmation, do not run the following scripts or equivalent commands because they update the local toolchain, switch branches in local repositories, install dependencies, or delete local data:
 
