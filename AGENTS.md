@@ -3,7 +3,7 @@
 ## 仓库边界
 
 - 本仓库是 public GitHub repository。
-- 以 [README.md](README.md) 作为仓库用途、目录范围和常用命令的 single source of truth；更细的执行约束以本文件和相关源码为准。
+- 以 [README.md](README.md) 作为仓库用途、当前目录和常用命令的 single source of truth；更细的执行约束以本文件和相关源码为准。
 - 不要提交或公开私有配置、账号信息、令牌、日志、本机路径输出或未经审查的脚本输出。
 
 ## 实现约定

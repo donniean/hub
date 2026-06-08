@@ -2,9 +2,9 @@
 
 [![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE) [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-一个个人自用的公开集合仓库，用于存放任何适合 version control 但不需要独立成仓库的公开内容，并允许后续扩展更多不同类型的公开内容。
+一个个人自用的公开集合仓库，用于存放任何适合 version control 但不需要独立成仓库的公开内容。仓库边界刻意保持开放；当前目录只是现有内容的组织方式，不代表长期固定分类，允许后续扩展更多不同类型的公开内容。
 
-## 内容范围
+## 当前内容
 
 - [`.github/workflows/`](.github/workflows/)：可复用 GitHub Actions workflows，以及本仓库自己的 CI、dependency bump 和 pull request automation。
 - [`apps/`](apps/)：小型应用、实验代码和可独立查看的页面。
