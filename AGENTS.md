@@ -1,17 +1,17 @@
 # AGENTS.md
 
-## 仓库边界
+## Repository Scope
 
-- 仓库用途、当前目录和常用命令以 [README.md](README.md) 为 single source of truth；本文件只维护 coding agent 需要执行的仓库约束。
-- 不要提交或公开私有配置、账号信息、令牌、日志、本机路径输出或未经审查的脚本输出。
+- Repository purpose, current directories, and common commands are documented in [README.md](README.md) as the single source of truth; this file contains only repository constraints for coding agents.
+- Do not commit or disclose private configuration, account information, tokens, logs, local paths, or script output that has not been reviewed.
 
-## 实现约定
+## Implementation Conventions
 
-- 修改 TypeScript / JavaScript imports 前，先读取 `tsconfig.json` / `jsconfig.json` 中的 `compilerOptions.paths`。优先使用已配置的 paths alias，避免使用深层相对路径。
+- Before changing TypeScript / JavaScript imports, read `compilerOptions.paths` in `tsconfig.json` / `jsconfig.json`. Prefer configured path aliases, and avoid deep relative paths.
 
-## 脚本安全
+## Script Safety
 
-可以直接读取脚本内容。未经用户明确确认，不要运行以下脚本或等价命令，因为它们会更新本机工具链、切换仓库分支、安装依赖或删除本机数据：
+Reading scripts is allowed. Without explicit user confirmation, do not run the following scripts or equivalent commands because they update the local toolchain, switch branches in local repositories, install dependencies, or delete local data:
 
 ```bash
 scripts/update/all.sh
@@ -23,36 +23,36 @@ scripts/update/skills.sh
 scripts/cleanup/codex.sh
 ```
 
-影响范围：
+Impact summary:
 
-- [`scripts/update/all.sh`](scripts/update/all.sh) 会串行运行 `brew`、`mas`、global npm packages、global skills 和多个本地 repositories 的更新脚本。
-- [`scripts/update/brew.sh`](scripts/update/brew.sh) 会执行 Homebrew update / upgrade / cleanup，并移除不再需要的依赖。
-- [`scripts/update/mas.sh`](scripts/update/mas.sh) 会执行 Mac App Store app upgrade。
-- [`scripts/update/npm-global.sh`](scripts/update/npm-global.sh) 会更新 global npm packages。
-- [`scripts/update/skills.sh`](scripts/update/skills.sh) 会更新 global skills。
-- [`scripts/update/repos.sh`](scripts/update/repos.sh) 会切换到 `main`、拉取并安装 `~/repos/hub`、`~/repos/node-app`、`~/repos/react-app`、`~/repos/vault`。
-- [`scripts/cleanup/codex.sh`](scripts/cleanup/codex.sh) 会删除本机 Codex archived sessions 和 `~/Documents/Codex`。
+- [`scripts/update/all.sh`](scripts/update/all.sh) runs the Homebrew, Mac App Store, global npm package, global skill, and local repository update scripts in sequence.
+- [`scripts/update/brew.sh`](scripts/update/brew.sh) runs Homebrew update, upgrade, and cleanup tasks, and removes dependencies that are no longer needed.
+- [`scripts/update/mas.sh`](scripts/update/mas.sh) upgrades Mac App Store apps.
+- [`scripts/update/npm-global.sh`](scripts/update/npm-global.sh) updates global npm packages.
+- [`scripts/update/skills.sh`](scripts/update/skills.sh) updates global skills.
+- [`scripts/update/repos.sh`](scripts/update/repos.sh) switches `~/repos/hub`, `~/repos/node-app`, `~/repos/react-app`, and `~/repos/vault` to `main`, pulls changes, and installs dependencies.
+- [`scripts/cleanup/codex.sh`](scripts/cleanup/codex.sh) deletes local Codex archived sessions and `~/Documents/Codex`.
 
-[`scripts/inspect/`](scripts/inspect/) 下的脚本主要用于只读排查，但输出可能包含本机环境、shell 配置、Homebrew 信息、global npm packages、GitHub auth 状态、Codex 配置或仓库状态。不要在未审查和脱敏的情况下发布、转发或写入公开 issue / pull request。
+Scripts under [`scripts/inspect/`](scripts/inspect/) are intended for read-only diagnostics, but their output may include local environment details, shell configuration, Homebrew information, global npm packages, GitHub authentication state, Codex configuration, or repository status. Do not publish, forward, or write that output into a public issue or pull request without review and redaction.
 
 ## GitHub Workflows
 
-- [`.github/workflows/ci.yaml`](.github/workflows/ci.yaml) 是本仓库 CI。
-- [`.github/workflows/dependencies.bump.yaml`](.github/workflows/dependencies.bump.yaml)、[`.github/workflows/pull-requests.auto-merge.yaml`](.github/workflows/pull-requests.auto-merge.yaml) 和 [`.github/workflows/pull-requests.auto-update.yaml`](.github/workflows/pull-requests.auto-update.yaml) 也作为 reusable workflows 被其他个人仓库调用。
-- 修改 reusable workflows 前，检查本仓库行为和已知调用方；没有读取调用方配置前，不要推断其 secrets、permissions 或触发条件。
+- [`.github/workflows/ci.yaml`](.github/workflows/ci.yaml) is the CI workflow for this repository.
+- [`.github/workflows/dependencies.bump.yaml`](.github/workflows/dependencies.bump.yaml), [`.github/workflows/pull-requests.auto-merge.yaml`](.github/workflows/pull-requests.auto-merge.yaml), and [`.github/workflows/pull-requests.auto-update.yaml`](.github/workflows/pull-requests.auto-update.yaml) are also reusable workflows used by other personal repositories through `workflow_call`.
+- Before modifying reusable workflows, check this repository's behavior and known callers. Do not infer caller secrets, permissions, or trigger conditions before reading the caller workflow configurations.
 
-## 验证
+## Verification
 
-根据改动范围运行相关检查：
+Run checks relevant to the change scope:
 
 ```bash
 pnpm run lint
 pnpm run test
 ```
 
-如果检查结果可自动修复，优先运行影响范围最小的 `fix` 命令，而不是无差别运行全仓库修复。
+If check results can be fixed automatically, prefer the smallest relevant `fix` command instead of running a full-repository fix indiscriminately.
 
-更小范围的检查可按文件类型选择：
+Use smaller checks by file type when possible:
 
 ```bash
 pnpm run lint:md
@@ -66,7 +66,7 @@ pnpm run lint:text
 pnpm run lint:package-json
 ```
 
-对应的 `fix` 命令包括：
+Matching `fix` commands include:
 
 - `pnpm run lint:md:fix`
 - `pnpm run lint:js:fix`
@@ -75,4 +75,4 @@ pnpm run lint:package-json
 - `pnpm run lint:text:fix`
 - `pnpm run lint:package-json:fix`
 
-CI 当前只运行 `lint:package-json`、`lint:format`、`lint:css`、`lint:html`、`lint:md`、`lint:text` 和 `lint:spell`。`lint:types`、`lint:js`、`pnpm run test` 和本机维护脚本不在当前 CI 覆盖范围内；相关改动应在本地补充验证。
+CI currently runs only `lint:package-json`, `lint:format`, `lint:css`, `lint:html`, `lint:md`, `lint:text`, and `lint:spell`. `lint:types`, `lint:js`, `pnpm run test`, and local maintenance scripts are not covered by the current CI; validate related changes locally.

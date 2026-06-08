@@ -2,26 +2,26 @@
 
 [![License: MIT](https://img.shields.io/github/license/donniean/hub)](https://github.com/donniean/hub/blob/main/LICENSE) [![CI](https://github.com/donniean/hub/actions/workflows/ci.yaml/badge.svg)](https://github.com/donniean/hub/actions/workflows/ci.yaml)
 
-一个个人自用的公开集合仓库，用于存放任何适合 version control 但不需要独立成仓库的公开内容。仓库边界刻意保持开放；当前目录只是现有内容的组织方式，不代表长期固定分类，后续可以继续扩展不同类型的公开内容。
+A public collection repository maintained for personal use. It stores public material that belongs in version control but does not warrant a standalone repository. The scope is intentionally broad; the current directories describe how the repository is organized today, not fixed long-term categories, and other public material can be added over time.
 
-## 当前内容
+## Current Contents
 
-- [`.github/workflows/`](.github/workflows/)：本仓库的 CI、dependency bump 和 pull request automation；其中 reusable workflows 也会被其他个人仓库引用。
-- [`apps/`](apps/)：小型应用、实验代码和可独立查看的页面。
-- [`scripts/`](scripts/)：日常使用和维护脚本，包括环境检查、本机更新和清理脚本。
-- [`snippets/`](snippets/)：学习、练习、面试、实用或可复用的 snippets。
+- [`.github/workflows/`](.github/workflows/): GitHub Actions workflows for CI, dependency updates, and pull request automation; some workflows are reusable workflows used by other personal repositories.
+- [`apps/`](apps/): Small apps, experiments, and pages that can be viewed independently.
+- [`scripts/`](scripts/): Day-to-day maintenance scripts, including environment inspection, local updates, and cleanup tasks.
+- [`snippets/`](snippets/): Reusable code and reference snippets for study, practice, interviews, and utilities.
 
-运行 `scripts/` 下脚本前先阅读脚本内容。更新和清理脚本可能修改本机工具链、切换其他本地仓库分支、安装依赖或删除本机数据。
+Review the script before running anything under `scripts/`. Update and cleanup scripts may modify the local toolchain, switch branches in other local repositories, install dependencies, or delete local data.
 
-检查脚本的输出可能包含本机环境、账号状态、配置路径或其他不适合公开的信息；对外复用前应先审查和脱敏。
+Output from inspection scripts may include local environment details, account state, config paths, or other information that is not suitable for public sharing. Review and redact it before external reuse.
 
-## 环境要求
+## Environment Requirements
 
-- Node.js 版本以 [`.nvmrc`](.nvmrc) 和 [`package.json`](package.json) 的 `engines.node` 为准。
-- pnpm 版本以 [`package.json`](package.json) 的 `packageManager` 和 `engines.pnpm` 为准。
-- 使用 `pnpm`。`preinstall` 会通过 `only-allow` 阻止其他 package manager。
+- The Node.js version is defined by [`.nvmrc`](.nvmrc) and `engines.node` in [`package.json`](package.json).
+- The pnpm version is defined by `packageManager` and `engines.pnpm` in [`package.json`](package.json).
+- Use `pnpm`. `preinstall` enforces this with `only-allow`.
 
-## 常用命令
+## Common Commands
 
 ```bash
 pnpm install
@@ -31,7 +31,7 @@ pnpm run test
 pnpm run serve
 ```
 
-`pnpm run serve` 会启动 [`apps/playground/`](apps/playground/) 的静态服务。
+`pnpm run serve` starts a static server for [`apps/playground/`](apps/playground/).
 
 ## License
 
