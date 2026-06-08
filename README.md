@@ -6,17 +6,17 @@
 
 ## 当前内容
 
-- [`.github/workflows/`](.github/workflows/)：可复用 GitHub Actions workflows，以及本仓库自己的 CI、dependency bump 和 pull request automation。
+- [`.github/workflows/`](.github/workflows/)：本仓库的 CI、dependency bump 和 pull request automation；其中部分 workflows 也支持 `workflow_call`。
 - [`apps/`](apps/)：小型应用、实验代码和可独立查看的页面。
 - [`scripts/`](scripts/)：日常使用和维护脚本，包括只读检查、本机更新和清理脚本。
 - [`snippets/`](snippets/)：学习、练习、面试、实用或可复用的 snippets。
 
-运行 `scripts/` 下脚本前先阅读脚本内容；更新和清理脚本可能修改本机环境、切换其他本地仓库分支、安装依赖或删除本机数据。
+运行 `scripts/` 下脚本前先阅读脚本内容。更新和清理脚本可能修改本机工具链、切换其他本地仓库分支、安装依赖或删除本机数据；检查脚本的输出也可能包含本机环境、账号状态、配置路径或其他不适合公开的信息。
 
 ## 环境要求
 
-- Node.js 版本以 [`.nvmrc`](.nvmrc) 和 [`package.json`](package.json) 的 `engines.node` 字段为准。
-- pnpm 版本以 [`package.json`](package.json) 的 `packageManager` 和 `engines.pnpm` 字段为准。
+- Node.js 版本以 [`.nvmrc`](.nvmrc) 和 [`package.json`](package.json) 的 `engines.node` 为准。
+- pnpm 版本以 [`package.json`](package.json) 的 `packageManager` 和 `engines.pnpm` 为准。
 - 使用 `pnpm`。`preinstall` 会通过 `only-allow` 阻止其他 package manager。
 
 ## 常用命令
