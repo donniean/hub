@@ -73,7 +73,6 @@ jobs:
         if: ${{ steps.create-pull-request.outputs.pull-request-number && inputs.is-auto-merge }}
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
+          PR_URL: ${{ steps.create-pull-request.outputs.pull-request-url }}
         run: |
-          url="${{ steps.create-pull-request.outputs.pull-request-url }}"
-          # gh pr merge --disable-auto "$url" || true
-          gh pr merge --auto --squash "$url"
+          gh pr merge --auto --squash "$PR_URL"
