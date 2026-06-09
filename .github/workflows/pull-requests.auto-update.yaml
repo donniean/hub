@@ -3,6 +3,7 @@ on:
   workflow_call:
     inputs:
       app-client-id:
+        description: GitHub App client ID for reusable workflow callers. Direct runs use vars.APP_CLIENT_ID.
         required: true
         type: string
     secrets:
@@ -17,6 +18,7 @@ jobs:
       - uses: actions/create-github-app-token@v3
         id: app-token
         with:
+          # Reusable callers pass this input; direct runs use this repository variable.
           client-id: ${{ inputs.app-client-id || vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
           permission-contents: write
