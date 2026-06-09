@@ -11,11 +11,7 @@ on:
         type: boolean
         default: true
     secrets:
-      GPG_PRIVATE_KEY:
-        required: true
-      GPG_PASSPHRASE:
-        required: true
-      GH_TOKEN:
+      APP_PRIVATE_KEY:
         required: true
   schedule:
     - cron: '0 0 * * *'
@@ -50,17 +46,6 @@ jobs:
       - name: Install Dependencies
         run: pnpm install --no-frozen-lockfile
 
-      - name: Import GPG Key
-        # cSpell: disable-next-line
-        uses: crazy-max/ghaction-import-gpg@v7
-        with:
-          gpg_private_key: ${{ secrets.GPG_PRIVATE_KEY }}
-          passphrase: ${{ secrets.GPG_PASSPHRASE }}
-          # cSpell: disable-next-line
-          git_user_signingkey: true
-          # cSpell: disable-next-line
-          git_commit_gpgsign: true
-
       - uses: actions/create-github-app-token@v3
         id: app-token
         with:
@@ -71,7 +56,6 @@ jobs:
         id: create-pull-request
         env:
           COMMIT_MESSAGE: 'chore(bot): bump dependencies'
-          COMMITTER: github-actions[bot] <12584040+donniean@users.noreply.github.com>
         uses: peter-evans/create-pull-request@v8
         with:
           token: ${{ steps.app-token.outputs.token }}
