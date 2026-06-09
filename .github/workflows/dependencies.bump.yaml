@@ -18,8 +18,7 @@ on:
   workflow_dispatch:
 
 permissions:
-  contents: write
-  pull-requests: write
+  contents: read
 
 jobs:
   bump:
@@ -51,6 +50,8 @@ jobs:
         with:
           client-id: ${{ inputs.app-client-id || vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
 
       - name: 'Create Pull Request'
         id: create-pull-request
@@ -69,7 +70,7 @@ jobs:
       - name: Auto-Merge Pull Request
         if: ${{ steps.create-pull-request.outputs.pull-request-number && inputs.is-auto-merge }}
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           url="${{ steps.create-pull-request.outputs.pull-request-url }}"
           # gh pr merge --disable-auto "$url" || true

@@ -19,6 +19,8 @@ jobs:
         with:
           client-id: ${{ inputs.app-client-id || vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
 
       # cSpell:disable-next-line
       - uses: docker://chinthakagodawita/autoupdate-action:v1
