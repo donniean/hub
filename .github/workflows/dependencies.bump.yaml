@@ -70,7 +70,7 @@ jobs:
       - name: Auto-Merge Pull Request
         if: ${{ steps.create-pull-request.outputs.pull-request-number && inputs.is-auto-merge }}
         env:
-          GITHUB_TOKEN: ${{ steps.app-token.outputs.token }}
+          GH_TOKEN: ${{ steps.app-token.outputs.token }}
         run: |
           url="${{ steps.create-pull-request.outputs.pull-request-url }}"
           # gh pr merge --disable-auto "$url" || true
