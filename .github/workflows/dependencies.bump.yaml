@@ -3,6 +3,9 @@ name: Dependencies Bump
 on:
   workflow_call:
     inputs:
+      app-client-id:
+        required: true
+        type: string
       is-auto-merge:
         required: false
         type: boolean
@@ -58,6 +61,12 @@ jobs:
           # cSpell: disable-next-line
           git_commit_gpgsign: true
 
+      - uses: actions/create-github-app-token@v3
+        id: app-token
+        with:
+          client-id: ${{ inputs.app-client-id || vars.APP_CLIENT_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+
       - name: 'Create Pull Request'
         id: create-pull-request
         env:
@@ -65,13 +74,12 @@ jobs:
           COMMITTER: github-actions[bot] <12584040+donniean@users.noreply.github.com>
         uses: peter-evans/create-pull-request@v8
         with:
-          token: ${{ secrets.GH_TOKEN }}
+          token: ${{ steps.app-token.outputs.token }}
           commit-message: ${{ env.COMMIT_MESSAGE }}
-          committer: ${{ env.COMMITTER}}
-          author: ${{ env.COMMITTER}}
           signoff: true
           delete-branch: true
           branch-suffix: timestamp
+          sign-commits: true
           title: ${{ env.COMMIT_MESSAGE }}
 
       - name: Auto-Merge Pull Request
