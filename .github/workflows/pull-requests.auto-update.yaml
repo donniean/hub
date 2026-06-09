@@ -1,25 +1,37 @@
 name: Pull Requests Auto-Update
 on:
   workflow_call:
-    secrets:
-      APP_ID:
+    inputs:
+      app-client-id:
+        description: GitHub App client ID for reusable workflow callers. Direct runs use vars.APP_CLIENT_ID.
         required: true
+        type: string
+    secrets:
       APP_PRIVATE_KEY:
         required: true
   push:
+
+permissions: {}
 
 jobs:
   auto-update:
     runs-on: ubuntu-latest
     steps:
-      - name: Generate a Token
-        id: generate-token
-        uses: actions/create-github-app-token@v3
+      - uses: actions/create-github-app-token@v3
+        id: app-token
         with:
-          app-id: ${{ secrets.APP_ID }}
+          # Reusable callers pass this input; direct runs use this repository variable.
+          client-id: ${{ inputs.app-client-id || vars.APP_CLIENT_ID }}
           private-key: ${{ secrets.APP_PRIVATE_KEY }}
+          permission-contents: write
+          permission-pull-requests: write
 
-      # cSpell:disable-next-line
-      - uses: docker://chinthakagodawita/autoupdate-action:v1
-        env:
-          GITHUB_TOKEN: '${{ steps.generate-token.outputs.token }}'
+      - name: Automatically Update Pull Request
+        uses: adRise/update-pr-branch@v0.11
+        with:
+          token: ${{ steps.app-token.outputs.token }}
+          base: ${{ github.ref_name }}
+          required_approval_count: 0
+          require_passed_checks: true
+          allow_ongoing_checks: true
+          require_auto_merge_enabled: true
