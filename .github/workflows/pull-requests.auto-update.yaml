@@ -11,6 +11,8 @@ on:
         required: true
   push:
 
+permissions: {}
+
 jobs:
   auto-update:
     runs-on: ubuntu-latest
