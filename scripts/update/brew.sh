@@ -17,8 +17,8 @@ brew outdated --cask --greedy --verbose
 brew upgrade --formula --display-times --dry-run
 brew upgrade --cask --greedy --display-times --dry-run
 
-brew upgrade --formula --display-times
-brew upgrade --cask --greedy --display-times
+brew upgrade --formula --display-times --yes
+brew upgrade --cask --greedy --display-times --yes
 
 brew autoremove
 brew cleanup
