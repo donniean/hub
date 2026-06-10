@@ -10,7 +10,7 @@ permissions:
   contents: read
 
 jobs:
-  lint:
+  quality:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -28,33 +28,33 @@ jobs:
       - name: Install Dependencies
         run: pnpm install
 
-      # - name: Lint
-      #   run: pnpm run lint
-      # Linters
+      # - name: Quality Check
+      #   run: pnpm run quality:check
+      # Checks
 
-      - name: lint:package-json
-        run: pnpm run lint:package-json
+      - name: format:package-json:check
+        run: pnpm run format:package-json:check
 
-      - name: lint:format
-        run: pnpm run lint:format
+      - name: format:prettier:check
+        run: pnpm run format:prettier:check
 
-      # - name: lint:types
-      #   run: pnpm run lint:types
+      # - name: lint:types:check
+      #   run: pnpm run lint:types:check
 
-      # - name: lint:js
-      #   run: pnpm run lint:js
+      # - name: lint:js:check
+      #   run: pnpm run lint:js:check
 
-      - name: lint:css
-        run: pnpm run lint:css
+      - name: lint:styles:check
+        run: pnpm run lint:styles:check
 
-      - name: lint:html
-        run: pnpm run lint:html
+      - name: lint:html:check
+        run: pnpm run lint:html:check
 
-      - name: lint:md
-        run: pnpm run lint:md
+      - name: lint:markdown:check
+        run: pnpm run lint:markdown:check
 
-      - name: lint:text
-        run: pnpm run lint:text
+      - name: lint:text:check
+        run: pnpm run lint:text:check
 
-      - name: lint:spell
-        run: pnpm run lint:spell
+      - name: lint:spelling:check
+        run: pnpm run lint:spelling:check

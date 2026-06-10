@@ -46,38 +46,38 @@ Scripts under [`scripts/inspect/`](scripts/inspect/) are intended for read-only 
 Run checks relevant to the change scope:
 
 ```bash
-pnpm run lint:md
-pnpm run lint:format
-pnpm run lint:spell
-pnpm run lint:text
+pnpm run format:prettier:check
+pnpm run lint:markdown:check
+pnpm run lint:spelling:check
+pnpm run lint:text:check
 pnpm run test
 ```
 
-`pnpm run lint` includes `lint:js`. `lint:js` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
+`pnpm run quality:check` includes `lint:js:check`. `lint:js:check` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
 
 If check results can be fixed automatically, prefer the smallest relevant `fix` command instead of running a full-repository fix indiscriminately.
 
 Use smaller checks by file type when possible:
 
 ```bash
-pnpm run lint:md
-pnpm run lint:js
-pnpm run lint:types
-pnpm run lint:css
-pnpm run lint:html
-pnpm run lint:format
-pnpm run lint:spell
-pnpm run lint:text
-pnpm run lint:package-json
+pnpm run format:package-json:check
+pnpm run format:prettier:check
+pnpm run lint:html:check
+pnpm run lint:js:check
+pnpm run lint:markdown:check
+pnpm run lint:spelling:check
+pnpm run lint:styles:check
+pnpm run lint:text:check
+pnpm run lint:types:check
 ```
 
 Matching `fix` commands include:
 
-- `pnpm run lint:md:fix`
+- `pnpm run format:package-json:fix`
+- `pnpm run format:prettier:fix`
 - `pnpm run lint:js:fix`
-- `pnpm run lint:css:fix`
-- `pnpm run lint:format:fix`
+- `pnpm run lint:markdown:fix`
+- `pnpm run lint:styles:fix`
 - `pnpm run lint:text:fix`
-- `pnpm run lint:package-json:fix`
 
-CI currently runs only `lint:package-json`, `lint:format`, `lint:css`, `lint:html`, `lint:md`, `lint:text`, and `lint:spell`. `lint:types`, `lint:js`, `pnpm run test`, and local maintenance scripts are not covered by the current CI; validate related changes locally.
+CI currently runs only `format:package-json:check`, `format:prettier:check`, `lint:styles:check`, `lint:html:check`, `lint:markdown:check`, `lint:text:check`, and `lint:spelling:check`. `lint:types:check`, `lint:js:check`, `pnpm run test`, and local maintenance scripts are not covered by the current CI; validate related changes locally.

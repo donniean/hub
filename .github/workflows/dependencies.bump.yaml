@@ -38,7 +38,7 @@ jobs:
           cache: pnpm
 
       - name: Bump Dependencies
-        run: pnpm run ncu:upgrade
+        run: pnpm run deps:upgrade
 
       - name: Remove Dependencies
         run: pnpm dlx rimraf@latest --glob "**/node_modules/" "**/pnpm-lock.yaml"

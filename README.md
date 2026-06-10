@@ -25,15 +25,15 @@ Output from inspection scripts may include local environment details, account st
 
 ```bash
 pnpm install
-pnpm run lint:md
-pnpm run lint:format
-pnpm run lint:spell
-pnpm run lint:text
+pnpm run format:prettier:check
+pnpm run lint:markdown:check
+pnpm run lint:spelling:check
+pnpm run lint:text:check
 pnpm run test
 pnpm run serve
 ```
 
-`pnpm run lint` includes `lint:js`. `lint:js` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
+`pnpm run quality:check` includes `lint:js:check`. `lint:js:check` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
 
 `pnpm run serve` starts a static server for [`apps/playground/`](apps/playground/).
 
