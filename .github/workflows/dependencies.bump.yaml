@@ -70,7 +70,9 @@ jobs:
           title: ${{ env.COMMIT_MESSAGE }}
 
       - name: Auto-Merge Pull Request
-        if: ${{ steps.create-pull-request.outputs.pull-request-number && inputs.is-auto-merge }}
+        if: >
+          steps.create-pull-request.outputs.pull-request-number &&
+          toJSON(inputs.is-auto-merge) != 'false'
         env:
           GH_TOKEN: ${{ steps.app-token.outputs.token }}
           PR_URL: ${{ steps.create-pull-request.outputs.pull-request-url }}
