@@ -14,8 +14,8 @@ brew update
 brew outdated --formula --verbose
 brew outdated --cask --greedy --verbose
 
-brew upgrade --formula --display-times --dry-run
-brew upgrade --cask --greedy --display-times --dry-run
+brew upgrade --formula --display-times --yes --dry-run
+brew upgrade --cask --greedy --display-times --yes --dry-run
 
 brew upgrade --formula --display-times --yes
 brew upgrade --cask --greedy --display-times --yes
