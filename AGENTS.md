@@ -51,6 +51,7 @@ pnpm run lint:format
 pnpm run lint:spell
 pnpm run lint:text
 pnpm run test
+pnpm run test:unit
 ```
 
 `pnpm run lint` includes `lint:js`. `lint:js` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
@@ -80,4 +81,4 @@ Matching `fix` commands include:
 - `pnpm run lint:text:fix`
 - `pnpm run lint:package-json:fix`
 
-CI currently runs only `lint:package-json`, `lint:format`, `lint:css`, `lint:html`, `lint:md`, `lint:text`, and `lint:spell`. `lint:types`, `lint:js`, `pnpm run test`, and local maintenance scripts are not covered by the current CI; validate related changes locally.
+CI currently runs only `lint:package-json`, `lint:format`, `lint:css`, `lint:html`, `lint:md`, `lint:text`, and `lint:spell`. `lint:types`, `lint:js`, `pnpm run test`, `pnpm run test:unit`, and local maintenance scripts are not covered by the current CI; validate related changes locally.
