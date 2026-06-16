@@ -32,29 +32,29 @@ jobs:
       #   run: pnpm run lint
       # Linters
 
-      - name: lint:package-json
-        run: pnpm run lint:package-json
+      - name: format:package-json:check
+        run: pnpm run format:package-json:check
 
-      - name: lint:format
-        run: pnpm run lint:format
+      - name: format:prettier:check
+        run: pnpm run format:prettier:check
 
-      # - name: lint:types
-      #   run: pnpm run lint:types
+      # - name: typecheck
+      #   run: pnpm run typecheck
 
-      # - name: lint:js
-      #   run: pnpm run lint:js
+      # - name: lint:eslint
+      #   run: pnpm run lint:eslint
 
-      - name: lint:css
-        run: pnpm run lint:css
+      - name: lint:styles
+        run: pnpm run lint:styles
 
       - name: lint:html
         run: pnpm run lint:html
 
-      - name: lint:md
-        run: pnpm run lint:md
+      - name: lint:markdown
+        run: pnpm run lint:markdown
 
-      - name: lint:text
-        run: pnpm run lint:text
+      - name: lint:autocorrect
+        run: pnpm run lint:autocorrect
 
-      - name: lint:spell
-        run: pnpm run lint:spell
+      - name: lint:spellcheck
+        run: pnpm run lint:spellcheck
