@@ -18,17 +18,16 @@ Output from inspection scripts may include local environment details, account st
 ## Requirements
 
 - The Node.js version is defined by [`.nvmrc`](.nvmrc) and `engines.node` in [`package.json`](package.json). See [Node.js version upgrade](docs/node-version-upgrade.md).
-- The pnpm version is defined by `packageManager` and `engines.pnpm` in [`package.json`](package.json).
-- Use `pnpm`. `preinstall` enforces this with `only-allow`.
+- The required pnpm version is pinned by the `packageManager` in [`package.json`](package.json).
 
 ## Commands
 
 ```bash
 pnpm install
-pnpm run lint:md
-pnpm run lint:format
-pnpm run lint:spell
-pnpm run lint:text
+pnpm run lint:markdown
+pnpm run format:prettier:check
+pnpm run lint:spellcheck
+pnpm run lint:autocorrect
 pnpm run test
 pnpm run test:unit
 pnpm run test:unit:coverage
@@ -37,7 +36,7 @@ pnpm run test:unit:ui
 pnpm run serve
 ```
 
-`pnpm run lint` includes `lint:js`. `lint:js` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
+`pnpm run lint` includes `lint:eslint`. `lint:eslint` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
 
 `pnpm run serve` starts a static server for [`apps/playground/`](apps/playground/).
 
