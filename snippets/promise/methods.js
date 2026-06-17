@@ -37,7 +37,6 @@ Promise.last = function last(promises = []) {
       Promise.resolve(promise)
         .then((value) => {
           count += 1;
-          // eslint-disable-next-line promise/always-return
           if (count === length) {
             resolve(value);
           }
@@ -153,7 +152,6 @@ Promise.first(promises)
     console.log('first then', value);
     return value;
   })
-  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch((error) => {
     console.error('first catch', error);
   });
@@ -163,7 +161,6 @@ Promise.last(promises)
     console.log('last then', value);
     return value;
   })
-  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch((error) => {
     console.error('last catch', error);
   });
@@ -173,7 +170,6 @@ Promise.none(promises)
     console.log('none then', value);
     return value;
   })
-  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch((error) => {
     console.error('none catch', error);
   });
@@ -183,7 +179,6 @@ Promise.any(promises)
     console.log('any then', value);
     return value;
   })
-  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch((error) => {
     console.error('any catch', error);
   });

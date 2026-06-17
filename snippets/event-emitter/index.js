@@ -21,7 +21,6 @@ class EventEmitter {
   }
 
   once(eventName, listener) {
-    // eslint-disable-next-line unicorn/no-this-assignment
     const self = this;
 
     function func(...args) {
@@ -34,8 +33,9 @@ class EventEmitter {
 
   emit(eventName, ...args) {
     if (this.events[eventName]) {
-      for (const listener of this.events[eventName])
+      for (const listener of this.events[eventName]) {
         listener.call(this, ...args);
+      }
     }
   }
 }

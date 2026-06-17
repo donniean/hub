@@ -3,7 +3,7 @@
     /* base */
 
     /* Language and Environment */
-    "target": "es2022",
+    "target": "es2023",
     "moduleDetection": "force",
     "useDefineForClassFields": true,
 

@@ -41,8 +41,8 @@ jobs:
       # - name: typecheck
       #   run: pnpm run typecheck
 
-      # - name: lint:eslint
-      #   run: pnpm run lint:eslint
+      # - name: lint:oxlint
+      #   run: pnpm run lint:oxlint
 
       - name: lint:styles
         run: pnpm run lint:styles
