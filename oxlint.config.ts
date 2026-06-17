@@ -6,7 +6,7 @@ export default defineConfig({
     denyWarnings: true,
     reportUnusedDisableDirectives: 'error',
     respectEslintDisableDirectives: true,
-    typeAware: false,
+    typeAware: true,
     typeCheck: false,
   },
   // https://oxc.rs/docs/guide/usage/linter/plugins.html#supported-plugins
