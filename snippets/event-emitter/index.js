@@ -33,8 +33,9 @@ class EventEmitter {
 
   emit(eventName, ...args) {
     if (this.events[eventName]) {
-      for (const listener of this.events[eventName])
+      for (const listener of this.events[eventName]) {
         listener.call(this, ...args);
+      }
     }
   }
 }
