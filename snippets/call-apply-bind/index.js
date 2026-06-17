@@ -21,7 +21,6 @@ Function.prototype.customApply = function customApply(context, args) {
 };
 
 Function.prototype.customBind = function customBind(context, ...args) {
-  // eslint-disable-next-line unicorn/no-this-assignment
   const func = this;
   return function fn() {
     return func.customCall(context, ...args);

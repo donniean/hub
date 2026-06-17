@@ -12,7 +12,6 @@ function customNew(Func, ...args) {
 }
 
 function customCreate(o) {
-  // eslint-disable-next-line unicorn/consistent-function-scoping
   function F() {}
 
   F.prototype = o;

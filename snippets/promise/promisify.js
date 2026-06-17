@@ -31,7 +31,6 @@ o.p()
     console.log('resolve', value);
     return value;
   })
-  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch((error) => {
     console.log('reject', error);
   });

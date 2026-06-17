@@ -18,7 +18,6 @@ const category = CATEGORIES.install;
 const days = DAYS['30d'];
 
 const url = `${BASE_URL}/${category}/${days}.json`;
-// eslint-disable-next-line no-console
 console.info(url);
 
 interface Analytics {
@@ -37,5 +36,4 @@ const result = {
 };
 const json = JSON.stringify(result, null, 2);
 
-// eslint-disable-next-line no-console
 console.info(json);

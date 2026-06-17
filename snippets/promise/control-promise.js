@@ -34,7 +34,6 @@ function controlPromise(urls, max) {
           isSuccess: index % 2 === 0,
         })
           .then((data) => {
-            // eslint-disable-next-line promise/always-return
             if (completedCount < total) {
               /* cSpell: disable-next-line */
 
@@ -66,7 +65,6 @@ controlPromise(['a', 'b', 'c', 'd', 'e', 'f'], 3)
     console.log(res);
     return res;
   })
-  // eslint-disable-next-line unicorn/prefer-top-level-await
   .catch((error) => {
     console.log(error);
   });

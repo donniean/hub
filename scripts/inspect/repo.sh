@@ -28,4 +28,4 @@ bat --paging=never --style=full \
   tsconfig.app.json \
   tsconfig.node.json \
   tsconfig.json \
-  eslint.config.mjs
+  oxlint.config.ts
