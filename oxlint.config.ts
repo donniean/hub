@@ -1,7 +1,6 @@
-import type { OxlintConfig } from 'oxlint';
 import { defineConfig } from 'oxlint';
 
-export default defineConfig<OxlintConfig>({
+export default defineConfig({
   // https://oxc.rs/docs/guide/usage/linter/config-file-reference.html#options
   options: {
     denyWarnings: true,
@@ -117,6 +116,12 @@ export default defineConfig<OxlintConfig>({
       files: ['apps/playground/**'],
       env: {
         browser: true,
+      },
+    },
+    {
+      files: ['snippets/**'],
+      rules: {
+        'no-console': 'off',
       },
     },
   ],
