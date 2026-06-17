@@ -1,22 +1,8 @@
 import type { OxlintConfig } from 'oxlint';
 import { defineConfig } from 'oxlint';
 
-const nodeParameterNames = [
-  'acc', // for reduce accumulators
-  'accumulator', // for reduce accumulators
-  'e', // for e.returnvalue
-  'ctx', // for Koa routing
-  'context', // for Koa routing
-  'req', // for Express requests
-  'request', // for Express requests
-  'res', // for Express responses
-  'response', // for Express responses
-  '$scope', // for Angular 1 scopes
-  'staticContext', // for ReactRouter context
-  'draft', // for immer
-];
-
 export default defineConfig<OxlintConfig>({
+  // https://oxc.rs/docs/guide/usage/linter/config-file-reference.html#options
   options: {
     denyWarnings: true,
     reportUnusedDisableDirectives: 'error',
@@ -24,11 +10,25 @@ export default defineConfig<OxlintConfig>({
     typeAware: false,
     typeCheck: false,
   },
-  ignorePatterns: ['apps/playground/**', 'snippets/**'],
+  // https://oxc.rs/docs/guide/usage/linter/plugins.html#supported-plugins
+  plugins: [
+    'eslint',
+    'typescript',
+    'unicorn',
+    'oxc',
+    'import',
+    'jsdoc',
+    'promise',
+    // node
+    'node',
+    // vitest
+    'vitest',
+  ],
+  // https://oxc.rs/docs/guide/usage/linter/config-file-reference.html#env
   env: {
     builtin: true,
-    node: true,
   },
+  // https://oxc.rs/docs/guide/usage/linter/config.html#enable-groups-of-rules-with-categories
   categories: {
     correctness: 'error',
     suspicious: 'error',
@@ -38,29 +38,23 @@ export default defineConfig<OxlintConfig>({
     restriction: 'off',
     nursery: 'off',
   },
-  plugins: [
-    'eslint',
-    'typescript',
-    'unicorn',
-    'oxc',
-    'import',
-    'jsdoc',
-    'promise',
-    'node',
-    'vitest',
-  ],
+  // https://oxc.rs/docs/guide/usage/linter/rules.html
   rules: {
     'eslint/curly': 'error',
     'eslint/eqeqeq': 'error',
     'eslint/no-console': [
       process.env['NODE_ENV'] === 'development' ? 'warn' : 'error',
-      { allow: ['info', 'warn', 'error'] },
+      { allow: ['warn', 'error'] },
     ],
     'eslint/no-param-reassign': [
       'error',
       {
         props: true,
-        ignorePropertyModificationsFor: nodeParameterNames,
+        ignorePropertyModificationsFor: [
+          'acc', // for reduce accumulators
+          'accumulator', // for reduce accumulators
+          'draft', // for immer
+        ],
       },
     ],
     'eslint/no-restricted-imports': [
@@ -69,7 +63,6 @@ export default defineConfig<OxlintConfig>({
         patterns: ['../../**'],
       },
     ],
-    'eslint/no-useless-call': 'error',
     'eslint/no-var': 'error',
     'eslint/prefer-const': 'error',
     'eslint/prefer-template': 'error',
@@ -82,6 +75,7 @@ export default defineConfig<OxlintConfig>({
         considerQueryString: true,
       },
     ],
+    'import/no-unassigned-import': ['error', { allow: ['**/*.css'] }],
     'typescript/consistent-type-exports': 'error',
     'typescript/consistent-type-imports': 'error',
     'typescript/no-empty-object-type': 'error',
@@ -89,7 +83,14 @@ export default defineConfig<OxlintConfig>({
     'typescript/no-import-type-side-effects': 'error',
     'typescript/no-misused-promises': 'error',
     'typescript/no-require-imports': 'error',
+    'typescript/no-unnecessary-condition': 'error',
+    'typescript/no-unsafe-argument': 'error',
+    'typescript/no-unsafe-assignment': 'error',
+    'typescript/no-unsafe-call': 'error',
+    'typescript/no-unsafe-member-access': 'error',
+    'typescript/no-unsafe-return': 'error',
     'typescript/restrict-plus-operands': 'error',
+    'typescript/switch-exhaustiveness-check': 'error',
     'unicorn/filename-case': [
       'error',
       {
@@ -104,9 +105,18 @@ export default defineConfig<OxlintConfig>({
   overrides: [
     {
       files: ['**'],
+      env: {
+        node: true,
+      },
       rules: {
         'node/no-new-require': 'error',
         'node/no-path-concat': 'error',
+      },
+    },
+    {
+      files: ['apps/playground/**'],
+      env: {
+        browser: true,
       },
     },
   ],
