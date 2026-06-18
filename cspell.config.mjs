@@ -22,6 +22,7 @@ export default defineConfig({
     '.markdownlintignore',
     '.ncurc',
     '.nvmrc',
+    '.oxfmtrc',
     '.stylelintignore',
     // Git
     'signoff',
@@ -44,6 +45,7 @@ export default defineConfig({
     'markdownlint',
     'npmjs',
     'numbro',
+    'oxfmt',
     'oxlint',
     'rimraf',
     'sonarjs',

@@ -47,7 +47,7 @@ Run checks relevant to the change scope:
 
 ```bash
 pnpm run lint:markdown
-pnpm run format:prettier:check
+pnpm run format:oxfmt:check
 pnpm run lint:spellcheck
 pnpm run lint:autocorrect
 pnpm run test
@@ -61,8 +61,7 @@ If check results can be fixed automatically, prefer the smallest relevant `fix` 
 Use smaller checks by file type when possible:
 
 ```bash
-pnpm run format:package-json:check
-pnpm run format:prettier:check
+pnpm run format:oxfmt:check
 pnpm run lint:autocorrect
 pnpm run lint:oxlint
 pnpm run lint:html
@@ -74,11 +73,10 @@ pnpm run typecheck
 
 Matching `fix` commands include:
 
-- `pnpm run format:package-json`
-- `pnpm run format:prettier`
+- `pnpm run format:oxfmt`
 - `pnpm run lint:autocorrect:fix`
 - `pnpm run lint:oxlint:fix`
 - `pnpm run lint:markdown:fix`
 - `pnpm run lint:styles:fix`
 
-CI currently runs only `format:package-json:check`, `format:prettier:check`, `lint:styles`, `lint:html`, `lint:markdown`, `lint:autocorrect`, and `lint:spellcheck`. `typecheck`, `lint:oxlint`, `pnpm run test`, `pnpm run test:unit`, and local maintenance scripts are not covered by the current CI; validate related changes locally.
+CI currently runs only `format:oxfmt:check`, `lint:styles`, `lint:html`, `lint:markdown`, `lint:autocorrect`, and `lint:spellcheck`. `typecheck`, `lint:oxlint`, `pnpm run test`, `pnpm run test:unit`, and local maintenance scripts are not covered by the current CI; validate related changes locally.
