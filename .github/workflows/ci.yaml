@@ -32,11 +32,8 @@ jobs:
       #   run: pnpm run lint
       # Linters
 
-      - name: format:package-json:check
-        run: pnpm run format:package-json:check
-
-      - name: format:prettier:check
-        run: pnpm run format:prettier:check
+      - name: format:oxfmt:check
+        run: pnpm run format:oxfmt:check
 
       # - name: typecheck
       #   run: pnpm run typecheck

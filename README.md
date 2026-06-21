@@ -25,7 +25,7 @@ Output from inspection scripts may include local environment details, account st
 ```bash
 pnpm install
 pnpm run lint:markdown
-pnpm run format:prettier:check
+pnpm run format:oxfmt:check
 pnpm run lint:spellcheck
 pnpm run lint:autocorrect
 pnpm run test

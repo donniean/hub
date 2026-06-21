@@ -44,6 +44,7 @@ export default defineConfig({
     'markdownlint',
     'npmjs',
     'numbro',
+    'oxfmt',
     'oxlint',
     'rimraf',
     'sonarjs',

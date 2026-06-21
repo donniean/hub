@@ -53,10 +53,7 @@ Promise.last = function last(promises = []) {
 
 Promise.none = function none(promises) {
   const list = promises.map(
-    (promise) =>
-      new Promise((resolve, reject) =>
-        Promise.resolve(promise).then(reject, resolve),
-      ),
+    (promise) => new Promise((resolve, reject) => Promise.resolve(promise).then(reject, resolve)),
   );
 
   return Promise.all(list);
@@ -138,14 +135,7 @@ const promise300 = sleep(true, 300);
 const promise400 = sleep(true, 400);
 const promise500 = sleep(false, 500);
 const promise600 = sleep(true, 600);
-const promises = [
-  promise600,
-  promise200,
-  promise500,
-  promise300,
-  promise400,
-  promise100,
-];
+const promises = [promise600, promise200, promise500, promise300, promise400, promise100];
 
 Promise.first(promises)
   .then((value) => {

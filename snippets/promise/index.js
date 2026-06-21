@@ -48,17 +48,11 @@ class CustomPromise {
       this.rejectedCallbacks.push(onRejected);
     }
 
-    if (
-      this.status === STATUS_MAP.FULFILLED &&
-      typeof onFulfilled === 'function'
-    ) {
+    if (this.status === STATUS_MAP.FULFILLED && typeof onFulfilled === 'function') {
       onFulfilled(this.value);
     }
 
-    if (
-      this.status === STATUS_MAP.REJECTED &&
-      typeof onRejected === 'function'
-    ) {
+    if (this.status === STATUS_MAP.REJECTED && typeof onRejected === 'function') {
       onRejected(this.reason);
     }
 
