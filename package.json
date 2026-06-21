@@ -6,14 +6,16 @@
   "bugs": {
     "url": "https://github.com/donniean/hub/issues"
   },
+  "license": "MIT",
+  "author": "Donnie An",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/donniean/hub.git"
   },
-  "license": "MIT",
-  "author": "Donnie An",
   "type": "module",
   "scripts": {
+    "format:oxfmt": "oxfmt",
+    "format:oxfmt:check": "oxfmt --check",
     "lint": "concurrently --group --timings \"pnpm:lint:*(!:fix|^lint:knip$)\" \"pnpm:format:*:check\" \"pnpm:typecheck\"",
     "lint:autocorrect": "autocorrect --lint",
     "lint:autocorrect:fix": "autocorrect --fix",
@@ -37,9 +39,7 @@
     "test:unit:coverage": "vitest run --coverage",
     "test:unit:ui": "vitest --ui",
     "test:unit:watch": "vitest watch",
-    "typecheck": "tsc --noEmit",
-    "format:oxfmt": "oxfmt",
-    "format:oxfmt:check": "oxfmt --check"
+    "typecheck": "tsc --noEmit"
   },
   "devDependencies": {
     "@commitlint/cli": "21.0.2",
@@ -67,8 +67,8 @@
     "typescript": "5.9.3",
     "vitest": "4.1.9"
   },
-  "packageManager": "pnpm@11.8.0",
   "engines": {
     "node": ">=24.0.0 <25.0.0"
-  }
+  },
+  "packageManager": "pnpm@11.8.0"
 }
