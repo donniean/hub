@@ -54,7 +54,7 @@ pnpm run test
 pnpm run test:unit
 ```
 
-`pnpm run lint` includes `lint:oxlint`. `lint:oxlint` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
+`pnpm run lint` includes `lint:knip` and `lint:oxlint`. `lint:oxlint` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
 
 If check results can be fixed automatically, prefer the smallest relevant `fix` command instead of running a full-repository fix indiscriminately.
 
@@ -63,6 +63,7 @@ Use smaller checks by file type when possible:
 ```bash
 pnpm run format:oxfmt:check
 pnpm run lint:autocorrect
+pnpm run lint:knip
 pnpm run lint:oxlint
 pnpm run lint:html
 pnpm run lint:markdown
@@ -75,6 +76,7 @@ Matching `fix` commands include:
 
 - `pnpm run format:oxfmt`
 - `pnpm run lint:autocorrect:fix`
+- `pnpm run lint:knip:fix`
 - `pnpm run lint:oxlint:fix`
 - `pnpm run lint:markdown:fix`
 - `pnpm run lint:styles:fix`
