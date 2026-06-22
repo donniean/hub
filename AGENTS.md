@@ -63,6 +63,7 @@ Use smaller checks by file type when possible:
 ```bash
 pnpm run format:oxfmt:check
 pnpm run lint:autocorrect
+pnpm run lint:knip
 pnpm run lint:oxlint
 pnpm run lint:html
 pnpm run lint:markdown
