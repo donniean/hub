@@ -51,5 +51,5 @@
     "moduleResolution": "bundler",
     "types": ["node"]
   },
-  "include": ["apps/**/*", "scripts/**/*", "snippets/**/*", "*.ts"]
+  "include": ["apps/**/*", "scripts/**/*", "snippets/**/*", "*.ts", "*.mts", "*.cts"]
 }
