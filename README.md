@@ -36,7 +36,7 @@ pnpm run test:unit:ui
 pnpm run serve
 ```
 
-`pnpm run lint` includes `lint:oxlint`. `lint:oxlint` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
+`pnpm run lint` includes `lint:knip` and `lint:oxlint`. `lint:oxlint` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
 
 `pnpm run serve` starts a static server for [`apps/playground/`](apps/playground/).
 
