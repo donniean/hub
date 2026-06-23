@@ -1,7 +1,5 @@
 import type { KnipConfig } from 'knip';
 
-const config = {
-  entry: ['.htmlvalidate.mjs', '.ncurc.mjs', 'apps/playground/index.js', 'snippets/**/*.js'],
-} as const satisfies KnipConfig;
-
-export default config;
+export default {
+  entry: ['html-validate.config.ts', '.ncurc.mjs', 'apps/playground/index.js', 'snippets/**/*.js'],
+} satisfies KnipConfig;
