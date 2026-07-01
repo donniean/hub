@@ -44,7 +44,7 @@
   "devDependencies": {
     "@commitlint/cli": "21.1.0",
     "@commitlint/config-conventional": "21.2.0",
-    "@commitlint/types": "21.1.0",
+    "@commitlint/types": "21.2.0",
     "@types/node": "24.13.2",
     "@vitest/coverage-v8": "4.1.9",
     "@vitest/ui": "4.1.9",
