@@ -51,7 +51,7 @@
     "autocorrect-node": "2.14.0",
     "concurrently": "10.0.3",
     "cspell": "10.0.1",
-    "html-validate": "11.5.3",
+    "html-validate": "11.5.4",
     "husky": "9.1.7",
     "knip": "6.23.0",
     "lint-staged": "17.0.8",
