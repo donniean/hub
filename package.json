@@ -45,7 +45,7 @@
     "@commitlint/cli": "21.2.0",
     "@commitlint/config-conventional": "21.2.0",
     "@commitlint/types": "21.2.0",
-    "@types/node": "24.13.2",
+    "@types/node": "24.13.3",
     "@vitest/coverage-v8": "4.1.10",
     "@vitest/ui": "4.1.10",
     "autocorrect-node": "2.14.0",
