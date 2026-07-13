@@ -17,6 +17,6 @@ set -x
   npm ls --global --depth=0
   npm outdated --global
 
-  npm update --global --dry-run
+  # npm update --global --dry-run
   npm update --global
 )
