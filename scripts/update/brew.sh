@@ -14,11 +14,11 @@ brew update
 brew outdated --formula --verbose
 brew outdated --cask --greedy --verbose
 
-brew upgrade --formula --display-times --yes --dry-run
-brew upgrade --cask --greedy --display-times --yes --dry-run
+brew upgrade --formula --display-times --no-ask --dry-run
+brew upgrade --cask --greedy --display-times --no-ask --dry-run
 
-brew upgrade --formula --display-times --yes
-brew upgrade --cask --greedy --display-times --yes
+brew upgrade --formula --display-times --no-ask
+brew upgrade --cask --greedy --display-times --no-ask
 
 brew autoremove
 brew cleanup
