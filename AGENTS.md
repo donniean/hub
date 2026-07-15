@@ -18,6 +18,7 @@ scripts/update/all.sh
 scripts/update/brew.sh
 scripts/update/mas.sh
 scripts/update/npm-global.sh
+scripts/update/pnpm-allow-builds.sh
 scripts/update/repos.sh
 scripts/update/skills.sh
 scripts/cleanup/codex.sh
@@ -29,6 +30,7 @@ Impact summary:
 - [`scripts/update/brew.sh`](scripts/update/brew.sh) runs Homebrew update, upgrade, and cleanup tasks, and removes dependencies that are no longer needed.
 - [`scripts/update/mas.sh`](scripts/update/mas.sh) upgrades Mac App Store apps.
 - [`scripts/update/npm-global.sh`](scripts/update/npm-global.sh) updates global npm packages.
+- [`scripts/update/pnpm-allow-builds.sh`](scripts/update/pnpm-allow-builds.sh) removes stale pnpm build approvals from the configured local repositories, installs dependencies, approves pending builds, and creates draft pull requests for changed repositories.
 - [`scripts/update/skills.sh`](scripts/update/skills.sh) updates global skills.
 - [`scripts/update/repos.sh`](scripts/update/repos.sh) switches the local repositories listed in the script to `main`, pulls changes, and installs dependencies.
 - [`scripts/cleanup/codex.sh`](scripts/cleanup/codex.sh) deletes the local Codex output directories listed in the script.
