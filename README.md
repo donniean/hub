@@ -40,16 +40,6 @@ pnpm run serve
 
 `pnpm run serve` starts a static server for [`apps/playground/`](apps/playground/).
 
-## Repository Maintenance
-
-[`scripts/update/pnpm-allow-builds.sh`](scripts/update/pnpm-allow-builds.sh) refreshes pnpm build approvals in `hub`, `node-app`, `react-app`, and `vault`. It requires clean local repositories, checks out and updates `main`, installs dependencies, and creates a signed commit and draft pull request for each repository whose `pnpm-workspace.yaml` changes.
-
-The script preserves build decisions for packages that remain in the locked dependency graph, removes stale entries, and runs newly approved dependency build scripts before creating pull requests. Set `REPO_ROOT` to override the default `$HOME/repos` repository root.
-
-```bash
-bash scripts/update/pnpm-allow-builds.sh
-```
-
 ## License
 
 [MIT](LICENSE)
