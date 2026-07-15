@@ -46,8 +46,14 @@ jobs:
       - name: Remove Dependencies
         run: pnpm dlx rimraf@latest --glob "**/node_modules/" "**/pnpm-lock.yaml"
 
+      - name: Reset Allowed Builds
+        run: pnpm config delete --location=project allowBuilds
+
       - name: Install Updated Dependencies
-        run: pnpm install --no-frozen-lockfile
+        run: pnpm install --no-frozen-lockfile --config.strictDepBuilds=false
+
+      - name: Approve Dependency Builds
+        run: pnpm approve-builds --all
 
       - uses: actions/create-github-app-token@v3
         id: app-token
