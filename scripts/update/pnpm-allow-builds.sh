@@ -48,6 +48,6 @@ for repo_name in "${repo_names[@]}"; do
       --web
 
     git switch main
-    git branch --delete "${head_branch_name}"
+    git branch --delete --force "${head_branch_name}"
   )
 done
