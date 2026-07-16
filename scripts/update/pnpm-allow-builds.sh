@@ -58,7 +58,7 @@ for repo_name in "${repo_names[@]}"; do
     fi
 
     git add --all
-    git commit -asS --message "${commit_message}"
+    git commit --all --signoff --gpg-sign --message "${commit_message}"
     git push --set-upstream origin "${head_branch_name}"
 
     pr_url="$(gh pr create \
