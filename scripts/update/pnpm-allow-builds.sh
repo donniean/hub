@@ -25,6 +25,9 @@ for repo_name in "${repo_names[@]}"; do
   (
     cd "${repo_path}"
 
+    # 这里需要先检查是否有未提交的
+    # 有未提交的则不执行后续命令
+
     fnm use
 
     git switch main
@@ -35,6 +38,9 @@ for repo_name in "${repo_names[@]}"; do
     pnpm config delete --location=project allowBuilds
     pnpm install --no-frozen-lockfile --config.strictDepBuilds=false
     pnpm approve-builds --all
+
+    # 这里需要先检查是否有需要提交的
+    # 没有需要提交的则不执行后续命令，切换到之前的分支，删除新创建的分支
 
     git add --all
     git commit -asS --message "${commit_message}"
