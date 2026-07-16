@@ -25,8 +25,17 @@ for repo_name in "${repo_names[@]}"; do
   (
     cd "${repo_path}"
 
-    # 这里需要先检查是否有未提交的
-    # 有未提交的则不执行后续命令
+    if [[ -n "$(git status --porcelain)" ]]; then
+      echo "Skip ${repo_name}: the working tree has uncommitted changes."
+      exit 0
+    fi
+
+    previous_branch_name="$(git branch --show-current)"
+
+    if [[ -z "${previous_branch_name}" ]]; then
+      echo "Skip ${repo_name}: HEAD is detached."
+      exit 0
+    fi
 
     fnm use
 
@@ -39,8 +48,12 @@ for repo_name in "${repo_names[@]}"; do
     pnpm install --no-frozen-lockfile --config.strictDepBuilds=false
     pnpm approve-builds --all
 
-    # 这里需要先检查是否有需要提交的
-    # 没有需要提交的则不执行后续命令，切换到之前的分支，删除新创建的分支
+    if [[ -z "$(git status --porcelain)" ]]; then
+      echo "Skip ${repo_name}: pnpm build approvals are already up to date."
+      git switch "${previous_branch_name}"
+      git branch --delete --force "${head_branch_name}"
+      exit 0
+    fi
 
     git add --all
     git commit -asS --message "${commit_message}"
@@ -54,7 +67,7 @@ for repo_name in "${repo_names[@]}"; do
 
     gh pr view "${pr_url}" --web
 
-    git switch main
+    git switch "${previous_branch_name}"
     git branch --delete --force "${head_branch_name}"
   )
 done
