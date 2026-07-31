@@ -7,7 +7,7 @@ export default {
     'cspell --no-progress --dot --gitignore --no-must-find-files',
   ],
   // '*.{ts,tsx,mts,cts}': [() => 'tsc --noEmit', 'vitest related --run'],
-  // '*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}': 'oxlint --fix',
+  // '*.{js,jsx,mjs,cjs,ts,tsx,mts,cts}': 'oxlint --fix --no-error-on-unmatched-pattern',
   '*.css': 'stylelint --fix',
   '*.html': 'html-validate',
   '*.md': 'markdownlint --dot --fix',
