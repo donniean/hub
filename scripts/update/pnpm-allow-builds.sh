@@ -45,7 +45,8 @@ for repo_name in "${repo_names[@]}"; do
     git pull --all --prune
     git switch --create "${head_branch_name}"
 
-    rm -rf node_modules/
+    find . -type d -name node_modules -prune -exec rm -rf {} +
+    find . -type f -name pnpm-lock.yaml -delete
     pnpm config delete --location=project allowBuilds
     pnpm install --no-frozen-lockfile --config.strictDepBuilds=false
     pnpm approve-builds --all
