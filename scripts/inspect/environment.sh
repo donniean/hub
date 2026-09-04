@@ -24,6 +24,12 @@ printf 'TERM_PROGRAM_VERSION=%s\n' "${TERM_PROGRAM_VERSION-}"
 printf 'COLORTERM=%s\n' "${COLORTERM-}"
 printf 'EDITOR=%s\n' "${EDITOR-}"
 printf 'VISUAL=%s\n' "${VISUAL-}"
+printf 'XDG_CONFIG_HOME=%s\n' "${XDG_CONFIG_HOME-}"
+printf 'XDG_DATA_HOME=%s\n' "${XDG_DATA_HOME-}"
+printf 'XDG_STATE_HOME=%s\n' "${XDG_STATE_HOME-}"
+printf 'XDG_CACHE_HOME=%s\n' "${XDG_CACHE_HOME-}"
+printf 'FNM_DIR=%s\n' "${FNM_DIR-}"
+printf 'PNPM_HOME=%s\n' "${PNPM_HOME-}"
 
 printenv | LC_ALL=C sort | awk -F= '
 BEGIN { IGNORECASE=1 }
@@ -41,15 +47,6 @@ bat --paging=never --style=full \
 
 brew config
 brew doctor
-
-brew tap-info
-brew tap
-
-brew list --formula --versions
-brew list --formula --installed-on-request
-brew list --formula --no-installed-on-request
-brew list --pinned
-brew leaves
 
 items=(
   ast-grep
