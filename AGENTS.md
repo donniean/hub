@@ -33,9 +33,7 @@ Impact summary:
 - [`scripts/update/skills.sh`](scripts/update/skills.sh) updates global skills.
 - [`scripts/update/repos.sh`](scripts/update/repos.sh) switches the local repositories listed in the script to `main`, pulls changes, and installs dependencies.
 
-Scripts under [`scripts/inspect/`](scripts/inspect/) collect diagnostic information. Some commands use `npx --yes` to download and run tools, which may access the network and write to the local npm cache. Account for these effects when deciding whether to run an inspection script.
-
-Inspection output may include local environment details, shell configuration, Homebrew information, global npm packages, GitHub authentication state, Codex configuration, or repository status. Do not publish, forward, or write that output into a public issue or pull request without review and redaction.
+Scripts under [`scripts/inspect/`](scripts/inspect/) are intended for read-only diagnostics, but their output may include local environment details, shell configuration, Homebrew information, global npm packages, GitHub authentication state, Codex configuration, or repository status. Do not publish, forward, or write that output into a public issue or pull request without review and redaction.
 
 ## GitHub Workflows
 

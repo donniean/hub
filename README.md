@@ -13,8 +13,6 @@ A public collection repository for personal use. It stores public material that 
 
 Review the script before running anything under `scripts/`. Update scripts may modify the local toolchain, switch branches in other local repositories, install dependencies, or delete local data.
 
-Inspection scripts collect diagnostic information. Some commands use `npx --yes` to download and run tools, which may access the network and write to the local npm cache.
-
 Output from inspection scripts may include local environment details, account state, config paths, or other information that is not suitable for public sharing. Review and redact it before external reuse.
 
 ## Requirements
