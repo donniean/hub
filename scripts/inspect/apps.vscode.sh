@@ -13,4 +13,7 @@ type -a code
 code --status
 code --version
 
-code --list-extensions --show-versions
+code --list-extensions --show-versions | LC_ALL=C sort
+
+bat --paging=never --style=full \
+  "$HOME/Library/Application Support/Code/User/settings.json"
