@@ -55,6 +55,8 @@ items=(
   ast-grep
   bash
   bat
+  brew
+  chezmoi
   clang
   curl
   docker
@@ -63,6 +65,7 @@ items=(
   fnm
   gh
   git
+  gpg
   jq
   make
   mas
@@ -73,6 +76,7 @@ items=(
   python3
   rg
   ruby
+  tesseract
   uv
   yarn
   yq
