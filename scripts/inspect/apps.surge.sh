@@ -8,4 +8,6 @@ set -x
 
 /Applications/Surge.app/Contents/Applications/surge-cli status
 
+/Applications/Surge.app/Contents/Applications/surge-cli version
+
 /Applications/Surge.app/Contents/Applications/surge-cli summary

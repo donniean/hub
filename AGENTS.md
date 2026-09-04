@@ -21,7 +21,6 @@ scripts/update/npm-global.sh
 scripts/update/pnpm-refresh.sh
 scripts/update/repos.sh
 scripts/update/skills.sh
-scripts/cleanup/codex.sh
 ```
 
 Impact summary:
