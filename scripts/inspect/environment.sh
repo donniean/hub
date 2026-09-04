@@ -19,6 +19,11 @@ printf 'PATH=%s\n' "${PATH-}"
 printf 'LANG=%s\n' "${LANG-}"
 printf 'LC_ALL=%s\n' "${LC_ALL-}"
 printf 'TERM=%s\n' "${TERM-}"
+printf 'TERM_PROGRAM=%s\n' "${TERM_PROGRAM-}"
+printf 'TERM_PROGRAM_VERSION=%s\n' "${TERM_PROGRAM_VERSION-}"
+printf 'COLORTERM=%s\n' "${COLORTERM-}"
+printf 'EDITOR=%s\n' "${EDITOR-}"
+printf 'VISUAL=%s\n' "${VISUAL-}"
 
 items=(
   ast-grep
@@ -27,7 +32,6 @@ items=(
   clang
   curl
   docker
-  docker-compose
   eza
   fd
   fnm
@@ -56,6 +60,20 @@ for item in "${items[@]}"; do
     "$item" --version
   )
 done
+
+brew config
+brew doctor
+
+brew tap-info
+brew tap
+
+brew list --formula --versions
+brew list --formula --installed-on-request
+brew list --formula --no-installed-on-request
+brew list --pinned
+brew leaves
+
+docker compose version
 
 printenv | LC_ALL=C sort | awk -F= '
 BEGIN { IGNORECASE=1 }
