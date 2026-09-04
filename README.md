@@ -8,10 +8,10 @@ A public collection repository for personal use. It stores public material that 
 
 - [`.github/workflows/`](.github/workflows/): GitHub Actions workflows for CI, dependency updates, and pull request automation; some workflows are reusable workflows used by other personal repositories.
 - [`apps/`](apps/): Small apps, experiments, and pages that can be viewed independently.
-- [`scripts/`](scripts/): Day-to-day maintenance scripts, including environment inspection, local updates, and cleanup tasks.
+- [`scripts/`](scripts/): Day-to-day maintenance scripts, with system, environment, application, and repository diagnostics under [`inspect/`](scripts/inspect/) and local toolchain and repository updates under [`update/`](scripts/update/).
 - [`snippets/`](snippets/): Reusable code and reference snippets for study, practice, interviews, and utilities.
 
-Review the script before running anything under `scripts/`. Update and cleanup scripts may modify the local toolchain, switch branches in other local repositories, install dependencies, or delete local data.
+Review the script before running anything under `scripts/`. Update scripts may modify the local toolchain, switch branches in other local repositories, install dependencies, or delete local data.
 
 Output from inspection scripts may include local environment details, account state, config paths, or other information that is not suitable for public sharing. Review and redact it before external reuse.
 
