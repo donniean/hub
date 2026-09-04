@@ -20,4 +20,6 @@ brew leaves
 brew leaves --installed-on-request
 brew list --cask --versions
 
+mas list
+
 eza --long --all --group-directories-first --git-ignore /Applications/
