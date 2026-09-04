@@ -17,18 +17,6 @@ xcrun clang --version
 
 npx --yes envinfo@latest
 
-printf 'SHELL=%s\n' "${SHELL-}"
-printf 'PATH=%s\n' "${PATH-}"
-printf 'LANG=%s\n' "${LANG-}"
-printf 'LC_CTYPE=%s\n' "${LC_CTYPE-}"
-
-printf 'TERM=%s\n' "${TERM-}"
-printf 'TERM_PROGRAM=%s\n' "${TERM_PROGRAM-}"
-printf 'TERM_PROGRAM_VERSION=%s\n' "${TERM_PROGRAM_VERSION-}"
-printf 'COLORTERM=%s\n' "${COLORTERM-}"
-
-printf 'FNM_DIR=%s\n' "${FNM_DIR-}"
-
 printenv | LC_ALL=C sort | awk -F= '
 BEGIN { IGNORECASE=1 }
 $1 ~ /(TOKEN|SECRET|PASS(WOR)?D|API[_-]?KEY|PRIVATE[_-]?KEY|ACCESS[_-]?KEY|SESSION|COOKIE|AUTH|BEARER|CREDENTIAL|AWS_|GCP_|AZURE_|SSH_|GITHUB_|OPENAI_|ANTHROPIC_|GOOGLE_)/ {
