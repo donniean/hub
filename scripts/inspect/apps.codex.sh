@@ -11,8 +11,9 @@ brew info codex
 type -a codex
 
 codex --version
-codex doctor
+codex doctor --json
 
+codex features list
 codex plugin marketplace list --json
 codex plugin list --json
 codex mcp list --json
