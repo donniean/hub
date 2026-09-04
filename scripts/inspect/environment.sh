@@ -9,8 +9,11 @@ set -x
 xcode-select --print-path
 xcodebuild -version
 pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
+
 xcrun --sdk macosx --show-sdk-path
 xcrun --sdk macosx --show-sdk-version
+xcrun --find clang
+xcrun clang --version
 
 npx --yes envinfo@latest
 
@@ -18,18 +21,27 @@ printf 'SHELL=%s\n' "${SHELL-}"
 printf 'PATH=%s\n' "${PATH-}"
 printf 'LANG=%s\n' "${LANG-}"
 printf 'LC_ALL=%s\n' "${LC_ALL-}"
+printf 'LC_CTYPE=%s\n' "${LC_CTYPE-}"
+
 printf 'TERM=%s\n' "${TERM-}"
 printf 'TERM_PROGRAM=%s\n' "${TERM_PROGRAM-}"
 printf 'TERM_PROGRAM_VERSION=%s\n' "${TERM_PROGRAM_VERSION-}"
 printf 'COLORTERM=%s\n' "${COLORTERM-}"
+
 printf 'EDITOR=%s\n' "${EDITOR-}"
 printf 'VISUAL=%s\n' "${VISUAL-}"
+printf 'GIT_EDITOR=%s\n' "${GIT_EDITOR-}"
+printf 'PAGER=%s\n' "${PAGER-}"
+printf 'MANPAGER=%s\n' "${MANPAGER-}"
+
 printf 'XDG_CONFIG_HOME=%s\n' "${XDG_CONFIG_HOME-}"
 printf 'XDG_DATA_HOME=%s\n' "${XDG_DATA_HOME-}"
 printf 'XDG_STATE_HOME=%s\n' "${XDG_STATE_HOME-}"
 printf 'XDG_CACHE_HOME=%s\n' "${XDG_CACHE_HOME-}"
+
 printf 'FNM_DIR=%s\n' "${FNM_DIR-}"
 printf 'PNPM_HOME=%s\n' "${PNPM_HOME-}"
+printf 'NODE_OPTIONS=%s\n' "${NODE_OPTIONS-}"
 
 printenv | LC_ALL=C sort | awk -F= '
 BEGIN { IGNORECASE=1 }
