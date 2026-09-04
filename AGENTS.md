@@ -32,7 +32,6 @@ Impact summary:
 - [`scripts/update/pnpm-refresh.sh`](scripts/update/pnpm-refresh.sh) removes the repository-root `node_modules` directory, regenerates `pnpm-lock.yaml`, resets pnpm build approvals in the configured local repositories, reinstalls dependencies without a frozen lockfile, approves all discovered builds, commits and pushes all resulting changes, creates pull requests and opens their pages in the browser, and force-deletes the local update branches.
 - [`scripts/update/skills.sh`](scripts/update/skills.sh) updates global skills.
 - [`scripts/update/repos.sh`](scripts/update/repos.sh) switches the local repositories listed in the script to `main`, pulls changes, and installs dependencies.
-- [`scripts/cleanup/codex.sh`](scripts/cleanup/codex.sh) deletes the local Codex output directories listed in the script.
 
 Scripts under [`scripts/inspect/`](scripts/inspect/) are intended for read-only diagnostics, but their output may include local environment details, shell configuration, Homebrew information, global npm packages, GitHub authentication state, Codex configuration, or repository status. Do not publish, forward, or write that output into a public issue or pull request without review and redaction.
 
