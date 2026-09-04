@@ -15,5 +15,8 @@ code --version
 
 code --list-extensions --show-versions | LC_ALL=C sort
 
+vscode_user_dir="$HOME/Library/Application Support/Code/User"
+
 bat --paging=never --style=full \
-  "$HOME/Library/Application Support/Code/User/settings.json"
+  "$vscode_user_dir/settings.json" \
+  "$vscode_user_dir/keybindings.json"
