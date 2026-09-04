@@ -6,16 +6,20 @@ export PS4=$'\n+CMD [\D{%Y-%m-%dT%H:%M:%S%z}] [${BASH_SOURCE##*/}:${LINENO}] '
 
 set -x
 
-/Applications/Surge.app/Contents/Applications/surge-cli status
-/Applications/Surge.app/Contents/Applications/surge-cli summary
-/Applications/Surge.app/Contents/Applications/surge-cli version
+surge_cli="/Applications/Surge.app/Contents/Applications/surge-cli"
 
-/Applications/Surge.app/Contents/Applications/surge-cli module list
-/Applications/Surge.app/Contents/Applications/surge-cli feature list
-/Applications/Surge.app/Contents/Applications/surge-cli external-resource list
+"$surge_cli" status
+"$surge_cli" version
+"$surge_cli" environment
+"$surge_cli" dump summary
 
-/Applications/Surge.app/Contents/Applications/surge-cli plugin list
+"$surge_cli" module list
+"$surge_cli" feature list
+"$surge_cli" plugin list
+"$surge_cli" external-resource list
 
-/Applications/Surge.app/Contents/Applications/surge-cli dump profile original
-/Applications/Surge.app/Contents/Applications/surge-cli dump profile effective
-/Applications/Surge.app/Contents/Applications/surge-cli profile diff
+"$surge_cli" dump policy
+
+"$surge_cli" dump profile original
+"$surge_cli" dump profile effective
+"$surge_cli" profile diff
