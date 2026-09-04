@@ -10,9 +10,3 @@ sysctl -n hw.model
 uname -sr
 uname -m
 sw_vers
-
-xcode-select --print-path
-xcodebuild -version
-pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
-
-npx --yes envinfo@latest

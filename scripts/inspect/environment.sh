@@ -6,6 +6,12 @@ export PS4=$'\n+CMD [\D{%Y-%m-%dT%H:%M:%S%z}] [${BASH_SOURCE##*/}:${LINENO}] '
 
 set -x
 
+xcode-select --print-path
+xcodebuild -version
+pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
+
+npx --yes envinfo@latest
+
 brew config
 brew doctor
 
@@ -19,6 +25,8 @@ brew list --pinned
 brew leaves
 brew leaves --installed-on-request
 brew list --cask --versions
+
+eza --long --all --group-directories-first --git-ignore /Applications/
 
 items=(
   ast-grep
