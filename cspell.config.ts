@@ -77,7 +77,7 @@ export default defineConfig({
     '**/pnpm-workspace.yaml',
     '**/yarn.lock',
     // custom
-    'resources/macos/',
-    'resources/vscode/settings.json',
+    'scripts/inspect/environment.sh',
+    'scripts/inspect/system.sh',
   ],
 });

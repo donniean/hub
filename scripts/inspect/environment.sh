@@ -9,43 +9,40 @@ set -x
 xcode-select --print-path
 xcodebuild -version
 pkgutil --pkg-info=com.apple.pkg.CLTools_Executables
+xcrun --sdk macosx --show-sdk-path
+xcrun --sdk macosx --show-sdk-version
 
 npx --yes envinfo@latest
 
-brew config
-brew doctor
-
-brew tap-info
-brew tap
-
-brew list --formula --versions
-brew list --formula --installed-on-request
-brew list --formula --installed-as-dependency
-brew list --pinned
-brew leaves
-brew leaves --installed-on-request
-brew list --cask --versions
-
-eza --long --all --group-directories-first --git-ignore /Applications/
+printf 'SHELL=%s\n' "${SHELL-}"
+printf 'PATH=%s\n' "${PATH-}"
+printf 'LANG=%s\n' "${LANG-}"
+printf 'LC_ALL=%s\n' "${LC_ALL-}"
+printf 'TERM=%s\n' "${TERM-}"
 
 items=(
   ast-grep
   bash
   bat
-  codex
+  clang
   curl
+  docker
+  docker-compose
   eza
   fd
   fnm
   gh
   git
   jq
+  make
   mas
   node
   npm
   npx
   pnpm
+  python3
   rg
+  ruby
   uv
   yarn
   yq
