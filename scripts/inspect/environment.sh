@@ -78,5 +78,3 @@ fnm list
 npm ls --global --depth=0
 
 gh auth status
-
-npx --yes --package=@playwright/cli@latest playwright-cli --version

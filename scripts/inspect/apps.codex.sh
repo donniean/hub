@@ -23,3 +23,5 @@ bat --paging=never --style=full \
 
 npx --yes skills@latest list --global
 eza --oneline --all --group-directories-first --git-ignore "$HOME/.agents/skills/"
+
+npx --yes --package=@playwright/cli@latest playwright-cli --version
