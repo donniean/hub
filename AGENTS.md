@@ -11,19 +11,7 @@
 
 ## Scripts
 
-Reading scripts is allowed. Without explicit user confirmation, do not run the following scripts or equivalent commands because they update the local toolchain, switch branches in local repositories, install dependencies, or delete local data:
-
-```bash
-scripts/update/all.sh
-scripts/update/brew.sh
-scripts/update/mas.sh
-scripts/update/npm-global.sh
-scripts/update/pnpm-refresh.sh
-scripts/update/repos.sh
-scripts/update/skills.sh
-```
-
-Impact summary:
+Reading scripts is allowed. Running the following update scripts or equivalent maintenance commands requires explicit user authorization covering their effects. Reuse authorization already given for the operation; inspection and source edits can proceed independently.
 
 - [`scripts/update/all.sh`](scripts/update/all.sh) runs the Homebrew, Mac App Store, global npm package, global skill, and local repository update scripts in sequence.
 - [`scripts/update/brew.sh`](scripts/update/brew.sh) runs Homebrew update, upgrade, and cleanup tasks, and removes dependencies that are no longer needed.
@@ -43,42 +31,7 @@ Scripts under [`scripts/inspect/`](scripts/inspect/) are intended for read-only 
 
 ## Verification
 
-Run checks relevant to the change scope:
-
-```bash
-pnpm run lint:markdown
-pnpm run format:oxfmt:check
-pnpm run lint:spellcheck
-pnpm run lint:autocorrect
-pnpm run test
-pnpm run test:unit
-```
-
-`pnpm run lint` includes `lint:knip` and `lint:oxlint`. `lint:oxlint` is not part of the current default validation for legacy snippets; the long-term target is to fix those snippets or migrate them to TypeScript so they meet the JavaScript linting standard.
-
-If check results can be fixed automatically, prefer the smallest relevant `fix` command instead of running a full-repository fix indiscriminately.
-
-Use smaller checks by file type when possible:
-
-```bash
-pnpm run format:oxfmt:check
-pnpm run lint:autocorrect
-pnpm run lint:knip
-pnpm run lint:oxlint
-pnpm run lint:html
-pnpm run lint:markdown
-pnpm run lint:spellcheck
-pnpm run lint:styles
-pnpm run typecheck
-```
-
-Matching `fix` commands include:
-
-- `pnpm run format:oxfmt`
-- `pnpm run lint:autocorrect:fix`
-- `pnpm run lint:knip:fix`
-- `pnpm run lint:oxlint:fix`
-- `pnpm run lint:markdown:fix`
-- `pnpm run lint:styles:fix`
-
-CI currently runs only `format:oxfmt:check`, `lint:styles`, `lint:html`, `lint:markdown`, `lint:autocorrect`, and `lint:spellcheck`. `typecheck`, `lint:oxlint`, `pnpm run test`, `pnpm run test:unit`, and local maintenance scripts are not covered by the current CI; validate related changes locally.
+- For Markdown-only edits, run Oxfmt, Markdownlint, AutoCorrect, and CSpell on changed files. Use `pnpm exec` with file paths when scripts hardcode the repository scope; retain tool configuration and scope fixes likewise.
+- For behavior changes, choose relevant lint, type checks, and tests from [`package.json`](package.json). `test` aliases `test:unit`; run one. Expand for cross-cutting changes; repeat passing checks only for relevant edits, failures, or unresolved concerns.
+- CI covers Oxfmt, Stylelint, HTML Validate, Markdownlint, AutoCorrect, and CSpell. Validate affected types, JavaScript, tests, and scripts locally, within the script authorization boundary above.
+- Full `lint` also runs Knip, Oxlint, and type checking. Legacy snippets currently omit Oxlint from default validation; the target remains fixing or migrating them to meet that standard.
