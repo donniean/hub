@@ -50,7 +50,6 @@ export default defineConfig({
     'svgr',
     'tailwindcss',
     'tanstack',
-    'tsup',
     'vitest',
     'zustand',
     // TypeScript
